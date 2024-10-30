@@ -488,6 +488,7 @@
 .qipt.1632j6.cn,xxx
 .163ren.com,xxx
 .ac.dun.163yun.com,xxx
+.ye.dun.163yun.com,xxx
 .165tchuang.com,xxx
 .tr.newsletter.1664france.fr,xxx
 .166br.com,xxx
@@ -65728,7 +65729,6 @@
 .c.l.qq.com,xxx
 .c2.l.qq.com,xxx
 .cb.l.qq.com,xxx
-.cc.map.qq.com,xxx
 .cm.l.qq.com,xxx
 .configsvr.msf.3g.qq.com,xxx
 .download.sj.qq.com,xxx
