@@ -1,4 +1,3 @@
-,xxx
 .000dn.com,xxx
 .0013.cc,xxx
 .s8.001fzc.com,xxx
@@ -8078,7 +8077,6 @@
 .supportmetrics.apple.com,xxx
 .weather-analytics-events.apple.com,xxx
 .widgets.itunes.apple.com,xxx
-.xp.apple.com,xxx
 .banners.itunes.apple.com,xxx
 .fpb1.apple886.com,xxx
 .applequan.com,xxx
