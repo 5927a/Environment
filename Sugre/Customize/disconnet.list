@@ -96,6 +96,8 @@ DOMAIN-SUFFIX,macime.sogou.com
 DOMAIN-SUFFIX,pinyin.sogou.com
 DOMAIN-SUFFIX,shouji.sogou.com
 DOMAIN-SUFFIX,account.sogou.com
+DOMAIN-KEYWORD,sogou
 PROCESS-NAME,SogouInput
 PROCESS-NAME,SogouTaskManager
 PROCESS-NAME,SogouServices
+#
