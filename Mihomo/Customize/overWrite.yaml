@@ -1,0 +1,60 @@
++rules:
+  # 截图App
+  - DOMAIN-KEYWORD,viewdepth,REJECT
+  - DOMAIN-KEYWORD,pixpin,REJECT
+  - PROCESS-NAME,PixPin.exe,REJECT
+  - PROCESS-NAME,zip.exe,REJECT
+
+  # xshell
+  - DOMAIN-KEYWORD,netsarang,REJECT
+
+  # wps
+  - DOMAIN-SUFFIX,wps.cn,REJECT
+  - DOMAIN-SUFFIX,wpscdn.cn,REJECT
+  - DOMAIN,update.pan.baidu.com,REJECT
+
+  # chrome更新
+  - DOMAIN,update.googleapis.com,REJECT
+
+  # 百度
+  - DOMAIN,hm.baidu.com,REJECT
+
+  # Typora
+  - DOMAIN-KEYWORD,typora,REJECT
+  - PROCESS-NAME,Typora.exe,REJECT
+
+  # notpad++
+  - PROCESS-NAME,notepad++.exe,REJECT
+
+  # 其他
+  - DOMAIN-SUFFIX,huandian.com,REJECT
+  - PROCESS-NAME,Everything.exe,REJECT
+
+  # 向日葵
+  - DOMAIN-KEYWORD,oray,REJECT
+  - PROCESS-NAME,SunloginClient.exe,REJECT
+
+  # 播放
+  - PROCESS-NAME,PotPlayerMini64.exe,REJECT
+
+  # 搜狗输入法
+  - DOMAIN-KEYWORD,sogou,REJECT
+  - DOMAIN-SUFFIX,beacon.qq.com,REJECT
+  - DOMAIN-SUFFIX,sginput.qq.com,REJECT
+  - DOMAIN-SUFFIX,sginput.qq.com,REJECT
+  - DOMAIN,oth.str.mdt.qq.com,REJECT
+  - PROCESS-NAME,SogouInput.exe,REJECT
+  - PROCESS-NAME, SGDownload.exe,REJECT
+  - PROCESS-NAME, SGWebRender.exe,REJECT
+  - PROCESS-NAME,SogouTaskManager.exe,REJECT
+  - PROCESS-NAME,SogouServices.exe,REJECT
+  - PROCESS-NAME,SGBizLauncher.exe,REJECT
+  - PROCESS-NAME,SGIGuideHelper.exe,REJECT
+  - PROCESS-NAME,sgfeedbackhelper.exe,REJECT
+  - PROCESS-NAME,PinyinUp.exe,REJECT
+  - PROCESS-NAME,screencapture.exe,REJECT
+  - PROCESS-NAME,crashrpt.exe,REJECT
+  - PROCESS-NAME,userNetSchedule.exe,REJECT
+  - PROCESS-NAME,SGWebRender.exe,REJECT
+  - PROCESS-NAME,SGKaomoji.exe,REJECT
+  - PROCESS-NAME,crashpad_handler.exe,REJECT
