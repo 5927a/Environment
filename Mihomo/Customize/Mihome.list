@@ -18,7 +18,7 @@ IP-CIDR,218.87.136.7/32,no-resolve
 IP-CIDR,218.87.136.8/32,no-resolve
 IP-CIDR,202.101.224.88/32,no-resolve
 
-# GitHub,gitee
+# GitHub
 DOMAIN-SUFFIX,atom.io
 DOMAIN-SUFFIX,dependabot.com
 DOMAIN-SUFFIX,ghcr.io
