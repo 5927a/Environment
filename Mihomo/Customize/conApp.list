@@ -4,6 +4,7 @@ PROCESS-NAME,DingTalk.exe
 PROCESS-NAME,mstsc.exe
 PROCESS-NAME,happ.exe
 PROCESS-NAME,QQ.exe
+PROCESS-NAME,JianyingPro.exe
+PROCESS-NAME,VirtualBox.exe
 PROCESS-NAME,哔哩哔哩.exe
 PROCESS-NAME,喜马拉雅.exe
-PROCESS-NAME,JianyingPro.exe
