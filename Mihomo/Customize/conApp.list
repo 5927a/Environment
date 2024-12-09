@@ -1,0 +1,8 @@
+# 直连进程
+PROCESS-NAME,WeChat.exe
+PROCESS-NAME,DingTalk.exe
+PROCESS-NAME,mstsc.exe
+PROCESS-NAME,happ.exe
+PROCESS-NAME,QQ.exe
+PROCESS-NAME,哔哩哔哩.exe
+PROCESS-NAME,喜马拉雅.exe
