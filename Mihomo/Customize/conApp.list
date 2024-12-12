@@ -1,6 +1,6 @@
 # 直连进程
 PROCESS-NAME,WeChat.exe
-PROCESS-NAME,WeChatAppEx
+PROCESS-NAME,WeChatAppEx.exe
 PROCESS-NAME,DingTalk.exe
 PROCESS-NAME,mstsc.exe
 PROCESS-NAME,happ.exe
