@@ -144,8 +144,6 @@ DOMAIN-KEYWORD,amazon
 # 维基
 DOMAIN-SUFFIX,wikipedia.org
 DOMAIN-SUFFIX,mbalib.com
-# github
-DOMAIN-SUFFIX,v2ex.com
 # whatsapp
 DOMAIN-KEYWORD,whatsapp
 # 音乐
@@ -189,3 +187,5 @@ DOMAIN-SUFFIX,coolshell.cn
 #
 DOMAIN-SUFFIX,ierc20.com
 #
+DOMAIN-SUFFIX,linux.do
+DOMAIN-SUFFIX,v2ex.com
