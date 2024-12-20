@@ -120,6 +120,12 @@ HOST-SUFFIX,luohanacademy.com,xxx
 HOST-SUFFIX,sinopayment.com.cn,xxx
 HOST-SUFFIX,gov.cn,xxx
 HOST-SUFFIX,jd.com,xxx
+HOST-SUFFIX,paipai.com,xxx
+HOST-SUFFIX,jd.shop,xxx
+HOST-SUFFIX,jdbusiness.com,xxx
+HOST-SUFFIX,jdcache.com,xxx
+HOST-SUFFIX,jdcdn.com,xxx
+HOST-SUFFIX,jingxi.com,xxx
 HOST-SUFFIX,qpic.cn,xxx
 HOST-SUFFIX,mijia.tech,xxx
 HOST-SUFFIX,aliapp.org,xxx
@@ -140,6 +146,9 @@ HOST-SUFFIX,picc.com.cn,xxx
 HOST-SUFFIX,epicc.com.cm,xxx
 HOST-SUFFIX,picc.com,xxx
 HOST-SUFFIX,sohu.com,xxx
+HOST-SUFFIX,os.click,xxx
+HOST-SUFFIX,quark.cn,xxx
+HOST-SUFFIX,bilivideo.com,xxx
 HOST-KEYWORD,bitwarden,xxx
 HOST-KEYWORD,alicdn,xxx
 HOST-KEYWORD,alipay,xxx

@@ -144,8 +144,6 @@ HOST-KEYWORD,amazon,xxx
 # 维基,xxx
 HOST-SUFFIX,wikipedia.org,xxx
 HOST-SUFFIX,mbalib.com,xxx
-# github,xxx
-HOST-SUFFIX,v2ex.com,xxx
 # whatsapp,xxx
 HOST-KEYWORD,whatsapp,xxx
 # 音乐,xxx
@@ -189,3 +187,5 @@ HOST-SUFFIX,coolshell.cn,xxx
 #,xxx
 HOST-SUFFIX,ierc20.com,xxx
 #,xxx
+HOST-SUFFIX,linux.do,xxx
+HOST-SUFFIX,v2ex.com,xxx

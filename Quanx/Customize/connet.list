@@ -1,7 +1,7 @@
 # 修正规则,xxx
 # App手机一键登陆,xxx
-HOST-SUFFIX,id6.me,xxx
-HOST-SUFFIX,open.e.189.cn,xxx
+#HOST-SUFFIX,id6.me,xxx
+#HOST-SUFFIX,open.e.189.cn,xxx
 #局域网过滤地址,xxx
 IP-CIDR,10.0.0.0/8,xxx
 IP-CIDR,100.64.0.0/10,xxx
