@@ -100,4 +100,6 @@ DOMAIN-KEYWORD,sogou
 PROCESS-NAME,SogouInput
 PROCESS-NAME,SogouTaskManager
 PROCESS-NAME,SogouServices
+# 快手
+DOMAIN,open.e.kuaishou.com
 #
