@@ -100,4 +100,6 @@ HOST-KEYWORD,sogou,xxx
 PROCESS-NAME,SogouInput,xxx
 PROCESS-NAME,SogouTaskManager,xxx
 PROCESS-NAME,SogouServices,xxx
+# 快手,xxx
+HOST,open.e.kuaishou.com,xxx
 #,xxx
