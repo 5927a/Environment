@@ -11,6 +11,7 @@ HOST,httpdns.c.cdnhwc2.com,xxx
 HOST,dns.jd.com,xxx
 IP-CIDR,101.124.19.122/32,xxx
 IP-CIDR,103.224.222.208/32,xxx
+HOST,httpdns.calorietech.com,xxx
 HOST,kuaishou.httpdns.pro,xxx
 HOST,httpdns.meituan.com,xxx
 HOST,httpdns.yunxindns.com,xxx
