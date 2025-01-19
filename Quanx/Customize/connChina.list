@@ -7,6 +7,7 @@ HOST-SUFFIX,ebscn.com,xxx
 HOST-SUFFIX,hexin.cn,xxx
 HOST-SUFFIX,thsi.cn,xxx
 HOST-SUFFIX,10jqka.com.cn,xxx
+HOST-SUFFIX,10099.com.cn,xxx
 HOST-SUFFIX,qq.com,xxx
 HOST,apd-pcdnwxlogin.teg.tencent-cloud.net,xxx
 HOST-SUFFIX,iot-tencent.com,xxx
@@ -157,6 +158,7 @@ HOST-SUFFIX,quark.cn,xxx
 HOST-SUFFIX,bilivideo.com,xxx
 HOST-SUFFIX,pingan.com.cn,xxx
 HOST-SUFFIX,pingan.com,xxx
+HOST-SUFFIX,org.cn,xxx
 HOST-KEYWORD,bitwarden,xxx
 HOST-KEYWORD,alicdn,xxx
 HOST-KEYWORD,alipay,xxx
