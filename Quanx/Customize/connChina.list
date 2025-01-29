@@ -159,6 +159,7 @@ HOST-SUFFIX,bilivideo.com,xxx
 HOST-SUFFIX,pingan.com.cn,xxx
 HOST-SUFFIX,pingan.com,xxx
 HOST-SUFFIX,org.cn,xxx
+HOST,time.windows.com,xxx
 HOST-KEYWORD,bitwarden,xxx
 HOST-KEYWORD,alicdn,xxx
 HOST-KEYWORD,alipay,xxx
