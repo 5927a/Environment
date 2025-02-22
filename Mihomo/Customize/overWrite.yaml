@@ -1,60 +1,110 @@
 +rules:
-  # 截图App
-  - DOMAIN-KEYWORD,viewdepth,REJECT
-  - DOMAIN-KEYWORD,pixpin,REJECT
+  # 搜狗输入法
+  - PROCESS-NAME,crashrpt.exe,REJECT
+  - PROCESS-NAME,Install64.exe,REJECT
+  - PROCESS-NAME,PinyinUp.exe,REJECT
+  - PROCESS-NAME,screencapture.exe,REJECT
+  - PROCESS-NAME,SGBizLauncher.exe,REJECT
+  - PROCESS-NAME,SGDownload.exe,REJECT
+  - PROCESS-NAME,sgfeedbackhelper.exe,REJECT
+  - PROCESS-NAME,SGIGuideHelper.exe,REJECT
+  - PROCESS-NAME,SGKaomoji.exe,REJECT
+  - PROCESS-NAME,SGMyInput.exe,REJECT
+  - PROCESS-NAME,SGSmartAssistant.exe,REJECT
+  - PROCESS-NAME,SGTool.exe,REJECT
+  - PROCESS-NAME,SGWangzai.exe,REJECT
+  - PROCESS-NAME,SGWebRender.exe,REJECT
+  - PROCESS-NAME,SGWizard.exe,REJECT
+  - PROCESS-NAME,SogouCloud.exe,REJECT
+  - PROCESS-NAME,SogouImeRepair.exe,REJECT
+  - PROCESS-NAME,SogouToolkits.exe,REJECT
+  - PROCESS-NAME,userNetSchedule.exe,REJECT
+  - PROCESS-NAME,SogouSvc.exe,REJECT
+  - PROCESS-NAME,SogouComMgr.exe,REJECT
+  - PROCESS-NAME,SogouFlash.exe,REJECT
+  - PROCESS-NAME,SogouExe.exe,REJECT
+  - PROCESS-NAME,SOGOUSmartAssistant.exe,REJECT
+  - PROCESS-NAME,sogouimebroker.exe,REJECT
+  - PROCESS-NAME,SogouPlayLauncher,REJECT
+    # 截图App
   - PROCESS-NAME,PixPin.exe,REJECT
   - PROCESS-NAME,zip.exe,REJECT
-
-  # xshell
-  - DOMAIN-KEYWORD,netsarang,REJECT
-
+  # 复制黏贴
+  - PROCESS-NAME,EcoPaste.exe,REJECT
+  - PROCESS-NAME,ocr.exe,REJECT
+  # 录屏软件
+  - PROCESS-NAME,EVCapture.exe,REJECT
+  - PROCESS-NAME,updater.exe,REJECT
+  # 编辑
+  - PROCESS-NAME,notepad++.exe,REJECT
+  # ps
+  - PROCESS-NAME,Photoshop.exe,REJECT
+  - PROCESS-NAME,CCXProcess.exe,REJECT
+  # 搜索
+  - PROCESS-NAME,Everything.exe,REJECT
   # wps
-  - DOMAIN-SUFFIX,wps.cn,REJECT
-  - DOMAIN-SUFFIX,wpscdn.cn,REJECT
-  - DOMAIN,update.pan.baidu.com,REJECT
+  - PROCESS-NAME,ksolaunch.exe,REJECT
+  - PROCESS-NAME,wpsclouddisk.exe,REJECT
+  - PROCESS-NAME,wpscenter.exe,REJECT
+  - PROCESS-NAME,wpsdoccenter.exe,REJECT
+  - PROCESS-NAME,wpsoffice.exe,REJECT
+  # 查看文件大小软件
+  - PROCESS-NAME,WizTree64.exe,REJECT
+  # 录音
+  - PROCESS-NAME,RecorderOnes.exe,REJECT
 
+  # 英伟达
+  - PROCESS-NAME,NVIDIA app.exe,REJECT
+
+  # vm更新
+  - DOMAIN,softwareupdate.vmware.com,REJECT
+  # 浏览器
+  - PROCESS-NAME,microsoftedgeupdate.exe,REJECT
+  # thunderbird邮箱客户端
+  - DOMAIN,aus.thunderbird.net,REJECT
+  - DOMAIN,updates.thunderbird.net,REJECT
+
+  # 百度更新
+  - DOMAIN,update.pan.baidu.com,REJECT
   # chrome更新
   - DOMAIN,update.googleapis.com,REJECT
-
   # 百度
   - DOMAIN,hm.baidu.com,REJECT
-
-  # Typora
-  - DOMAIN-KEYWORD,typora,REJECT
-  - PROCESS-NAME,Typora.exe,REJECT
-
-  # notpad++
-  - PROCESS-NAME,notepad++.exe,REJECT
+  # 英伟达
+  - DOMAIN-SUFFIX,nvidia.com,REJECT
 
   # 其他
   - DOMAIN-SUFFIX,huandian.com,REJECT
-  - PROCESS-NAME,Everything.exe,REJECT
+  # ps
+  - DOMAIN-SUFFIX,photoshop.com,REJECT
+  - DOMAIN-SUFFIX,adobe.com,REJECT
+  - DOMAIN-KEYWORD,adobe,REJECT
+  # 截图
+  - DOMAIN-KEYWORD,viewdepth,REJECT
+  - DOMAIN-KEYWORD,pixpin,REJECT
+  # xshell
+  - DOMAIN-KEYWORD,mobaxterm,REJECT
+  - DOMAIN-KEYWORD,mobatek,REJECT
+  - DOMAIN-KEYWORD,netsarang,REJECT
+  - DOMAIN-KEYWORD,xshell,REJECT
 
-  # 向日葵
-  - DOMAIN-KEYWORD,oray,REJECT
-  - PROCESS-NAME,SunloginClient.exe,REJECT
+  # Pycharm
+  - DOMAIN-KEYWORD,jetbrains,REJECT
 
-  # 播放
-  - PROCESS-NAME,PotPlayerMini64.exe,REJECT
+  # wps
+  - DOMAIN-KEYWORD,wps,REJECT
 
   # 搜狗输入法
   - DOMAIN-KEYWORD,sogou,REJECT
-  - DOMAIN-SUFFIX,beacon.qq.com,REJECT
-  - DOMAIN-SUFFIX,sginput.qq.com,REJECT
-  - DOMAIN-SUFFIX,sginput.qq.com,REJECT
-  - DOMAIN,oth.str.mdt.qq.com,REJECT
-  - PROCESS-NAME,SogouInput.exe,REJECT
-  - PROCESS-NAME, SGDownload.exe,REJECT
-  - PROCESS-NAME, SGWebRender.exe,REJECT
-  - PROCESS-NAME,SogouTaskManager.exe,REJECT
-  - PROCESS-NAME,SogouServices.exe,REJECT
-  - PROCESS-NAME,SGBizLauncher.exe,REJECT
-  - PROCESS-NAME,SGIGuideHelper.exe,REJECT
-  - PROCESS-NAME,sgfeedbackhelper.exe,REJECT
-  - PROCESS-NAME,PinyinUp.exe,REJECT
-  - PROCESS-NAME,screencapture.exe,REJECT
-  - PROCESS-NAME,crashrpt.exe,REJECT
-  - PROCESS-NAME,userNetSchedule.exe,REJECT
-  - PROCESS-NAME,SGWebRender.exe,REJECT
-  - PROCESS-NAME,SGKaomoji.exe,REJECT
-  - PROCESS-NAME,crashpad_handler.exe,REJECT
+  - DOMAIN-KEYWORD,sginput.qq.com,REJECT
+  - DOMAIN-KEYWORD,cmpc.cmcm.com,REJECT
+
+  # 时间
+  #- DOMAIN,time.windows.com,DIRECT
+
+  # 向日葵
+  #- DOMAIN-KEYWORD,oray,REJECT
+  #- PROCESS-NAME,SunloginClient.exe,REJECT
+
+  # 播放
+  #- PROCESS-NAME,PotPlayerMini64.exe,REJECT
