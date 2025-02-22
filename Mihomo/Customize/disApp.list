@@ -27,22 +27,31 @@ PROCESS-NAME,SogouExe.exe,REJECT
 PROCESS-NAME,SOGOUSmartAssistant.exe,REJECT
 PROCESS-NAME,sogouimebroker.exe,REJECT
 PROCESS-NAME,SogouPlayLauncher.exe,REJECT
-
-# 截图App
+#截图App
 PROCESS-NAME,PixPin.exe,REJECT
 PROCESS-NAME,zip.exe,REJECT
-
-# Typora
-PROCESS-NAME,Typora.exe,REJECT
-
-# notpad++
+#复制黏贴
+PROCESS-NAME,EcoPaste.exe,REJECT
+PROCESS-NAME,ocr.exe,REJECT
+#录屏软件
+PROCESS-NAME,EVCapture.exe,REJECT
+PROCESS-NAME,updater.exe,REJECT
+#编辑
 PROCESS-NAME,notepad++.exe,REJECT
-
-# 搜索软件
+#ps
+PROCESS-NAME,Photoshop.exe,REJECT
+PROCESS-NAME,CCXProcess.exe,REJECT
+#搜索
 PROCESS-NAME,Everything.exe,REJECT
-
-# 向日葵
-PROCESS-NAME,SunloginClient.exe,REJECT
-
-# 播放
-PROCESS-NAME,PotPlayerMini64.exe,REJECT
+#wps
+PROCESS-NAME,ksolaunch.exe,REJECT
+PROCESS-NAME,wpsclouddisk.exe,REJECT
+PROCESS-NAME,wpscenter.exe,REJECT
+PROCESS-NAME,wpsdoccenter.exe,REJECT
+PROCESS-NAME,wpsoffice.exe,REJECT
+#查看文件大小软件
+PROCESS-NAME,WizTree64.exe,REJECT
+#录音
+PROCESS-NAME,RecorderOnes.exe,REJECT
+#英伟达
+PROCESS-NAME,NVIDIA app.exe,REJECT
