@@ -35,7 +35,7 @@ PROCESS-NAME,EcoPaste.exe,REJECT
 PROCESS-NAME,ocr.exe,REJECT
 #录屏软件
 PROCESS-NAME,EVCapture.exe,REJECT
-PROCESS-NAME,updater.exe,REJECT
+#PROCESS-NAME,updater.exe,REJECT
 #编辑
 PROCESS-NAME,notepad++.exe,REJECT
 #ps
