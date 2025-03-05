@@ -17,7 +17,6 @@ IP-CIDR,114.114.114.114/32,,no-resolve
 IP-CIDR,218.87.136.7/32,no-resolve
 IP-CIDR,218.87.136.8/32,no-resolve
 IP-CIDR,202.101.224.88/32,no-resolve
-
 # GitHub
 DOMAIN-SUFFIX,atom.io
 DOMAIN-SUFFIX,dependabot.com
@@ -49,7 +48,6 @@ DOMAIN-SUFFIX,rawgithub.com
 DOMAIN-SUFFIX,repo.new
 DOMAIN-SUFFIX,thegithubshop.com
 DOMAIN-KEYWORD,github
-
 # 腾讯
 DOMAIN,apd-pcdnwxlogin.teg.tencent-cloud.net
 DOMAIN,dldir1.qq.com

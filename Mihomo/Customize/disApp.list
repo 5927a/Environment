@@ -1,5 +1,31 @@
 # 拒绝app联网
-
+#截图App
+PROCESS-NAME,PixPin.exe,REJECT
+PROCESS-NAME,zip.exe,REJECT
+#复制黏贴
+PROCESS-NAME,EcoPaste.exe,REJECT
+PROCESS-NAME,ocr.exe,REJECT
+#录屏软件
+PROCESS-NAME,EVCapture.exe,REJECT
+#编辑
+PROCESS-NAME,notepad++.exe,REJECT
+#ps
+PROCESS-NAME,Photoshop.exe,REJECT
+PROCESS-NAME,CCXProcess.exe,REJECT
+#搜索
+PROCESS-NAME,Everything.exe,REJECT
+#wps
+PROCESS-NAME,ksolaunch.exe,REJECT
+PROCESS-NAME,wpsclouddisk.exe,REJECT
+PROCESS-NAME,wpscenter.exe,REJECT
+PROCESS-NAME,wpsdoccenter.exe,REJECT
+PROCESS-NAME,wpsoffice.exe,REJECT
+#查看文件大小软件
+PROCESS-NAME,WizTree64.exe,REJECT
+#录音
+PROCESS-NAME,RecorderOnes.exe,REJECT
+#英伟达
+PROCESS-NAME,NVIDIA app.exe,REJECT
 # 搜狗输入法
 PROCESS-NAME,crashrpt.exe,REJECT
 PROCESS-NAME,Install64.exe,REJECT
@@ -27,31 +53,3 @@ PROCESS-NAME,SogouExe.exe,REJECT
 PROCESS-NAME,SOGOUSmartAssistant.exe,REJECT
 PROCESS-NAME,sogouimebroker.exe,REJECT
 PROCESS-NAME,SogouPlayLauncher.exe,REJECT
-#截图App
-PROCESS-NAME,PixPin.exe,REJECT
-PROCESS-NAME,zip.exe,REJECT
-#复制黏贴
-PROCESS-NAME,EcoPaste.exe,REJECT
-PROCESS-NAME,ocr.exe,REJECT
-#录屏软件
-PROCESS-NAME,EVCapture.exe,REJECT
-#PROCESS-NAME,updater.exe,REJECT
-#编辑
-PROCESS-NAME,notepad++.exe,REJECT
-#ps
-PROCESS-NAME,Photoshop.exe,REJECT
-PROCESS-NAME,CCXProcess.exe,REJECT
-#搜索
-PROCESS-NAME,Everything.exe,REJECT
-#wps
-PROCESS-NAME,ksolaunch.exe,REJECT
-PROCESS-NAME,wpsclouddisk.exe,REJECT
-PROCESS-NAME,wpscenter.exe,REJECT
-PROCESS-NAME,wpsdoccenter.exe,REJECT
-PROCESS-NAME,wpsoffice.exe,REJECT
-#查看文件大小软件
-PROCESS-NAME,WizTree64.exe,REJECT
-#录音
-PROCESS-NAME,RecorderOnes.exe,REJECT
-#英伟达
-PROCESS-NAME,NVIDIA app.exe,REJECT
