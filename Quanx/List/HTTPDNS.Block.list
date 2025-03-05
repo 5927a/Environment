@@ -5,15 +5,16 @@ IP-CIDR,203.107.1.0/24,xxx
 HOST,httpsdns.baidu.com,xxx
 HOST,httpdns.baidu.com,xxx
 HOST,httpdns.baidubce.com,xxx
-IP-CIDR,186.76.76.200/32,xxx
+IP-CIDR,180.76.76.200/32,xxx
 HOST,httpdns.bilivideo.com,xxx
 HOST,httpdns.c.cdnhwc2.com,xxx
 HOST,dns.jd.com,xxx
 IP-CIDR,101.124.19.122/32,xxx
 IP-CIDR,103.224.222.208/32,xxx
 HOST,httpdns.calorietech.com,xxx
-HOST,kuaishou.httpdns.pro,xxx
 HOST,httpdns.meituan.com,xxx
+IP-CIDR,202.90.108.13/32,xxx
+IP-CIDR,202.90.110.46/32,xxx
 HOST,httpdns.yunxindns.com,xxx
 HOST,httpdns.n.netease.com,xxx
 HOST,httpdns.music.163.com,xxx
@@ -24,6 +25,7 @@ IP-CIDR,59.111.239.62/32,xxx
 IP-CIDR,115.236.121.51/32,xxx
 IP-CIDR,115.236.121.195/32,xxx
 HOST,httpdns.push.oppomobile.com,xxx
+HOST-SUFFIX,httpdns.pro,xxx
 IP-CIDR,119.29.29.98/32,xxx
 IP-CIDR,119.29.29.99/32,xxx
 HOST,httpdns.volcengineapi.com,xxx
@@ -39,4 +41,4 @@ IP-CIDR,42.187.184.154/32,xxx
 IP-CIDR,123.151.54.50/32,xxx
 IP-CIDR,182.254.116.117/32,xxx
 IP-CIDR,182.254.118.119/32,xxx
-IP-CIDR,118.89.204.198/23,xxx
+IP-CIDR,118.89.204.198/32,xxx
