@@ -9279,7 +9279,6 @@
 .idm.api.autohome.com.cn,xxx
 .leads.api.autohome.com.cn,xxx
 .leads.autohome.com.cn,xxx
-.activity.app.autohome.com.cn,xxx
 .adnewnc.app.autohome.com.cn,xxx
 .adproxy.autohome.com.cn,xxx
 .alert.autohome.com.cn,xxx
