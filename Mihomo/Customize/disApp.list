@@ -45,6 +45,12 @@ PROCESS-NAME,node.exe
 PROCESS-NAME,CRWindowsClientService.exe
 PROCESS-NAME,Adobe Crash Processor.exe
 PROCESS-NAME,CCXProcess.exe
+PROCESS-NAME,CCLibrary.exe
+PROCESS-NAME,AdobeIPCBroker.exe
+PROCESS-NAME,AggregatorHost.exe
+PROCESS-NAME,ApplicationFrameHost.exe
+PROCESS-NAME,AgentService.exe
+PROCESS-NAME,agentactivationruntimestarter.exe
 # 看图软件
 PROCESS-NAME,2345Pic.exe
 PROCESS-NAME,UpdateTimeDate.exe
