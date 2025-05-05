@@ -1,0 +1,29 @@
+# 个人增加的拒绝规则
+payload:
+  - DOMAIN-SUFFIX,emdcadvertise.eastmoney.com
+  - DOMAIN-SUFFIX,js4.eastmoney.com
+  - DOMAIN-SUFFIX,same.eastmoney.com
+  - DOMAIN-SUFFIX,g1.dfcfw.com
+  - DOMAIN-SUFFIX,app-site-association.cdn-apple.com
+  - DOMAIN-SUFFIX,mesu.apple.com
+  - DOMAIN-SUFFIX,gdmf.apple.com
+  - DOMAIN-SUFFIX,updates-http.cdn-apple.com
+  - DOMAIN-SUFFIX,xp.apple.com
+  - DOMAIN-SUFFIX,safebrowsing.googleapis.com
+  - DOMAIN-SUFFIX,safebrowsing.googleapis-cn.com
+  - DOMAIN-SUFFIX,urlsec.qq.com
+  - DOMAIN-SUFFIX,wostore.cn
+  - DOMAIN-SUFFIX,rmonitor.qq.com
+  - DOMAIN-SUFFIX,r.release.qq.com
+  - DOMAIN-SUFFIX,collect.ux.21cn.com
+  - DOMAIN-SUFFIX,google.cn
+  - DOMAIN-SUFFIX,fanyi.baidu.com
+  - DOMAIN-SUFFIX,fanyi-api.baidu.com
+  - DOMAIN-SUFFIX,fanyi.youdao.com
+  - DOMAIN-SUFFIX,oth.eve.mdt.qq.com
+  - DOMAIN-SUFFIX,get.sogou.com
+  - DOMAIN-SUFFIX,shouji.sogou.com
+  - DOMAIN-SUFFIX,account.sogou.com
+  - DOMAIN-SUFFIX,pinyin.sogou.com
+  - DOMAIN-SUFFIX,ime.sogou.com
+  - DOMAIN-SUFFIX,macime.sogou.com
