@@ -3,6 +3,8 @@
   - DOMAIN,softwareupdate.vmware.com,REJECT
   # 浏览器
   - PROCESS-NAME,microsoftedgeupdate.exe,REJECT
+  # 钉钉更新
+  - PROCESS-NAME,DingTalkUpdater.exe,REJECT
   # thunderbird邮箱客户端
   - DOMAIN,aus.thunderbird.net,REJECT
   - DOMAIN,updates.thunderbird.net,REJECT
@@ -34,11 +36,11 @@
   # xshell
   - DOMAIN-KEYWORD,mobaxterm,REJECT
   - DOMAIN-KEYWORD,mobatek,REJECT
-  - DOMAIN-KEYWORD,netsarang,REJECT
-  - DOMAIN-KEYWORD,xshell,REJECT
+  #- DOMAIN-KEYWORD,netsarang,REJECT
+  #- DOMAIN-KEYWORD,xshell,REJECT
 
   # Pycharm
-  - DOMAIN-KEYWORD,jetbrains,REJECT
+  #- DOMAIN-KEYWORD,jetbrains,REJECT
 
   # wps
   - DOMAIN-KEYWORD,wps,REJECT
@@ -50,3 +52,6 @@
 
   # 其他
   - DOMAIN-SUFFIX,huandian.com,REJECT
+
+  # 2345
+  - DOMAIN-KEYWORD,.2345.,REJECT
