@@ -1,5 +1,5 @@
 # 个人增加的拒绝规则,xxx
-HOST,update.googleapis.com,xxx
+#HOST,update.googleapis.com,xxx
 HOST-SUFFIX,emdcadvertise.eastmoney.com,xxx
 HOST-SUFFIX,js4.eastmoney.com,xxx
 HOST-SUFFIX,same.eastmoney.com,xxx
