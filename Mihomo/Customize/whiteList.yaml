@@ -57,6 +57,8 @@ payload:
   - DOMAIN-SUFFIX,127.net
   - DOMAIN-SUFFIX,netease.com
   - DOMAIN-SUFFIX,360.com
+  - DOMAIN-SUFFIX,xiaohongshu.com
+  - DOMAIN-SUFFIX,xhscdn.com
   - DOMAIN-SUFFIX,yinxiang.com
   - DOMAIN-SUFFIX,youdao.com
   - DOMAIN-SUFFIX,youku.com
