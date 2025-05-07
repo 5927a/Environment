@@ -97,9 +97,6 @@ HOST-SUFFIX,pinyin.sogou.com,xxx
 HOST-SUFFIX,shouji.sogou.com,xxx
 HOST-SUFFIX,account.sogou.com,xxx
 HOST-KEYWORD,sogou,xxx
-PROCESS-NAME,SogouInput,xxx
-PROCESS-NAME,SogouTaskManager,xxx
-PROCESS-NAME,SogouServices,xxx
 # 快手,xxx
 HOST,open.e.kuaishou.com,xxx
 #,xxx
