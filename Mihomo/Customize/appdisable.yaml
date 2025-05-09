@@ -25,7 +25,6 @@ payload:
     - DOMAIN-KEYWORD,2345,REJECT
     # 不知名的域名
     - DOMAIN-SUFFIX,huandian.com
-    ###########################################
     # 钉钉更新进程
     - PROCESS-NAME,DingTalkUpdater.exe
     # 微软浏览器
