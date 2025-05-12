@@ -2,6 +2,10 @@
 #截图App
 PROCESS-NAME,PixPin.exe
 PROCESS-NAME,zip.exe
+# 钉钉升级
+PROCESS-NAME,DingTalkUpdater.exe
+# 微软浏览器
+PROCESS-NAME,microsoftedgeupdate.exe
 #复制黏贴
 PROCESS-NAME,EcoPaste.exe
 PROCESS-NAME,ocr.exe
