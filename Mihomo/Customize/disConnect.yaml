@@ -78,6 +78,6 @@ payload:
   - DOMAIN-SUFFIX,music.httpdns.c.163.com
   - DOMAIN-SUFFIX,lofter.httpdns.c.163.com
   - DOMAIN-SUFFIX,httpdns.push.oppomobile.com
-  - DOMAIN-SUFFIX,pddpic.com
+  #- DOMAIN-SUFFIX,pddpic.com
   - DOMAIN-SUFFIX,jddebug.com
   - DOMAIN-SUFFIX,bootpreload.uve.weibo.com

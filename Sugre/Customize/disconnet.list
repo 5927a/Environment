@@ -83,7 +83,7 @@ DOMAIN-SUFFIX,httpdns.music.163.com
 DOMAIN-SUFFIX,music.httpdns.c.163.com
 DOMAIN-SUFFIX,lofter.httpdns.c.163.com
 DOMAIN-SUFFIX,httpdns.push.oppomobile.com
-DOMAIN-SUFFIX,pddpic.com
+#DOMAIN-SUFFIX,pddpic.com
 DOMAIN-SUFFIX,jddebug.com
 DOMAIN-SUFFIX,bootpreload.uve.weibo.com
 #搜狗
@@ -97,9 +97,6 @@ DOMAIN-SUFFIX,pinyin.sogou.com
 DOMAIN-SUFFIX,shouji.sogou.com
 DOMAIN-SUFFIX,account.sogou.com
 DOMAIN-KEYWORD,sogou
-PROCESS-NAME,SogouInput
-PROCESS-NAME,SogouTaskManager
-PROCESS-NAME,SogouServices
 # 快手
 DOMAIN,open.e.kuaishou.com
 #
