@@ -42,11 +42,14 @@ PROCESS-NAME,nsregister.exe
 #PROCESS-NAME,Xshell.exe
 #PROCESS-NAME,Xftp.exe
 # 播放软件
-PROCESS-NAME,PotPlayerMini64.exe
-PROCESS-NAME,KillPot64.exe
 PROCESS-NAME,DesktopHook.exe
 PROCESS-NAME,DesktopHook64.exe
 PROCESS-NAME,DTDrop64.exe
+PROCESS-NAME,KillPot64.exe
+PROCESS-NAME,PotPlayerMini64.exe
+PROCESS-NAME,uninstall.exe
+PROCESS-NAME,main64.exe
+PROCESS-NAME,main64.exe
 # ps软件
 PROCESS-NAME,Photoshop.exe
 PROCESS-NAME,node.exe
