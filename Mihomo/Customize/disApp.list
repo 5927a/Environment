@@ -2,6 +2,9 @@
 #截图App
 PROCESS-NAME,PixPin.exe
 PROCESS-NAME,zip.exe
+PROCESS-NAME,crashpad_handler.exe
+PROCESS-NAME,unzip.exe
+PROCESS-NAME,unins000.exe
 # 钉钉升级
 PROCESS-NAME,DingTalkUpdater.exe
 # 微软浏览器
@@ -9,6 +12,7 @@ PROCESS-NAME,microsoftedgeupdate.exe
 #复制黏贴
 PROCESS-NAME,EcoPaste.exe
 PROCESS-NAME,ocr.exe
+PROCESS-NAME,uninstall.exe
 #录屏软件
 PROCESS-NAME,EVCapture.exe
 #编辑
