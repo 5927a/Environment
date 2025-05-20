@@ -1,0 +1,25 @@
+# chrome更新
+DOMAIN,update.googleapis.com
+# vm更新
+DOMAIN,softwareupdate.vmware.com
+# 百度网盘更新
+DOMAIN,update.pan.baidu.com
+# 截图
+- DOMAIN-KEYWORD,viewdepth
+- DOMAIN-KEYWORD,pixpin
+# ps
+- DOMAIN-SUFFIX,photoshop.com
+- DOMAIN-KEYWORD,adobe
+# 英伟达显卡
+- DOMAIN-SUFFIX,nvidia.com
+# 搜狗输入法
+- DOMAIN-KEYWORD,sogou,REJECT
+- DOMAIN-KEYWORD,cmpc.cmcm.com,REJECT
+- DOMAIN-SUFFIX,beacon.qq.com,REJECT
+- DOMAIN-SUFFIX,sginput.qq.com,REJECT
+- DOMAIN-SUFFIX,sginput.qq.com,REJECT
+- DOMAIN-SUFFIX,str.mdt.qq.com,REJECT
+# 2345看图王
+- DOMAIN-KEYWORD,2345,REJECT
+# 不知名的域名
+- DOMAIN-SUFFIX,huandian.com
