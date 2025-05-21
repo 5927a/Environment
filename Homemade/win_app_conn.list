@@ -12,13 +12,6 @@ DOMAIN-SUFFIX,photoshop.com
 DOMAIN-KEYWORD,adobe
 # 英伟达显卡
 DOMAIN-SUFFIX,nvidia.com
-# 搜狗输入法
-DOMAIN-KEYWORD,sogou
-DOMAIN-KEYWORD,cmpc.cmcm.com
-DOMAIN-SUFFIX,beacon.qq.com
-DOMAIN-SUFFIX,sginput.qq.com
-DOMAIN-SUFFIX,sginput.qq.com
-DOMAIN-SUFFIX,str.mdt.qq.com
 # 2345看图王
 DOMAIN-KEYWORD,2345
 # 不知名的域名
