@@ -1,0 +1,6 @@
+# ios拒绝更新
+DOMAIN-SUFFIX,app-site-association.cdn-apple.com
+DOMAIN-SUFFIX,mesu.apple.com
+DOMAIN-SUFFIX,gdmf.apple.com
+DOMAIN-SUFFIX,updates-http.cdn-apple.com
+DOMAIN-SUFFIX,xp.apple.com
