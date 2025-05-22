@@ -164,6 +164,10 @@ DOMAIN-SUFFIX,58.com
 # 财经及资讯 - 财经信息及投资平台
 DOMAIN-SUFFIX,eastmoney.com
 
+DOMAIN-SUFFIX,eastmoneysec.com
+
+DOMAIN-SUFFIX,xzsec.com
+
 DOMAIN-SUFFIX,dfcfw.com
 
 DOMAIN-SUFFIX,dfcfs.com
@@ -172,11 +176,17 @@ DOMAIN-SUFFIX,18.cn
 
 DOMAIN-SUFFIX,10jqka.com.cn
 
-DOMAIN-SUFFIX,xueqiu.com
-
 DOMAIN-SUFFIX,iwencai.com
 
+DOMAIN-SUFFIX,51ifind.com
+
+DOMAIN-SUFFIX,forfunds.cn
+
+DOMAIN-SUFFIX,5ifund.com
+
 DOMAIN-SUFFIX,hexin.cn
+
+DOMAIN-SUFFIX,xueqiu.com
 
 DOMAIN-SUFFIX,futunn.com
 
