@@ -1,3 +1,4 @@
+# 禁止联网
 # chrome更新
 DOMAIN,update.googleapis.com
 # vm更新
@@ -7,6 +8,8 @@ DOMAIN,update.pan.baidu.com
 # 截图
 DOMAIN-KEYWORD,viewdepth
 DOMAIN-KEYWORD,pixpin
+# 黏贴
+DOMAIN-KEYWORD,ecopaste
 # ps
 DOMAIN-SUFFIX,photoshop.com
 DOMAIN-KEYWORD,adobe
