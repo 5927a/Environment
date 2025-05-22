@@ -1,2 +1,6 @@
 # 对于一些广告过滤的规则，需要放行集合区
 # 修正规则
+
+# App手机一键登陆
+#DOMAIN-SUFFIX,id6.me
+#DOMAIN-SUFFIX,open.e.189.cn
