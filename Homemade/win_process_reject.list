@@ -63,11 +63,35 @@ PROCESS-NAME,ApplicationFrameHost.exe
 PROCESS-NAME,AgentService.exe
 PROCESS-NAME,agentactivationruntimestarter.exe
 # 看图软件
-PROCESS-NAME,2345Pic.exe
-PROCESS-NAME,UpdateTimeDate.exe
 PROCESS-NAME,2345Login.exe
-PROCESS-NAME,PdfEditor.exe
+PROCESS-NAME,2345PdfEditor.exe
+PROCESS-NAME,2345PdfReader.exe
+PROCESS-NAME,2345Pic.exe
+PROCESS-NAME,2345PicCapture.exe
+PROCESS-NAME,2345PicDumper.exe
+PROCESS-NAME,2345PicEdit.exe
 PROCESS-NAME,2345PicFeedback.exe
+PROCESS-NAME,2345PicHelper.exe
+PROCESS-NAME,2345PicHome.exe
+PROCESS-NAME,2345PicPrinter.exe
+PROCESS-NAME,2345PicViewer.exe
+PROCESS-NAME,2345Uninst.exe
+PROCESS-NAME,PicCompressTask.exe
+PROCESS-NAME,PdfEditor.exe
+PROCESS-NAME,UpdateTimeDate.exe
+PROCESS-NAME,ngen.exe
+PROCESS-NAME,WpfApp.exe
+PROCESS-NAME,PicService.exe
+PROCESS-NAME,PicServiceManager.exe
+PROCESS-NAME,Tool_Uninstall.exe
+# sublimetext
+PROCESS-NAME,crash_handler.exe
+PROCESS-NAME,plugin_host-3.3.exe
+PROCESS-NAME,plugin_host-3.8.exe
+PROCESS-NAME,subl.exe
+PROCESS-NAME,sublime_text.exe
+PROCESS-NAME,unins000.exe
+PROCESS-NAME,update_installer.exe
 # 搜狗输入法
 PROCESS-NAME,crashrpt.exe
 PROCESS-NAME,Install64.exe
