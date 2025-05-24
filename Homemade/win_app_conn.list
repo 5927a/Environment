@@ -14,7 +14,7 @@ DOMAIN-KEYWORD,ecopaste
 DOMAIN-SUFFIX,photoshop.com
 DOMAIN-KEYWORD,adobe
 # 英伟达显卡
-DOMAIN-SUFFIX,nvidia.com
+#DOMAIN-SUFFIX,nvidia.com
 # 2345看图王
 DOMAIN-KEYWORD,2345
 # 不知名的域名
