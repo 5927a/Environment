@@ -1,5 +1,6 @@
 # 走楼梯
 # apple
+DOMAIN-SUFFIX,icloud.com
 DOMAIN-SUFFIX,appsto.re
 DOMAIN-SUFFIX,smoot.apple.com
 DOMAIN,amp-api.podcasts.apple.com
@@ -13,7 +14,6 @@ DOMAIN,books.apple.com
 DOMAIN,itunes.apple.com
 DOMAIN,tv.apple.com
 # > News
-DOMAIN,gateway.icloud.com
 DOMAIN-SUFFIX,apple.news
 DOMAIN,news-assets.apple.com
 DOMAIN,news-client.apple.com
