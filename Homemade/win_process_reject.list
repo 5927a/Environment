@@ -5,6 +5,7 @@ PROCESS-NAME,zip.exe
 PROCESS-NAME,crashpad_handler.exe
 PROCESS-NAME,unzip.exe
 PROCESS-NAME,unins000.exe
+PROCESS-NAME,snipaste.exe
 # 钉钉升级
 PROCESS-NAME,DingTalkUpdater.exe
 # 微软浏览器
