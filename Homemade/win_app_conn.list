@@ -20,4 +20,4 @@ DOMAIN-KEYWORD,2345
 # 不知名的域名
 DOMAIN-SUFFIX,huandian.com
 # 播放视频
-DOMAIN-KEYWORD,potplayer
+#DOMAIN-KEYWORD,potplayer
