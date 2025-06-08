@@ -1,5 +1,4 @@
 HOST,browser-intake-datadoghq.com
-HOST,gemini.google.com
 HOST,static.cloudflareinsights.com
 HOST-SUFFIX,ai.com
 HOST-SUFFIX,algolia.net
