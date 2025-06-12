@@ -1,59 +1,130 @@
-# 走楼梯
-# apple
-DOMAIN-SUFFIX,icloud.com
-DOMAIN-SUFFIX,appsto.re
-DOMAIN-SUFFIX,smoot.apple.com
+# 走楼梯规则 - 精简优化版
+
+# 苹果 (Apple)
 DOMAIN,amp-api.podcasts.apple.com
 DOMAIN,beta.music.apple.com
 DOMAIN,books.itunes.apple.com
 DOMAIN,lookup-api.apple.com
 DOMAIN,radio.itunes.apple.com
-# > Web Preview
 DOMAIN,apps.apple.com
 DOMAIN,books.apple.com
 DOMAIN,itunes.apple.com
 DOMAIN,tv.apple.com
-# > News
-DOMAIN-SUFFIX,apple.news
-DOMAIN,news-assets.apple.com
-DOMAIN,news-client.apple.com
-DOMAIN,news-client-search.apple.com
-DOMAIN,news-edge.apple.com
-DOMAIN,news-events.apple.com
-DOMAIN,apple.comscoreresearch.com
-# testflight
 DOMAIN,testflight.apple.com
-#
-DOMAIN-KEYWORD,cloudflare
-# news
+DOMAIN-SUFFIX,icloud.com
+DOMAIN-SUFFIX,appsto.re
+DOMAIN-SUFFIX,smoot.apple.com
+DOMAIN-SUFFIX,apple.news
+# 谷歌 (Google) - 【重要补充】
+DOMAIN-SUFFIX,g.co
+DOMAIN-SUFFIX,goo.gl
+DOMAIN-SUFFIX,google.com
+DOMAIN-SUFFIX,googleapis.com
+DOMAIN-SUFFIX,googleusercontent.com
+DOMAIN-SUFFIX,googlevideo.com
+DOMAIN-SUFFIX,gstatic.com
+DOMAIN-SUFFIX,gmail.com
+DOMAIN-SUFFIX,ggpht.com
+DOMAIN-SUFFIX,firebaseio.com
+DOMAIN-SUFFIX,android.com
+DOMAIN-SUFFIX,youtube.com
+
+# 微软 (Microsoft)
+DOMAIN-SUFFIX,github.com
+DOMAIN-SUFFIX,github.io
+DOMAIN-SUFFIX,githubusercontent.com
+DOMAIN-SUFFIX,msn.com
+DOMAIN-SUFFIX,msn.cn
+DOMAIN-SUFFIX,onenote.com # 注意：原规则为 onenote，建议改为 onenote.com
+DOMAIN-SUFFIX,surface.com
+DOMAIN-KEYWORD,microsoft
+DOMAIN-KEYWORD,bing.com # 包含 hotmail, outlook 等
+DOMAIN-KEYWORD,windows
+DOMAIN-KEYWORD,xbox
+DOMAIN-KEYWORD,azure
+DOMAIN-KEYWORD,skype
+DOMAIN-KEYWORD,onedrive
+# 社交与通讯 (Social & Communication)
+# > Meta (Facebook, Instagram, WhatsApp)
+DOMAIN-SUFFIX,instagram.com # 保留此条以确保覆盖
+DOMAIN-SUFFIX,messenger.com # 保留此条以确保覆盖
+DOMAIN-KEYWORD,facebook
+DOMAIN-KEYWORD,whatsapp
+# > Telegram
+DOMAIN-SUFFIX,t.me
+DOMAIN-SUFFIX,telegram.org
+DOMAIN-SUFFIX,telegra.ph
+# > Twitter / X
+DOMAIN-SUFFIX,t.co
+DOMAIN-SUFFIX,twimg.com
+DOMAIN-SUFFIX,twitter.com
+DOMAIN-SUFFIX,x.com
+# > Reddit
+DOMAIN-KEYWORD,reddit
+# > Discord
+DOMAIN-SUFFIX,discord.com
+DOMAIN-SUFFIX,discordapp.com
+DOMAIN-SUFFIX,discordapp.net
+# > Clubhouse
+DOMAIN-SUFFIX,clubhouseapi.com
+DOMAIN-SUFFIX,joinclubhouse.com
+# > Line
+DOMAIN-SUFFIX,line.me
+DOMAIN-SUFFIX,line-apps.com
+DOMAIN-SUFFIX,line-scdn.net
+DOMAIN-SUFFIX,naver.jp
+# 新闻媒体 (News)
 DOMAIN-SUFFIX,wsj.com
 DOMAIN-SUFFIX,wsj.net
 DOMAIN-SUFFIX,zaobao.com
 DOMAIN-SUFFIX,yandex.ru
 DOMAIN-SUFFIX,bbc.com
-DOMAIN-SUFFIX,abc.xyz
-DOMAIN-SUFFIX,abc-studios.com
-DOMAIN-SUFFIX,abc.com.py
-DOMAIN-SUFFIX,duckduckgo.com
-DOMAIN-SUFFIX,dueapp.com
 DOMAIN-SUFFIX,dw.com
-DOMAIN-SUFFIX,9to5mac.com
-DOMAIN-SUFFIX,cnet.com
 DOMAIN-SUFFIX,cnn.com
 DOMAIN-SUFFIX,time.com
-# > Clubhouse
-DOMAIN-SUFFIX,clubhouseapi.com
-DOMAIN-SUFFIX,joinclubhouse.com
-# > Discord
-DOMAIN-SUFFIX,discord.com
-DOMAIN-SUFFIX,discordapp.com
-DOMAIN-SUFFIX,discordapp.net
+DOMAIN-SUFFIX,9to5mac.com
+DOMAIN-SUFFIX,cnet.com
+DOMAIN-SUFFIX,chinatimes.com # 台湾中国时报
+# 流媒体 (1Streaming)
+DOMAIN-SUFFIX,netflix.com
+DOMAIN-SUFFIX,nflxvideo.net
+DOMAIN-SUFFIX,disneyplus.com
+DOMAIN-KEYWORD,disney
+DOMAIN-KEYWORD,spotify
+DOMAIN-KEYWORD,tiktok
+# 生产力与工具 (Productivity & Tools)
 # > Dropbox
-DOMAIN-SUFFIX,dropbox.com
-DOMAIN-SUFFIX,dropboxapi.com
-DOMAIN-SUFFIX,dropboxusercontent.com
 DOMAIN-KEYWORD,dropbox
-# > 数字货币
+# > WPS Office
+DOMAIN-SUFFIX,wps.com
+DOMAIN-SUFFIX,wpscdn.com
+DOMAIN-KEYWORD,kingsoft
+# > 其他
+DOMAIN-SUFFIX,duckduckgo.com
+DOMAIN-SUFFIX,dueapp.com
+DOMAIN-KEYWORD,paypal
+DOMAIN-KEYWORD,amazon
+DOMAIN-KEYWORD,cloudflare
+# 开发者与设计 (Developer & Design)
+DOMAIN-SUFFIX,medium.com
+DOMAIN-SUFFIX,figma.com
+DOMAIN-SUFFIX,stackoverflow.com
+DOMAIN-SUFFIX,vimeo.com
+DOMAIN-SUFFIX,dev.to
+DOMAIN-SUFFIX,apache.org
+DOMAIN-SUFFIX,jsdelivr.net
+DOMAIN-SUFFIX,coolshell.cn
+DOMAIN-SUFFIX,v2ex.com
+DOMAIN-SUFFIX,linux.do
+DOMAIN-KEYWORD,wordpress
+DOMAIN-KEYWORD,mozilla
+DOMAIN-KEYWORD,netsarang # Xshell
+DOMAIN-KEYWORD,bianyuan # 边缘API
+# AI 服务 (AI Services)
+DOMAIN-SUFFIX,openai.com
+DOMAIN-SUFFIX,anthropic.com
+DOMAIN-SUFFIX,claude.ai
+# 数字货币 (Cryptocurrency)
 DOMAIN-SUFFIX,aex.com
 DOMAIN-SUFFIX,bibox.com
 DOMAIN-SUFFIX,bitcointalk.org
@@ -84,110 +155,11 @@ DOMAIN-SUFFIX,sushi.com
 DOMAIN-SUFFIX,uniswap.org
 DOMAIN-SUFFIX,zb.com
 DOMAIN-KEYWORD,binance
-# > Line
-DOMAIN-SUFFIX,line.me
-DOMAIN-SUFFIX,line-apps.com
-DOMAIN-SUFFIX,line-scdn.net
-DOMAIN-SUFFIX,naver.jp
-# > Meta
-DOMAIN-SUFFIX,accountkit.com
-DOMAIN-SUFFIX,cdninstagram.com
-DOMAIN-SUFFIX,f8.com
-DOMAIN-SUFFIX,facebookmail.com
-DOMAIN-SUFFIX,fb.com
-DOMAIN-SUFFIX,fb.me
-DOMAIN-SUFFIX,fb.watch
-DOMAIN-SUFFIX,fbaddins.com
-DOMAIN-SUFFIX,fbcdn.net
-DOMAIN-SUFFIX,fbsbx.com
-DOMAIN-SUFFIX,fbworkmail.com
-DOMAIN-SUFFIX,instagram.com
-DOMAIN-SUFFIX,m.me
-DOMAIN-SUFFIX,messenger.com
-DOMAIN-SUFFIX,oculus.com
-DOMAIN-SUFFIX,oculuscdn.com
-DOMAIN-SUFFIX,readyatdawn.com
-DOMAIN-SUFFIX,rocksdb.org
-DOMAIN-SUFFIX,whatsapp.com
-DOMAIN-SUFFIX,whatsapp.net
-DOMAIN-KEYWORD,facebook
-# > Reddit
-DOMAIN-SUFFIX,redd.it
-DOMAIN-SUFFIX,reddit.com
-DOMAIN-SUFFIX,redditmedia.com
-DOMAIN-SUFFIX,redditstatic.com
-DOMAIN-KEYWORD,reddit
-# 微软
-DOMAIN-SUFFIX,onenote
-DOMAIN-SUFFIX,github.blog
-DOMAIN-SUFFIX,github.com
-DOMAIN-SUFFIX,github.io
-DOMAIN-SUFFIX,githubusercontent.com
-DOMAIN-SUFFIX,surface.com
-DOMAIN-SUFFIX,msn.com
-DOMAIN-SUFFIX,msn.cn
-DOMAIN-KEYWORD,windows
-DOMAIN-KEYWORD,xbox
-DOMAIN-KEYWORD,azure
-DOMAIN-KEYWORD,bing.com
-DOMAIN-KEYWORD,hotmail
-DOMAIN-KEYWORD,microsoft
-DOMAIN-KEYWORD,msauth
-DOMAIN-KEYWORD,office
-DOMAIN-KEYWORD,onedrive
-DOMAIN-KEYWORD,outlook
-DOMAIN-KEYWORD,skydrive
-DOMAIN-KEYWORD,skype
-DOMAIN-KEYWORD,windowsupdate
-# 亚马逊
-DOMAIN-KEYWORD,amazon
-# 维基
-DOMAIN-SUFFIX,wikipedia.org
-DOMAIN-SUFFIX,mbalib.com
-# whatsapp
-DOMAIN-KEYWORD,whatsapp
-# 音乐
-DOMAIN-KEYWORD,spotify
-# tiktok
-DOMAIN-KEYWORD,tiktok
-# paypal
-DOMAIN-KEYWORD,paypal
-#
-DOMAIN-KEYWORD,yandex
-# yahoo
-DOMAIN-KEYWORD,yahoo
-#
-DOMAIN-KEYWORD,wordpress
-#
-DOMAIN-KEYWORD,mozilla
-#
-DOMAIN-SUFFIX,jsdelivr.net
-#
-DOMAIN-KEYWORD,wiki
+# 其他 (Misc)
 DOMAIN-SUFFIX,adblockplus.org
-DOMAIN-SUFFIX,android.com
-DOMAIN-SUFFIX,apache.org
-DOMAIN-SUFFIX,chinatimes.com
-#wps
-DOMAIN-SUFFIX,wps.com
-DOMAIN-SUFFIX,wpscdn.com
-DOMAIN-KEYWORD,wps.com
-DOMAIN-KEYWORD,wps.net
-DOMAIN-KEYWORD,kingsoft
-#
-DOMAIN-KEYWORD,HongKong
-#
-DOMAIN-KEYWORD,quantumult
-#xshell
-DOMAIN-KEYWORD,netsarang
-#api
-DOMAIN-KEYWORD,bianyuan
-#
-DOMAIN-SUFFIX,coolshell.cn
-# 时尚商演
-DOMAIN-KEYWORD,sxsy
-#
+DOMAIN-SUFFIX,mbalib.com # MBA智库百科
 DOMAIN-SUFFIX,ierc20.com
-#
-DOMAIN-SUFFIX,linux.do
-DOMAIN-SUFFIX,v2ex.com
+DOMAIN-KEYWORD,wiki
+DOMAIN-KEYWORD,HongKong
+DOMAIN-KEYWORD,quantumult
+DOMAIN-KEYWORD,sxsy
