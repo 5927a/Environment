@@ -21,3 +21,5 @@ DOMAIN-KEYWORD,2345
 DOMAIN-SUFFIX,huandian.com
 # 播放视频
 #DOMAIN-KEYWORD,potplayer
+# oppo手机
+IP-CIDR,182.87.111.23/32,no-resolve
