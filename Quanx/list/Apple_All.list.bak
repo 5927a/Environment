@@ -1188,6 +1188,7 @@ HOST-SUFFIX,applepaysupplies.net
 HOST-SUFFIX,applepaysupplies.tv
 HOST-SUFFIX,applewallet.com
 HOST-SUFFIX,applewallet.tv
+HOST-SUFFIX,appsto.re
 HOST-SUFFIX,appstore.co.id
 HOST-SUFFIX,appstore.com
 HOST-SUFFIX,appstore.hk
@@ -1466,7 +1467,6 @@ HOST-SUFFIX,apple.comscoreresearch.com
 HOST-SUFFIX,appleenews.com
 HOST-SUFFIX,applemusic.berlin
 HOST-SUFFIX,applemusic.co
-HOST-SUFFIX,applemusic.com
 HOST-SUFFIX,applemusic.com.au
 HOST-SUFFIX,applemusic.hamburg
 HOST-SUFFIX,applemusic.wang
@@ -1499,10 +1499,9 @@ HOST-SUFFIX,iphoto.se
 HOST-SUFFIX,iphoto.wang
 HOST-SUFFIX,musickit.net
 HOST-SUFFIX,wwwapplemusic.com
+HOST-SUFFIX,applemusic.com
 HOST-SUFFIX,apple-dns.net
 HOST-SUFFIX,apple.news
-HOST-SUFFIX,appsto.re
-HOST-SUFFIX,cdn-apple.com
 HOST-SUFFIX,digicert.com
 HOST-SUFFIX,apple-cloudkit.com
 HOST-SUFFIX,apple-icloud.cn
@@ -1510,6 +1509,7 @@ HOST-SUFFIX,apple-livephotoskit.com
 HOST-SUFFIX,appleicloud.cn
 HOST-SUFFIX,applemx-icloud.com
 HOST-SUFFIX,apzones.com
+HOST-SUFFIX,cdn-apple.com
 HOST-SUFFIX,icloud-apple.cn
 HOST-SUFFIX,icloud-content.com
 HOST-SUFFIX,icloud-isupport.com
