@@ -6,8 +6,8 @@ DOMAIN,softwareupdate.vmware.com
 # 百度网盘更新
 DOMAIN,update.pan.baidu.com
 # 截图
-DOMAIN-KEYWORD,viewdepth
-DOMAIN-KEYWORD,pixpin
+#DOMAIN-KEYWORD,viewdepth
+#DOMAIN-KEYWORD,pixpin
 # 黏贴
 DOMAIN-KEYWORD,ecopaste
 # ps
