@@ -6,8 +6,8 @@ DOMAIN,softwareupdate.vmware.com
 # 百度网盘更新
 DOMAIN,update.pan.baidu.com
 # 截图
-#DOMAIN-KEYWORD,viewdepth
-#DOMAIN-KEYWORD,pixpin
+DOMAIN-KEYWORD,viewdepth
+DOMAIN-KEYWORD,pixpin
 # 黏贴
 DOMAIN-KEYWORD,ecopaste
 # ps
@@ -23,3 +23,4 @@ DOMAIN-SUFFIX,huandian.com
 #DOMAIN-KEYWORD,potplayer
 # oppo手机
 IP-CIDR,182.87.111.23/32,no-resolve
+IP-CIDR,117.75.33.210/32,no-resolve
