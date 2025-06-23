@@ -74,4 +74,4 @@ DOMAIN,open.e.kuaishou.com
 DOMAIN,log.mmstat.com
 DOMAIN,gm.mmstat.com
 # 抖音早期域名
-DOMAIN-SUFFIX,amemv.com
+#DOMAIN-SUFFIX,amemv.com
