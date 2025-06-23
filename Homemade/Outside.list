@@ -1,22 +1,22 @@
 # 走楼梯规则 - 精简优化版
 
 # 苹果 (Apple)
-DOMAIN,appleid.apple.com
-DOMAIN,appleid.cdn-apple.com
-DOMAIN,gsa.apple.com
-DOMAIN,idmsa.apple.com
+#DOMAIN,appleid.apple.com
+#DOMAIN,appleid.cdn-apple.com
+#DOMAIN,gsa.apple.com
+#DOMAIN,idmsa.apple.com
+#DOMAIN,itunes.apple.com
+#DOMAIN,apps.apple.com
 DOMAIN,amp-api.podcasts.apple.com
 DOMAIN,beta.music.apple.com
 DOMAIN,books.itunes.apple.com
 DOMAIN,lookup-api.apple.com
 DOMAIN,radio.itunes.apple.com
-DOMAIN,apps.apple.com
 DOMAIN,books.apple.com
-DOMAIN,itunes.apple.com
 DOMAIN,tv.apple.com
 DOMAIN,testflight.apple.com
-DOMAIN-SUFFIX,icloud.com
-DOMAIN-SUFFIX,appsto.re
+#DOMAIN-SUFFIX,icloud.com
+#DOMAIN-SUFFIX,appsto.re
 DOMAIN-SUFFIX,smoot.apple.com
 DOMAIN-SUFFIX,apple.news
 # 谷歌 (Google) - 【重要补充】
