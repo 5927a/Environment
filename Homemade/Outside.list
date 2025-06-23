@@ -15,8 +15,8 @@ DOMAIN,radio.itunes.apple.com
 DOMAIN,books.apple.com
 DOMAIN,tv.apple.com
 DOMAIN,testflight.apple.com
-#DOMAIN-SUFFIX,icloud.com
-#DOMAIN-SUFFIX,appsto.re
+DOMAIN-SUFFIX,icloud.com
+DOMAIN-SUFFIX,appsto.re
 DOMAIN-SUFFIX,smoot.apple.com
 DOMAIN-SUFFIX,apple.news
 # 谷歌 (Google) - 【重要补充】
