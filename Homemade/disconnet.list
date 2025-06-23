@@ -73,3 +73,5 @@ DOMAIN,open.e.kuaishou.com
 # 阿里
 DOMAIN,log.mmstat.com
 DOMAIN,gm.mmstat.com
+# 抖音早期域名
+DOMAIN-SUFFIX,amemv.com
