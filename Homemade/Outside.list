@@ -4,6 +4,7 @@
 DOMAIN,appleid.apple.com
 DOMAIN,appleid.cdn-apple.com
 DOMAIN,gsa.apple.com
+DOMAIN,ocsp2.apple.com
 DOMAIN,idmsa.apple.com
 DOMAIN,itunes.apple.com
 DOMAIN,apps.apple.com
