@@ -25,3 +25,4 @@ DOMAIN-SUFFIX,huandian.com
 IP-CIDR,182.87.111.23/32,no-resolve
 IP-CIDR,117.75.33.210/32,no-resolve
 IP-CIDR,111.75.33.210/32,no-resolve
+IP-CIDR,182.105.225.183/32,no-resolve
