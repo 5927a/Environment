@@ -51466,7 +51466,6 @@ HOST-SUFFIX,message.meitu.com
 HOST-SUFFIX,rabbit.tg.meitu.com
 HOST-SUFFIX,xiuxiu.android.dl.meitu.com
 HOST-SUFFIX,report.meituan.com
-HOST-SUFFIX,analytics.meituan.net
 HOST-SUFFIX,data-sdk-uuid-log.d.meituan.net
 HOST-SUFFIX,dreport.meituan.net
 HOST-SUFFIX,xiuxiu.mobile.meitudata.com
