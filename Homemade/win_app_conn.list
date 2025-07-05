@@ -22,6 +22,7 @@ DOMAIN-SUFFIX,huandian.com
 # 播放视频
 #DOMAIN-KEYWORD,potplayer
 # oppo手机
+DST-PORT,58049
 IP-CIDR,182.87.111.23/32,no-resolve
 IP-CIDR,117.75.33.210/32,no-resolve
 IP-CIDR,111.75.33.210/32,no-resolve

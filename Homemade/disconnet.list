@@ -74,5 +74,3 @@ DOMAIN,log.mmstat.com
 DOMAIN,gm.mmstat.com
 # google错误链接
 DOMAIN-SUFFIX,fkknet.cn
-#
-DST-PORT,58049
