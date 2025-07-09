@@ -37328,8 +37328,12 @@ HOST-SUFFIX,share.heypubstory.com
 HOST-SUFFIX,heystaks.com
 HOST-SUFFIX,adsfs-sdkconfig.heytapimage.com
 HOST-SUFFIX,img-c.heytapimage.com
-HOST-SUFFIX,ads.heytapmobi.com
+HOST-SUFFIX,adx.ads.heytapmobi.com
+HOST-SUFFIX,b1-data.ads.heytapmobi.com
+HOST-SUFFIX,stg-data.ads.heytapmobi.com
+HOST-SUFFIX,uapi.ads.heytapmobi.com
 HOST-SUFFIX,virusinfo-cloudscan-cn.heytapmobi.com
+HOST-SUFFIX,b2-data.ads.heytapmobi.com
 HOST-SUFFIX,heyyounow.my
 HOST-SUFFIX,heyzap.com
 HOST-SUFFIX,e.hf355.cn
