@@ -21,6 +21,8 @@ DOMAIN-KEYWORD,2345
 DOMAIN-SUFFIX,huandian.com
 # 播放视频
 DOMAIN-KEYWORD,potplayer
+# 录屏软件
+DOMAIN-SUFFIX,ieway.cn
 # oppo手机
 DST-PORT,58049
 IP-CIDR,182.87.111.23/32,no-resolve
