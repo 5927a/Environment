@@ -95,6 +95,57 @@ DOMAIN-SUFFIX,miwifi.com
 
 DOMAIN-SUFFIX,mijia.tech
 
+DOMAIN-SUFFIX,duokan.com
+
+DOMAIN-SUFFIX,mi-img.com
+
+DOMAIN-SUFFIX,mipush.com
+
+DOMAIN-SUFFIX,xiaoaiassist.com
+
+DOMAIN-SUFFIX,xiaoaiscan.net
+
+DOMAIN-SUFFIX,xiaoaisound.com
+
+DOMAIN-SUFFIX,xiaomixiaoai.com
+
+DOMAIN-SUFFIX,mi0.cc
+
+DOMAIN-SUFFIX,micoce.com.cn
+
+DOMAIN-SUFFIX,mifile.cn
+
+DOMAIN-SUFFIX,mij.cc
+
+# 小米系统接口
+DOMAIN-SUFFIX,growth.ai.srv
+DOMAIN-SUFFIX,qsb.browser.miui.srv
+DOMAIN-SUFFIX,restapi.amap.com
+DOMAIN-SUFFIX,miav-cse.avlyun.com
+DOMAIN-SUFFIX,miui-fxcse.avlyun.com
+DOMAIN-SUFFIX,kssdata-yz1.kuaipandata.com
+DOMAIN-SUFFIX,kssdata-yz2-lt.kuaipandata.com
+DOMAIN-SUFFIX,kssdata-yz2.kuaipandata.com
+DOMAIN-SUFFIX,kssm.kuaipandata.com
+DOMAIN-SUFFIX,kssv-w-yz01.kuaipandata.com
+DOMAIN-SUFFIX,singapore01.kuaipandata.com
+DOMAIN-SUFFIX,thumb-yz01.kuaipandata.com
+DOMAIN-SUFFIX,thumb-yz02.kuaipandata.com
+DOMAIN-SUFFIX,thumb-yz69.kuaipandata.com
+DOMAIN-SUFFIX,thumb-yz96.kuaipandata.com
+DOMAIN-SUFFIX,tj1-miui-bn-stage01.kscn
+DOMAIN-SUFFIX,res.mi.baidu.com
+DOMAIN-SUFFIX,xiaomi.open.qingting.fm
+DOMAIN-SUFFIX,account-cn.huami.com
+DOMAIN-SUFFIX,aos-incentive.huami.com
+DOMAIN-SUFFIX,api-aos-cnbj6.huami.com
+DOMAIN-SUFFIX,api-mifit-cn.huami.com
+DOMAIN-SUFFIX,api-mifit.huami.com
+DOMAIN-SUFFIX,app-analytics-cn.huami.com
+DOMAIN-SUFFIX,fe-cdn.huami.com
+DOMAIN-SUFFIX,fe-static.huami.com
+DOMAIN-SUFFIX,store-cdn.huami.com
+
 # 百度 - 搜索引擎及导航服务
 DOMAIN-KEYWORD,baidu
 
