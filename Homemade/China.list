@@ -506,9 +506,13 @@ DOMAIN-SUFFIX,ebscn.com
 # 威锋网
 DOMAIN-SUFFIX,feng.com
 
-#
-
-
+# 下载
+DOMAIN-SUFFIX,qbittorrent.org
+DOMAIN-KEYWORD,aria2
+DOMAIN-KEYWORD,thunder
+DOMAIN-KEYWORD,xlliveud
+DOMAIN-KEYWORD,xunlei
+DOMAIN-KEYWORD,yunpan
 
 # Bitwarden - 密码管理工具
 #DOMAIN-KEYWORD,bitwarden
