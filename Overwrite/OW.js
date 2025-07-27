@@ -1,34 +1,39 @@
+// 全局开关，用于启用或禁用脚本
 const enable = true;
 
+// 日志记录函数，格式化输出带时间戳的日志信息
 function log(message) {
   console.log(`[Clash Script] ${new Date().toISOString()}: ${message}`);
 }
 
+// 规则选项配置，控制各种规则的启用状态
 const ruleOptions = {
-  xiuzheng: true,
-  disconnet: true,
-  dns_reject: true,
-  win_app_conn: true,
-  win_process_reject: true,
-  ads: true,
-  google: true,
-  chatgpt: true,
-  microsoft: true,
-  telegram: true,
-  twitter: true,
-  outside: true,
-  apple: true,
-  china: true,
+  xiuzheng: true,                // 修正规则
+  disconnet: true,               // 断开连接规则
+  dns_reject: true,              // DNS 拒绝规则
+  win_app_domain_reject: true,   // Windows 应用域名拒绝规则
+  win_process_reject: true,      // Windows 进程拒绝规则
+  ads: true,                     // 广告过滤规则
+  google: true,                  // 谷歌相关规则
+  chatgpt: true,                 // ChatGPT 相关规则
+  microsoft: true,               // 微软相关规则
+  telegram: true,                // Telegram 相关规则
+  twitter: true,                 // Twitter 相关规则
+  outside: true,                 // 境外规则
+  apple: true,                   // 苹果相关规则
+  win_process_conn: true,        // Windows 进程直连规则
+  china: true,                   // 国内规则
 };
 
+// 地区选项配置，用于匹配代理节点的地区规则
 const regionOptions = {
-  excludeHighPercentage: true,
+  excludeHighPercentage: true,   // 是否排除高倍率节点
   regions: [
     {
-      name: "美日",
-      regex: /(美|🇺🇸|us|united states?|america|凤凰城|纽约|日本|🇯🇵|jp|japan)/i,
-      ratioLimit: 5,
-      icon: "https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Proxy.png",
+      name: "美日",              // 地区名称
+      regex: /(美|🇺🇸|us|united states?|america|凤凰城|纽约|日本|🇯🇵|jp|japan)/i, // 匹配正则
+      ratioLimit: 5,             // 最大倍率限制
+      icon: "https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Proxy.png", // 图标 URL
     },
     {
       name: "HK香港",
@@ -55,12 +60,6 @@ const regionOptions = {
       icon: "https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Singapore.png",
     },
     {
-      name: "CN大陆",
-      regex: /(中国|🇨🇳|cn|china)/i,
-      ratioLimit: 5,
-      icon: "https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/China.png",
-    },
-    {
       name: "TW台湾",
       regex: /(台湾|🇹🇼|tw|taiwan|tai wan)/i,
       ratioLimit: 5,
@@ -69,22 +68,24 @@ const regionOptions = {
   ],
 };
 
-const defaultDNS = ["tls://1.12.12.12", "tls://223.5.5.5"];
-const chinaDNS = ["119.29.29.29", "223.5.5.5", "180.184.1.1"];
-const foreignDNS = ["tls://8.8.8.8", "tls://1.1.1.1"];
+// DNS 配置，包括默认、国内和国外 DNS 服务器
+const defaultDNS = ["tls://1.12.12.12", "tls://223.5.5.5"]; // 默认 DNS
+const chinaDNS = ["119.29.29.29", "223.5.5.5"];             // 国内 DNS
+const foreignDNS = ["tls://8.8.8.8", "tls://1.1.1.1"];      // 国外 DNS
 
+// DNS 配置对象，定义 DNS 解析行为
 const dnsConfig = {
-  enable: true,
-  listen: ":53",
-  ipv6: true,
-  "prefer-h3": true,
-  "use-hosts": true,
-  "use-system-hosts": true,
-  "respect-rules": true,
-  "enhanced-mode": "fake-ip",
-  "fake-ip-range": "198.18.0.1/16",
-  "fake-ip-filter-mode": "blacklist",
-  "fake-ip-filter": [
+  enable: true,                         // 启用 DNS
+  listen: ":53",                       // 监听端口
+  ipv6: false,                         // 禁用 IPv6
+  "prefer-h3": true,                   // 优先使用 HTTP/3
+  "use-hosts": true,                   // 使用 hosts 文件
+  "use-system-hosts": true,            // 使用系统 hosts
+  "respect-rules": true,               // 遵循规则
+  "enhanced-mode": "fake-ip",          // 启用 fake-ip 模式
+  "fake-ip-range": "198.18.0.1/16",   // fake-ip 地址范围
+  "fake-ip-filter-mode": "blacklist",  // fake-ip 过滤模式
+  "fake-ip-filter": [                  // fake-ip 过滤规则
     "+.lan",
     "+.local",
     "time.*.com",
@@ -100,34 +101,37 @@ const dnsConfig = {
     "+.push.apple.com",
     "login.microsoftonline.com",
   ],
-  "default-nameserver": [...defaultDNS],
-  "nameserver": [...foreignDNS],
-  "proxy-server-nameserver": [...foreignDNS],
-  "nameserver-policy": {
+  "default-nameserver": [...defaultDNS], // 默认名称服务器
+  "nameserver": [...foreignDNS],         // 名称服务器
+  "proxy-server-nameserver": [...foreignDNS], // 代理服务器名称服务器
+  "nameserver-policy": {                // 名称服务器策略
     "geosite:private,cn": [...chinaDNS],
   },
-  "fallback": [...foreignDNS],
-  "fallback-filter": {
+  "fallback": [...foreignDNS],          // 备用 DNS
+  "fallback-filter": {                  // 备用过滤规则
     "geoip": true,
     "geoip-code": "CN",
   },
 };
 
+// 规则提供者的通用配置
 const ruleProviderCommon = {
-  type: "http",
-  format: "yaml",
-  interval: 86400,
+  type: "http",                        // 规则类型
+  format: "yaml",                      // 规则格式
+  interval: 86400,                     // 更新间隔（秒）
 };
 
+// 代理组基础配置
 const groupBaseOption = {
-  interval: 300,
-  timeout: 3000,
-  url: "http://connectivitycheck.gstatic.com/generate_204",
-  lazy: true,
-  "max-failed-times": 3,
-  hidden: false,
+  interval: 300,                       // 测试间隔（秒）
+  timeout: 3000,                       // 超时时间（毫秒）
+  url: "http://connectivitycheck.gstatic.com/generate_204", // 测试 URL
+  lazy: true,                          // 延迟加载
+  "max-failed-times": 3,              // 最大失败次数
+  hidden: false,                       // 是否隐藏
 };
 
+// 规则提供者集合
 const ruleProviders = new Map();
 ruleProviders.set("applications", {
   ...ruleProviderCommon,
@@ -137,9 +141,12 @@ ruleProviders.set("applications", {
   path: "./ruleset/p2p.list",
 });
 
-const rules = ["RULE-SET,applications,下载软件"];
+// 初始规则列表
+const rules = ["RULE-SET,applications,DIRECT"];
 
+// 主函数，处理 Clash 配置文件
 function main(config) {
+  // 检查代理节点是否有效
   if (!config || !config.proxies || config.proxies.length === 0) {
     log("错误：未找到代理节点");
     throw new Error("配置文件中未找到任何代理");
@@ -147,54 +154,61 @@ function main(config) {
 
   log(`找到 ${config.proxies.length} 个代理节点`);
 
+  // 初始化代理组
   let regionProxyGroups = [];
   let otherProxyGroups = config.proxies.map((p) => p.name);
 
-  config["allow-lan"] = true;
-  config["bind-address"] = "*";
-  config["mode"] = "rule";
-  config["dns"] = dnsConfig;
+  // 设置全局配置
+  config["allow-lan"] = true;           // 允许局域网访问
+  config["bind-address"] = "*";         // 绑定所有地址
+  config["mode"] = "rule";             // 使用规则模式
+  config["dns"] = dnsConfig;           // 应用 DNS 配置
   config["profile"] = {
-    "store-selected": true,
-    "store-fake-ip": true,
+    "store-selected": true,             // 存储选择的代理
+    "store-fake-ip": true,             // 存储 fake-ip
   };
-  config["unified-delay"] = true;
-  config["tcp-concurrent"] = true;
-  config["keep-alive-interval"] = 15;
-  config["find-process-mode"] = "strict";
-  config["geodata-mode"] = false;
-  config["geodata-loader"] = "memconservative";
-  config["geo-auto-update"] = true;
-  config["geo-update-interval"] = 72;
+  config["unified-delay"] = true;      // 统一延迟
+  config["tcp-concurrent"] = true;     // 启用 TCP 并发
+  config["keep-alive-interval"] = 15;  // 保持连接间隔
+  config["find-process-mode"] = "strict"; // 严格进程查找模式
+  config["geodata-mode"] = false;      // 禁用 geodata 模式
+  config["geodata-loader"] = "memconservative"; // 内存保守加载
+  config["geo-auto-update"] = true;    // 自动更新 geodata
+  config["geo-update-interval"] = 72;  // geodata 更新间隔（小时）
 
+  // 配置嗅探器
   config["sniffer"] = {
-    enable: true,
-    "force-dns-mapping": true,
-    "parse-pure-ip": true,
-    "override-destination": false,
+    enable: true,                      // 启用嗅探
+    "force-dns-mapping": true,         // 强制 DNS 映射
+    "parse-pure-ip": true,             // 解析纯 IP
+    "override-destination": false,     // 不覆盖目标
     sniff: {
-      TLS: { ports: [443, 8443] },
-      HTTP: { ports: [80, "8080-8880"] },
-      QUIC: { ports: [443, 8443] },
+      TLS: { ports: [443, 8443] },     // TLS 嗅探端口
+      HTTP: { ports: [80, "8080-8880"] }, // HTTP 嗅探端口
+      QUIC: { ports: [443, 8443] },    // QUIC 嗅探端口
     },
-    "force-domain": [],
-    "skip-domain": ["Mijia Cloud"],
+    "force-domain": [],                // 强制域名
+    "skip-domain": ["Mijia Cloud"],   // 跳过域名
   };
 
+  // 配置 NTP
   config["ntp"] = {
-    enable: true,
-    "write-to-system": false,
-    server: "pool.ntp.org",
+    enable: true,                      // 启用 NTP
+    "write-to-system": false,          // 不写入系统时间
+    server: "pool.ntp.org",           // NTP 服务器
   };
 
+  // 如果脚本被禁用，直接返回配置
   if (!enable) {
     log("脚本已禁用，直接返回配置");
     return config;
   }
 
+  // 处理地区代理组
   regionOptions.regions.forEach((region) => {
     let proxies = config.proxies
       .filter((p) => {
+        // 提取节点名称中的倍率
         const multiplierMatch = p.name.match(/([0-9]+(\.\d+)?)(?=[xX✕✖⨉倍率])/i);
         const multiplier = multiplierMatch ? parseFloat(multiplierMatch[1]) : 0;
         return p.name.match(region.regex) && multiplier <= region.ratioLimit;
@@ -205,19 +219,22 @@ function main(config) {
       regionProxyGroups.push({
         ...groupBaseOption,
         name: region.name,
-        type: "url-test",
-        tolerance: 50,
+        type: "url-test",             // 使用 url-test 类型
+        tolerance: 50,                // 延迟容差
         icon: region.icon,
         proxies,
       });
       log(`地区 ${region.name} 匹配到 ${proxies.length} 个节点`);
     }
 
+    // 从其他代理组中移除已分配的节点
     otherProxyGroups = otherProxyGroups.filter((x) => !proxies.includes(x));
   });
 
+  // 收集地区代理组名称
   const proxyGroupsRegionNames = regionProxyGroups.map((g) => g.name);
 
+  // 处理剩余的未分配节点
   if (otherProxyGroups.length > 0) {
     proxyGroupsRegionNames.push("其他节点");
     regionProxyGroups.push({
@@ -229,23 +246,24 @@ function main(config) {
     });
   }
 
+  // 初始化默认代理组
   config["proxy-groups"] = [
     {
       ...groupBaseOption,
       name: "默认节点",
-      type: "select",
+      type: "select",              // 使用 select 类型
       proxies: [...proxyGroupsRegionNames, "直连"],
       icon: "https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Proxy.png",
     },
   ];
 
+  // 添加直连节点
   config.proxies.push(
-    { name: "直连", type: "direct", udp: true },
-    { name: "拒绝", type: "reject", udp: false }
+    { name: "直连", type: "direct", udp: true, url: "http://www.qualcomm.cn/generate_204"},
   );
 
+  // 根据规则选项添加规则和代理组
   if (ruleOptions.xiuzheng) {
-    rules.push("RULE-SET,xiuzheng,修正");
     ruleProviders.set("xiuzheng", {
       ...ruleProviderCommon,
       behavior: "classical",
@@ -257,13 +275,12 @@ function main(config) {
       ...groupBaseOption,
       name: "修正",
       type: "select",
-      proxies: ["直连", "拒绝"],
+      proxies: ["直连", "REJECT"],
       icon: "https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Direct.png",
     });
   }
 
   if (ruleOptions.disconnet) {
-    rules.push("RULE-SET,disconnet,disconnet");
     ruleProviders.set("disconnet", {
       ...ruleProviderCommon,
       behavior: "classical",
@@ -275,13 +292,12 @@ function main(config) {
       ...groupBaseOption,
       name: "disconnet",
       type: "select",
-      proxies: ["拒绝", "直连"],
+      proxies: ["REJECT", "直连"],
       icon: "https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Reject.png",
     });
   }
 
   if (ruleOptions.dns_reject) {
-    rules.push("RULE-SET,dns_reject,拒绝dns");
     ruleProviders.set("dns_reject", {
       ...ruleProviderCommon,
       behavior: "classical",
@@ -293,49 +309,46 @@ function main(config) {
       ...groupBaseOption,
       name: "拒绝dns",
       type: "select",
-      proxies: ["拒绝", "直连"],
+      proxies: ["REJECT", "直连"],
       icon: "https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Reject.png",
     });
   }
 
-  if (ruleOptions.win_app_conn) {
-    rules.push("RULE-SET,win_app_conn,拒绝桌面App");
-    ruleProviders.set("win_app_conn", {
+  if (ruleOptions.win_app_domain_reject) {
+    ruleProviders.set("win_app_domain_reject", {
       ...ruleProviderCommon,
       behavior: "classical",
       format: "text",
-      url: "https://raw.githubusercontent.com/5927a/Environment/config/Homemade/win_app_conn.list",
-      path: "./ruleset/win_app_conn",
+      url: "https://raw.githubusercontent.com/5927a/Environment/config/Homemade/win_app_domain_reject.list",
+      path: "./ruleset/win_app_domain_reject.list",
     });
     config["proxy-groups"].push({
       ...groupBaseOption,
-      name: "拒绝桌面App",
+      name: "拒绝Win软件域名",
       type: "select",
-      proxies: ["拒绝", "直连"],
+      proxies: ["REJECT", "直连"],
       icon: "https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Reject.png",
     });
   }
 
   if (ruleOptions.win_process_reject) {
-    rules.push("RULE-SET,win_process_reject,拒绝进程");
     ruleProviders.set("win_process_reject", {
       ...ruleProviderCommon,
       behavior: "classical",
       format: "text",
-      url: "https://raw.githubusercontent.com/5927a/Environment/config/Homemade/win_process_reject",
-      path: "./ruleset/win_process_reject",
+      url: "https://raw.githubusercontent.com/5927a/Environment/config/Homemade/win_process_reject.list",
+      path: "./ruleset/win_process_reject.list",
     });
     config["proxy-groups"].push({
       ...groupBaseOption,
       name: "拒绝进程",
       type: "select",
-      proxies: ["拒绝", "直连"],
+      proxies: ["REJECT", "直连"],
       icon: "https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Reject.png",
     });
   }
 
   if (ruleOptions.ads) {
-    rules.push("RULE-SET,ads,广告过滤");
     ruleProviders.set("ads", {
       ...ruleProviderCommon,
       behavior: "domain",
@@ -347,7 +360,7 @@ function main(config) {
       ...groupBaseOption,
       name: "广告过滤",
       type: "select",
-      proxies: ["拒绝"],
+      proxies: ["REJECT"],
       icon: "https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Reject.png",
     });
   }
@@ -364,10 +377,9 @@ function main(config) {
       ...groupBaseOption,
       name: "谷歌",
       type: "select",
-      proxies: ["默认节点", ...proxyGroupsRegionNames, "直连", "拒绝"],
+      proxies: ["默认节点", ...proxyGroupsRegionNames, "直连", "REJECT"],
       icon: "https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Google.png",
     });
-    rules.push("RULE-SET,google,谷歌");
   }
 
   if (ruleOptions.chatgpt) {
@@ -382,10 +394,9 @@ function main(config) {
       ...groupBaseOption,
       name: "ChatGPT",
       type: "select",
-      proxies: ["默认节点", ...proxyGroupsRegionNames, "直连", "拒绝"],
+      proxies: ["默认节点", ...proxyGroupsRegionNames, "直连", "REJECT"],
       icon: "https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/ChatGPT.png",
     });
-    rules.push("RULE-SET,chatgpt,ChatGPT");
   }
 
   if (ruleOptions.microsoft) {
@@ -400,11 +411,10 @@ function main(config) {
       ...groupBaseOption,
       name: "微软",
       type: "select",
-      proxies: ["默认节点", ...proxyGroupsRegionNames, "直连", "拒绝"],
+      proxies: ["默认节点", ...proxyGroupsRegionNames, "直连", "REJECT"],
       url: "http://www.google.com/generate_204",
       icon: "https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Microsoft.png",
     });
-    rules.push("RULE-SET,microsoft,微软");
   }
 
   if (ruleOptions.telegram) {
@@ -419,11 +429,10 @@ function main(config) {
       ...groupBaseOption,
       name: "飞机",
       type: "select",
-      proxies: ["默认节点", ...proxyGroupsRegionNames, "直连", "拒绝"],
+      proxies: ["默认节点", ...proxyGroupsRegionNames, "直连", "REJECT"],
       url: "http://www.google.com/generate_204",
       icon: "https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Telegram.png",
     });
-    rules.push("RULE-SET,telegram,飞机");
   }
 
   if (ruleOptions.twitter) {
@@ -438,11 +447,10 @@ function main(config) {
       ...groupBaseOption,
       name: "蓝鸟",
       type: "select",
-      proxies: ["默认节点", ...proxyGroupsRegionNames, "直连", "拒绝"],
+      proxies: ["默认节点", ...proxyGroupsRegionNames, "直连", "REJECT"],
       url: "http://www.google.com/generate_204",
       icon: "https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Twitter.png",
     });
-    rules.push("RULE-SET,twitter,蓝鸟");
   }
 
   if (ruleOptions.outside) {
@@ -457,11 +465,10 @@ function main(config) {
       ...groupBaseOption,
       name: "境外",
       type: "select",
-      proxies: ["默认节点", ...proxyGroupsRegionNames, "直连", "拒绝"],
+      proxies: ["默认节点", ...proxyGroupsRegionNames, "直连", "REJECT"],
       url: "http://www.google.com/generate_204",
       icon: "https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Proxy.png",
     });
-    rules.push("RULE-SET,outside,境外");
   }
 
   if (ruleOptions.apple) {
@@ -476,11 +483,28 @@ function main(config) {
       ...groupBaseOption,
       name: "苹果",
       type: "select",
-      proxies: ["直连", "默认节点", ...proxyGroupsRegionNames, "拒绝"],
+      proxies: ["直连", "默认节点", ...proxyGroupsRegionNames, "REJECT"],
       url: "http://www.google.com/generate_204",
       icon: "https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Apple.png",
     });
-    rules.push("RULE-SET,apple,苹果");
+  }
+
+  if (ruleOptions.win_process_conn) {
+    ruleProviders.set("win_process_conn", {
+      ...ruleProviderCommon,
+      behavior: "classical",
+      format: "text",
+      url: "https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Homemade/win_process_conn.list",
+      path: "./ruleset/win_process_conn.list",
+    });
+    config["proxy-groups"].push({
+      ...groupBaseOption,
+      name: "进程直连",
+      type: "select",
+      proxies: ["直连", "默认节点", ...proxyGroupsRegionNames, "REJECT"],
+      url: "http://www.google.com/generate_204",
+      icon: "https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/China.png",
+    });
   }
 
   if (ruleOptions.china) {
@@ -495,45 +519,38 @@ function main(config) {
       ...groupBaseOption,
       name: "国内",
       type: "select",
-      proxies: ["直连", "默认节点", ...proxyGroupsRegionNames, "拒绝"],
+      proxies: ["直连", "默认节点", ...proxyGroupsRegionNames, "REJECT"],
       url: "http://www.google.com/generate_204",
       icon: "https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/China.png",
     });
-    rules.push("RULE-SET,china,国内");
   }
 
-  config["proxy-groups"].push(
-    {
-      ...groupBaseOption,
-      name: "下载软件",
-      type: "select",
-      proxies: ["直连", "拒绝", "默认节点", "国内", ...proxyGroupsRegionNames],
-      icon: "https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Download.png",
-    },
-    {
-      ...groupBaseOption,
-      name: "国外网站",
-      type: "select",
-      proxies: ["默认节点", "国内", ...proxyGroupsRegionNames],
-      icon: "https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Streaming!CN.png",
-    },
-    {
-      ...groupBaseOption,
-      name: "国内网站",
-      type: "select",
-      proxies: ["直连", "默认节点", ...proxyGroupsRegionNames],
-      url: "http://wifi.vivo.com.cn/generate_204",
-      icon: "https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/StreamingCN.png",
-    }
-  );
-
+  // 将地区代理组追加到总代理组列表
   config["proxy-groups"] = config["proxy-groups"].concat(regionProxyGroups);
 
+  // 添加规则到规则列表
   rules.push(
-    "GEOIP,CN,国内网站",
-    "MATCH,国外网站"
+    "RULE-SET,xiuzheng,修正",
+    "RULE-SET,disconnet,disconnet",
+    "RULE-SET,dns_reject,拒绝dns",
+    "RULE-SET,win_app_domain_reject,拒绝Win软件域名",
+    "RULE-SET,win_process_reject,拒绝进程",
+    "RULE-SET,ads,广告过滤",
+    "RULE-SET,google,谷歌",
+    "RULE-SET,chatgpt,ChatGPT",
+    "RULE-SET,microsoft,微软",
+    "RULE-SET,telegram,飞机",
+    "RULE-SET,twitter,蓝鸟",
+    "RULE-SET,outside,境外",
+    "RULE-SET,apple,苹果",
+    "RULE-SET,win_process_conn,进程直连",
+    "RULE-SET,china,国内",
+    "GEOIP,LAN,DIRECT",
+    "GEOIP,CN,DIRECT",
+    "MATCH,默认节点"
   );
 
+  // 应用规则和规则提供者
   config["rules"] = rules;
   config["rule-providers"] = Object.fromEntries(ruleProviders);
 
