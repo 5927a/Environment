@@ -1,6 +1,6 @@
 # 禁止联网
 # chrome更新
-DOMAIN,update.googleapis.com
+#DOMAIN,update.googleapis.com
 # vm更新
 DOMAIN,softwareupdate.vmware.com
 # 百度网盘更新
