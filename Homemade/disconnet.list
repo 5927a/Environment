@@ -82,7 +82,7 @@ DOMAIN-SUFFIX,vinci.ie.sogou.com
 DOMAIN-SUFFIX,wap.sogou.com
 # 百度输入法
 DOMAIN-SUFFIX,dr-ime.baidu.com
-DOMAIN-SUFFIX,ime.baidu.com
+DOMAIN-SUFFIX,mime.baidu.com
 DOMAIN-SUFFIX,olime.baidu.com
 DOMAIN-SUFFIX,pcinput.baidu.com
 DOMAIN-SUFFIX,tips.ime.baidu.com
