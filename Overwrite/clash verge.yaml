@@ -301,7 +301,7 @@ rule-providers:
     
 # 分流规则
 rules:
-  - DOMAIN-SUFFIX,dcard.tw,手动选择
+  #- DOMAIN-SUFFIX,dcard.tw,手动选择
   - RULE-SET,xiuzhengguize,直连选择
   - RULE-SET,disconnet,拒绝服务
   - RULE-SET,dns_reject,拒绝服务
