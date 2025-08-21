@@ -1,4 +1,3 @@
-# 个人增加的拒绝规则
 DOMAIN-SUFFIX,emdcadvertise.eastmoney.com
 DOMAIN-SUFFIX,js4.eastmoney.com
 DOMAIN-SUFFIX,same.eastmoney.com
@@ -54,7 +53,6 @@ DOMAIN-SUFFIX,fengkongcloud.com
 DOMAIN-SUFFIX,tnc3-alisc1.zijieapi.com
 DOMAIN-SUFFIX,jddebug.com
 DOMAIN-SUFFIX,bootpreload.uve.weibo.com
-#搜狗
 DOMAIN-SUFFIX,account.sogou.com
 DOMAIN-SUFFIX,beacon.qq.com
 DOMAIN-SUFFIX,cloud.pinyin.sogou.com
@@ -80,7 +78,6 @@ DOMAIN-SUFFIX,shouji.sogou.com
 DOMAIN-SUFFIX,tb.sogou.com
 DOMAIN-SUFFIX,vinci.ie.sogou.com
 DOMAIN-SUFFIX,wap.sogou.com
-# 百度输入法
 DOMAIN-SUFFIX,dr-ime.baidu.com
 DOMAIN-SUFFIX,mime.baidu.com
 DOMAIN-SUFFIX,olime.baidu.com
@@ -88,8 +85,6 @@ DOMAIN-SUFFIX,pcinput.baidu.com
 DOMAIN-SUFFIX,tips.ime.baidu.com
 DOMAIN-SUFFIX,typing.bae.baidu.com
 DOMAIN-SUFFIX,updateime.baidu.com
-# 快手
 DOMAIN,open.e.kuaishou.com
-# 阿里
 DOMAIN,log.mmstat.com
 DOMAIN,gm.mmstat.com

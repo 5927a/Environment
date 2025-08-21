@@ -1,31 +1,13 @@
-# 禁止联网
-# chrome更新
 DOMAIN,update.googleapis.com
-# vm更新
 DOMAIN,softwareupdate.vmware.com
-# 百度网盘更新
 DOMAIN,update.pan.baidu.com
-# 截图
 DOMAIN-KEYWORD,viewdepth
 DOMAIN-KEYWORD,pixpin
-# 黏贴
 DOMAIN-KEYWORD,ecopaste
-# ps
 DOMAIN-SUFFIX,photoshop.com
 DOMAIN-KEYWORD,adobe
-# 英伟达显卡
 #DOMAIN-SUFFIX,nvidia.com
-# 2345看图王
 DOMAIN-KEYWORD,2345
-# 不知名的域名
 DOMAIN-SUFFIX,huandian.com
-# 播放视频
 DOMAIN-KEYWORD,potplayer
-# 录屏软件
 DOMAIN-SUFFIX,ieway.cn
-# oppo手机
-DST-PORT,58049
-IP-CIDR,182.87.111.23/32,no-resolve
-IP-CIDR,117.75.33.210/32,no-resolve
-IP-CIDR,111.75.33.210/32,no-resolve
-IP-CIDR,182.105.225.183/32,no-resolve

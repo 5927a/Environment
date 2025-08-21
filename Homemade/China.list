@@ -50,7 +50,6 @@ DOMAIN-SUFFIX,gtimg.com
 
 DOMAIN-SUFFIX,tenpay.com
 
-# 京东 - 电商及相关服务
 DOMAIN-KEYWORD,360buy
 
 DOMAIN-SUFFIX,jd.com
@@ -71,7 +70,6 @@ DOMAIN-SUFFIX,paipai.com
 
 DOMAIN-SUFFIX,jdcloud-oss.com
 
-# 字节跳动 - 短视频、新闻及广告平台
 DOMAIN-KEYWORD,douyin
 
 DOMAIN-SUFFIX,toutiao.com
@@ -84,7 +82,6 @@ DOMAIN-SUFFIX,bytedance.com
 
 DOMAIN-SUFFIX,amemv.com
 
-# 小米 - 智能设备及电商
 DOMAIN-SUFFIX,mi.com
 
 DOMAIN-SUFFIX,xiaomi.com
@@ -121,7 +118,6 @@ DOMAIN-SUFFIX,mifile.cn
 
 DOMAIN-SUFFIX,mij.cc
 
-# 小米系统接口
 DOMAIN-SUFFIX,growth.ai.srv
 DOMAIN-SUFFIX,qsb.browser.miui.srv
 DOMAIN-SUFFIX,restapi.amap.com
@@ -150,8 +146,6 @@ DOMAIN-SUFFIX,fe-cdn.huami.com
 DOMAIN-SUFFIX,fe-static.huami.com
 DOMAIN-SUFFIX,store-cdn.huami.com
 
-
-# oppo
 DOMAIN-SUFFIX,aibreeno.com
 DOMAIN-SUFFIX,allawnfs.com
 DOMAIN-SUFFIX,allawno.com
@@ -209,7 +203,6 @@ DOMAIN-SUFFIX,wanyol.com
 DOMAIN-SUFFIX,xiaobool.com
 DOMAIN-SUFFIX,zeku.com
 
-# oneplus
 DOMAIN-SUFFIX,h2os.com
 DOMAIN-SUFFIX,oneplus.cn
 DOMAIN-SUFFIX,oneplus.com
@@ -218,12 +211,10 @@ DOMAIN-SUFFIX,oneplusbbs.com
 DOMAIN-SUFFIX,oneplusmobile.com
 DOMAIN-SUFFIX,opstatics.com
 
-# 百度 - 搜索引擎及导航服务
 DOMAIN-KEYWORD,baidu
 
 DOMAIN-SUFFIX,hao123.com
 
-# 新浪 - 门户及社交媒体
 DOMAIN-KEYWORD,sina
 
 DOMAIN-SUFFIX,weibo.com
@@ -234,7 +225,6 @@ DOMAIN-SUFFIX,sohu.com
 
 DOMAIN-SUFFIX,souhu.com
 
-# 网易 - 门户、邮箱及在线服务
 DOMAIN-SUFFIX,netease.com
 
 DOMAIN-SUFFIX,163.com
@@ -249,12 +239,10 @@ DOMAIN-SUFFIX,youdao.com
 
 DOMAIN-SUFFIX,xiami.com
 
-# 联想 - 电脑及智能设备
 DOMAIN-SUFFIX,lenovo.com
 
 DOMAIN-SUFFIX,lenovo.com.cn
 
-# 视频及娱乐 - 视频、音频及短视频平台
 DOMAIN-KEYWORD,bilibili
 
 DOMAIN-SUFFIX,bilivideo.com
@@ -267,7 +255,6 @@ DOMAIN-SUFFIX,kuaishou.com
 
 DOMAIN-SUFFIX,ximalaya.com
 
-# 电商及生活服务 - 电商及本地服务平台
 DOMAIN-SUFFIX,pinduoduo.com
 
 DOMAIN-SUFFIX,meituan.com
@@ -286,7 +273,6 @@ DOMAIN-SUFFIX,ctrip.com
 
 DOMAIN-SUFFIX,58.com
 
-# 财经及资讯 - 财经信息及投资平台
 DOMAIN-SUFFIX,eastmoney.com
 
 DOMAIN-SUFFIX,eastmoneysec.com
@@ -315,7 +301,6 @@ DOMAIN-SUFFIX,xueqiu.com
 
 DOMAIN-SUFFIX,futunn.com
 
-# 社交及社区 - 问答、分享及科技社区
 DOMAIN-SUFFIX,zhihu.com
 
 DOMAIN-SUFFIX,douban.com
@@ -330,7 +315,6 @@ DOMAIN-SUFFIX,sspai.com
 
 DOMAIN-SUFFIX,nga.cn
 
-# 电信及运营商 - 通信及移动服务
 DOMAIN-KEYWORD,chinatelecom
 
 DOMAIN-SUFFIX,mob.com
@@ -343,7 +327,6 @@ DOMAIN-SUFFIX,chinabroadnet.com
 
 DOMAIN-SUFFIX,10086.cn
 
-# 银行及支付 - 金融、保险及支付服务
 DOMAIN-SUFFIX,95516.com
 
 DOMAIN-SUFFIX,icbc.com.cn
@@ -392,7 +375,6 @@ DOMAIN-SUFFIX,epicc.com.cm
 
 DOMAIN-SUFFIX,picc.com
 
-# 科技及工具 - 软件、安全及开发工具
 DOMAIN-SUFFIX,360.com
 
 DOMAIN-SUFFIX,quark.cn
@@ -425,7 +407,6 @@ DOMAIN-SUFFIX,ulikecam.com
 
 DOMAIN-SUFFIX,ys7.com
 
-# 手机及硬件 - 手机、家电及网络设备
 DOMAIN-SUFFIX,huawei.com
 
 DOMAIN-SUFFIX,huaweicloud.com
@@ -446,7 +427,6 @@ DOMAIN-KEYWORD,midea.net
 
 DOMAIN-SUFFIX,h3c.com
 
-# 汽车相关 - 汽车资讯及服务
 DOMAIN-SUFFIX,autohome.com.cn
 
 DOMAIN-SUFFIX,dongchedi.com
@@ -455,14 +435,12 @@ DOMAIN-SUFFIX,autoimg.cn
 
 DOMAIN-SUFFIX,dcarimg.com
 
-# 能源及制造 - 石油及新能源汽车
 DOMAIN-SUFFIX,byd.com
 
 DOMAIN-SUFFIX,cnpc.com.cn
 
 DOMAIN-SUFFIX,sinopec.com
 
-# IP及网络查询 - 网络地址查询服务
 DOMAIN-SUFFIX,ipip.net
 
 DOMAIN-SUFFIX,ip138.com
@@ -471,10 +449,8 @@ DOMAIN-SUFFIX,ip-api.com
 
 DOMAIN-SUFFIX,ipify.org
 
-# 招聘及职业 - 招聘服务平台
 DOMAIN-SUFFIX,zhipin.com
 
-# 政府及公共服务 - 政府及公益机构
 DOMAIN-SUFFIX,gov.cn
 
 DOMAIN-KEYWORD,12306.cn
@@ -485,7 +461,6 @@ DOMAIN-SUFFIX,org.cn
 
 DOMAIN-SUFFIX,ifaa.org.cn
 
-# 其他服务 - 体育、通信、教育及物流
 DOMAIN-SUFFIX,hupu.com
 
 DOMAIN-SUFFIX,21cn.com
@@ -506,13 +481,10 @@ DOMAIN-SUFFIX,sf-express.com
 
 DOMAIN-SUFFIX,neworiental.org
 
-# 光大证券
 DOMAIN-SUFFIX,ebscn.com
 
-# 威锋网
 DOMAIN-SUFFIX,feng.com
 
-# 下载
 DOMAIN-SUFFIX,qbittorrent.org
 DOMAIN-KEYWORD,aria2
 DOMAIN-KEYWORD,thunder
@@ -520,5 +492,4 @@ DOMAIN-KEYWORD,xlliveud
 DOMAIN-KEYWORD,xunlei
 DOMAIN-KEYWORD,yunpan
 
-# Bitwarden - 密码管理工具
 #DOMAIN-KEYWORD,bitwarden
