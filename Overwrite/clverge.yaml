@@ -23,7 +23,7 @@ find-process-mode: strict
 ###########################################
 lan-allowed-ips:
   - 127.0.0.1/32
-  - ::/0 
+  - ::/0
 lan-disallowed-ips: []
 authentication: []
 skip-auth-prefixes:
@@ -147,37 +147,37 @@ geodata-loader: "standard" # GEO 文件加载模式 standard/memconservative
 geo-auto-update: true # 自动更新 GEO 是否启用,可选 true/false
 geo-update-interval: 72 # 更新间隔,单位 h
 geox-url:
-  GeoIp: "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.dat"
-  GeoSite: "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat"
-  Mmdb: "https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Download/Country.mmdb"
-  ASN: "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/GeoLite2-ASN.mmdb"
+  geoip: "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.dat"
+  geosite: "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat"
+  mmdb: "https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Download/Country.mmdb"
+  asn: "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/GeoLite2-ASN.mmdb"
 
 # 节点订阅的参数 [每12小时更新一次订阅节点，每 60 秒一次健康检查]
 NodeParam: &NodeParam {type: http, interval: 21600, health-check: {enable: true, url: 'http://cp.cloudflare.com/generate_204', interval: 600}}
 
 # 节点订阅   # url替换自己的，这个是机场订阅地址
-proxy-providers: 
+proxy-providers:
   ONE:
-   url: '机场订阅地址'
+   url: '9822a647'
    <<: *NodeParam
    path: './proxy_provider/ONE.yaml'
-  
-  
+
+
   TWO:
-    url: '机场订阅地址'
+    url: 'https://a850e9'
     <<: *NodeParam
     path: './proxy_provider/TWO.yaml'
-  
-  THREE:
-    url: '机场订阅地址'
-    <<: *NodeParam
-    path: './proxy_provider/THREE.yaml'
+
+  #THREE:
+  #  url: '机场订阅地址'
+  #  <<: *NodeParam
+  #  path: './proxy_provider/THREE.yaml'
 
 
 # 策略组
-proxy-groups: 
+proxy-groups:
   - {name: 直连选择, type: select, proxies: [DIRECT, REJECT], icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Direct.png}
-  - {name: 拒绝服务, type: select, proxies: [REJECT, DIRECT], icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Reject.png}    
+  - {name: 拒绝服务, type: select, proxies: [REJECT, DIRECT], icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Reject.png}
   - {name: 节点选择, type: select, proxies: [自动选择, 手动选择, DIRECT, REJECT], icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Auto.png}
   - {name: 自动选择, type: select, proxies: [日美香], icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Proxy.png}
   - {name: 电报服务, type: select, proxies: [节点选择, 手动选择], icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Telegram_X.png}
@@ -203,11 +203,23 @@ rule-providers:
     url: https://raw.githubusercontent.com/5927a/Environment/config/Homemade/xiuzhengguize.list
     path: "./rule_set/xiuzhengguize.list"
 
-    # 拒绝
+  # 拒绝
   disconnet:
     <<: *RuleSet_classical
     url: https://raw.githubusercontent.com/5927a/Environment/config/Homemade/disconnet.list
     path: "./rule_set/disconnet.list"
+
+  # 禁止更新App域名
+  win_app_domain_reject:
+    <<: *RuleSet_classical
+    url: https://raw.githubusercontent.com/5927a/Environment/config/Homemade/win_app_domain_reject.list
+    path: "./rule_set/win_app_domain_reject.list"
+
+  # 拒绝更新系统
+  iota:
+    <<: *RuleSet_classical
+    url: https://raw.githubusercontent.com/5927a/Environment/config/Homemade/ota.list
+    path: "./rule_set/ota.list"
 
   # 禁止httpd_dns
   dns_reject:
@@ -220,7 +232,7 @@ rule-providers:
     <<: *RuleSet_classical
     url: https://raw.githubusercontent.com/5927a/Environment/config/Homemade/win_app_conn.list
     path: "./rule_set/win_app_conn.list"
-  
+
   # 禁止进程联网
   win_process_reject:
     <<: *RuleSet_classical
@@ -239,42 +251,42 @@ rule-providers:
     url: https://raw.githubusercontent.com/5927a/Environment/config/Homemade/p2p.list
     path: "./rule_set/p2p.list"
 
-  #chatgpt  
+  #chatgpt
   chagpt:
     <<: *RuleSet_classical
     url: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Download/OpenAI.list
     path: "./rule_set/OpenAI.list"
-  
+
   # google
   google:
     <<: *RuleSet_classical
     url: https://raw.githubusercontent.com/5927a/Environment/config/Sugre/list/Google.list
     path: "./rule_set/Google.list"
-  
+
   # twitter
   twitter:
     <<: *RuleSet_classical
     url: https://raw.githubusercontent.com/5927a/Environment/config/Download/Twitter.list
     path: "./rule_set/Twitter.list"
-  
+
   #飞机
   telegram:
     <<: *RuleSet_classical
     url: https://raw.githubusercontent.com/5927a/Environment/config/Download/Telegram.list
     path: "./rule_set/Telegram.list"
-    
+
   #苹果
   apple:
     <<: *RuleSet_classical
     url: https://raw.githubusercontent.com/5927a/Environment/config/Download/Apple_All.list
     path: "./rule_set/Apple_All.list"
-    
+
   # 微软
   microsoft:
     <<: *RuleSet_classical
     url: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Download/Microsoft.list
     path: "./rule_set/Microsoft.list"
-    
+
   # 境外域名
   Outside:
     <<: *RuleSet_classical
@@ -292,23 +304,25 @@ rule-providers:
     <<: *RuleSet_classical
     url: https://raw.githubusercontent.com/5927a/Environment/config/Homemade/win_process_conn.list
     path: "./rule_set/win_process_conn.list"
-    
+
   # 局域网ip
   lan:
     <<: *RuleSet_classical
     url: https://raw.githubusercontent.com/5927a/Environment/config/Homemade/lan.list
     path: "./rule_set/lan.list"
-    
+
 # 分流规则
 rules:
   #- DOMAIN-SUFFIX,dcard.tw,手动选择
   - RULE-SET,xiuzhengguize,直连选择
+  - RULE-SET,iota,拒绝服务
   - RULE-SET,disconnet,拒绝服务
   - RULE-SET,dns_reject,拒绝服务
   - RULE-SET,win_app_conn,拒绝服务
   - RULE-SET,win_process_reject,拒绝服务
+  - RULE-SET,win_app_domain_reject,拒绝服务
   - RULE-SET,anti-ad-surge2,拒绝服务
-  - RULE-SET,down_p2p,拒绝服务
+  - RULE-SET,down_p2p,直连选择
   - RULE-SET,google,谷歌服务
   - RULE-SET,chagpt,ChatGpt
   - RULE-SET,twitter,推特服务
