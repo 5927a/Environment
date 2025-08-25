@@ -87732,6 +87732,11 @@ DOMAIN-SUFFIX,ads-img-al.xhscdn.com
 DOMAIN-SUFFIX,ads-img-qc.xhscdn.com
 DOMAIN-SUFFIX,ads-video-al.xhscdn.com
 DOMAIN-SUFFIX,ads-video-qc.xhscdn.com
+DOMAIN-SUFFIX,ads-i1.xhscdn.com
+DOMAIN-SUFFIX,ads-i2.xhscdn.com
+DOMAIN-SUFFIX,ads-i3.xhscdn.com
+DOMAIN-SUFFIX,ads-i4.xhscdn.com
+DOMAIN-SUFFIX,ads-static.xhscdn.com
 DOMAIN-SUFFIX,xhskoszdinatr.space
 DOMAIN-SUFFIX,cluster.xhspot.com
 DOMAIN-SUFFIX,xhstfdnhkcgec.online

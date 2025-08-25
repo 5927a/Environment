@@ -87732,6 +87732,11 @@
 .ads-img-qc.xhscdn.com
 .ads-video-al.xhscdn.com
 .ads-video-qc.xhscdn.com
+.ads-i1.xhscdn.com
+.ads-i2.xhscdn.com
+.ads-i3.xhscdn.com
+.ads-i4.xhscdn.com
+.ads-static.xhscdn.com
 .xhskoszdinatr.space
 .cluster.xhspot.com
 .xhstfdnhkcgec.online
