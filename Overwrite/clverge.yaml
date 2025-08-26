@@ -23,7 +23,7 @@ find-process-mode: strict
 ###########################################
 lan-allowed-ips:
   - 127.0.0.1/32
-  - ::/0 
+  - ::/0
 lan-disallowed-ips: []
 authentication: []
 skip-auth-prefixes:
@@ -159,17 +159,18 @@ geox-url:
 NodeParam: &NodeParam {type: http, interval: 21600, health-check: {enable: true, url: 'http://cp.cloudflare.com/generate_204', interval: 600}}
 
 # 节点订阅   # url替换自己的，这个是机场订阅地址
-proxy-providers: 
+proxy-providers:
   ONE:
-   url: 'https://1f3fd6129bf79822a647'
+   url: 'https://2ac1f3fd6129bf79822a647'
    <<: *NodeParam
    path: './proxy_provider/ONE.yaml'
-  
+
+
   TWO:
-    url: 'https://b0b868def4984ac043a850e9'
+    url: 'https://b868def4984ac043a850e9'
     <<: *NodeParam
     path: './proxy_provider/TWO.yaml'
-  
+
   #THREE:
   #  url: '机场订阅地址'
   #  <<: *NodeParam
@@ -177,9 +178,9 @@ proxy-providers:
 
 
 # 策略组
-proxy-groups: 
+proxy-groups:
   - {name: 直连选择, type: select, proxies: [DIRECT, REJECT], icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Direct.png}
-  - {name: 拒绝服务, type: select, proxies: [REJECT, DIRECT], icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Reject.png}    
+  - {name: 拒绝服务, type: select, proxies: [REJECT, DIRECT], icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Reject.png}
   - {name: 节点选择, type: select, proxies: [自动选择, 手动选择, DIRECT, REJECT], icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Auto.png}
   - {name: 自动选择, type: select, proxies: [日美香], icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Proxy.png}
   - {name: 电报服务, type: select, proxies: [节点选择, 手动选择], icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Telegram_X.png}
@@ -237,7 +238,7 @@ rule-providers:
     <<: *RuleSet_classical
     url: https://raw.githubusercontent.com/5927a/Environment/config/Homemade/win_app_conn.list
     path: "./rule_set/win_app_conn.list"
-  
+
   # 禁止进程联网
   win_process_reject:
     <<: *RuleSet_classical
@@ -256,12 +257,12 @@ rule-providers:
     url: https://raw.githubusercontent.com/5927a/Environment/config/Homemade/p2p.list
     path: "./rule_set/p2p.list"
 
-  #chatgpt  
+  #chatgpt
   chagpt:
     <<: *RuleSet_classical
     url: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Download/OpenAI.list
     path: "./rule_set/OpenAI.list"
-  
+
   # google
   google:
     <<: *RuleSet_classical
@@ -273,31 +274,31 @@ rule-providers:
     <<: *RuleSet_classical
     url: https://raw.githubusercontent.com/5927a/Environment/config/Download/Binance.list
     path: "./rule_set/Twitter.list"
-      
+
   # twitter
   twitter:
     <<: *RuleSet_classical
     url: https://raw.githubusercontent.com/5927a/Environment/config/Download/Twitter.list
     path: "./rule_set/Twitter.list"
-  
+
   #飞机
   telegram:
     <<: *RuleSet_classical
     url: https://raw.githubusercontent.com/5927a/Environment/config/Download/Telegram.list
     path: "./rule_set/Telegram.list"
-    
+
   #苹果
   apple:
     <<: *RuleSet_classical
     url: https://raw.githubusercontent.com/5927a/Environment/config/Download/Apple_All.list
     path: "./rule_set/Apple_All.list"
-    
+
   # 微软
   microsoft:
     <<: *RuleSet_classical
     url: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Download/Microsoft.list
     path: "./rule_set/Microsoft.list"
-    
+
   # 境外域名
   Outside:
     <<: *RuleSet_classical
@@ -315,7 +316,7 @@ rule-providers:
     <<: *RuleSet_classical
     url: https://raw.githubusercontent.com/5927a/Environment/config/Homemade/win_process_conn.list
     path: "./rule_set/win_process_conn.list"
-  
+
   # ASN
   ASN:
     <<: *classicalyaml
@@ -327,7 +328,7 @@ rule-providers:
     <<: *RuleSet_classical
     url: https://raw.githubusercontent.com/5927a/Environment/config/Homemade/lan.list
     path: "./rule_set/lan.list"
-    
+
 # 分流规则
 rules:
   #- DOMAIN-SUFFIX,dcard.tw,手动选择
@@ -336,7 +337,6 @@ rules:
   - RULE-SET,iota,拒绝服务
   - RULE-SET,disconnet,拒绝服务
   - RULE-SET,dns_reject,拒绝服务
-  - RULE-SET,win_app_conn,拒绝服务
   - RULE-SET,win_process_reject,拒绝服务
   - RULE-SET,win_app_domain_reject,拒绝服务
   - RULE-SET,anti-ad-surge2,拒绝服务
