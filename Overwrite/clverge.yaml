@@ -206,7 +206,7 @@ rule-providers:
   # 修正规则
   xiuzhengguize:
     <<: *RuleSet_classical
-    url: https://raw.githubusercontent.com/5927a/Environment/config/Homemade/xiuzhengguize.list
+    url: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Homemade/xiuzhengguize.list
     path: "./rule_set/xiuzhengguize.list"
 
   # 拒绝
@@ -272,8 +272,8 @@ rule-providers:
   # Binance
   Binance:
     <<: *RuleSet_classical
-    url: https://raw.githubusercontent.com/5927a/Environment/config/Download/Binance.list
-    path: "./rule_set/Twitter.list"
+    url: https://raw.githubusercontent.com/5927a/Environment/config/Sugre/list/Binance.list
+    path: "./rule_set/Binance.list"
 
   # twitter
   twitter:
@@ -352,5 +352,5 @@ rules:
   - RULE-SET,apple,直连选择
   - RULE-SET,china,直连选择
   - RULE-SET,ASN,直连选择
-  # GEOIP,CN,直连选择
+  - GEOIP,CN,直连选择,no-resolve
   - MATCH,节点选择
