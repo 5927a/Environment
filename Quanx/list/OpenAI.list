@@ -1,3 +1,4 @@
+HOST-KEYWORD,openai
 HOST,browser-intake-datadoghq.com
 HOST,static.cloudflareinsights.com
 HOST-SUFFIX,ai.com
@@ -21,7 +22,6 @@ HOST-SUFFIX,segment.io
 HOST-SUFFIX,sentry.io
 HOST-SUFFIX,stripe.com
 HOST-SUFFIX,turn.livekit.cloud
-HOST-KEYWORD,openai
-IP-CIDR,24.199.123.28/32,no-resolve
-IP-CIDR,64.23.132.171/32,no-resolve
+IP-CIDR,24.199.123.28/32,no-resolve,no-resolve
+IP-CIDR,64.23.132.171/32,no-resolve,no-resolve
 IP-ASN,20473,no-resolve

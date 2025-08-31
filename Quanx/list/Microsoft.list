@@ -1,3 +1,7 @@
+HOST-KEYWORD,1drv
+HOST-KEYWORD,onedrive
+HOST-KEYWORD,skydrive
+HOST-KEYWORD,microsoft
 HOST,vsmarketplacebadge.apphb.com
 HOST-SUFFIX,21vbc.com
 HOST-SUFFIX,21vbluecloud.com
@@ -515,7 +519,3 @@ HOST-SUFFIX,livefilestore.com
 HOST-SUFFIX,sharepoint.com
 HOST-SUFFIX,sharepointonline.com
 HOST-SUFFIX,spoprod-a.akamaihd.net
-HOST-KEYWORD,microsoft
-HOST-KEYWORD,1drv
-HOST-KEYWORD,onedrive
-HOST-KEYWORD,skydrive

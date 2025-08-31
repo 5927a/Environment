@@ -1,3 +1,10 @@
+DOMAIN-KEYWORD,smp-device
+DOMAIN-KEYWORD,testflight
+DOMAIN-KEYWORD,apple.com.akadns.net
+DOMAIN-KEYWORD,buy.itunes.apple.com
+DOMAIN-KEYWORD,apple.com.edgekey.net
+DOMAIN-KEYWORD,icloud.com.akadns.net
+DOMAIN-KEYWORD,apple-support.akadns.net
 DOMAIN,appldnld.apple.com.edgesuite.net
 DOMAIN,apple-events.akamaized.net
 DOMAIN,appleworldwidedeveloper.hb-api.omtrdc.net
@@ -42,7 +49,6 @@ DOMAIN-SUFFIX,airtunes.com
 DOMAIN-SUFFIX,airtunes.info
 DOMAIN-SUFFIX,airtunes.net
 DOMAIN-SUFFIX,ajtalk.com
-DOMAIN-SUFFIX,akadns.net
 DOMAIN-SUFFIX,albeats.com
 DOMAIN-SUFFIX,alchemysynth.com
 DOMAIN-SUFFIX,annstores.net
@@ -81,7 +87,6 @@ DOMAIN-SUFFIX,apple.ch
 DOMAIN-SUFFIX,apple.cl
 DOMAIN-SUFFIX,apple.cm
 DOMAIN-SUFFIX,apple.cn
-DOMAIN-SUFFIX,apple.co
 DOMAIN-SUFFIX,apple.co.cr
 DOMAIN-SUFFIX,apple.co.hu
 DOMAIN-SUFFIX,apple.co.jp
@@ -90,7 +95,6 @@ DOMAIN-SUFFIX,apple.co.mz
 DOMAIN-SUFFIX,apple.co.nz
 DOMAIN-SUFFIX,apple.co.th
 DOMAIN-SUFFIX,apple.co.uk
-DOMAIN-SUFFIX,apple.com
 DOMAIN-SUFFIX,apple.com.af
 DOMAIN-SUFFIX,apple.com.au
 DOMAIN-SUFFIX,apple.com.bo
@@ -1511,7 +1515,6 @@ DOMAIN-SUFFIX,icloud-content.com
 DOMAIN-SUFFIX,icloud-isupport.com
 DOMAIN-SUFFIX,icloud-sandbox.com
 DOMAIN-SUFFIX,icloud.ch
-DOMAIN-SUFFIX,icloud.com
 DOMAIN-SUFFIX,icloud.com.cn
 DOMAIN-SUFFIX,icloud.de
 DOMAIN-SUFFIX,icloud.ee
@@ -1553,10 +1556,3 @@ DOMAIN-SUFFIX,me.com
 DOMAIN-SUFFIX,myicloud.net
 DOMAIN-SUFFIX,mylcloud.net
 DOMAIN-SUFFIX,wwwicloud.com
-DOMAIN-KEYWORD,apple-support.akadns.net
-DOMAIN-KEYWORD,apple.com.akadns.net
-DOMAIN-KEYWORD,apple.com.edgekey.net
-DOMAIN-KEYWORD,buy.itunes.apple.com
-DOMAIN-KEYWORD,smp-device
-DOMAIN-KEYWORD,testflight
-DOMAIN-KEYWORD,icloud.com.akadns.net
