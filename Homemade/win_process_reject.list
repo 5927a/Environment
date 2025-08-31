@@ -133,3 +133,5 @@ PROCESS-NAME,SogouExe.exe
 PROCESS-NAME,SogouSvc.exe
 # TrafficMonitor监控软件
 PROCESS-NAME,TrafficMonitor.exe
+# 禁止钉钉更新
+PROCESS-NAME,DingTalkCheck.exe
