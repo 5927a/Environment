@@ -22,6 +22,7 @@ DOMAIN,sandbox.itunes.apple.com
 DOMAIN,testflight.apple.com
 DOMAIN,tv.applemusic.com
 DOMAIN,uts-api.itunes.apple.com
+DOMAIN-KEYWORD,icloud
 DOMAIN-SUFFIX,apple-cloudkit.com
 DOMAIN-SUFFIX,apple-dns.net
 DOMAIN-SUFFIX,apple-livephotoskit.com

@@ -9,6 +9,7 @@ payload:
     - DOMAIN-KEYWORD,disney
     - DOMAIN-KEYWORD,paypal
     - DOMAIN-KEYWORD,amazon
+    - DOMAIN-KEYWORD,icloud
     - DOMAIN-KEYWORD,windows
     - DOMAIN-KEYWORD,spotify
     - DOMAIN-KEYWORD,dropbox
