@@ -42,8 +42,6 @@ DOMAIN-SUFFIX,me.com
 DOMAIN-SUFFIX,mylcloud.net
 DOMAIN-SUFFIX,ocsp.apple.com
 DOMAIN-SUFFIX,tv.apple.com
-IP-ASN,AS714
-IP-ASN,AS6185
 # Google - 搜索、视频、邮件
 DOMAIN-SUFFIX,android.com
 DOMAIN-SUFFIX,firebaseio.com
