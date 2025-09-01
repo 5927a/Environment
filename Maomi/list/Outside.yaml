@@ -1,4 +1,6 @@
 payload:
+    - IP-ASN,AS714
+    - IP-ASN,AS6185
     - DOMAIN-KEYWORD,xbox
     - DOMAIN-KEYWORD,sxsy
     - DOMAIN-KEYWORD,wiki
@@ -70,8 +72,6 @@ payload:
     - DOMAIN-SUFFIX,mylcloud.net
     - DOMAIN-SUFFIX,ocsp.apple.com
     - DOMAIN-SUFFIX,tv.apple.com
-    - IP-ASN,AS714
-    - IP-ASN,AS6185
     - DOMAIN-SUFFIX,android.com
     - DOMAIN-SUFFIX,firebaseio.com
     - DOMAIN-SUFFIX,ggpht.com
