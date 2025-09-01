@@ -3,6 +3,7 @@ HOST-KEYWORD,sxsy
 HOST-KEYWORD,wiki
 HOST-KEYWORD,azure
 HOST-KEYWORD,skype
+HOST-KEYWORD,icloud
 HOST-KEYWORD,tiktok
 HOST-KEYWORD,reddit
 HOST-KEYWORD,disney
@@ -68,8 +69,6 @@ HOST-SUFFIX,me.com
 HOST-SUFFIX,mylcloud.net
 HOST-SUFFIX,ocsp.apple.com
 HOST-SUFFIX,tv.apple.com
-IP-ASN,AS714
-IP-ASN,AS6185
 HOST-SUFFIX,android.com
 HOST-SUFFIX,firebaseio.com
 HOST-SUFFIX,ggpht.com

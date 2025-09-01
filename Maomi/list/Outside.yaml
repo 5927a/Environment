@@ -1,17 +1,15 @@
 payload:
-    - IP-ASN,AS714
-    - IP-ASN,AS6185
     - DOMAIN-KEYWORD,xbox
     - DOMAIN-KEYWORD,sxsy
     - DOMAIN-KEYWORD,wiki
     - DOMAIN-KEYWORD,azure
     - DOMAIN-KEYWORD,skype
+    - DOMAIN-KEYWORD,icloud
     - DOMAIN-KEYWORD,tiktok
     - DOMAIN-KEYWORD,reddit
     - DOMAIN-KEYWORD,disney
     - DOMAIN-KEYWORD,paypal
     - DOMAIN-KEYWORD,amazon
-    - DOMAIN-KEYWORD,icloud
     - DOMAIN-KEYWORD,windows
     - DOMAIN-KEYWORD,spotify
     - DOMAIN-KEYWORD,dropbox
