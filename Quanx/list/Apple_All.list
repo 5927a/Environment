@@ -1513,10 +1513,10 @@ HOST-SUFFIX,ukipad.com
 HOST-SUFFIX,wwwipodlounge.com
 HOST-SUFFIX,wwwmacbookair.com
 HOST-SUFFIX,apple.comscoreresearch.com
+HOST-SUFFIX,apple.news
 HOST-SUFFIX,appleenews.com
 HOST-SUFFIX,applemusic.berlin
 HOST-SUFFIX,applemusic.co
-HOST-SUFFIX,applemusic.com
 HOST-SUFFIX,applemusic.com.au
 HOST-SUFFIX,applemusic.hamburg
 HOST-SUFFIX,applemusic.wang
@@ -1549,8 +1549,8 @@ HOST-SUFFIX,iphoto.se
 HOST-SUFFIX,iphoto.wang
 HOST-SUFFIX,musickit.net
 HOST-SUFFIX,wwwapplemusic.com
+HOST-SUFFIX,applemusic.com
 HOST-SUFFIX,apple-dns.net
-HOST-SUFFIX,apple.news
 HOST-SUFFIX,cdn-apple.com
 HOST-SUFFIX,digicert.com
 HOST-SUFFIX,apple-cloudkit.com
