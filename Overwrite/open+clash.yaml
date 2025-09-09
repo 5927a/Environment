@@ -147,7 +147,7 @@ proxy-providers:
     path: './proxy_provider/TWO.yaml'
   
   THREE:
-    url: 'https://submit.sdnlv0.cn:20443/api/v1/client/subscribe?token=23c619f6b0b868def4984ac043a850e9'
+    url: 'b0b868def4984ac043a850e9'
     <<: *NodeParam
     path: './proxy_provider/THREE.yaml'
 
