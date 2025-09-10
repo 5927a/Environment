@@ -8,3 +8,6 @@ payload:
     - DOMAIN-SUFFIX,bnbstatic.com
     - DOMAIN-SUFFIX,bnbzh.ac
     - DOMAIN-SUFFIX,bntrace.com
+    - DOMAIN-SUFFIX,okex.com
+    - DOMAIN-SUFFIX,oklink.com
+    - DOMAIN-SUFFIX,okx.com
