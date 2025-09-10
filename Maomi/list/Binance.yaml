@@ -1,9 +1,10 @@
 payload:
+    - DOMAIN-KEYWORD,binance.
+    - DOMAIN-KEYWORD,saasexch.
     - DOMAIN-SUFFIX,appsflayer.com
+    - DOMAIN-SUFFIX,binancecnt.com
     - DOMAIN-SUFFIX,binancefuture.com
     - DOMAIN-SUFFIX,bnappzh.co
     - DOMAIN-SUFFIX,bnbstatic.com
     - DOMAIN-SUFFIX,bnbzh.ac
     - DOMAIN-SUFFIX,bntrace.com
-    - DOMAIN-KEYWORD,saasexch.
-    - DOMAIN-KEYWORD,binance.

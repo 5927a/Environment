@@ -1,10 +1,14 @@
-DOMAIN-KEYWORD,smp-device
-DOMAIN-KEYWORD,testflight
-DOMAIN-KEYWORD,apple.com.akadns.net
-DOMAIN-KEYWORD,buy.itunes.apple.com
-DOMAIN-KEYWORD,apple.com.edgekey.net
-DOMAIN-KEYWORD,icloud.com.akadns.net
-DOMAIN-KEYWORD,apple-support.akadns.net
+# NAME: Apple
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2025-09-10 02:06:43
+# DOMAIN: 10
+# DOMAIN-KEYWORD: 7
+# DOMAIN-SUFFIX: 1549
+# IP-CIDR: 10
+# PROCESS-NAME: 13
+# USER-AGENT: 23
+# TOTAL: 1612
 DOMAIN,appldnld.apple.com.edgesuite.net
 DOMAIN,apple-events.akamaized.net
 DOMAIN,appleworldwidedeveloper.hb-api.omtrdc.net
@@ -13,6 +17,7 @@ DOMAIN,beatselectronicsllc.tt.omtrdc.net
 DOMAIN,e16991.b.akamaiedge.net
 DOMAIN,edge.apple
 DOMAIN,icons.axm-usercontent-apple.com
+DOMAIN,lookup-api.apple.com.edgekey.net
 DOMAIN,p-events-delivery.akamaized.net
 DOMAIN-SUFFIX,100beatscheap.com
 DOMAIN-SUFFIX,1monsterbeatsbydreus.com
@@ -49,6 +54,7 @@ DOMAIN-SUFFIX,airtunes.com
 DOMAIN-SUFFIX,airtunes.info
 DOMAIN-SUFFIX,airtunes.net
 DOMAIN-SUFFIX,ajtalk.com
+DOMAIN-SUFFIX,akadns.net
 DOMAIN-SUFFIX,albeats.com
 DOMAIN-SUFFIX,alchemysynth.com
 DOMAIN-SUFFIX,annstores.net
@@ -87,6 +93,7 @@ DOMAIN-SUFFIX,apple.ch
 DOMAIN-SUFFIX,apple.cl
 DOMAIN-SUFFIX,apple.cm
 DOMAIN-SUFFIX,apple.cn
+DOMAIN-SUFFIX,apple.co
 DOMAIN-SUFFIX,apple.co.cr
 DOMAIN-SUFFIX,apple.co.hu
 DOMAIN-SUFFIX,apple.co.jp
@@ -95,6 +102,7 @@ DOMAIN-SUFFIX,apple.co.mz
 DOMAIN-SUFFIX,apple.co.nz
 DOMAIN-SUFFIX,apple.co.th
 DOMAIN-SUFFIX,apple.co.uk
+DOMAIN-SUFFIX,apple.com
 DOMAIN-SUFFIX,apple.com.af
 DOMAIN-SUFFIX,apple.com.au
 DOMAIN-SUFFIX,apple.com.bo
@@ -776,6 +784,7 @@ DOMAIN-SUFFIX,gmnetworks.net
 DOMAIN-SUFFIX,gobeatsye.com
 DOMAIN-SUFFIX,gobuyonlinestore.net
 DOMAIN-SUFFIX,goodsdunk.net
+DOMAIN-SUFFIX,gsp4-cn.ls.apple.com.edgekey.net
 DOMAIN-SUFFIX,headphonepubs.com
 DOMAIN-SUFFIX,headphones-cool.com
 DOMAIN-SUFFIX,headphones-dre.com
@@ -1044,6 +1053,7 @@ DOMAIN-SUFFIX,soso7778.com
 DOMAIN-SUFFIX,specialtyheadphones.com
 DOMAIN-SUFFIX,spektral.cc
 DOMAIN-SUFFIX,spiritclubs.com
+DOMAIN-SUFFIX,store.apple.com.edgekey.net
 DOMAIN-SUFFIX,straightouttasomewhere.com
 DOMAIN-SUFFIX,studiobeatsbydrdre.com
 DOMAIN-SUFFIX,sulwerphoto.com
@@ -1101,6 +1111,7 @@ DOMAIN-SUFFIX,wpewebkit.org
 DOMAIN-SUFFIX,wuxiapple.com
 DOMAIN-SUFFIX,wwapple.net
 DOMAIN-SUFFIX,www-sms-apple.com
+DOMAIN-SUFFIX,www.apple.com.edgekey.net
 DOMAIN-SUFFIX,wwwapple.com
 DOMAIN-SUFFIX,wwwapple.net
 DOMAIN-SUFFIX,wwwlapple.com
@@ -1207,6 +1218,7 @@ DOMAIN-SUFFIX,icloud-content.com
 DOMAIN-SUFFIX,icloud-isupport.com
 DOMAIN-SUFFIX,icloud-sandbox.com
 DOMAIN-SUFFIX,icloud.ch
+DOMAIN-SUFFIX,icloud.com
 DOMAIN-SUFFIX,icloud.com.cn
 DOMAIN-SUFFIX,icloud.de
 DOMAIN-SUFFIX,icloud.ee
@@ -1556,6 +1568,13 @@ DOMAIN-SUFFIX,digicert.com
 DOMAIN-SUFFIX,apple-cloudkit.com
 DOMAIN-SUFFIX,apple-livephotoskit.com
 DOMAIN-SUFFIX,apzones.com
+DOMAIN-KEYWORD,apple-support.akadns.net
+DOMAIN-KEYWORD,apple.com.akadns.net
+DOMAIN-KEYWORD,apple.com.edgekey.net
+DOMAIN-KEYWORD,buy.itunes.apple.com
+DOMAIN-KEYWORD,smp-device
+DOMAIN-KEYWORD,testflight
+DOMAIN-KEYWORD,icloud.com.akadns.net
 IP-CIDR,139.178.128.0/18
 IP-CIDR,144.178.0.0/19
 IP-CIDR,144.178.36.0/22
