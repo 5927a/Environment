@@ -1191,6 +1191,7 @@ HOST-SUFFIX,applepaysupplies.net
 HOST-SUFFIX,applepaysupplies.tv
 HOST-SUFFIX,applewallet.com
 HOST-SUFFIX,applewallet.tv
+HOST-SUFFIX,appsto.re
 HOST-SUFFIX,appstore.co.id
 HOST-SUFFIX,appstore.com
 HOST-SUFFIX,appstore.hk
@@ -1516,7 +1517,6 @@ HOST-SUFFIX,apple.news
 HOST-SUFFIX,appleenews.com
 HOST-SUFFIX,applemusic.berlin
 HOST-SUFFIX,applemusic.co
-HOST-SUFFIX,applemusic.com
 HOST-SUFFIX,applemusic.com.au
 HOST-SUFFIX,applemusic.hamburg
 HOST-SUFFIX,applemusic.wang
@@ -1549,13 +1549,13 @@ HOST-SUFFIX,iphoto.se
 HOST-SUFFIX,iphoto.wang
 HOST-SUFFIX,musickit.net
 HOST-SUFFIX,wwwapplemusic.com
+HOST-SUFFIX,applemusic.com
 HOST-SUFFIX,apple-dns.net
-HOST-SUFFIX,appsto.re
-HOST-SUFFIX,cdn-apple.com
 HOST-SUFFIX,digicert.com
 HOST-SUFFIX,apple-cloudkit.com
 HOST-SUFFIX,apple-livephotoskit.com
 HOST-SUFFIX,apzones.com
+HOST-SUFFIX,cdn-apple.com
 IP-CIDR,139.178.128.0/18,no-resolve
 IP-CIDR,144.178.0.0/19,no-resolve
 IP-CIDR,144.178.36.0/22,no-resolve
@@ -1586,8 +1586,8 @@ IP-CIDR,65.199.22.0/23,no-resolve
 # 不支持规则（QuanX）：USER-AGENT,Music*
 # 不支持规则（QuanX）：USER-AGENT,AppleNews*
 # 不支持规则（QuanX）：USER-AGENT,com.apple.news*
-# 不支持规则（QuanX）：USER-AGENT,AppleTV*
 # 不支持规则（QuanX）：USER-AGENT,com.apple.trustd*
+# 不支持规则（QuanX）：USER-AGENT,AppleTV*
 # 不支持规则（QuanX）：USER-AGENT,com.apple.tv*
 # 不支持规则（QuanX）：PROCESS-NAME,CoreLocationAgent
 # 不支持规则（QuanX）：PROCESS-NAME,WeatherWidget

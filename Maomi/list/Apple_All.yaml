@@ -1192,6 +1192,7 @@ payload:
     - DOMAIN-SUFFIX,applepaysupplies.tv
     - DOMAIN-SUFFIX,applewallet.com
     - DOMAIN-SUFFIX,applewallet.tv
+    - DOMAIN-SUFFIX,appsto.re
     - DOMAIN-SUFFIX,appstore.co.id
     - DOMAIN-SUFFIX,appstore.com
     - DOMAIN-SUFFIX,appstore.hk
@@ -1517,7 +1518,6 @@ payload:
     - DOMAIN-SUFFIX,appleenews.com
     - DOMAIN-SUFFIX,applemusic.berlin
     - DOMAIN-SUFFIX,applemusic.co
-    - DOMAIN-SUFFIX,applemusic.com
     - DOMAIN-SUFFIX,applemusic.com.au
     - DOMAIN-SUFFIX,applemusic.hamburg
     - DOMAIN-SUFFIX,applemusic.wang
@@ -1550,13 +1550,13 @@ payload:
     - DOMAIN-SUFFIX,iphoto.wang
     - DOMAIN-SUFFIX,musickit.net
     - DOMAIN-SUFFIX,wwwapplemusic.com
+    - DOMAIN-SUFFIX,applemusic.com
     - DOMAIN-SUFFIX,apple-dns.net
-    - DOMAIN-SUFFIX,appsto.re
-    - DOMAIN-SUFFIX,cdn-apple.com
     - DOMAIN-SUFFIX,digicert.com
     - DOMAIN-SUFFIX,apple-cloudkit.com
     - DOMAIN-SUFFIX,apple-livephotoskit.com
     - DOMAIN-SUFFIX,apzones.com
+    - DOMAIN-SUFFIX,cdn-apple.com
     - IP-CIDR,139.178.128.0/18
     - IP-CIDR,144.178.0.0/19
     - IP-CIDR,144.178.36.0/22
@@ -1587,8 +1587,8 @@ payload:
     #- USER-AGENT,Music*
     #- USER-AGENT,AppleNews*
     #- USER-AGENT,com.apple.news*
-    #- USER-AGENT,AppleTV*
     #- USER-AGENT,com.apple.trustd*
+    #- USER-AGENT,AppleTV*
     #- USER-AGENT,com.apple.tv*
     #- PROCESS-NAME,CoreLocationAgent
     #- PROCESS-NAME,WeatherWidget
