@@ -12,6 +12,7 @@
 # NAME: GoogleDrive
 # NAME: GoogleFCM
 # NAME: GoogleSearch
+# NAME: GoogleVoice
 # PROCESS-NAME: 1
 # PROCESS-NAME: 5
 # REPO: https://github.com/blackmatrix7/ios_rule_script
@@ -23,6 +24,7 @@
 # UPDATED: 2024-02-03 01:47:34
 # UPDATED: 2024-02-03 01:47:59
 # UPDATED: 2025-06-06 09:15:10
+# UPDATED: 2025-06-06 09:17:51
 # USER-AGENT: 3
 DOMAIN,alt1-mtalk.google.com
 DOMAIN,alt2-mtalk.google.com
@@ -32,6 +34,7 @@ DOMAIN,alt5-mtalk.google.com
 DOMAIN,alt6-mtalk.google.com
 DOMAIN,alt7-mtalk.google.com
 DOMAIN,alt8-mtalk.google.com
+DOMAIN,lens.l.google.com
 DOMAIN,mtalk.google.com
 DOMAIN,voice.telephony.goog
 DOMAIN,www.googleapis.com
