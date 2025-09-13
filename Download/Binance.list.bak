@@ -1,3 +1,4 @@
+DOMAIN-KEYWORD,okx.com
 DOMAIN-KEYWORD,binance.
 DOMAIN-KEYWORD,saasexch.
 DOMAIN-SUFFIX,appsflayer.com
@@ -7,8 +8,7 @@ DOMAIN-SUFFIX,bnappzh.co
 DOMAIN-SUFFIX,bnbstatic.com
 DOMAIN-SUFFIX,bnbzh.ac
 DOMAIN-SUFFIX,bntrace.com
-DOMAIN-SUFFIX,okx.com
 DOMAIN-SUFFIX,bnappweb.biz
 DOMAIN-SUFFIX,oklink.com
-DOMAIN-SUFFIX,okx.com
-DOMAIN-KEYWORD,okx.com
+DOMAIN-SUFFIX,okex.com
+DOMAIN-SUFFIX,cloudfront.net
