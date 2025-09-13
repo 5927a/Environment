@@ -390,3 +390,13 @@ IP-CIDR6,2620:120:e000::/40,no-resolve,no-resolve
 # 不支持规则（QuanX）：PROCESS-NAME,BackupandSync
 # 不支持规则（QuanX）：PROCESS-NAME,com.android.vending
 # 不支持规则（QuanX）：USER-AGENT,%E4%BA%91%E7%AB%AF%E7%A1%AC%E7%9B%98*
+HOST-KEYWORD,youtube
+HOST-SUFFIX,ggpht.cn
+HOST-SUFFIX,ggpht.com
+HOST-SUFFIX,googlevideo.com
+HOST-SUFFIX,gvt1.com
+HOST-SUFFIX,gvt2.com
+HOST-SUFFIX,video.google.com
+HOST-SUFFIX,youtu.be
+HOST-SUFFIX,yt.be
+HOST-SUFFIX,ytimg.com
