@@ -14,6 +14,7 @@ tproxy-port: 0
 external-controller: 127.0.0.1:9090
 secret: "788!@SDSt5@$@sfr2"
 external-ui: "./profiles/ui" # 外部控制目录
+external-ui-url: "https://127.0.0.1"
 ###########################################
 ipv6: false
 bind-address: "*"
@@ -57,7 +58,7 @@ sniffer:
 tun:
   enable: true
   device: Mihomo
-  stack: gvisor
+  stack: mixed
   auto-route: true
   #auto-redirect: false # 自动配置 iptables 以重定向 TCP 连接。仅支持 Linux。带有 auto-redirect 的 auto-route 现在可以在路由器上按预期工作，无需干预。
   auto-detect-interface: true
@@ -155,13 +156,13 @@ NodeParam: &NodeParam {type: http, interval: 21600, health-check: {enable: true,
 # 节点订阅   # url替换自己的，这个是机场订阅地址
 proxy-providers:
   ONE:
-   url: 'f3fd6129bf79822a647'
+   url: '822a647'
    <<: *NodeParam
    path: './proxy_provider/ONE.yaml'
 
 
   TWO:
-    url: 'b0b868def4984ac043a850e9'
+    url: 'a739f91c'
     <<: *NodeParam
     path: './proxy_provider/TWO.yaml'
 
