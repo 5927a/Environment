@@ -1,5 +1,24 @@
+HOST-KEYWORD,info
+HOST-KEYWORD,imac
+HOST-KEYWORD,ipod
+HOST-KEYWORD,wang
+HOST-KEYWORD,apple
+HOST-KEYWORD,itunes
+HOST-KEYWORD,icloud
+HOST-KEYWORD,iphone
+HOST-KEYWORD,berlin
+HOST-KEYWORD,hamburg
+HOST-KEYWORD,ipadair
+HOST-KEYWORD,appstore
+HOST-KEYWORD,quicktime
 HOST-KEYWORD,smp-device
 HOST-KEYWORD,testflight
+HOST-KEYWORD,webobjects
+HOST-KEYWORD,macbookair
+HOST-KEYWORD,macbookpro
+HOST-KEYWORD,researchkit
+HOST-KEYWORD,xn--hxt814e
+HOST-KEYWORD,dvdstudiopro
 HOST,beatselectronicsllc.tt.omtrdc.net
 HOST,e16991.b.akamaiedge.net
 HOST,p-events-delivery.akamaized.net
@@ -927,66 +946,3 @@ IP-CIDR,198.183.17.0/24,no-resolve
 IP-CIDR,205.180.175.0/24,no-resolve
 IP-CIDR,63.92.224.0/19,no-resolve
 IP-CIDR,65.199.22.0/23,no-resolve
-# 不支持规则（QuanX）：USER-AGENT,*FindMyiPhone?
-# 不支持规则（QuanX）：USER-AGENT,*Music?
-# 不支持规则（QuanX）：USER-AGENT,*WeatherFoundation*
-# 不支持规则（QuanX）：USER-AGENT,*com.apple.Maps?
-# 不支持规则（QuanX）：USER-AGENT,*com.apple.mobileme.fmip1
-# 不支持规则（QuanX）：USER-AGENT,FMDClient*
-# 不支持规则（QuanX）：USER-AGENT,FMFD*
-# 不支持规则（QuanX）：USER-AGENT,FindMyFriends*
-# 不支持规则（QuanX）：USER-AGENT,FindMyiPhone*
-# 不支持规则（QuanX）：USER-AGENT,Maps*
-# 不支持规则（QuanX）：USER-AGENT,Wallet*
-# 不支持规则（QuanX）：USER-AGENT,com.apple.Maps
-# 不支持规则（QuanX）：USER-AGENT,com.apple.appstored*
-# 不支持规则（QuanX）：USER-AGENT,fmflocatord*
-# 不支持规则（QuanX）：USER-AGENT,geod*
-# 不支持规则（QuanX）：USER-AGENT,locationd*
-# 不支持规则（QuanX）：USER-AGENT,passd*
-# 不支持规则（QuanX）：USER-AGENT,Music*
-# 不支持规则（QuanX）：USER-AGENT,AppleNews*
-# 不支持规则（QuanX）：USER-AGENT,com.apple.news*
-# 不支持规则（QuanX）：USER-AGENT,com.apple.trustd*
-# 不支持规则（QuanX）：USER-AGENT,AppleTV*
-# 不支持规则（QuanX）：USER-AGENT,com.apple.tv*
-# 不支持规则（QuanX）：PROCESS-NAME,CoreLocationAgent
-# 不支持规则（QuanX）：PROCESS-NAME,WeatherWidget
-# 不支持规则（QuanX）：PROCESS-NAME,apsd
-# 不支持规则（QuanX）：PROCESS-NAME,com.apple.Maps
-# 不支持规则（QuanX）：PROCESS-NAME,findmydevice-user-agent
-# 不支持规则（QuanX）：PROCESS-NAME,fmfd
-# 不支持规则（QuanX）：PROCESS-NAME,mapspushd
-# 不支持规则（QuanX）：PROCESS-NAME,netbiosd
-# 不支持规则（QuanX）：PROCESS-NAME,trustd
-# 不支持规则（QuanX）：PROCESS-NAME,com.apple.geod
-# 不支持规则（QuanX）：PROCESS-NAME,Music
-# 不支持规则（QuanX）：PROCESS-NAME,LookupViewService
-# 不支持规则（QuanX）：PROCESS-NAME,TVDOMAIN-KEYWORD,apple
-HOST-KEYWORD,itunes
-HOST-KEYWORD,icloud
-HOST-KEYWORD,info
-HOST-KEYWORD,hamburg
-HOST-KEYWORD,applecomputer
-HOST-KEYWORD,imac
-HOST-KEYWORD,ipod
-HOST-KEYWORD,wang
-HOST-KEYWORD,dvdstudiopro
-HOST-KEYWORD,iphone
-HOST-KEYWORD,quicktime
-HOST-KEYWORD,researchkit
-HOST-KEYWORD,webobjects
-HOST-KEYWORD,xn--hxt814e
-HOST-KEYWORD,12diasderegalosdeitunes
-HOST-KEYWORD,appstore
-HOST-KEYWORD,applepay
-HOST-KEYWORD,berlin
-HOST-KEYWORD,appleone
-HOST-KEYWORD,applepaysupplies
-HOST-KEYWORD,itunesradio
-HOST-KEYWORD,applestore
-HOST-KEYWORD,applecare
-HOST-KEYWORD,ipadair
-HOST-KEYWORD,macbookair
-HOST-KEYWORD,macbookpro
-HOST-KEYWORD,applemusic
