@@ -412,7 +412,7 @@ function main(config) {
       name: "微软",
       type: "select",
       proxies: ["默认节点", ...proxyGroupsRegionNames, "直连", "REJECT"],
-      url: "http://www.google.com/generate_204",
+      url: "https://www.google.com/generate_204",
       icon: "https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Microsoft.png",
     });
   }
@@ -430,7 +430,7 @@ function main(config) {
       name: "飞机",
       type: "select",
       proxies: ["默认节点", ...proxyGroupsRegionNames, "直连", "REJECT"],
-      url: "http://www.google.com/generate_204",
+      url: "https://www.google.com/generate_204",
       icon: "https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Telegram.png",
     });
   }
@@ -448,7 +448,7 @@ function main(config) {
       name: "蓝鸟",
       type: "select",
       proxies: ["默认节点", ...proxyGroupsRegionNames, "直连", "REJECT"],
-      url: "http://www.google.com/generate_204",
+      url: "https://www.google.com/generate_204",
       icon: "https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Twitter.png",
     });
   }
@@ -466,7 +466,7 @@ function main(config) {
       name: "境外",
       type: "select",
       proxies: ["默认节点", ...proxyGroupsRegionNames, "直连", "REJECT"],
-      url: "http://www.google.com/generate_204",
+      url: "https://www.google.com/generate_204",
       icon: "https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Proxy.png",
     });
   }
@@ -484,7 +484,7 @@ function main(config) {
       name: "苹果",
       type: "select",
       proxies: ["直连", "默认节点", ...proxyGroupsRegionNames, "REJECT"],
-      url: "http://www.google.com/generate_204",
+      url: "https://www.google.com/generate_204",
       icon: "https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Apple.png",
     });
   }
@@ -502,7 +502,7 @@ function main(config) {
       name: "进程直连",
       type: "select",
       proxies: ["直连", "默认节点", ...proxyGroupsRegionNames, "REJECT"],
-      url: "http://www.google.com/generate_204",
+      url: "https://www.google.com/generate_204",
       icon: "https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/China.png",
     });
   }
@@ -520,7 +520,7 @@ function main(config) {
       name: "国内",
       type: "select",
       proxies: ["直连", "默认节点", ...proxyGroupsRegionNames, "REJECT"],
-      url: "http://www.google.com/generate_204",
+      url: "https://www.google.com/generate_204",
       icon: "https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/China.png",
     });
   }

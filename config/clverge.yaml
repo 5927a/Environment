@@ -151,7 +151,7 @@ geox-url:
   asn: "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/GeoLite2-ASN.mmdb"
 
 # 节点订阅的参数 [每12小时更新一次订阅节点，每 60 秒一次健康检查]
-NodeParam: &NodeParam {type: http, interval: 21600, health-check: {enable: true, url: 'http://cp.cloudflare.com/generate_204', interval: 600}}
+NodeParam: &NodeParam {type: http, interval: 21600, health-check: {enable: true, url: 'https://cp.cloudflare.com/generate_204', interval: 600}}
 
 # 节点订阅   # url替换自己的，这个是机场订阅地址
 proxy-providers:
@@ -187,9 +187,9 @@ proxy-groups:
   - {name: 币圈选择, type: select, proxies: [日香新, 手动选择, DIRECT], icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Cryptocurrency_2.png}
 
   # 自动选择
-  - {name: 日美香, type: url-test, url: 'http://cp.cloudflare.com/generate_204', interval: 180, tolerance: 70, include-all: true, filter: ".*(?i)(日本|Japan|JP|美国|US|United|凤凰城|纽约)", icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Final.png}
-  - {name: 日香新, type: url-test, url: 'http://cp.cloudflare.com/generate_204', interval: 180, tolerance: 70, include-all: true, filter: ".*(?i)(日本|Japan|JP|香港|HK|新加)", icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Cryptocurrency_3.png}
-  - {name: 手动选择, type: select, url: 'http://cp.cloudflare.com/generate_204', interval: 180, tolerance: 70, include-all: true, filter: ".*", icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Unlock.png}
+  - {name: 日美香, type: url-test, url: 'https://cp.cloudflare.com/generate_204', interval: 180, tolerance: 70, include-all: true, filter: ".*(?i)(日本|Japan|JP|美国|US|United|凤凰城|纽约)", icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Final.png}
+  - {name: 日香新, type: url-test, url: 'https://cp.cloudflare.com/generate_204', interval: 180, tolerance: 70, include-all: true, filter: ".*(?i)(日本|Japan|JP|香港|HK|新加)", icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Cryptocurrency_3.png}
+  - {name: 手动选择, type: select, url: 'https://cp.cloudflare.com/generate_204', interval: 180, tolerance: 70, include-all: true, filter: ".*", icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Unlock.png}
 # 规则参数 [每12小时更新一次订阅规则，更新规则时使用（节点选择）策略]
 RuleSet_classical: &RuleSet_classical {type: http, behavior: classical, interval: 86400 , format: text}
 Yamlclassical: &Yamlclassical {type: http, behavior: domain, interval: 86400 , format: yaml}
