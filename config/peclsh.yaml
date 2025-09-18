@@ -311,7 +311,7 @@ rules:
   - RULE-SET,anti-ad-surge2,拒绝服务
   - RULE-SET,google,谷歌服务
   - RULE-SET,youtube,谷歌服务
-  - RULE-SET,Binance,日香
+  - RULE-SET,Binance,日香新
   - RULE-SET,chagpt,ChatGpt
   - RULE-SET,twitter,推特服务
   - RULE-SET,telegram,电报服务
