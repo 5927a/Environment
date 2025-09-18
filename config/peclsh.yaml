@@ -87,24 +87,28 @@ dns:
   default-nameserver:
       - 119.29.29.29
       - 223.5.5.5
+      - tls://223.5.5.5:853
   nameserver:
       - 119.29.29.29
       - 223.5.5.5
+      - tls://223.5.5.5:853
   nameserver-policy:
     geosite:cn,private:
       - 119.29.29.29
       - 223.5.5.5
+      - tls://223.5.5.5:853
     geosite:!cn,!private:
       - https://cloudflare-dns.com/dns-query
       - https://dns.google/dns-query
-      - https://dns.quad9.net/dns-query
+      - tls://9.9.9.9:853
   proxy-server-nameserver:
-      - https://dns.alidns.com/dns-query
-      - https://doh.pub/dns-query
+      - tls://223.5.5.5:853
+      - https://dns.twnic.tw/dns-query
+      - https://1.12.12.12/dns-query
   fallback:
       - https://cloudflare-dns.com/dns-query
       - https://dns.google/dns-query
-      - https://dns.quad9.net/dns-query
+      - tls://9.9.9.9:853
   fallback-filter:
     geoip: true
     geoip-code: CN
