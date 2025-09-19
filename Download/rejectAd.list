@@ -1879,6 +1879,8 @@ DOMAIN-SUFFIX, api.jr.mi.com
 DOMAIN-SUFFIX, a.union.mi.com
 DOMAIN, 39d83s.com
 DOMAIN, mistat.xiaomi.com
+DOMAIN-SUFFIX, fancyapi.com
+DOMAIN-SUFFIX, ad.richmob.cn
 DOMAIN-SUFFIX, api-htp.beizi.biz
 DOMAIN-SUFFIX, yfanads.com
 DOMAIN-SUFFIX, 1rtb.net
@@ -1890,7 +1892,7 @@ DOMAIN-SUFFIX, baihemob.com
 DOMAIN-SUFFIX, ad.bwton.com
 DOMAIN-SUFFIX, api.wxcjgg.cn
 DOMAIN-SUFFIX, shunchangzhixing.com
-IP-CIDR, 114.132.165.205/32
+IP-CIDR, 114.132.165.205/32, no-resolve
 DOMAIN-SUFFIX, ad.sina.com.cn
 DOMAIN-SUFFIX, ad4.sina.com.cn
 DOMAIN-SUFFIX, adbox.sina.com.cn

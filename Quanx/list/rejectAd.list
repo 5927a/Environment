@@ -1879,6 +1879,8 @@ HOST-SUFFIX,api.jr.mi.com
 HOST-SUFFIX,a.union.mi.com
 HOST,39d83s.com
 HOST,mistat.xiaomi.com
+HOST-SUFFIX,fancyapi.com
+HOST-SUFFIX,ad.richmob.cn
 HOST-SUFFIX,api-htp.beizi.biz
 HOST-SUFFIX,yfanads.com
 HOST-SUFFIX,1rtb.net
@@ -1890,7 +1892,7 @@ HOST-SUFFIX,baihemob.com
 HOST-SUFFIX,ad.bwton.com
 HOST-SUFFIX,api.wxcjgg.cn
 HOST-SUFFIX,shunchangzhixing.com
-IP-CIDR,114.132.165.205/32,no-resolve
+IP-CIDR,114.132.165.205/32, no-resolve
 HOST-SUFFIX,ad.sina.com.cn
 HOST-SUFFIX,ad4.sina.com.cn
 HOST-SUFFIX,adbox.sina.com.cn
