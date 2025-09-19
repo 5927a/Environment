@@ -1253,8 +1253,8 @@ payload:
     - DOMAIN-SUFFIX,android.rqd.qq.com
     - DOMAIN-SUFFIX,e.qq.com
     - DOMAIN-SUFFIX,v.gdt.qq.com
-    - DOMAIN,amsweb-cdn-gz-1258344696.file.myqcloud.com
-    - DOMAIN,wallpaper-1258344696.file.myqcloud.com
+    #- DOMAIN,amsweb-cdn-gz-1258344696.file.myqcloud.com
+    #- DOMAIN,wallpaper-1258344696.file.myqcloud.com
     - DOMAIN,xs.gdt.qq.com
     - IP-CIDR,120.222.240.171/32, no-resolve
     - DOMAIN,ad.qingting.fm
