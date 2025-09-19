@@ -2296,7 +2296,7 @@ payload:
     - DOMAIN-SUFFIX,ott.cibntv.net
     - DOMAIN-SUFFIX,cdntips.net
     - DOMAIN-SUFFIX,tfogc.com
-    - DOMAIN-SUFFIX,file.myqcloud.com
+    #- DOMAIN-SUFFIX,file.myqcloud.com
     - DOMAIN-SUFFIX,ad-stir.com
     - DOMAIN-SUFFIX,adadapted.com
     - DOMAIN-SUFFIX,ads.adadapted.com
