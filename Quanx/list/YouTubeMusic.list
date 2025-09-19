@@ -1,0 +1,5 @@
+HOST,music.youtube.com
+# 不支持规则（QuanX）：USER-AGENT,*YouTubeMusic*
+# 不支持规则（QuanX）：USER-AGENT,*com.google.ios.youtubemusic*
+# 不支持规则（QuanX）：USER-AGENT,YouTubeMusic*
+# 不支持规则（QuanX）：USER-AGENT,com.google.ios.youtubemusic*

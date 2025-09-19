@@ -1,20 +1,13 @@
+# NAME: YouTube
 # AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2025-06-06 09:15:09
 # DOMAIN-KEYWORD: 1
 # DOMAIN-SUFFIX: 179
-# DOMAIN: 1
-# IP-CIDR6: 1
 # IP-CIDR: 2
-# NAME: YouTube
-# NAME: YouTubeMusic
-# REPO: https://github.com/blackmatrix7/ios_rule_script
-# TOTAL: 190
-# TOTAL: 5
-# UPDATED: 2025-06-06 09:15:09
-# UPDATED: 2025-06-06 09:15:10
-# USER-AGENT: 4
+# IP-CIDR6: 1
 # USER-AGENT: 7
-DOMAIN,music.youtube.com
-DOMAIN-KEYWORD,youtube
+# TOTAL: 190
 DOMAIN-SUFFIX,ggpht.cn
 DOMAIN-SUFFIX,ggpht.com
 DOMAIN-SUFFIX,googlevideo.com
@@ -194,6 +187,7 @@ DOMAIN-SUFFIX,youtubekids.com
 DOMAIN-SUFFIX,youtubemobilesupport.com
 DOMAIN-SUFFIX,yt.be
 DOMAIN-SUFFIX,ytimg.com
+DOMAIN-KEYWORD,youtube
 IP-CIDR,172.110.32.0/21,no-resolve
 IP-CIDR,216.73.80.0/20,no-resolve
 IP-CIDR6,2620:120:e000::/40,no-resolve
