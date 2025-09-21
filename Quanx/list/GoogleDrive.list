@@ -1,9 +1,0 @@
-HOST,www.googleapis.com
-HOST-SUFFIX,docs.google.com
-HOST-SUFFIX,drive.google.com
-HOST-SUFFIX,googledrive.com
-HOST-SUFFIX,googleusercontent.com
-# 不支持规则（QuanX）：USER-AGENT,%E4%BA%91%E7%AB%AF%E7%A1%AC%E7%9B%98*
-# 不支持规则（QuanX）：USER-AGENT,*com.google.Drive*
-# 不支持规则（QuanX）：USER-AGENT,Google.Drive*
-# 不支持规则（QuanX）：PROCESS-NAME,BackupandSync
