@@ -1,3 +1,4 @@
+# open猫系列
 mode: rule
 external-controller-cors:
   allow-origins:
@@ -145,13 +146,7 @@ geox-url:
 NodeParam: &NodeParam {type: http, interval: 21600, health-check: {enable: true, url: 'https://cp.cloudflare.com/generate_204', interval: 300}}
 
 # 节点订阅   # url替换自己的，这个是机场订阅地址
-proxy-providers: 
-  #ONE:
-  # url: 'h'
-   #<<: *NodeParam
-   #path: './proxy_provider/ONE.yaml'
-  
-  
+proxy-providers:
   TWO:
     url: 'h647'
     <<: *NodeParam
@@ -182,125 +177,133 @@ proxy-groups:
   - {name: 坡县, type: url-test, url: 'https://cp.cloudflare.com/generate_204', interval: 180, tolerance: 70, include-all: true, filter: ".*(?i)(SG|新加)", icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Singapore.png}
   - {name: 日香新, type: url-test, url: 'https://cp.cloudflare.com/generate_204', interval: 180, tolerance: 70, include-all: true, filter: ".*(?i)(日本|Japan|JP|香港|HK|新加)", icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Cryptocurrency_3.png}
   - {name: 手动选择, type: select, url: 'https://cp.cloudflare.com/generate_204', interval: 180, tolerance: 70, include-all: true, filter: ".*", icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Unlock.png}
-  
 # 规则参数 [每12小时更新一次订阅规则，更新规则时使用（节点选择）策略]
-text_classical: &text_classical {type: http, behavior: classical, interval: 86400 , format: text}
+# domain大量规则yaml
+domain_yaml: &domain_yaml {type: http, behavior: domain, interval: 86400 , format: yaml}
+# 杂乱规则
+classical_yaml: &classical_yaml {type: http, behavior: classical, interval: 86400 , format: yaml}
+# domain大量规则text
+classical_text: &classical_text {type: http, behavior: classical, interval: 86400 , format: text}
+#RuleSet_ipcidr: &RuleSet_ipcidr {type: http, behavior: ipcidr, interval: 0, format: text}
 
-Yamlclassical_domain: &Yamlclassical_domain {type: http, behavior: domain, interval: 86400 , format: yaml}
-
-classicalyaml: &classicalyaml {type: http, behavior: classical, interval: 86400 , format: yaml}
 rule-providers:
   # 修正规则
   xiuzhengguize:
-    <<: *text_classical
-    url: https://raw.githubusercontent.com/5927a/Environment/config/Homemade/xiuzhengguize.list
-    path: "./rule_set/xiuzhengguize.list"
-  
-  # 拒绝更新系统
-  iota:
-    <<: *text_classical
-    url: https://raw.githubusercontent.com/5927a/Environment/config/Homemade/ota.list
-    path: "./rule_set/ota.list"
+    <<: *classical_yaml
+    url: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Maomi/list/xiuzhengguize.yaml
+    path: "./rule_set/xiuzhengguize.yaml"
 
-    # 拒绝
+  # 拒绝
   disconnet:
-    <<: *text_classical
-    url: https://raw.githubusercontent.com/5927a/Environment/config/Homemade/disconnet.list
-    path: "./rule_set/disconnet.list"
-
-  # 禁止httpd_dns
-  dns_reject:
-    <<: *classicalyaml
-    url: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Maomi/list/HTTPDNS.Block.yaml
-    path: "./rule_set/HTTPDNS.Block.yaml"
+    <<: *classical_yaml
+    url: https://raw.githubusercontent.com/5927a/Environment/config/Maomi/list/disconnet.yaml
+    path: "./rule_set/disconnet.yaml"
 
   # 禁止更新App域名
   win_app_domain_reject:
-    <<: *text_classical
-    url: https://raw.githubusercontent.com/5927a/Environment/config/Homemade/win_app_domain_reject.list
-    path: "./rule_set/win_app_domain_reject.list"
-  
+    <<: *classical_yaml
+    url: https://raw.githubusercontent.com/5927a/Environment/config/Maomi/list/win_app_domain_reject.yaml
+    path: "./rule_set/win_app_domain_reject.yaml"
+
+  # 拒绝更新系统
+  iota:
+    <<: *classical_yaml
+    url: https://raw.githubusercontent.com/5927a/Environment/config/Maomi/list/ota.yaml
+    path: "./rule_set/ota.yaml"
+
+  # 禁止httpd_dns
+  dns_reject:
+    <<: *classical_yaml
+    url: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Maomi/list/HTTPDNS.Block.yaml
+    path: "./rule_set/HTTPDNS.Block.yaml"
+
   # 广告规则
   anti-ad-surge2:
-    <<: *Yamlclassical_domain
+    <<: *domain_yaml
     url: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Maomi/list/anti-ad-surge2.yaml
     path: "./rule_set/anti-ad-surge2.yaml"
 
-  #chatgpt  
+  #chatgpt
   chagpt:
-    <<: *classicalyaml
+    <<: *classical_yaml
     url: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Maomi/list/OpenAI.yaml
     path: "./rule_set/OpenAI.yaml"
-  
+
   # google
   google:
-    <<: *classicalyaml
+    <<: *classical_yaml
     url: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Maomi/list/Google.yaml
     path: "./rule_set/Google.yaml"
 
-  # youtube
-  youtube:
-    <<: *classicalyaml
-    url: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Maomi/list/YouTube.yaml
-    path: "./rule_set/YouTuBe.yaml"
-  
-  # twitter
-  twitter:
-    <<: *classicalyaml
-    url: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Maomi/list/Twitter.yaml
-    path: "./rule_set/Twitter.yaml"
-  
   # Binance
   Binance:
-    <<: *classicalyaml
+    <<: *classical_yaml
     url: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Maomi/list/Binance.yaml
     path: "./rule_set/Binance.yaml"
-  
-  
+
+  # twitter
+  twitter:
+    <<: *classical_yaml
+    url: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Maomi/list/Twitter.yaml
+    path: "./rule_set/Twitter.yaml"
+
   #飞机
   telegram:
-    <<: *classicalyaml
+    <<: *classical_yaml
     url: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Maomi/list/Telegram.yaml
     path: "./rule_set/Telegram.yaml"
-    
+
   #苹果
   apple:
-    <<: *classicalyaml
+    <<: *classical_yaml
     url: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Maomi/list/Apple_All.yaml
     path: "./rule_set/Apple_All.yaml"
-    
+
   # 微软
   microsoft:
-    <<: *classicalyaml
+    <<: *classical_yaml
     url: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Maomi/list/Microsoft.yaml
     path: "./rule_set/Microsoft.yaml"
- 
+
   # 境外域名
   Outside:
-    <<: *text_classical
-    url: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Homemade/Outside.list
-    path: "./rule_set/Outside.list"    
+    <<: *classical_yaml
+    url: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Maomi/list/Outside.yaml
+    path: "./rule_set/Outside.yaml"
+
+  # 下载App
+  down_p2p:
+    <<: *classical_yaml
+    url: https://raw.githubusercontent.com/5927a/Environment/config/Maomi/list/p2p.yaml
+    path: "./rule_set/p2p.yaml"
 
   # 直连
   china:
-    <<: *text_classical
-    url: https://raw.githubusercontent.com/5927a/Environment/config/Homemade/China.list
-    path: "./rule_set/China.list"
+    <<: *classical_yaml
+    url: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Maomi/list/China.yaml
+    path: "./rule_set/China.yaml"
 
-  # 直连
-  asn:
-    <<: *classicalyaml
+  # ASN
+  ASN:
+    <<: *classical_yaml
     url: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Maomi/list/ASN.China.yaml
     path: "./rule_set/ASN.China.yaml"
-    
+
   # 局域网ip
   lan:
-    <<: *text_classical
-    url: https://raw.githubusercontent.com/5927a/Environment/config/Homemade/lan.list
-    path: "./rule_set/lan.list"
-    
+    <<: *classical_yaml
+    url: https://raw.githubusercontent.com/5927a/Environment/config/Maomi/list/lan.yaml
+    path: "./rule_set/lan.yaml"
+
+    # 局域网ip
+  geoip_rule:
+    <<: *classical_yaml
+    url: https://raw.githubusercontent.com/5927a/Environment/config/Maomi/list/geoip.yaml
+    path: "./rule_set/geoip.yaml"
+
 # 分流规则
 rules:
+  #- DOMAIN-SUFFIX,dcard.tw,手动选择
   - RULE-SET,lan,直连选择
   - RULE-SET,xiuzhengguize,直连选择
   - RULE-SET,iota,拒绝服务
@@ -309,15 +312,15 @@ rules:
   - RULE-SET,win_app_domain_reject,拒绝服务
   - RULE-SET,anti-ad-surge2,拒绝服务
   - RULE-SET,google,谷歌服务
-  - RULE-SET,youtube,谷歌服务
-  - RULE-SET,Binance,日香新
+  - RULE-SET,Binance,币圈选择
   - RULE-SET,chagpt,ChatGpt
   - RULE-SET,twitter,推特服务
   - RULE-SET,telegram,电报服务
   - RULE-SET,microsoft,微软服务
   - RULE-SET,Outside,节点选择
   - RULE-SET,apple,直连选择
+  - RULE-SET,down_p2p,直连选择
   - RULE-SET,china,直连选择
-  - RULE-SET,asn,直连选择
-  - GEOIP,CN,直连选择,no-resolve
+  - RULE-SET,ASN,直连选择
+  - RULE-SET,geoip_rule,直连选择
   - MATCH,节点选择
