@@ -307,3 +307,6 @@ HOST-SUFFIX,hupu.com
 #系统及杂项服务
 HOST,time.windows.com
 HOST-SUFFIX,tongyi.com
+#步步高
+HOST-SUFFIX,eebbk.net
+HOST-SUFFIX,eebbk.com
