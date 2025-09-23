@@ -307,3 +307,6 @@ DOMAIN-SUFFIX,hupu.com
 #系统及杂项服务
 DOMAIN,time.windows.com
 DOMAIN-SUFFIX,tongyi.com
+#步步高
+DOMAIN-SUFFIX,eebbk.net
+DOMAIN-SUFFIX,eebbk.com
