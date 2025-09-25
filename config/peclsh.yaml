@@ -293,6 +293,7 @@ rule-providers:
 rules:
   #- RULE-SET,lan,直连选择
   #- RULE-SET,xiuzhengguize,直连选择
+  - SRC-IP-CIDR,192.168.1.201/32,DIRECT
   - RULE-SET,iota,拒绝服务
   - RULE-SET,disconnet,拒绝服务
   - RULE-SET,dns_reject,拒绝服务
