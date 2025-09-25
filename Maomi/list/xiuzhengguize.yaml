@@ -1,2 +1,3 @@
 payload:
+  - SRC-IP-CIDR,172.21.0.132/32
   - DOMAIN-SUFFIX,open.e.189.cn
