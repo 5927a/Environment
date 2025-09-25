@@ -36,10 +36,10 @@ PROCESS-NAME,RecorderOnes.exe
 #英伟达
 PROCESS-NAME,NVIDIA app.exe
 # xshell
-PROCESS-NAME,LiveUpdate.exe
-PROCESS-NAME,Xtransport.exe
-PROCESS-NAME,CrashSender.exe
-PROCESS-NAME,nsregister.exe
+#PROCESS-NAME,LiveUpdate.exe
+#PROCESS-NAME,Xtransport.exe
+#PROCESS-NAME,CrashSender.exe
+#PROCESS-NAME,nsregister.exe
 #PROCESS-NAME,Xshell.exe
 #PROCESS-NAME,Xftp.exe
 # 播放软件
