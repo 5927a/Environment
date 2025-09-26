@@ -113,3 +113,4 @@ payload:
   - PROCESS-NAME,SogouSvc.exe
   - PROCESS-NAME,TrafficMonitor.exe
   - PROCESS-NAME,DingTalkCheck.exe
+  - PROCESS-NAME,JianyingPro-DiffUpgrade.exe

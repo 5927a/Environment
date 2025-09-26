@@ -135,3 +135,5 @@ PROCESS-NAME,SogouSvc.exe
 PROCESS-NAME,TrafficMonitor.exe
 # 禁止钉钉更新
 PROCESS-NAME,DingTalkCheck.exe
+# 剪映
+PROCESS-NAME,JianyingPro-DiffUpgrade.exe
