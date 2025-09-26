@@ -23,6 +23,10 @@ payload:
   - PROCESS-NAME,WizTree64.exe
   - PROCESS-NAME,RecorderOnes.exe
   - PROCESS-NAME,NVIDIA app.exe
+  - PROCESS-NAME,LiveUpdate.exe
+  - PROCESS-NAME,Xtransport.exe
+  - PROCESS-NAME,CrashSender.exe
+  - PROCESS-NAME,nsregister.exe
   - PROCESS-NAME,DesktopHook.exe
   - PROCESS-NAME,DesktopHook64.exe
   - PROCESS-NAME,DTDrop64.exe
