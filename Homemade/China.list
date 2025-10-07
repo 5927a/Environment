@@ -14,6 +14,7 @@ DOMAIN-SUFFIX,ele.me
 DOMAIN-SUFFIX,gaode.com
 DOMAIN-SUFFIX,luohanacademy.com
 DOMAIN-SUFFIX,restapi.amap.com
+DOMAIN-SUFFIX,qwen.ai
 #腾讯 - 互联网服务、即时通讯、支付及社交
 DOMAIN-KEYWORD,tencent
 DOMAIN-KEYWORD,wechat
