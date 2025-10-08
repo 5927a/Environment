@@ -14,6 +14,7 @@ HOST-SUFFIX,ele.me
 HOST-SUFFIX,gaode.com
 HOST-SUFFIX,luohanacademy.com
 HOST-SUFFIX,restapi.amap.com
+HOST-SUFFIX,qwen.ai
 #腾讯 - 互联网服务、即时通讯、支付及社交
 HOST-KEYWORD,tencent
 HOST-KEYWORD,wechat
