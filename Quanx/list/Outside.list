@@ -1,4 +1,6 @@
 # Apple - 云服务、应用商店、开发
+HOST,apple-relay.cloudflare.com
+HOST,apple-relay.apple.com
 HOST,api-glb-sea.smoot.apple.com
 HOST,apple.comscoreresearch.com
 HOST,books.itunes.apple.com
