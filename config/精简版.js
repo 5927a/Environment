@@ -84,9 +84,9 @@ const groupBaseOption = {
   "max-failed-times": 3,
   hidden: false,
 };
-
-const ruleProviders = new Map();
 //广告规则
+const ruleProviders = new Map();
+
 ruleProviders.set("reject_rules", {
   ...ruleProviderCommon,
   behavior: "domain",
