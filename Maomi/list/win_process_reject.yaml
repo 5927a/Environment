@@ -114,3 +114,4 @@ payload:
   - PROCESS-NAME,TrafficMonitor.exe
   - PROCESS-NAME,DingTalkCheck.exe
   - PROCESS-NAME,JianyingPro-DiffUpgrade.exe
+  - PROCESS-NAME,ScreenshotHD.exe
