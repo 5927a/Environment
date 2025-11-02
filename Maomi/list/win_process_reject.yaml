@@ -115,3 +115,4 @@ payload:
   - PROCESS-NAME,DingTalkCheck.exe
   - PROCESS-NAME,JianyingPro-DiffUpgrade.exe
   - PROCESS-NAME,ScreenshotHD.exe
+  - PROCESS-NAME,OfficeClickToRun.exe
