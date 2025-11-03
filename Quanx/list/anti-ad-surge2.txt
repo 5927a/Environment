@@ -294,6 +294,7 @@ HOST-WILDCARD,info.*.aleragroup.com
 HOST-WILDCARD,f-log*.grammarly.io
 HOST-WILDCARD,*.ad.*.prod.hosts.ooklaserver.net
 HOST-WILDCARD,adv0*.msa.cdn.mediaset.net
+HOST-WILDCARD,v*.thenewstack.io
 HOST-WILDCARD,beacons*.gvt?.com
 HOST-WILDCARD,*-pcdn-*.biliapi.net
 HOST-WILDCARD,tracking.*.miui.com
