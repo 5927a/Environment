@@ -27,6 +27,10 @@ DOMAIN-SUFFIX,tenpay.com
 DOMAIN-SUFFIX,weixin.com
 DOMAIN-SUFFIX,weixinbridge.com
 DOMAIN-SUFFIX,weixinsxy.com
+# 广汽丰田
+DOMAIN-KEYWORD,gtmc.com
+DOMAIN-SUFFIX,ingeek.com
+DOMAIN-SUFFIX,bonree.com
 #京东 - 电商
 DOMAIN-KEYWORD,360buy
 DOMAIN-SUFFIX,jd.com

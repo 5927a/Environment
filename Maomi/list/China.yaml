@@ -26,6 +26,9 @@ payload:
   - DOMAIN-SUFFIX,weixin.com
   - DOMAIN-SUFFIX,weixinbridge.com
   - DOMAIN-SUFFIX,weixinsxy.com
+  - DOMAIN-KEYWORD,gtmc.com
+  - DOMAIN-SUFFIX,ingeek.com
+  - DOMAIN-SUFFIX,bonree.com
   - DOMAIN-KEYWORD,360buy
   - DOMAIN-SUFFIX,jd.com
   - DOMAIN-SUFFIX,jd.shop

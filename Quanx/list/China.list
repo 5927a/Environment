@@ -27,6 +27,10 @@ HOST-SUFFIX,tenpay.com
 HOST-SUFFIX,weixin.com
 HOST-SUFFIX,weixinbridge.com
 HOST-SUFFIX,weixinsxy.com
+# 广汽丰田
+HOST-KEYWORD,gtmc.com
+HOST-SUFFIX,ingeek.com
+HOST-SUFFIX,bonree.com
 #京东 - 电商
 HOST-KEYWORD,360buy
 HOST-SUFFIX,jd.com
