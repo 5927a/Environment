@@ -8,7 +8,7 @@ HOST-KEYWORD,ecopaste
 HOST-SUFFIX,photoshop.com
 HOST-KEYWORD,adobe
 #DOMAIN-SUFFIX,nvidia.com
-HOST-KEYWORD,2345
+#DOMAIN-KEYWORD,2345
 HOST-SUFFIX,huandian.com
 HOST-KEYWORD,potplayer
 HOST-SUFFIX,ieway.cn
