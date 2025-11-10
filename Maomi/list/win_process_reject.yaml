@@ -116,3 +116,5 @@ payload:
   - PROCESS-NAME,JianyingPro-DiffUpgrade.exe
   - PROCESS-NAME,ScreenshotHD.exe
   - PROCESS-NAME,OfficeClickToRun.exe
+  - PROCESS-NAME,WizTree64.exe
+  - PROCESS-NAME,WizTree.exe
