@@ -95,16 +95,13 @@ dns:
   default-nameserver:
       - 119.29.29.29
       - 223.5.5.5
-      - tls://223.5.5.5:853
   nameserver:
       - 119.29.29.29
       - 223.5.5.5
-      - tls://223.5.5.5:853
   nameserver-policy:
     geosite:cn,private:
       - 119.29.29.29
       - 223.5.5.5
-      - tls://223.5.5.5:853
     geosite:!cn,!private:
       - https://cloudflare-dns.com/dns-query
       - https://dns.google/dns-query
@@ -148,20 +145,26 @@ geox-url:
   asn: "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/GeoLite2-ASN.mmdb"
 
 # 节点订阅的参数 [每12小时更新一次订阅节点，每 60 秒一次健康检查]
-NodeParam: &NodeParam {type: http, interval: 21600, health-check: {enable: true, url: 'https://cp.cloudflare.com/generate_204', interval: 600}}
+NodeParam: &NodeParam {type: http, interval: 21600, health-check: {enable: true, url: 'http://cp.cloudflare.com/generate_204', interval: 600}}
 
 # 节点订阅   # url替换自己的，这个是机场订阅地址
 proxy-providers:
   ONE:
-   url: 'httpsc1f3fd6129bf79822a647'
+   url: 'https:/22a647'
    <<: *NodeParam
    path: './proxy_provider/ONE.yaml'
 
 
   TWO:
-    url: 'https:2a739f85ed91c'
+    url: 'https:/d91c'
     <<: *NodeParam
     path: './proxy_provider/TWO.yaml'
+
+  THREE:
+    url: 'https:7168028b'
+    <<: *NodeParam
+    path: './proxy_provider/THREE.yaml'
+
 
 # 策略组
 proxy-groups:
@@ -178,17 +181,15 @@ proxy-groups:
   - {name: 币圈选择, type: select, proxies: [日香新, 手动选择, DIRECT], icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Cryptocurrency_2.png}
 
   # 自动选择
-  - {name: 日美, type: url-test, url: 'https://cp.cloudflare.com/generate_204', interval: 120, tolerance: 70, include-all: true, filter: ".*(?i)(日本|Japan|JP|美国|US|United|凤凰城|纽约)", icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Final.png}
-  - {name: 坡县, type: url-test, url: 'https://cp.cloudflare.com/generate_204', interval: 180, tolerance: 70, include-all: true, filter: ".*(?i)(SG|新加)", icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Singapore.png}
-  - {name: 日香新, type: url-test, url: 'https://cp.cloudflare.com/generate_204', interval: 180, tolerance: 70, include-all: true, filter: ".*(?i)(日本|Japan|JP|香港|HK|新加)", icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Cryptocurrency_3.png}
+  - {name: 日美, type: url-test, url: 'http://cp.cloudflare.com/generate_204', interval: 120, tolerance: 70, include-all: true, filter: ".*(?i)(日本|Japan|JP|美国|US|United|凤凰城|纽约)", icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Final.png}
+  - {name: 坡县, type: url-test, url: 'http://cp.cloudflare.com/generate_204', interval: 180, tolerance: 70, include-all: true, filter: ".*(?i)(SG|新加)", icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Singapore.png}
+  - {name: 日香新, type: url-test, url: 'http://cp.cloudflare.com/generate_204', interval: 180, tolerance: 70, include-all: true, filter: ".*(?i)(日本|Japan|JP|香港|HK|新加)", icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Cryptocurrency_3.png}
   - {name: 手动选择, type: select, url: 'https://cp.cloudflare.com/generate_204', interval: 180, tolerance: 70, include-all: true, filter: ".*", icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Unlock.png}
 # 规则参数 [每12小时更新一次订阅规则，更新规则时使用（节点选择）策略]
-# domain大量规则yaml
-domain_yaml: &domain_yaml {type: http, behavior: domain, interval: 86400 , format: yaml}
-# 杂乱规则
-classical_yaml: &classical_yaml {type: http, behavior: classical, interval: 86400 , format: yaml}
-# domain大量规则text
 classical_text: &classical_text {type: http, behavior: classical, interval: 86400 , format: text}
+domain_yaml: &domain_yaml {type: http, behavior: domain, interval: 86400 , format: yaml}
+classical_yaml: &classical_yaml {type: http, behavior: classical, interval: 86400 , format: yaml}
+#RuleSet_domain: &RuleSet_domain {type: http, behavior: domain, interval: 0, format: text}
 #RuleSet_ipcidr: &RuleSet_ipcidr {type: http, behavior: ipcidr, interval: 0, format: text}
 
 rule-providers:
@@ -320,7 +321,6 @@ rule-providers:
 
 # 分流规则
 rules:
-  #- DOMAIN-SUFFIX,dcard.tw,手动选择
   - RULE-SET,lan,直连选择
   - RULE-SET,xiuzhengguize,直连选择
   - RULE-SET,iota,拒绝服务
