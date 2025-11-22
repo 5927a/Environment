@@ -4535,6 +4535,7 @@ HOST-SUFFIX,adfrika.com
 HOST-SUFFIX,adfrontiers.com
 HOST-SUFFIX,adfsda005.xyz
 HOST-SUFFIX,adfunds.org
+HOST-SUFFIX,adfunlink.com
 HOST-SUFFIX,adfurikun.jp
 HOST-SUFFIX,adfusion.com
 HOST-SUFFIX,adfuture.cn
@@ -12617,7 +12618,7 @@ HOST-SUFFIX,bidswitch.net
 HOST-SUFFIX,bidsxchange.com
 HOST-SUFFIX,bidtheatre.com
 HOST-SUFFIX,bidtimize.com
-HOST-SUFFIX,c.bidtoolads.com
+HOST-SUFFIX,bidtoolads.com
 HOST-SUFFIX,m.biduo.cc
 HOST-SUFFIX,cn.bidushe.com
 HOST-SUFFIX,bidvance.com
@@ -79384,6 +79385,7 @@ HOST-SUFFIX,takingbackjuly.com
 HOST-SUFFIX,yddtah.takingshape.com
 HOST-SUFFIX,a8clk.takken-job.com
 HOST-SUFFIX,traffic.taktikal.is
+HOST-SUFFIX,takuad.com
 HOST-SUFFIX,swwcyk.takvim.com.tr
 HOST-SUFFIX,talaropa.com
 HOST-SUFFIX,marketing.talbot-promo.com
@@ -81943,6 +81945,7 @@ HOST-SUFFIX,toawaups.net
 HOST-SUFFIX,toazdkl.top
 HOST-SUFFIX,tobaccosturgeon.com
 HOST-SUFFIX,tobaltoyon.com
+HOST-SUFFIX,tobidad.com
 HOST-SUFFIX,tobipovsem.com
 HOST-SUFFIX,toboads.com
 HOST-SUFFIX,toc.io
@@ -82179,6 +82182,7 @@ HOST-SUFFIX,topnews-24.com
 HOST-SUFFIX,topnewsgo.com
 HOST-SUFFIX,topodat.info
 HOST-SUFFIX,topofblogs.com
+HOST-SUFFIX,toponad.com
 HOST-SUFFIX,topperformance.xyz
 HOST-SUFFIX,otx23nu6rzon.prep.toppers.com
 HOST-SUFFIX,toppleunit.com
