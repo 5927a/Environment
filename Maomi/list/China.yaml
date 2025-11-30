@@ -45,6 +45,7 @@ payload:
   - DOMAIN-SUFFIX,ixigua.com
   - DOMAIN-SUFFIX,oceanengine.com
   - DOMAIN-SUFFIX,toutiao.com
+  - DOMAIN-SUFFIX,bytescm.com
   - DOMAIN-SUFFIX,account-cn.huami.com
   - DOMAIN-SUFFIX,aos-incentive.huami.com
   - DOMAIN-SUFFIX,api-aos-cnbj6.huami.com
