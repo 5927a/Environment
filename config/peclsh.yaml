@@ -45,19 +45,19 @@ profile:
 #    - 0.0.0.0:53
 #  mtu: 1500
 
-sniffer:
-  enable: true
-  sniff:
-    HTTP:
-      ports: [80, 8080]
-      override-destination: true
-    TLS:
-      ports: [443, 8443]
-    QUIC:
-      ports: [443, 8443]
-  skip-domain:
-    - "Mijia Cloud"
-    - "dlg.io.mi.com"
+#sniffer:
+#  enable: true
+#  sniff:
+#    HTTP:
+#      ports: [80, 8080]
+#      override-destination: true
+#    TLS:
+#      ports: [443, 8443]
+#    QUIC:
+#      ports: [443, 8443]
+#  skip-domain:
+#    - "Mijia Cloud"
+#    - "dlg.io.mi.com"
 ###########################################
 dns:
   enable: true
@@ -70,17 +70,9 @@ dns:
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter-mode: blacklist
   fake-ip-filter:
-    - '+.lan'
-    - '+.local'
-    - 'time.*.com'
-    - 'ntp.*.com'
-    - '+.mi.com'
-    - '+.mijia.tech'
-    - '+.miot-spec.org'
-    - '+.mi-img.com'
-    - '+.eset.com'
-    - '+.qq.com'
-    - '+.eastmoney.com'
+      - geosite:connectivity-check
+      - geosite:private
+      - geosite:cn
   default-nameserver:
       - 119.29.29.29
       - 223.5.5.5
