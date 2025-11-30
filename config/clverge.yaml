@@ -1,5 +1,4 @@
-###########################################
-### windows11端版本
+# windows11端版本
 mode: rule
 external-controller-cors:
   allow-origins:
@@ -40,20 +39,25 @@ profile:
   store-fake-ip: true
 ###########################################
 sniffer:
-  enable: true
-  sniff:
-    HTTP:
-      ports: [80, 8080]
-      override-destination: true
-    TLS:
-      ports: [443, 8443]
-    QUIC:
-      ports: [443, 8443]
-  skip-domain:
-    - "Mijia Cloud"
-    - "dlg.io.mi.com"
-    - "+.push.apple.com"
-  override-destination: true # 是否使用嗅探结果作为实际访问,默认为 true
+  enable: false
+  force-dns-mapping: false
+  parse-pure-ip: false
+  override-destination: false
+#sniffer:
+  #enable: false
+#  sniff:
+#   HTTP:
+#      ports: [80, 8080]
+#      override-destination: true
+#    TLS:
+#      ports: [443, 8443]
+#    QUIC:
+#      ports: [443, 8443]
+  #skip-domain:
+  #  - "Mijia Cloud"
+  #  - "dlg.io.mi.com"
+  #  - "+.push.apple.com"
+  #override-destination: true # 是否使用嗅探结果作为实际访问,默认为 true
 ###########################################
 tun:
   enable: true
@@ -77,21 +81,9 @@ dns:
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter-mode: blacklist
   fake-ip-filter:
-    - '+.lan'
-    - '+.local'
-    - 'time.*.com'
-    - 'ntp.*.com'
-    - '+.mi.com'
-    - '+.xiaomi.com'
-    - '+.xiaomi.cn'
-    - '+.xiaomi.net'
-    - '+.xiaomiyoupin.com'
-    - '+.mijia.tech'
-    - '+.miot-spec.org'
-    - '+.mi-img.com'
-    - '+.eset.com'
-    - '+.qq.com'
-    - '+.eastmoney.com'
+      - geosite:connectivity-check
+      - geosite:private
+      - geosite:cn
   default-nameserver:
       - 119.29.29.29
       - 223.5.5.5
@@ -139,7 +131,7 @@ geodata-loader: "standard" # GEO 文件加载模式 standard/memconservative
 geo-auto-update: true # 自动更新 GEO 是否启用,可选 true/false
 geo-update-interval: 72 # 更新间隔,单位 h
 geox-url:
-  geoip: "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.dat"
+  geoip: "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip-lite.dat"
   geosite: "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat"
   mmdb: "https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Download/Country.mmdb"
   asn: "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/GeoLite2-ASN.mmdb"
@@ -150,18 +142,18 @@ NodeParam: &NodeParam {type: http, interval: 21600, health-check: {enable: true,
 # 节点订阅   # url替换自己的，这个是机场订阅地址
 proxy-providers:
   ONE:
-   url: 'https:/22a647'
+   url: 'https://su822a647'
    <<: *NodeParam
    path: './proxy_provider/ONE.yaml'
 
 
   TWO:
-    url: 'https:/d91c'
+    url: 'https://sub9f85ed91c'
     <<: *NodeParam
     path: './proxy_provider/TWO.yaml'
 
   THREE:
-    url: 'https:7168028b'
+    url: 'https://dtkf3bac7168028b'
     <<: *NodeParam
     path: './proxy_provider/THREE.yaml'
 
@@ -184,7 +176,7 @@ proxy-groups:
   - {name: 日美, type: url-test, url: 'http://cp.cloudflare.com/generate_204', interval: 120, tolerance: 70, include-all: true, filter: ".*(?i)(日本|Japan|JP|美国|US|United|凤凰城|纽约)", icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Final.png}
   - {name: 坡县, type: url-test, url: 'http://cp.cloudflare.com/generate_204', interval: 180, tolerance: 70, include-all: true, filter: ".*(?i)(SG|新加)", icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Singapore.png}
   - {name: 日香新, type: url-test, url: 'http://cp.cloudflare.com/generate_204', interval: 180, tolerance: 70, include-all: true, filter: ".*(?i)(日本|Japan|JP|香港|HK|新加)", icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Cryptocurrency_3.png}
-  - {name: 手动选择, type: select, url: 'https://cp.cloudflare.com/generate_204', interval: 180, tolerance: 70, include-all: true, filter: ".*", icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Unlock.png}
+  - {name: 手动选择, type: select, url: 'http://cp.cloudflare.com/generate_204', interval: 180, tolerance: 70, include-all: true, filter: ".*", icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Unlock.png}
 # 规则参数 [每12小时更新一次订阅规则，更新规则时使用（节点选择）策略]
 classical_text: &classical_text {type: http, behavior: classical, interval: 86400 , format: text}
 domain_yaml: &domain_yaml {type: http, behavior: domain, interval: 86400 , format: yaml}
