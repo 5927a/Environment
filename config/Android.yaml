@@ -76,34 +76,22 @@ dns:
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter-mode: blacklist
   fake-ip-filter:
-    - '+.lan'
-    - '+.local'
-    - 'time.*.com'
-    - 'ntp.*.com'
-    - '+.mi.com'
-    - '+.xiaomi.com'
-    - '+.xiaomi.cn'
-    - '+.xiaomi.net'
-    - '+.xiaomiyoupin.com'
-    - '+.mijia.tech'
-    - '+.miot-spec.org'
-    - '+.mi-img.com'
-    - '+.eset.com'
-    - '+.qq.com'
-    - '+.eastmoney.com'
+      #- geosite:connectivity-check
+      - geosite:private
+      - geosite:cn
   default-nameserver:
       - 119.29.29.29
       - 223.5.5.5
-      - tls://223.5.5.5:853
+      #- tls://223.5.5.5:853
   nameserver:
       - 119.29.29.29
       - 223.5.5.5
-      - tls://223.5.5.5:853
+      #- tls://223.5.5.5:853
   nameserver-policy:
     geosite:cn,private:
       - 119.29.29.29
       - 223.5.5.5
-      - tls://223.5.5.5:853
+      #- tls://223.5.5.5:853
     geosite:!cn,!private:
       - https://cloudflare-dns.com/dns-query
       - https://dns.google/dns-query
