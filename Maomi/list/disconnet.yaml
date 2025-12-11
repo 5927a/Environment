@@ -88,6 +88,11 @@ payload:
   - DOMAIN-SUFFIX,typing.bae.baidu.com
   - DOMAIN-SUFFIX,updateime.baidu.com
   - DOMAIN-SUFFIX,iytcdn.com
+  - DOMAIN,amap-aos-info-nogw.amap.com
+  - DOMAIN,amdc.m.taobao.com
+  - DOMAIN,awaken.amap.com
+  - DOMAIN,free-aos-cdn-image.amap.com
+  - DOMAIN,idklog.ingeek.com
   - DOMAIN,open.e.kuaishou.com
   - DOMAIN,log.mmstat.com
   - DOMAIN,gm.mmstat.com
