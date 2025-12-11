@@ -86,7 +86,14 @@ DOMAIN-SUFFIX,pcinput.baidu.com
 DOMAIN-SUFFIX,tips.ime.baidu.com
 DOMAIN-SUFFIX,typing.bae.baidu.com
 DOMAIN-SUFFIX,updateime.baidu.com
+# 万年历
 DOMAIN-SUFFIX,iytcdn.com
+# 高德开屏
+DOMAIN,amap-aos-info-nogw.amap.com
+DOMAIN,amdc.m.taobao.com
+DOMAIN,awaken.amap.com
+DOMAIN,free-aos-cdn-image.amap.com
+#
 DOMAIN,open.e.kuaishou.com
 DOMAIN,log.mmstat.com
 DOMAIN,gm.mmstat.com
