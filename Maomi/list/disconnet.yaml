@@ -87,6 +87,7 @@ payload:
   - DOMAIN-SUFFIX,tips.ime.baidu.com
   - DOMAIN-SUFFIX,typing.bae.baidu.com
   - DOMAIN-SUFFIX,updateime.baidu.com
+  - DOMAIN-SUFFIX,iytcdn.com
   - DOMAIN,open.e.kuaishou.com
   - DOMAIN,log.mmstat.com
   - DOMAIN,gm.mmstat.com
