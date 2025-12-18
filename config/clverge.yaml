@@ -1,4 +1,5 @@
-# windows11端版本
+###########################################
+### windows11端版本
 mode: rule
 external-controller-cors:
   allow-origins:
@@ -38,26 +39,35 @@ profile:
   store-selected: true
   store-fake-ip: true
 ###########################################
+# sniffer:
+#   enable: false
+#   force-dns-mapping: false
+#   parse-pure-ip: false
+#   override-destination: false
 sniffer:
-  enable: false
-  force-dns-mapping: false
-  parse-pure-ip: false
-  override-destination: false
-#sniffer:
-  #enable: false
-#  sniff:
-#   HTTP:
-#      ports: [80, 8080]
-#      override-destination: true
-#    TLS:
-#      ports: [443, 8443]
-#    QUIC:
-#      ports: [443, 8443]
-  #skip-domain:
-  #  - "Mijia Cloud"
-  #  - "dlg.io.mi.com"
-  #  - "+.push.apple.com"
-  #override-destination: true # 是否使用嗅探结果作为实际访问,默认为 true
+  enable: true                 # 启用 sniffer
+  force-dns-mapping: true      # 强制使用内置 DNS 映射嗅探域名
+  parse-pure-ip: true          # 解析纯 IP 请求（如果可能提取域名）
+  override-destination: true   # 用嗅探域名覆盖目标（影响路由）
+  sniff:
+    HTTP:
+      ports: [80, 8080-8880]   # HTTP 嗅探端口
+      override-destination: true
+    TLS:
+      ports: [443, 8443]       # TLS 嗅探端口
+    QUIC:
+      ports: [443, 8443]       # QUIC 嗅探端口
+  skip-domain:                 # 跳过嗅探这些域名
+    - "Mijia Cloud"
+    - "dlg.io.mi.com"
+    - "+.push.apple.com"
+  force-domain:                # 强制嗅探这些域名
+    - "google.com"
+    - "x.com"
+    - "youtube.com"
+    - "telegram.org"
+    - "live.com"
+    - "googlevideo.com"
 ###########################################
 tun:
   enable: true
@@ -87,25 +97,30 @@ dns:
   default-nameserver:
       - 119.29.29.29
       - 223.5.5.5
+      - 1.1.1.1
+      - 114.114.114.114
   nameserver:
       - 119.29.29.29
       - 223.5.5.5
+      - 1.1.1.1
+      - 114.114.114.114
   nameserver-policy:
     geosite:cn,private:
       - 119.29.29.29
       - 223.5.5.5
+      - 114.114.114.114
     geosite:!cn,!private:
-      - https://cloudflare-dns.com/dns-query
-      - https://dns.google/dns-query
-      #- tls://9.9.9.9:853
+      - https://1.1.1.1/dns-query
+      - https://8.8.8.8/dns-query
+      - https://9.9.9.9/dns-query
   proxy-server-nameserver:
-      #- tls://223.5.5.5:853
-      - https://dns.twnic.tw/dns-query
+      - https://223.5.5.5/dns-query
+      - https://1.1.1.1/dns-query
       - https://1.12.12.12/dns-query
   fallback:
-      - https://cloudflare-dns.com/dns-query
-      - https://dns.google/dns-query
-      #- tls://9.9.9.9:853
+      - https://1.1.1.1/dns-query
+      - https://8.8.8.8/dns-query
+      - https://9.9.9.9/dns-query
   fallback-filter:
     geoip: true
     geoip-code: CN
@@ -133,7 +148,7 @@ geo-update-interval: 72 # 更新间隔,单位 h
 geox-url:
   geoip: "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip-lite.dat"
   geosite: "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat"
-  mmdb: "https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Download/Country.mmdb"
+  mmdb: "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip.metadb"
   asn: "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/GeoLite2-ASN.mmdb"
 
 # 节点订阅的参数 [每12小时更新一次订阅节点，每 60 秒一次健康检查]
@@ -142,18 +157,18 @@ NodeParam: &NodeParam {type: http, interval: 21600, health-check: {enable: true,
 # 节点订阅   # url替换自己的，这个是机场订阅地址
 proxy-providers:
   ONE:
-   url: 'https://su822a647'
+   url: 'https://3fd6129bf79822a647'
    <<: *NodeParam
    path: './proxy_provider/ONE.yaml'
 
 
   TWO:
-    url: 'https://sub9f85ed91c'
+    url: 'https://448c72a739f85ed91c'
     <<: *NodeParam
     path: './proxy_provider/TWO.yaml'
 
   THREE:
-    url: 'https://dtkf3bac7168028b'
+    url: 'https://32d1520f3bac7168028b'
     <<: *NodeParam
     path: './proxy_provider/THREE.yaml'
 
@@ -173,16 +188,16 @@ proxy-groups:
   - {name: 币圈选择, type: select, proxies: [日香新, 手动选择, DIRECT], icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Cryptocurrency_2.png}
 
   # 自动选择
-  - {name: 日美, type: url-test, url: 'http://cp.cloudflare.com/generate_204', interval: 120, tolerance: 70, timeout: 5000, include-all: true, filter: ".*(?i)(日本|Japan|JP|美国|US|United|凤凰城|纽约)", icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Final.png}
-  - {name: 坡县, type: url-test, url: 'http://cp.cloudflare.com/generate_204', interval: 180, tolerance: 70, timeout: 5000, include-all: true, filter: ".*(?i)(SG|新加)", icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Singapore.png}
-  - {name: 日香新, type: url-test, url: 'http://cp.cloudflare.com/generate_204', interval: 180, tolerance: 70, timeout: 5000, include-all: true, filter: ".*(?i)(日本|Japan|JP|香港|HK|新加)", icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Cryptocurrency_3.png}
+  - {name: 日美, type: url-test, url: 'http://cp.cloudflare.com/generate_204', interval: 120, tolerance: 100, timeout: 5000, include-all: true, filter: ".*(?i)(日本|Japan|JP|美国|US|United|凤凰城|纽约)", icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Final.png}
+  - {name: 坡县, type: url-test, url: 'http://cp.cloudflare.com/generate_204', interval: 180, tolerance: 100, timeout: 5000, include-all: true, filter: ".*(?i)(SG|新加)", icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Singapore.png}
+  - {name: 日香新, type: url-test, url: 'http://cp.cloudflare.com/generate_204', interval: 180, tolerance: 100, timeout: 5000, include-all: true, filter: ".*(?i)(日本|Japan|JP|香港|HK|新加)", icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Cryptocurrency_3.png}
   - {name: 手动选择, type: select, url: 'http://cp.cloudflare.com/generate_204', interval: 180, tolerance: 70, include-all: true, filter: ".*", icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Unlock.png}
 # 规则参数 [每12小时更新一次订阅规则，更新规则时使用（节点选择）策略]
-classical_text: &classical_text {type: http, behavior: classical, interval: 86400 , format: text}
 domain_yaml: &domain_yaml {type: http, behavior: domain, interval: 86400 , format: yaml}
 classical_yaml: &classical_yaml {type: http, behavior: classical, interval: 86400 , format: yaml}
 #RuleSet_domain: &RuleSet_domain {type: http, behavior: domain, interval: 0, format: text}
 #RuleSet_ipcidr: &RuleSet_ipcidr {type: http, behavior: ipcidr, interval: 0, format: text}
+#classical_text: &classical_text {type: http, behavior: classical, interval: 86400 , format: text}
 
 rule-providers:
   # 修正规则
