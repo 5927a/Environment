@@ -124,17 +124,26 @@ dns:
     geoip-code: CN
     ipcidr:
       - 240.0.0.0/4
+      - 0.0.0.0/8
+      - 127.0.0.0/8
+      - 10.0.0.0/8
+      - 172.16.0.0/12
+      - 192.168.0.0/16
     domain:
-      - '+.google.com'
-      - '+.facebook.com'
-      - '+.youtube.com'
-      - '+.x.com'
-      - '+.twitter.com'
-      - '+.reddit.com'
-      - '+.telegram.org'
-      - '+.chatgpt.com'
-      - '+.openai.com'
-      - '+.grok.com'
+      - 'geosite:google'          # 覆盖所有 Google 服务（比手动写 +.google.com 全面）
+      - 'geosite:youtube'
+      - 'geosite:facebook'
+      - 'geosite:twitter'
+      - 'geosite:openai'           # 包含 chatgpt.com、openai.com 等
+      - 'geosite:microsoft'       # OneDrive、Windows Update、Copilot 等常被污染
+      - 'geosite:github'
+      - 'geosite:netflix'
+      - 'geosite:spotify'
+      - 'geosite:telegram'
+      - 'geosite:discord'
+      - 'geosite:amazon'
+      - 'geosite:cloudflare'      # 很多站点用 Cloudflare CDN
+      - 'geosite:private'
 ###########################################
 geodata-mode: false           # GEOIP 数据模式,更改 geoip 使用文件为 mmdb 或者 dat , true 为 dat
 geosite-matcher: "succinct"   # GeoSite 匹配器使用的实现 succinct (default, same as rule-set)/mph (from V2Ray, also `hybrid` in Xray)
