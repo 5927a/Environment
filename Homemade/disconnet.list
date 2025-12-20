@@ -99,3 +99,5 @@ DOMAIN,idklog.ingeek.com
 DOMAIN,open.e.kuaishou.com
 DOMAIN,log.mmstat.com
 DOMAIN,gm.mmstat.com
+# 钉钉开屏广告
+DOMAIN-SUFFIX,adashx.ut.dingtalk.com
