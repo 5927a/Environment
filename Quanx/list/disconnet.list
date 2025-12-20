@@ -99,3 +99,6 @@ HOST,idklog.ingeek.com
 HOST,open.e.kuaishou.com
 HOST,log.mmstat.com
 HOST,gm.mmstat.com
+# 钉钉开屏广告
+HOST,adashx.ut.dingtalk.com
+HOST,h-adashx.ut.dingtalk.com

@@ -96,3 +96,5 @@ payload:
   - DOMAIN,open.e.kuaishou.com
   - DOMAIN,log.mmstat.com
   - DOMAIN,gm.mmstat.com
+  - DOMAIN,adashx.ut.dingtalk.com
+  - DOMAIN,h-adashx.ut.dingtalk.com
