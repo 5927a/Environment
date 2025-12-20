@@ -17,7 +17,7 @@ ipv6: false
 bind-address: "*"
 allow-lan: false
 log-level: error
-find-process-mode: strict
+#find-process-mode: strict
 ###########################################
 lan-allowed-ips:
   - 127.0.0.1/32
