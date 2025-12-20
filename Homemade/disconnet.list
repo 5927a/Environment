@@ -86,8 +86,6 @@ DOMAIN-SUFFIX,pcinput.baidu.com
 DOMAIN-SUFFIX,tips.ime.baidu.com
 DOMAIN-SUFFIX,typing.bae.baidu.com
 DOMAIN-SUFFIX,updateime.baidu.com
-# 钉钉开屏广告
-DOMAIN-SUFFIX,adashx.ut.dingtalk.com
 # 万年历
 DOMAIN-SUFFIX,iytcdn.com
 # 高德开屏
@@ -101,3 +99,6 @@ DOMAIN,idklog.ingeek.com
 DOMAIN,open.e.kuaishou.com
 DOMAIN,log.mmstat.com
 DOMAIN,gm.mmstat.com
+# 钉钉开屏广告
+DOMAIN,adashx.ut.dingtalk.com
+DOMAIN,h-adashx.ut.dingtalk.com
