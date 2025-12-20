@@ -75,7 +75,7 @@ dns:
   fake-ip-filter-mode: blacklist
   fake-ip-filter:
       - geosite:private
-      #- geosite:cn
+      - geosite:cn
       - rule-set:fake-ips-filter
   default-nameserver:
       - 119.29.29.29
