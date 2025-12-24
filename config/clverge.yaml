@@ -105,7 +105,7 @@ dns:
       - 119.29.29.29
       - 223.5.5.5
       - 114.114.114.114
-    geosite:!cn,!private:
+    geosite:!cn:
       - https://1.1.1.1/dns-query
       - https://8.8.8.8/dns-query
       - https://9.9.9.9/dns-query
