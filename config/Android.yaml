@@ -224,9 +224,9 @@ rule-providers:
 
   # 广告规则
   anti-ad-surge2:
-    <<: *domain_rule
-    url: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Download/anti-ad-surge2.txt
-    path: "./rule_set/anti-ad-surge2.txt"
+    <<: *domain_yaml
+    url: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Maomi/list/anti-ad-surge.yaml
+    path: "./rule_set/anti-ad-surge.yaml"
 
   #chatgpt
   chagpt:
