@@ -100,33 +100,19 @@ dns:
       - https://223.5.5.5/dns-query
       - https://1.1.1.1/dns-query
       - https://1.12.12.12/dns-query
-  fallback:
-      - https://1.1.1.1/dns-query
-      - https://8.8.8.8/dns-query
-      - https://9.9.9.9/dns-query
-  fallback-filter:
-    geoip: true
-    geoip-code: CN
-    ipcidr:
-      - 240.0.0.0/4
-      - 127.0.0.0/8
-      - 10.0.0.0/8
-      - 172.16.0.0/12
-      - 192.168.0.0/16
-    domain:
-      - 'geosite:google'          # 覆盖所有 Google 服务（比手动写 +.google.com 全面）
-      - 'geosite:youtube'
-      - 'geosite:facebook'
-      - 'geosite:twitter'
-      - 'geosite:openai'           # 包含 chatgpt.com、openai.com 等
-      - 'geosite:microsoft'       # OneDrive、Windows Update、Copilot 等常被污染
-      - 'geosite:github'
-      - 'geosite:netflix'
-      - 'geosite:spotify'
-      - 'geosite:telegram'
-      - 'geosite:discord'
-      - 'geosite:amazon'
-      - 'geosite:cloudflare'      # 很多站点用 Cloudflare CDN
+#  fallback:
+#      - https://1.1.1.1/dns-query
+#      - https://8.8.8.8/dns-query
+#      - https://9.9.9.9/dns-query
+#  fallback-filter:
+#    geoip: true
+#    geoip-code: CN
+#    ipcidr:
+#      - 240.0.0.0/4
+#      - 127.0.0.0/8
+#      - 10.0.0.0/8
+#      - 172.16.0.0/12
+#      - 192.168.0.0/16
 ###########################################
 geodata-mode: false # GEOIP 数据模式,更改 geoip 使用文件为 mmdb 或者 dat , true 为 dat
 geosite-matcher: "succinct" # GeoSite 匹配器使用的实现 succinct (default, same as rule-set)/mph (from V2Ray, also `hybrid` in Xray)
