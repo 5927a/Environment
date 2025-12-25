@@ -267,12 +267,6 @@ rule-providers:
     url: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Homemade/Outside.list
     path: "./rule_set/Outside.list"
 
-  # 下载App
-  down_p2p:
-    <<: *classical_yaml
-    url: https://raw.githubusercontent.com/5927a/Environment/config/Maomi/list/p2p.yaml
-    path: "./rule_set/p2p.yaml"
-
   # 直连
   china:
     <<: *classical_text
@@ -314,7 +308,6 @@ rules:
   - RULE-SET,microsoft,微软服务
   - RULE-SET,Outside,节点选择
   - RULE-SET,apple,直连选择
-  - RULE-SET,down_p2p,直连选择
   - RULE-SET,china,直连选择
   - RULE-SET,ASN,直连选择
   - RULE-SET,geoip_rule,直连选择
