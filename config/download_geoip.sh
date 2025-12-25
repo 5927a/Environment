@@ -1,65 +1,108 @@
 #!/bin/bash
-# geosite.dat 和 Country.mmdb 下载脚本（带失败重试 + /tmp 临时文件机制）
-# 自动设置定时任务. 0 0 1 * * /opt/download.sh 下载文件，取消了自带多个定时任务问题。
-# 此脚本会重启路由器或者操作系统。如果不需要请禁用 /sbin/reboot改成重启openclash
+# 完整性 = 下载成功就必须替换
+# md5 仅用于判断是否重启
+# 1号：无条件重启系统
+# 周六：文件变动才重启 openclash
 
-# 文件 URL
-URL1="https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat"
+# ======================
+# 时间判断
+# ======================
+
+DAY_OF_WEEK=$(date +%u)   # 1-7（6=周六）
+DAY_OF_MONTH=$(date +%d) # 01-31
+
+IS_FIRST_DAY=0
+IS_SATURDAY=0
+
+[ "$DAY_OF_MONTH" -eq 1 ] && IS_FIRST_DAY=1
+[ "$DAY_OF_WEEK" -eq 6 ] && IS_SATURDAY=1
+
+if [ "$IS_FIRST_DAY" -eq 0 ] && [ "$IS_SATURDAY" -eq 0 ]; then
+    echo "ℹ️ 非 1 号也非周六，退出"
+    exit 0
+fi
+
+# ======================
+# 文件配置
+# ======================
+
+URL1="https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Download/geosite.dat"
 URL2="https://raw.githubusercontent.com/alecthw/mmdb_china_ip_list/release/lite/Country.mmdb"
 
-# 最终保存路径
 DEST_DIR="/etc/openclash"
 DEST1="${DEST_DIR}/GeoSite.dat"
 DEST2="${DEST_DIR}/Country.mmdb"
 
-# 临时目录
 TMP_DIR="/tmp"
 TMP1="${TMP_DIR}/GeoSite.dat.tmp"
 TMP2="${TMP_DIR}/Country.mmdb.tmp"
 
-# 最大重试次数
 MAX_RETRY=5
-# 重试间隔（秒）
 RETRY_INTERVAL=30
 
-# 下载函数（带重试 + /tmp 临时文件）
-download_file() {
+DOWNLOAD_OK=1
+FILE_CHANGED=0
+
+# ======================
+# 下载 + 强制替换函数
+# ======================
+
+download_and_replace() {
     local url=$1
     local tmp=$2
     local dest=$3
     local attempt=1
 
+    local old_md5=""
+    [ -f "$dest" ] && old_md5=$(md5sum "$dest" | awk '{print $1}')
+
     while [ $attempt -le $MAX_RETRY ]; do
-        curl -L --fail -s "$url" -o "$tmp" >/dev/null 2>&1
-        if [ $? -eq 0 ]; then
-            # 成功才替换原文件
+        if curl -L --fail -s "$url" -o "$tmp"; then
+            local new_md5
+            new_md5=$(md5sum "$tmp" | awk '{print $1}')
+
+            # md5 是否变化（仅用于重启判断）
+            [ "$old_md5" != "$new_md5" ] && FILE_CHANGED=1
+
+            # 强制、原子替换
             mv -f "$tmp" "$dest"
+            echo "✔ $(basename "$dest") 已替换"
             return 0
-        else
-            echo "⚠️ 下载失败: $url (第 $attempt 次)，$RETRY_INTERVAL 秒后重试..." >&2
-            attempt=$((attempt + 1))
-            sleep $RETRY_INTERVAL
         fi
+
+        echo "⚠️ 下载失败: $url（第 $attempt 次），$RETRY_INTERVAL 秒后重试" >&2
+        attempt=$((attempt + 1))
+        sleep $RETRY_INTERVAL
     done
 
-    # 超过重试次数仍失败，清理临时文件
-    [ -f "$tmp" ] && rm -f "$tmp"
+    rm -f "$tmp"
     return 1
 }
 
+# ======================
 # 执行下载
-download_file "$URL1" "$TMP1" "$DEST1"
-RESULT1=$?
+# ======================
 
-download_file "$URL2" "$TMP2" "$DEST2"
-RESULT2=$?
+download_and_replace "$URL1" "$TMP1" "$DEST1" || DOWNLOAD_OK=0
+download_and_replace "$URL2" "$TMP2" "$DEST2" || DOWNLOAD_OK=0
 
-# 判断是否全部成功
-if [ $RESULT1 -eq 0 ] && [ $RESULT2 -eq 0 ]; then
-    echo "✅ 两个文件均下载成功，5 秒后重启..."
+# ======================
+# 重启策略
+# ======================
+
+if [ "$IS_FIRST_DAY" -eq 1 ]; then
+    echo "🔴 今天是 1 号，无条件重启系统"
     sleep 5
     /sbin/reboot
-else
-    echo "❌ 下载失败，超过最大重试次数，系统不会重启。" >&2
-    exit 1
+    exit 0
+fi
+
+# 周六逻辑
+if [ "$IS_SATURDAY" -eq 1 ]; then
+    if [ "$DOWNLOAD_OK" -eq 1 ] && [ "$FILE_CHANGED" -eq 1 ]; then
+        echo "♻️ 周六文件有变动，重启 OpenClash"
+        /etc/init.d/openclash restart
+    else
+        echo "ℹ️ 周六无变动或下载失败，不重启"
+    fi
 fi
