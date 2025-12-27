@@ -8,7 +8,6 @@
 #!loon_version=3.2.4(787)
 #!homepage=https://hub.kelee.one
 #!date=2025-12-05 04:20:51
-#!https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/%E9%AB%98%E5%BE%B7%E5%9C%B0%E5%9B%BE%E5%8E%BB%E5%B9%BF%E5%91%8A.sgmodule
 
 [Rule]
 DOMAIN,amap-aos-info-nogw.amap.com,REJECT,extended-matching,pre-matching
