@@ -102,3 +102,5 @@ HOST,gm.mmstat.com
 # 钉钉开屏广告
 HOST,adashx.ut.dingtalk.com
 HOST,h-adashx.ut.dingtalk.com
+HOST,pcapp-data-collect.youku.com
+HOST,h-adashx.ut.taobao.com

@@ -181,6 +181,8 @@ HOST-SUFFIX,iqiyi.com
 HOST-SUFFIX,kuaishou.com
 HOST-SUFFIX,youku.com
 HOST-SUFFIX,ximalaya.com
+HOST-SUFFIX,hdslb.com
+HOST-SUFFIX,biliimg.com
 #金融及支付服务
 HOST-SUFFIX,10086.cn
 HOST-SUFFIX,95516.com

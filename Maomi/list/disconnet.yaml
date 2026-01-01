@@ -98,3 +98,5 @@ payload:
   - DOMAIN,gm.mmstat.com
   - DOMAIN,adashx.ut.dingtalk.com
   - DOMAIN,h-adashx.ut.dingtalk.com
+  - DOMAIN,pcapp-data-collect.youku.com
+  - DOMAIN,h-adashx.ut.taobao.com
