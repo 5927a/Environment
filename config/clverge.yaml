@@ -135,7 +135,7 @@ geo-update-interval: 72 # 更新间隔,单位 h
 geox-url:
   geoip: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Download/geoip.dat
   geosite: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Download/geosite.dat
-  mmdb: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Download/geoip.mmdb
+  mmdb: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Download/Country.mmdb
   asn: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Download/GeoLite2-ASN.mmdb
 
 # 节点订阅的参数 [每12小时更新一次订阅节点，每 60 秒一次健康检查]
