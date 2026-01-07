@@ -115,7 +115,7 @@ dns:
       - https://1.12.12.12/dns-query
   fallback:
     - https://doh.opendns.com/dns-query
-    - https://94.140.14.14/dns-query
+    - https://1.0.0.1/dns-query
     - https://9.9.9.9/dns-query
   fallback-filter:
     geoip: true
@@ -159,26 +159,26 @@ proxy-providers:
     <<: *NodeParam
     path: './proxy_provider/THREE.yaml'
 
-
 # 策略组
 proxy-groups:
   - {name: 直连选择, type: select, proxies: [DIRECT, REJECT], icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Direct.png}
-  - {name: 拒绝服务, type: select, proxies: [REJECT, DIRECT], icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Reject.png}
+  - {name: 拒绝服务, type: select, proxies: [REJECT, DIRECT, 自动选择], icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Reject.png}
   - {name: 节点选择, type: select, proxies: [自动选择, 手动选择, DIRECT, REJECT], icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Auto.png}
-  - {name: 自动选择, type: fallback, proxies: [主出口,备出口], interval: 60, timeout: 5000, icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Proxy.png}
+  - {name: 自动选择, type: fallback, proxies: [主出口,备出口], interval: 60, timeout: 5000, url: 'http://cp.cloudflare.com/generate_204',  icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Proxy.png}
   - {name: 电报服务, type: select, proxies: [节点选择, 手动选择], icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Telegram_X.png}
   - {name: 谷歌服务, type: select, proxies: [节点选择, 手动选择], icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Google_Search.png}
   - {name: 推特服务, type: select, proxies: [节点选择, 手动选择], icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Twitter.png}
   - {name: ChatGpt, type: select, proxies: [节点选择, 手动选择], icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/ChatGPT.png}
   - {name: 苹果服务, type: select, proxies: [DIRECT, 节点选择, 手动选择], icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Apple.png}
   - {name: 微软服务, type: select, proxies: [节点选择, 手动选择, DIRECT], icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Microsoft.png}
-  - {name: 币圈选择, type: select, proxies: [加密出口, 手动选择, DIRECT], icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Cryptocurrency_2.png}
+  - {name: 币圈选择, type: select, proxies: [币出口, 手动选择, DIRECT], icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Cryptocurrency_2.png}
 
   # 自动选择
-  - {name: 主出口, type: url-test, url: 'http://cp.cloudflare.com/generate_204', interval: 120, tolerance: 100, timeout: 5000, include-all: true, filter: ".*(?i)(日本|Japan|JP|SG|新加)", icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Final.png}
-  - {name: 备出口, type: url-test, url: 'http://cp.cloudflare.com/generate_204', interval: 180, tolerance: 100, timeout: 5000, include-all: true, filter: ".*(?i)(美国|US)", icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Singapore.png}
-  - {name: 加密出口, type: url-test, url: 'http://cp.cloudflare.com/generate_204', interval: 180, tolerance: 100, timeout: 5000, include-all: true, filter: ".*(?i)(日本|Japan|JP|香港|HK|新加)", icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Cryptocurrency_3.png}
+  - {name: 主出口, type: url-test, url: 'http://cp.cloudflare.com/generate_204', interval: 60, tolerance: 100, timeout: 5000, lazy: false, include-all: true, filter: ".*(?i)(日本|Japan|JP|SG|新加)", icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Final.png}
+  - {name: 备出口, type: url-test, url: 'http://cp.cloudflare.com/generate_204', interval: 60, tolerance: 100, timeout: 5000, lazy: false, include-all: true, filter: ".*(?i)(美国|US)", icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Singapore.png}
+  - {name: 币出口, type: url-test, url: 'http://cp.cloudflare.com/generate_204', interval: 180, tolerance: 100, timeout: 5000, include-all: true, filter: ".*(?i)(日本|Japan|JP|香港|HK|新加)", icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Cryptocurrency_3.png}
   - {name: 手动选择, type: select, url: 'http://cp.cloudflare.com/generate_204', interval: 180, tolerance: 70, include-all: true, filter: ".*", icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Unlock.png}
+
 # 规则参数 [每12小时更新一次订阅规则，更新规则时使用（节点选择）策略]
 classical_text: &classical_text {type: http, behavior: classical, interval: 86400 , format: text}
 
