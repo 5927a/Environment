@@ -118,3 +118,4 @@ payload:
   - PROCESS-NAME,OfficeClickToRun.exe
   - PROCESS-NAME,WizTree64.exe
   - PROCESS-NAME,WizTree.exe
+  - PROCESS-NAME,wps.exe
