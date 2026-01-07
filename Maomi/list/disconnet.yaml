@@ -87,8 +87,8 @@ payload:
   - DOMAIN-SUFFIX,tips.ime.baidu.com
   - DOMAIN-SUFFIX,typing.bae.baidu.com
   - DOMAIN-SUFFIX,updateime.baidu.com
-  - DOMAIN-SUFFIX,iytcdn.com
   - DOMAIN-SUFFIX,xterminal.cn
+  - DOMAIN-SUFFIX,iytcdn.com
   - DOMAIN,amap-aos-info-nogw.amap.com
   - DOMAIN,amdc.m.taobao.com
   - DOMAIN,awaken.amap.com

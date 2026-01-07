@@ -86,6 +86,8 @@ HOST-SUFFIX,pcinput.baidu.com
 HOST-SUFFIX,tips.ime.baidu.com
 HOST-SUFFIX,typing.bae.baidu.com
 HOST-SUFFIX,updateime.baidu.com
+# ssh工具
+HOST-SUFFIX,xterminal.cn
 # 万年历
 HOST-SUFFIX,iytcdn.com
 # 高德开屏
