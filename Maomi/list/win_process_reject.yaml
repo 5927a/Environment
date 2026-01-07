@@ -119,3 +119,12 @@ payload:
   - PROCESS-NAME,WizTree64.exe
   - PROCESS-NAME,WizTree.exe
   - PROCESS-NAME,wps.exe
+  - PROCESS-NAME,wpp.exe
+  - PROCESS-NAME,et.exe
+  - PROCESS-NAME,wpspdf.exe
+  - PROCESS-NAME,wpscenter.exe
+  - PROCESS-NAME,wpsdoccenter.exe
+  - PROCESS-NAME,WPSOfficePIA.exe
+  - PROCESS-NAME,wpsoffice.exe
+  - PROCESS-NAME,wpsclouddisk.exe
+  - PROCESS-NAME,ksolaunch.exe
