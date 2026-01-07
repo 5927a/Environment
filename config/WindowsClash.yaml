@@ -305,22 +305,16 @@ rule-providers:
     path: "./rule_set/win_process_conn.yaml"
 
   # ASN
-  ASN:
-    <<: *classical_yaml
-    url: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config//Maomi/list/ASN.China.yaml
-    path: "./rule_set/ASN.China.yaml"
+  #ASN:
+  #  <<: *classical_yaml
+  #  url: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config//Maomi/list/ASN.China.yaml
+  #  path: "./rule_set/ASN.China.yaml"
 
   # 局域网ip
   lan:
     <<: *classical_yaml
     url: https://raw.githubusercontent.com/5927a/Environment/config/Maomi/list/lan.yaml
     path: "./rule_set/lan.yaml"
-
-    # 局域网ip
-  geoip_rule:
-    <<: *classical_yaml
-    url: https://raw.githubusercontent.com/5927a/Environment/config/Maomi/list/geoip.yaml
-    path: "./rule_set/geoip.yaml"
 
 # 分流规则
 rules:
@@ -343,6 +337,5 @@ rules:
   - RULE-SET,apple,直连选择
   - RULE-SET,down_p2p,直连选择
   - RULE-SET,china,直连选择
-  - RULE-SET,ASN,直连选择
-  - RULE-SET,geoip_rule,直连选择
+  - GEOIP,CN,直连选择
   - MATCH,节点选择
