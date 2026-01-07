@@ -64,7 +64,7 @@ ipv6: false
 bind-address: "*"
 allow-lan: true
 log-level: silent
-find-process-mode: off
+#find-process-mode: off
 ###########################################
 keep-alive-interval: 15 # TCP Keep Alive 间隔,单位为秒,控制 Clash 发出 TCP Keep Alive 包的间隔,减少移动设备耗电问题的临时措施
 keep-alive-idle: 300
@@ -254,16 +254,16 @@ rule-providers:
     path: "./rule_set/ota.list"
 
   # 禁止httpd_dns
-  dns_reject:
-    <<: *classical_yaml
-    url: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Maomi/list/HTTPDNS.Block.yaml
-    path: "./rule_set/HTTPDNS.Block.yaml"
+  #dns_reject:
+  #  <<: *classical_yaml
+  #  url: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Maomi/list/HTTPDNS.Block.yaml
+  #  path: "./rule_set/HTTPDNS.Block.yaml"
 
   # 广告规则
-  anti-ad-surge2:
-    <<: *domain_yaml
-    url: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Maomi/list/ad2.yaml
-    path: "./rule_set/ad2.yaml"
+  #anti-ad-surge2:
+  #  <<: *domain_yaml
+  #  url: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Maomi/list/ad2.yaml
+  # path: "./rule_set/ad2.yaml"
 
   #chatgpt
   chagpt:
@@ -319,11 +319,6 @@ rule-providers:
     url: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Homemade/China.list
     path: "./rule_set/China.list"
 
-  # ASN
-  ASN:
-    <<: *classical_yaml
-    url: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config//Maomi/list/ASN.China.yaml
-    path: "./rule_set/ASN.China.yaml"
 
   # 局域网ip
   lan:
@@ -338,9 +333,7 @@ rules:
   - RULE-SET,xiuzhengguize,直连选择
   - RULE-SET,iota,拒绝服务
   - RULE-SET,disconnet,拒绝服务
-  - RULE-SET,dns_reject,拒绝服务
   - RULE-SET,win_app_domain_reject,拒绝服务
-  - RULE-SET,anti-ad-surge2,拒绝服务
   - RULE-SET,google,谷歌服务
   - RULE-SET,Binance,币圈选择
   - RULE-SET,chagpt,ChatGpt
@@ -350,6 +343,5 @@ rules:
   - RULE-SET,Outside,节点选择
   - RULE-SET,apple,直连选择
   - RULE-SET,china,直连选择
-  - RULE-SET,ASN,直连选择
   - GEOIP,CN,直连选择
   - MATCH,节点选择
