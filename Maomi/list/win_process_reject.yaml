@@ -118,15 +118,39 @@ payload:
   - PROCESS-NAME,OfficeClickToRun.exe
   - PROCESS-NAME,WizTree64.exe
   - PROCESS-NAME,WizTree.exe
-  - PROCESS-NAME,wps.exe
-  - PROCESS-NAME,wpp.exe
-  - PROCESS-NAME,et.exe
-  - PROCESS-NAME,wpspdf.exe
-  - PROCESS-NAME,wpscenter.exe
-  - PROCESS-NAME,wpsdoccenter.exe
-  - PROCESS-NAME,WPSOfficePIA.exe
-  - PROCESS-NAME,wpsoffice.exe
-  - PROCESS-NAME,wpsclouddisk.exe
   - PROCESS-NAME,ksolaunch.exe
-  - PROCESS-NAME,msedgewebview2.exe
+  - PROCESS-NAME,et.exe
+  - PROCESS-NAME,install_webmdshow.exe
+  - PROCESS-NAME,kcrashdumper.exe
+  - PROCESS-NAME,kcrashdumper64.exe
+  - PROCESS-NAME,ksolaunch.exe
+  - PROCESS-NAME,ksomisc.exe
+  - PROCESS-NAME,KSOXMLED.exe
+  - PROCESS-NAME,opencodecs_0.85.17777.exe
+  - PROCESS-NAME,pintaskbar.exe
+  - PROCESS-NAME,promecefpluginhost.exe
+  - PROCESS-NAME,restartexplorer.exe
+  - PROCESS-NAME,transerr.exe
+  - PROCESS-NAME,wpp.exe
+  - PROCESS-NAME,wps.exe
+  - PROCESS-NAME,wpscenter.exe
+  - PROCESS-NAME,wpsclouddisk.exe
+  - PROCESS-NAME,wpscloudlaunch.exe
+  - PROCESS-NAME,wpscloudsvr.exe
+  - PROCESS-NAME,wpsdoccenter.exe
+  - PROCESS-NAME,wpsoffice.exe
+  - PROCESS-NAME,WPSOfficePIA.exe
+  - PROCESS-NAME,wpspdf.exe
+  - PROCESS-NAME,Everything.exe
+  - PROCESS-NAME,dokanctl.exe
+  - PROCESS-NAME,install.exe
+  - PROCESS-NAME,oem.exe
+  - PROCESS-NAME,EqnEdit.exe
+  - PROCESS-NAME,EqnEdit.exe
+  - PROCESS-NAME,uninst.exe
+  - PROCESS-NAME,oem_static.exe
+  - PROCESS-NAME,install.exe
+  - PROCESS-NAME,oem.exe
+  - PROCESS-NAME,updateself.exe
+  - PROCESS-NAME,updsynctool.exe
   - PROCESS-NAME,wpsupdate.exe
