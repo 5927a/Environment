@@ -1,0 +1,3581 @@
+! Homepage: https:
+! License: https:
+!
+!---------------------------------------------------------------------------!
+!-------------- General tracking parameters list  --------------------------!
+!---------------------------------------------------------------------------!
+!
+! This section contains the list of generic `$removeparam` rules that are applied on every website.
+! You should only put here known parameters that are used on many websites.
+! IMPORTANT: add a comment that explains where this parameter comes from (what tracking company is using it).
+! Ideally, supply a link to the document that explains how this parameter is used.
+!
+! Good: $removeparam=utm_id
+! Bad:  $removeparam=utm_id,domain=example.org (for instance, should be in specific.txt)
+!
+! NOTE: Generic rules
+!
+! Oracle Eloqua
+$removeparam=elqTrackId
+$removeparam=elq
+$removeparam=elqaid
+$removeparam=elqat
+$removeparam=elqCampaignId
+$removeparam=elqak
+! Winfluencer
+$removeparam=winflncrtag
+! FastFlow
+$removeparam=ftag
+! https:
+$removeparam=janet
+! https:
+$removeparam=vs_campaign_id
+! Adsterra
+$removeparam=adsterra_clid
+$removeparam=adsterra_placement_id
+! LOGLY
+! https:
+$removeparam=loclid
+! LINE Ad click ID
+! https:
+$removeparam=ldtag_cl
+$removeparam=lt_r
+$removeparam=srclt
+! Yahoo JP
+! https:
+! https:
+! https:
+$removeparam=_ly_c
+$removeparam=_ly_r
+$removeparam=yj_r
+$removeparam=line_uid
+! MyTracker
+$removeparam=mt_click_id
+$removeparam=mt_network
+$removeparam=mt_campaign
+$removeparam=mt_adset
+$removeparam=mt_creative
+$removeparam=mt_medium
+$removeparam=mt_sub1
+$removeparam=mt_sub2
+$removeparam=mt_sub3
+$removeparam=mt_sub4
+$removeparam=mt_sub5
+! AD Counter by live-revolution.co.jp
+$removeparam=adc_publisher
+$removeparam=adc_token
+! https:
+$removeparam=tw_medium
+$removeparam=tw_profile_id
+$removeparam=tw_source
+! https:
+$removeparam=uzcid
+$removeparam=beyond_uzcvid
+$removeparam=beyond_uzmcvid
+! https:
+?from=glia^$removeparam=from
+! Google Merchant Center tracking
+$removeparam=srsltid
+! Segmentify
+$removeparam=_sgm_campaign
+$removeparam=_sgm_term
+$removeparam=_sgm_pinned
+! https:
+$removeparam=ebisOther1
+$removeparam=ebisOther2
+$removeparam=ebisOther3
+$removeparam=ebisOther4
+$removeparam=ebisOther5
+! https:
+$removeparam=bemobdata
+! Unidentified email subscription system
+$removeparam=_bhlid
+! Not identified. Popular on Japanese sites
+$removeparam=_bdadid
+! personaclick.com
+$removeparam=recommended_by
+$removeparam=recommended_code
+$removeparam=personaclick_search_query
+$removeparam=personaclick_input_query
+! Emarsys
+$removeparam=ems_dl
+$removeparam=emcs_t
+! channelsight.com
+$removeparam=cstrackid
+! Tracking in casino links
+/?affijet-click=$removeparam
+! https:
+$removeparam=btag
+! jmty.jp
+$removeparam=jmtyClId
+! TCS
+$removeparam=Tcsack
+! Visumo
+! https:
+$removeparam=vsm_type
+$removeparam=vsm_cid
+$removeparam=vsm_pid
+! Commission Junction
+! https:
+$removeparam=cjdata
+$removeparam=cjevent
+! AT Internet
+$removeparam=/^at_custom/
+$removeparam=at_campaign
+$removeparam=at_campaign_type
+$removeparam=at_creation
+$removeparam=at_emailtype
+$removeparam=at_link
+$removeparam=at_link_id
+$removeparam=at_link_origin
+$removeparam=at_link_type
+$removeparam=at_medium
+$removeparam=at_ptr_name
+$removeparam=at_recipient_id
+$removeparam=at_recipient_list
+$removeparam=at_send_date
+! Email subscription tracking
+$removeparam=_ope
+! AappsFlyer
+! https:
+$removeparam=af_xp
+$removeparam=af_ad
+$removeparam=af_adset
+$removeparam=af_click_lookback
+$removeparam=af_force_deeplink
+$removeparam=is_retargeting
+&af_xp=$removeparam=c
+&af_xp=$removeparam=pid
+! https:
+$removeparam=dclid
+! https:
+$removeparam=sms_click
+$removeparam=sms_source
+$removeparam=sms_uph
+$removeparam=ttclid
+! spot.im
+$removeparam=spot_im_redirect_source
+! tracker.my.com
+$removeparam=mt_link_id
+! https:
+$removeparam=iclid
+! https:
+$removeparam=user_email_address
+! https:
+$removeparam=_gl
+! Coremetrics
+! https:
+! https:
+$removeparam=cm_me
+$removeparam=cm_cr
+$removeparam=/^cm_mmc/
+! https:
+! Used by shareasale.com
+$removeparam=sscid
+! Click tracking. Probably used by malware
+! https:
+$removeparam=rtkcid
+rtkcid=*&clickid=$removeparam=clickid
+! impact.com
+$removeparam=ir_campaignid
+$removeparam=ir_adid
+$removeparam=ir_partnerid
+! IO Technologies
+! Identify a period of time for which unique visitors use our website
+$removeparam=__io_lv
+! Counts sessions of unique visitors
+$removeparam=_io_session_id
+! https:
+$removeparam=asgtbndr
+! https:
+$removeparam=ymid
+^z=*&var=$removeparam=var
+! GLAMI click id
+! https:
+$removeparam=gci
+! https:
+$removeparam=pk_vid
+! mindbox.ru - https:
+$removeparam=mindbox-click-id
+! https:
+! fake dating sites
+click_id=*_branch_referrer=$removeparam
+! https:
+$removeparam=famad_xuid
+! https:
+$removeparam=twclid
+! Cxense clickthrough tracking
+$removeparam=cx_click
+$removeparam=cx_recsOrder
+$removeparam=cx_recsWidget
+! Marketo email tracking
+$removeparam=mkt_tok
+! Mindbox email tracking
+$removeparam=mindbox-message-key
+! Klaviyo onsite tracking
+$removeparam=_kx
+! https:
+! ad click tracking
+?uclick=*&uclickhash=$removeparam
+/?uclick=*;uclickhash=$removeparam
+&uclick=*&uclickhash=$removeparam
+! PopMagic clickthrough tracking
+/?r=dir&zoneid=$removeparam
+/?rb=*&zoneid=$removeparam
+! Adobe SiteCatalyst Campaign Tracking ID parameter
+$removeparam=s_cid
+! https:
+$removeparam=adobe_mc_ref
+$removeparam=adobe_mc_sdid
+! awin.com
+$removeparam=awc
+! Hubspot tracking https:
+$removeparam=_hsmi
+$removeparam=__hsfp
+$removeparam=__hssc
+$removeparam=__hstc
+$removeparam=_hsenc
+$removeparam=hsa_acc
+$removeparam=hsa_ad
+$removeparam=hsa_cam
+$removeparam=hsa_grp
+$removeparam=hsa_kw
+$removeparam=hsa_la
+$removeparam=hsa_mt
+$removeparam=hsa_net
+$removeparam=hsa_ol
+$removeparam=hsa_src
+$removeparam=hsa_tgt
+$removeparam=hsa_ver
+$removeparam=hsCtaTracking
+! Yandex Metrika
+$removeparam=ysclid
+$removeparam=yclid
+! https:
+$removeparam=aiad_clid
+! https:
+$removeparam=_sgm_campaign
+$removeparam=_sgm_source
+$removeparam=_sgm_action
+! drip.com https:
+! It looks like that this parameter is used not only for tracking purpose - https:
+! so to make it less problematic, it will be blocked only if contains at least 6 characters - numbers and letters
+$removeparam=/^__s=[A-Za-z0-9]{6\,}/,domain=~univis.uni-erlangen.de|~univis.uni-bamberg.de|~univis.uni-luebeck.de|~univis.uni-kiel.de|~univis.th-koeln.de
+! MailChimp click tracking
+$removeparam=mc_cid
+$removeparam=mc_eid
+! moshimo affiliate
+$removeparam=maf
+! https:
+$removeparam=_clde
+$removeparam=_cldee
+! URL Campaign Mapper
+! https:
+$removeparam=wt_mc
+! https:
+! https:
+$removeparam=oprtrack
+! Campaign link tracking
+! https:
+$removeparam=xtor
+! Microsoft Click ID
+! https:
+$removeparam=msclkid
+! vero
+$removeparam=vero_conv
+$removeparam=vero_id
+!
+!INT
+$removeparam=int_content
+$removeparam=int_term
+$removeparam=int_source
+$removeparam=int_medium
+$removeparam=int_campaign
+! ITM
+! https:
+! https:
+! https:
+$removeparam=itm_source
+$removeparam=itm_medium
+$removeparam=itm_campaign
+$removeparam=itm_content
+$removeparam=itm_term
+! UTM
+$removeparam=utm_emailid
+$removeparam=utm_email
+$removeparam=utm_newsletterid
+$removeparam=utm_tag
+$removeparam=utm_adset
+$removeparam=utm_adgroup
+$removeparam=utm_ad
+$removeparam=utm_affiliate
+$removeparam=utm_brand
+$removeparam=utm_campaignid
+$removeparam=utm_channel
+$removeparam=utm_cid
+$removeparam=utm_creative
+$removeparam=utm_emcid
+$removeparam=utm_emmid
+$removeparam=utm_id
+$removeparam=utm_id_
+$removeparam=utm_keyword
+$removeparam=utm_name
+$removeparam=utm_place
+$removeparam=utm_product
+$removeparam=utm_pubreferrer
+$removeparam=utm_reader
+$removeparam=utm_referrer
+$removeparam=utm_serial
+$removeparam=utm_servlet
+$removeparam=utm_session
+$removeparam=utm_siteid
+$removeparam=utm_social
+$removeparam=utm_social-type
+$removeparam=utm_source_platform
+$removeparam=utm_supplier
+$removeparam=utm_swu
+$removeparam=utm_umguk
+$removeparam=utm_userid
+$removeparam=utm_viz_id
+$removeparam=utm_source_code
+$removeparam=utm_campaign_name
+$removeparam=utm_journey_id
+! https:
+$removeparam=gad_campaignid
+$removeparam=gad_source
+! Google ads/analytics
+$removeparam=gbraid
+$removeparam=wbraid
+$removeparam=gclsrc
+$removeparam=gclid
+! Google AMP-analytics
+$removeparam=usqp
+! DPG Media analytics
+! Used on Dutch sites
+$removeparam=dpg_source
+$removeparam=dpg_campaign
+$removeparam=dpg_medium
+$removeparam=dpg_content
+! AdmitAd tracking
+$removeparam=admitad_uid
+! adjust.com tracking
+$removeparam=adj_label
+$removeparam=adj_campaign
+$removeparam=adj_creative
+$removeparam=gps_adid
+$removeparam=unicorn_click_id
+$removeparam=adjust_creative
+$removeparam=adjust_tracker_limit
+$removeparam=adjust_tracker
+$removeparam=adjust_adgroup
+$removeparam=adjust_campaign
+! https:
+$removeparam=adjust_referrer
+$removeparam=external_click_id
+! https:
+! email subscriptions tracking
+$removeparam=bsft_clkid
+$removeparam=bsft_eid
+$removeparam=bsft_mid
+$removeparam=bsft_uid
+$removeparam=bsft_aaid
+$removeparam=bsft_ek
+! Matomo/Piwik
+$removeparam=mtm_campaign
+$removeparam=mtm_cid
+$removeparam=mtm_content
+$removeparam=mtm_group
+$removeparam=mtm_keyword
+$removeparam=mtm_medium
+$removeparam=mtm_placement
+$removeparam=mtm_source
+$removeparam=pk_campaign
+$removeparam=pk_medium
+$removeparam=pk_source
+! Branch.io ( https:
+$removeparam=_branch_referrer
+$removeparam=_branch_match_id
+! https:
+$removeparam=ml_subscriber
+$removeparam=ml_subscriber_hash
+! Olytics
+$removeparam=rb_clickid
+$removeparam=oly_anon_id
+! AD EBiS
+$removeparam=ebisAdID
+! Wicked Reports click tracking
+$removeparam=wickedid
+! https:
+$removeparam=irgwc
+! Facebook analytics
+$removeparam=fbclid
+! https:
+$removeparam=fbadid
+$removeparam=nb_placement
+$removeparam=nb_expid_meta
+?nbt=nb%3A$removeparam=nbt
+&nbt=nb%3A$removeparam=nbt
+!
+$removeparam=adfrom
+$removeparam=nx_source
+$removeparam=_zucks_suid
+$removeparam=guccounter
+$removeparam=guce_referrer
+$removeparam=guce_referrer_sig
+$removeparam=_openstat
+$removeparam=action_object_map
+$removeparam=action_ref_map
+$removeparam=action_type_map
+$removeparam=fb_action_ids
+$removeparam=fb_action_types
+$removeparam=fb_comment_id
+$removeparam=fb_ref
+$removeparam=fb_source
+!
+! ###########################################################################################################################
+! ##################### Generic rules with exclusions for the MV3 extensions ################################################
+! ###########################################################################################################################
+! It's needed for the MV3 extensions - exceptions like `@@*$removeparam` do not work
+! TODO: Remove this section and revert to the original rules if this https:
+! SECTION: Generic rules with exclusions for the MV3 extensions
+!
+!#if (ext_chromium_mv3 || ext_ublock)
+$denyallow=cleviationly.com,removeparam=cmpid
+$denyallow=adj.st|yandex.go.link,removeparam=adj_t
+$denyallow=em.dynamicyield.com|mootoon.co.kr,removeparam=cuid
+$denyallow=a8cv.amiami.jp,removeparam=a8
+$denyallow=meishi.meituan.com|portal-portm.meituan.com|rd.bizrate.com|glavnoe.life|mmcref.pl|t.send.vt.edu|app.plex.tv,removeparam=utm_medium
+$denyallow=rd.bizrate.com|glavnoe.life|redirects.tradedoubler.com|t.send.vt.edu|google.ad|google.ae|google.al|google.am|google.as|google.at|google.az|google.ba|google.be|google.bf|google.bg|google.bi|google.bj|google.bs|google.bt|google.by|google.ca|google.cat|google.cd|google.cf|google.cg|google.ch|google.ci|google.cl|google.cm|google.cn|google.co.ao|google.co.bw|google.co.ck|google.co.cr|google.co.id|google.co.il|google.co.in|google.co.jp|google.co.ke|google.co.kr|google.co.ls|google.co.ma|google.co.mz|google.co.nz|google.co.th|google.co.tz|google.co.ug|google.co.uk|google.co.uz|google.co.ve|google.co.vi|google.co.za|google.co.zm|google.co.zw|google.com|google.com.af|google.com.ag|google.com.ai|google.com.ar|google.com.au|google.com.bd|google.com.bh|google.com.bn|google.com.bo|google.com.br|google.com.bz|google.com.co|google.com.cu|google.com.cy|google.com.do|google.com.ec|google.com.eg|google.com.et|google.com.fj|google.com.gh|google.com.gi|google.com.gt|google.com.hk|google.com.jm|google.com.kh|google.com.kw|google.com.lb|google.com.ly|google.com.mm|google.com.mt|google.com.mx|google.com.my|google.com.na|google.com.nf|google.com.ng|google.com.ni|google.com.np|google.com.om|google.com.pa|google.com.pe|google.com.pg|google.com.ph|google.com.pk|google.com.pr|google.com.py|google.com.qa|google.com.sa|google.com.sb|google.com.sg|google.com.sl|google.com.sv|google.com.tj|google.com.tr|google.com.tw|google.com.ua|google.com.uy|google.com.vc|google.com.vn|google.cv|google.cz|google.de|google.dj|google.dk|google.dm|google.dz|google.ee|google.es|google.fi|google.fm|google.fr|google.ga|google.ge|google.gg|google.gl|google.gm|google.gp|google.gr|google.gy|google.hn|google.hr|google.ht|google.hu|google.ie|google.im|google.iq|google.is|google.it|google.je|google.jo|google.kg|google.ki|google.kz|google.la|google.li|google.lk|google.lt|google.lu|google.lv|google.md|google.me|google.mg|google.mk|google.ml|google.mn|google.ms|google.mu|google.mv|google.mw|google.ne|google.nl|google.no|google.nr|google.nu|google.pl|google.pn|google.ps|google.pt|google.ro|google.rs|google.ru|google.rw|google.sc|google.se|google.sh|google.si|google.sk|google.sm|google.sn|google.so|google.sr|google.st|google.td|google.tg|google.tk|google.tl|google.tm|google.tn|google.to|google.tt|google.vg|google.vu|google.ws,removeparam=utm_campaign
+$denyallow=glavnoe.life,removeparam=utm_referrer
+$denyallow=reddit.app.link|glavnoe.life|gaugau.futabanet.jp|redirects.tradedoubler.com|app.plex.tv,removeparam=utm_content
+$denyallow=video-shoper.ru|glavnoe.life|uploadnow.io|3dnews.ru|transfernow.net|carrefourpl.snrpage.com|transfernow.net|lanacion.com.ar|t.send.vt.edu|ofeminin.pl|auto-swiat.pl|komputerswiat.pl|noizz.pl|plejada.pl|medonet.pl|businessinsider.com.pl|sendgb.com|plex.tv|insurancexblog.blogspot.com,removeparam=utm_source
+$denyallow=glavnoe.life|metabase.com,removeparam=utm_term
+$denyallow=tix.axs.com,removeparam=irclickid
+$denyallow=booklive.jp,removeparam=vc_lpp
+$denyallow=lifehacker.ru|forbes.ru|kommersant.ru,removeparam=erid
+$denyallow=greenbuildingadvisor.com,removeparam=oly_enc_id
+$denyallow=login.aliexpress.com,removeparam=_ga
+$denyallow=tradedoubler.com,removeparam=tduid
+!#endif
+!
+! Move original rules to this directive if you can confirm the problem
+!
+!#if (!adguard_ext_chromium_mv3 && !ext_ublock)
+$removeparam=cmpid
+! adjust.com tracking
+$removeparam=adj_t
+! https:
+! Sovrn (VigLink) tracking
+$removeparam=cuid
+! a8.net
+$removeparam=a8
+! UTM
+$removeparam=utm_medium
+$removeparam=utm_campaign
+$removeparam=utm_referrer
+$removeparam=utm_content
+$removeparam=utm_source
+$removeparam=utm_term
+! impact.com
+$removeparam=irclickid
+! Valuecommerce ( https:
+$removeparam=vc_lpp
+! https:
+$removeparam=erid
+! Olytics
+$removeparam=oly_enc_id
+! https:
+$removeparam=_ga
+! Tradedoubler
+! https:
+$removeparam=tduid
+!#endif
+! NOTE: Generic rules with exclusions for the MV3 extensions ⬆️
+! !SECTION: Generic rules with exclusions for the MV3 extensions
+!
+!---------------------------------------------------------------------------!
+!-------------- Specific web sites -----------------------------------------!
+!---------------------------------------------------------------------------!
+!
+! This section contains the list of domain-specific rules that remove URL tracking parameters. Rules have to contain only a single modifier: `removeparam`.
+! In some cases, it's allowed to add content type and `$domain` modifiers.
+!
+! Good: ||example.org^$removeparam=cx
+! Bad: ||example.org^$xmlhttprequest,redirect=noopvast-3.0 (for instance, should be in specific.txt)
+!
+!
+! https:
+||temu.com^$removeparam=_x_ads_account
+||temu.com^$removeparam=_x_ads_creative_id
+||temu.com^$removeparam=_x_ads_id
+||temu.com^$removeparam=_x_ads_set
+||temu.com^$removeparam=_x_ns_catalog_id
+||temu.com^$removeparam=_x_ns_gid
+||temu.com^$removeparam=_x_ns_placement
+||temu.com^$removeparam=_x_ns_product_id
+||temu.com^$removeparam=_x_ns_site_id
+||temu.com^$removeparam=_x_ns_source
+||temu.com^$removeparam=_x_ns_crt_id
+||temu.com^$removeparam=_x_bg_adid
+||temu.com^$removeparam=_x_from
+||temu.com^$removeparam=adg_ctx
+||temu.com^$removeparam=mrk_rec
+! Browsec VPN
+||browsec-uninstall.s3-website.eu-central-1.amazonaws.com^$removeparam
+! https:
+||bookoffonline.co.jp^$removeparam=xadid
+! https:
+||reifen24.de^$removeparam=sv_campaign_id
+||reifen24.de^$removeparam=sv1
+! urban-vpn.com
+||urban-vpn.com^$removeparam=cid
+! https:
+||oricon.co.jp^$removeparam=ref
+! https:
+||carviewform.yahoo.co.jp^$removeparam=src
+! https:
+! aglint-disable-next-line
+! https:
+||kaigonoshigoto.jp^$removeparam=scid
+! coco.fun
+||coco.fun/share/$removeparam=share_to
+||coco.fun/share/$removeparam=m
+||coco.fun/share/$removeparam=d
+! https:
+||music.amazon.co.jp^$removeparam=ref
+! https:
+||irisplaza.co.jp^$removeparam=fd_bridge_id
+! https:
+! https:
+||ana.co.jp^$removeparam=mall_cid
+||ana.co.jp^$removeparam=cid
+! https:
+||coca-cola.com^$removeparam=openExternalBrowser
+! https:
+||promo-search.yahoo.co.jp^$removeparam=fr
+! https:
+||shop.tsukumo.co.jp/goods/$removeparam=cid
+! https:
+||s.awa.fm^$removeparam=t
+! https:
+||aozorabank.co.jp^$removeparam=lid
+! https:
+||teinei.co.jp^$removeparam=ref
+||teinei.co.jp^$removeparam=camp_no
+||teinei.co.jp^$removeparam=rmai
+! https:
+||frontier-direct.jp^$removeparam=argument
+||frontier-direct.jp^$removeparam=dmai
+! https:
+||careerindex.jp^$removeparam=pathway
+! https:
+||sell.amazon.de^$removeparam=refTag
+||sell.amazon.de^$removeparam=ld
+! https:
+||qoo10.jp^$removeparam=__da_seqno
+||qoo10.jp^$removeparam=flowpath_page_no
+||qoo10.jp^$removeparam=flowpath_page_value
+! https:
+||research-panel.jp^$removeparam=AID
+! https:
+||status.medium.com^$removeparam=source
+! https:
+||sonybank.jp^$removeparam=kid
+||sonybank.jp^$removeparam=cid
+! https:
+||cmoa.jp^$removeparam=pg
+||cmoa.jp^$removeparam=lp_fol
+||cmoa.jp^$removeparam=adef1043
+! https:
+||and-pro.jp^$removeparam=waad
+! https:
+||healthgrades.com^$removeparam=referrerSource
+! https:
+||zurichlife.co.jp^$removeparam=waad
+||zurichlife.co.jp^$removeparam=agentCode
+! https:
+||chickencoopcompany.com/services/$removeparam=analytics_context
+||chickencoopcompany.com/services/$removeparam=analytics_trace_id
+||shop.app/accounts/$removeparam=analytics_trace_id
+! byn.kr - any product page via product listing page
+||byn.kr^$removeparam=rURL
+! https:
+||smbc.co.jp^$removeparam=aff
+||smbc.co.jp^$removeparam=um
+||smbc.co.jp^$removeparam=us
+! https:
+||metlife.co.jp^$removeparam=BannerCode
+||metlife.co.jp^$removeparam=Page
+! https:
+||gu-global.com^$removeparam=path
+! https:
+||mel.fm^$removeparam=infNews
+! https:
+||cmoa.jp^$removeparam=cmoa
+||cmoa.jp^$removeparam=cmoa_pg
+||cmoa.jp^$removeparam=site
+||cmoa.jp^$removeparam=adme5101
+! https:
+||myoji-yurai.net^$removeparam=from
+! https:
+||jiji.com^$removeparam=ref
+! https:
+$removeparam=promo,domain=vjav.com|vjav.tube
+! p-bandai.com
+||p-bandai.com^$removeparam=eccid
+||p-bandai.com^$removeparam=ecuid
+||p-bandai.com^$removeparam=octid
+||p-bandai.com^$removeparam=ectag
+! https:
+||hh.ru^$removeparam=hhtmFrom
+! https:
+||mgstage.com^$removeparam=form
+! https:
+||playerok.com^$removeparam=click
+! https:
+||dennikn.sk^$removeparam=ref
+! https:
+||plus.fifa.com^$removeparam=entryPoint
+! https:
+||filmzie.com^$removeparam=sourceId
+! https:
+||scoopzapp.com^$removeparam=send_time
+||scoopzapp.com^$removeparam=actBtn
+||scoopzapp.com^$removeparam=nid
+||scoopzapp.com^$removeparam=pd
+||scoopzapp.com^$removeparam=s
+! https:
+||ad.doubleclick.net/ddm/clk/$removeparam=PID
+||ad.doubleclick.net/ddm/clk/$removeparam=deeplink
+||ad.doubleclick.net/ddm/clk/$removeparam=clickId
+||ad.doubleclick.net/ddm/clk/$removeparam=clickOrigin
+||ad.doubleclick.net/ddm/clk/$removeparam=/^\\$ja=/
+||ad.doubleclick.net/ddm/clk/$removeparam=/^utm_custom\d+/
+! https:
+! epsilon.com tracking
+! Disabled because it breaks some redirects - https:
+! ||cj.dotomi.com^$removeparam=/^\w=/
+! ||emjcd.com^$removeparam=/^\w=/
+! https:
+||fastmail.com^$removeparam=pscd
+||fastmail.com^$removeparam=ps_partner_key
+||fastmail.com^$removeparam=ps_xid
+||fastmail.com^$removeparam=gsxid
+||fastmail.com^$removeparam=gspk
+! https:
+||notebooklm.google.*$removeparam=icid
+||notebooklm.google.*$removeparam=original_referer
+! https:
+||sravni.ru^$removeparam=rubricAlias
+!https:
+||pcmax.jp^$removeparam=ad_id
+! https:
+||indianexpress.com^$removeparam=ref
+! https:
+||biccamera.com^$removeparam=source
+! https:
+||bunshun.jp^$removeparam=ref
+! https:
+||surfshark.com^$removeparam=rdr_refr
+! https:
+||1fichier.com^$removeparam=af
+! https:
+||index.hr^$removeparam=index_ref
+! https:
+$removeparam=s-id,domain=item.rakuten.co.jp|www.rakuten.co.jp
+||item.rakuten.co.jp^$removeparam=iasid
+! https:
+||fanicon.net^$removeparam=from
+! https:
+||lululemon.com.hk^$removeparam=cid
+||lululemon.com.hk^$removeparam=mcid
+||lululemon.com.hk^$removeparam=ismcid
+! https:
+||steiledema.boxnow.gr^$removeparam=/^lkws_/
+! casino.ua
+||casino.ua/short-register/$removeparam
+! https:
+||4kdownload.com^$removeparam=source
+! https:
+||perplexity.ai^$removeparam=login-source
+||perplexity.ai^$removeparam=login-new
+! https:
+||techbook.de^$removeparam=ref
+||techbook.de^$removeparam=dtp
+||techbook.de^$removeparam=tbl
+! https:
+||blu-ray.com/link/click.php$removeparam=tid
+||blu-ray.com/link/click.php$removeparam=c
+! https:
+||trendyol.com^$removeparam=adjust_t
+||trendyol.com^$removeparam=link_userID
+||trendyol.com^$removeparam=link_contentid
+! https:
+||qms.ru^$removeparam=src
+! https:
+||e-himart.co.kr^$removeparam=gtmPos
+||e-himart.co.kr^$removeparam=jsClck
+! https:
+||cancam.jp^$removeparam=from
+! fnnews.com
+||fnnews.com^$removeparam=jd
+||fnnews.com^$removeparam=dc_data
+||fnnews.com^$removeparam=did
+||fnnews.com^$removeparam=origin_referral_type
+||fnnews.com^$removeparam=ui
+||fnnews.com^$removeparam=response.session
+||fnnews.com^$removeparam=response.id
+! https:
+||firefox.com^$removeparam=redirect_source
+! https:
+||lyf.eu^$removeparam=adid
+! https:
+||lenovo.com^$removeparam=obem
+||lenovo.com^$removeparam=CID
+||lenovo.com^$removeparam=rrid
+||lenovo.com^$removeparam=run_key
+! pumb.ua
+||ref.digital.pumb.ua^$removeparam
+||digital.pumb.ua^$removeparam=source_caller
+||digital.pumb.ua^$removeparam=af_channel
+||digital.pumb.ua^$removeparam=shortlink
+! cyberghostvpn.com
+||cyberghostvpn.com^$removeparam=brand
+||cyberghostvpn.com^$removeparam=aff_sub
+||cyberghostvpn.com^$removeparam=aff_id
+||cyberghostvpn.com^$removeparam=source
+! clubi.cc
+||clubi.cc/*?t=$removeparam=t
+||clubi.cc/*?t=$removeparam=s
+||clubi.cc/*?t=$removeparam=c
+! https:
+*$removeparam=channable,domain=easynotebooks.de|notebook.de
+*$removeparam=sPartner,domain=easynotebooks.de|notebook.de
+! https:
+||tingfm.com^$removeparam=from
+! https:
+||hola.org^$removeparam=ref
+! midasbuy.com
+||midasbuy.com^$removeparam=adtag
+||midasbuy.com^$removeparam=from
+! idnes.cz
+||idnes.cz^$removeparam=zdroj
+! https:
+||coloso.co.kr^$removeparam=fb_asc
+! https:
+||alia-cloudflare.com/launcher/$removeparam=url,xmlhttprequest
+||alia-cloudflare.com/launcher/$removeparam=is_mobile,xmlhttprequest
+||alia-cloudflare.com/launcher/$removeparam=timezone,xmlhttprequest
+||alia-cloudflare.com/launcher/$removeparam=ip_address,xmlhttprequest
+||alia-cloudflare.com/launcher/$removeparam=user_agent,xmlhttprequest
+||alia-cloudflare.com/launcher/$removeparam=new_session,xmlhttprequest
+! https:
+||operanewsapp.com^$removeparam=from
+||operanewsapp.com^$removeparam=request_id
+||operanewsapp.com^$removeparam=share_from
+! https:
+||sprinklr.com/api/livechat/event/$removeparam=cursor
+! hepsiburada.com
+! https:
+||hepsiburada.com^$removeparam=wt_ds
+||hepsiburada.com^$removeparam=wt_pc
+! akakce.com
+! u = UTM here
+||akakce.com/r/?c=$removeparam=u
+! https:
+||domclick.ru^$removeparam=from
+! buydomains.com
+||buydomains.com/lander/*?domain=$removeparam
+!
+! DuckDuckGo
+! DuckDuckGo ads/shopping
+||duckduckgo.com/y.js$removeparam=ad_provider
+||duckduckgo.com/y.js$removeparam=ad_domain
+||duckduckgo.com/y.js$removeparam=click_metadata
+||duckduckgo.com/y.js$removeparam=vqd
+||duckduckgo.com/y.js$removeparam=iurl
+||duckduckgo.com/y.js$removeparam=ad_type
+! https:
+||duckduckgo.com/?q=*&t=$document,removeparam=t
+||duckduckgo.com/?t=*&q=$document,removeparam=t
+! https:
+! Removing "bing_market" parameter causes that search results are not localized
+! and results are displayed for "All regions"
+! ||duckduckgo.com/d.js?q=$script,removeparam=bing_market
+! ||duckduckgo.com/d.js?q=$script,removeparam=host_region
+! https:
+! breaks redirect when their Extension is installed - https:
+! ||duckduckgo.com^$removeparam=atb
+||duckduckgo.com^$removeparam=from
+||duckduckgo.com^$removeparam=vis
+||duckduckgo.com^$removeparam=perf_id
+||duckduckgo.com^$removeparam=parent_perf_id
+!
+! https:
+||olybet.lv^$removeparam=ref
+! https:
+||provereno.media^$removeparam=tg_rhash
+! https:
+||weathernews.jp^$removeparam=fm
+! https:
+||grok.com^$removeparam=referrer
+! https:
+||nikke-jp.com^$removeparam=pid
+||nikke.onelink.me^$removeparam=pid
+! https:
+*$removeparam=siteNo,domain=m-emart.ssg.com|emart.ssg.com
+*$removeparam=ckwhere,domain=m-emart.ssg.com|emart.ssg.com
+*$removeparam=appPopYn,domain=m-emart.ssg.com|emart.ssg.com
+*$removeparam=service_id,domain=m-emart.ssg.com|emart.ssg.com
+! https:
+||gettranny.com^$removeparam=campaign
+! https:
+||stanby.com^$removeparam=sr_fr
+! https:
+! https:
+||youtube.com/shorts/$removeparam=si
+:
+||youtu.be^$removeparam=si
+! https:
+||myaccount.google.com^$removeparam=source
+! https:
+||www.hcaptcha.com^$removeparam=ref
+! https:
+||korona.ru^$removeparam=pr-source
+||korona.ru^$removeparam=pr-medium
+||korona.ru^$removeparam=pr-campaign
+! https:
+||k2s.cc^$removeparam=site
+! https:
+||skyeng.ru^$removeparam=source_type
+||skyeng.ru^$removeparam=manager
+||skyeng.ru^$removeparam=workflow
+||skyeng.ru^$removeparam=product
+||skysmart.ru^$removeparam=source_type
+||skysmart.ru^$removeparam=manager
+||skysmart.ru^$removeparam=workflow
+||skysmart.ru^$removeparam=product
+! https:
+||em.dynamicyield.com^$removeparam=tag_ids
+! https:
+||ebikes.ca^$removeparam=___store
+||ebikes.ca^$removeparam=___from_store
+! https:
+! https:
+/viewforum.php?$removeparam=sid
+/viewtopic.php?$removeparam=sid
+! https:
+||html5.gamedistribution.com^$removeparam=mp_site_url
+||html5.gamedistribution.com^$removeparam=mp_site_name
+||html5.gamedistribution.com^$removeparam=mp_view_type
+||html5.gamedistribution.com^$removeparam=mp_api_js_url_bc
+||html5.gamedistribution.com^$removeparam=mp_site_https_url
+||html5.gamedistribution.com^$removeparam=mp_locale
+||html5.gamedistribution.com^$removeparam=mp_timezone
+||html5.gamedistribution.com^$removeparam=xdm_p
+||html5.gamedistribution.com^$removeparam=xdm_c
+||html5.gamedistribution.com^$removeparam=xdm_e
+||html5.gamedistribution.com^$removeparam=mini_signature
+||html5.gamedistribution.com^$removeparam=mp_game_uid
+||html5.gamedistribution.com^$removeparam=mp_player_type
+||html5.gamedistribution.com^$removeparam=mp_int
+||html5.gamedistribution.com^$removeparam=mp_game_url
+||html5.gamedistribution.com^$removeparam=mp_game_id
+||html5.gamedistribution.com^$removeparam=mp_game_assets
+||html5.gamedistribution.com^$removeparam=mp_game_embed
+||html5.gamedistribution.com^$removeparam=mp_api_js_url_bck
+||html5.gamedistribution.com^$removeparam=mp_embed
+||html5.gamedistribution.com^$removeparam=mp_assets
+||html5.gamedistribution.com^$removeparam=mp_api_js_url
+||html5.gamedistribution.com^$removeparam=mp_api_id
+||html5.gamedistribution.com^$removeparam=mp_api_as3_url_bck
+||html5.gamedistribution.com^$removeparam=mp_api_as3_url
+! https:
+||wesleyfinancialgroup.typeform.com^$removeparam=taboola_click_id
+||wesleyfinancialgroup.typeform.com^$removeparam=typeform-source
+||wesleyfinancialgroup.typeform.com^$removeparam=tblci
+! https:
+||m24.ru^$removeparam=from
+! https:
+||litres.ru^$removeparam=lfrom_processed
+! links on the HP
+||hokkaido-np.co.jp^$removeparam=ref
+! https:
+||tv.apple.com^$removeparam=itscg
+||tv.apple.com^$removeparam=itsct
+! https:
+||m.1688.com^$removeparam=src
+||m.1688.com^$removeparam=__removesafearea__
+||m.1688.com^$removeparam=src_cna
+! https:
+||gofundme.com^$removeparam=attribution_id
+! https:
+! Install/uninstall tracking
+||d.ghostery.com^$removeparam
+! https:
+||deepl.com^$removeparam=share
+! https:
+||netflix.com^$removeparam=source
+! https:
+$removeparam=xmt,domain=threads.com|threads.net
+! https:
+||nintendo.com^$removeparam=nt_redirect_referrer
+! https:
+||code-wallets.com^$removeparam=tw_adid
+! https:
+||autodaily.ru^$removeparam=from
+! Yandex.Practicum
+||practicum.yandex.*$removeparam=from
+! shop.asus.com
+||shop.asus.com^$removeparam=campaign_id
+||shop.asus.com^$removeparam=ad_id
+! https:
+||read.amazon.$removeparam=ref
+! bluestacks.com
+||support.bluestacks.com^$removeparam=email
+||support.bluestacks.com^$removeparam=guid
+||support.bluestacks.com^$removeparam=oem
+||support.bluestacks.com^$removeparam=client_ver
+||support.bluestacks.com^$removeparam=install_id
+||support.bluestacks.com^$removeparam=country
+! https:
+||carwow.de^$removeparam=utm_group
+||carwow.de^$removeparam=affiliate_ref
+||carwow.de^$removeparam=impact_ad_id
+||carwow.de^$removeparam=impact_click_id
+||carwow.de^$removeparam=impact_product_sku
+! unity.com
+||assetstore.unity.com^$removeparam=aid
+! airvpn.org
+||airvpn.org^$removeparam=referred_by
+! protonvpn.com, proton.me
+||protonvpn.com^$removeparam=url_id
+||protonvpn.com^$removeparam=plan
+||protonvpn.com^$removeparam=ref
+||go.getproton.me^$removeparam=aff_c
+! https:
+||proton.me^$removeparam=url_id
+$removeparam=phfp,domain=protonvpn.com|proton.me
+! purevpn.com
+||billing.purevpn.com/aff.php$removeparam=aff
+! strongvpn.com
+||strongvpn.com$removeparam=tr_aid
+! trustzonevpn.info
+||trustzonevpn.info/r.php$removeparam=RID
+! https:
+||get.surfshark.net^$removeparam=aff_c
+||get.surfshark.net^$removeparam=aff_id
+||get.surfshark.net^$removeparam=offer_id
+! https:
+||hide.me^$removeparam=friend
+! https:
+||weareholy.com^$removeparam=ref
+! https:
+||eventbrite.ca^$removeparam=aff
+! accounts.adblockplus.org
+||accounts.adblockplus.org^$removeparam=an
+||accounts.adblockplus.org^$removeparam=av
+||accounts.adblockplus.org^$removeparam=ap
+||accounts.adblockplus.org^$removeparam=apv
+||accounts.adblockplus.org^$removeparam=p
+||accounts.adblockplus.org^$removeparam=pv
+||accounts.adblockplus.org^$removeparam=s
+! https:
+||engage.cloud.microsoft/main/*thread$removeparam=trk_user
+||engage.cloud.microsoft/main/*thread$removeparam=trk_thread_id
+||engage.cloud.microsoft/main/*thread$removeparam=trk_outlook_origin
+||engage.cloud.microsoft/main/*thread$removeparam=trk_notif_id
+||engage.cloud.microsoft/main/*thread$removeparam=trk_network
+||engage.cloud.microsoft/main/*thread$removeparam=trk_event
+||engage.cloud.microsoft/main/*thread$removeparam=trk_email_type
+||engage.cloud.microsoft/main/*thread$removeparam=trk_ecs_etag
+||engage.cloud.microsoft/main/*thread$removeparam=allow_app_redirect
+! comic.k-manga.jp
+||comic.k-manga.jp^$removeparam=xuid
+||comic.k-manga.jp^$removeparam=ad
+||comic.k-manga.jp^$removeparam=adtype
+||comic.k-manga.jp^$removeparam=ad_flag
+! https:
+||sharepoint.com^$removeparam=referrerScenario
+||sharepoint.com^$removeparam=referrer
+||sharepoint.com^$removeparam=xsdata
+||sharepoint.com^$removeparam=sdata
+||sharepoint.com^$removeparam=clickparams
+||sharepoint.com^$removeparam=ovuser
+||sharepoint.com^$removeparam=OR
+||sharepoint.com^$removeparam=CT
+||sharepoint.com^$removeparam=e
+||sharepoint.com^$removeparam=CID
+! https:
+||ure.pia.co.jp^$removeparam=c
+! realtor.com
+||realtor.com^$removeparam=rdc_visitor_id
+||realtor.com^$removeparam=cid
+||realtor.com^$removeparam=flow
+! https:
+||meetup.com^$removeparam=eventOrigin
+||meetup.com^$removeparam=recSource
+||meetup.com^$removeparam=recId
+||meetup.com^$removeparam=searchId
+! https:
+||kitbash3d.com^$removeparam=campaign_id
+||kitbash3d.com^$removeparam=ad_id
+! ExpressVPN
+||expressvpn.com^$removeparam=xvcid
+||expressvpn.com^$removeparam=shareid
+! links on www.golfdigest.co.jp
+||golfdigest.co.jp^$removeparam=car
+! https:
+||ho-mobile.it^$removeparam=icmp
+! semrush.com
+||semrush.com^$removeparam=source
+! https:
+||bookshop.org^$removeparam=affiliate
+! https:
+||marketplace.navitime.co.jp^$removeparam=from
+! https:
+||gaming.amazon.com^$removeparam=ref_
+||gaming.amazon.com^$removeparam=twitchReferral
+||gaming.amazon.com^$removeparam=yTwchPos
+||gaming.amazon.com^$removeparam=ingress
+||luna.amazon.*^$removeparam=ingress
+||luna.amazon.*^$removeparam=ref
+||luna.amazon.*^$removeparam=yTwchPos
+! https:
+||allegro.pl^$removeparam=clickId
+! blog.naver.com
+||blog.naver.com^$removeparam=trackingCode
+||blog.naver.com^$removeparam=proxyReferer
+||blog.naver.com^$removeparam=referrerCode
+! https:
+! https:
+||fiverr.com^$removeparam=context_referrer
+||fiverr.com^$removeparam=context_type
+||fiverr.com^$removeparam=filtered_price
+||fiverr.com^$removeparam=funnel
+||fiverr.com^$removeparam=imp_id
+||fiverr.com^$removeparam=pckg_id
+||fiverr.com^$removeparam=pos
+||fiverr.com^$removeparam=ref_ctx_id
+||fiverr.com^$removeparam=source
+! https:
+||muskelmacher-shop.de$removeparam=sv_campaign_id
+||muskelmacher-shop.de$removeparam=sv1
+! redirecting link on mobile from mydealz.de to Metro
+||rd.bizrate.com$removeparam=af_creative_id
+||rd.bizrate.com$removeparam=af_assettype_id
+||rd.bizrate.com$removeparam=rf_code
+||rd.bizrate.com$removeparam=af_placement_id
+||rd.bizrate.com$removeparam=cobrand
+||rd.bizrate.com$removeparam=af_permalink_id
+||rd.bizrate.com$removeparam=af_rid
+||rd.bizrate.com$removeparam=af_id
+||rd.bizrate.com$removeparam=bidType
+||rd.bizrate.com$removeparam=bId
+||rd.bizrate.com$removeparam=tokenId
+||rd.bizrate.com$removeparam=dMid
+||metro.*$removeparam=cnxclid
+! https:
+||ehon.alphapolis.co.jp^$removeparam=from
+! https:
+||luisaviaroma.com/*/p$removeparam=lvrid
+! https:
+||dailymail.co.uk^$removeparam=ns_mchannel
+||dailymail.co.uk^$removeparam=ns_campaign
+! https:
+||vpnpay.io$removeparam=sr
+||vpnpay.io$removeparam=pr
+||vpnpay.io$removeparam=arf
+! https:
+||fanatical.com^$removeparam=cj_pid
+||fanatical.com^$removeparam=cj_aid
+||fanatical.com^$removeparam=aff_track
+||fanatical.com^$removeparam=CJEVENT
+!
+! indeed.com
+! no query param is needed in such url:
+! https:
+||ca.indeed.com/cmp^$removeparam=from
+||ca.indeed.com/cmp^$removeparam=tk
+||ca.indeed.com/cmp^$removeparam=fromjk
+||ca.indeed.com/cmp^$removeparam=attributionid
+! only 'jk' is needed in the url:
+! https:
+||ca.indeed.com/viewjob^$removeparam=tk
+||ca.indeed.com/viewjob^$removeparam=from
+||ca.indeed.com/viewjob^$removeparam=vjs
+||ca.indeed.com/viewjob^$removeparam=cmp
+||ca.indeed.com/viewjob^$removeparam=t
+||ca.indeed.com/viewjob^$removeparam=q
+||ca.indeed.com/viewjob^$removeparam=l
+||ca.indeed.com/viewjob^$removeparam=xpse
+||ca.indeed.com/viewjob^$removeparam=xfps
+||ca.indeed.com/viewjob^$removeparam=xkcb
+||ca.indeed.com/viewjob^$removeparam=hl
+||ca.indeed.com/viewjob^$removeparam=rjptk
+||ca.indeed.com/viewjob^$removeparam=advn
+||ca.indeed.com/viewjob^$removeparam=adid
+||ca.indeed.com/viewjob^$removeparam=ad
+||ca.indeed.com/viewjob^$removeparam=sjdu
+||ca.indeed.com/viewjob^$removeparam=acatk
+||ca.indeed.com/viewjob^$removeparam=pub
+||ca.indeed.com/viewjob^$removeparam=i2af
+||ca.indeed.com/viewjob^$removeparam=camk
+||ca.indeed.com/viewjob^$removeparam=jrtk
+!
+! https:
+||target.com^$removeparam=ref
+||target.com^$removeparam=AFID
+||target.com^$removeparam=fndsrc
+||target.com^$removeparam=DFA
+||target.com^$removeparam=adgroup
+||target.com^$removeparam=LNM
+||target.com^$removeparam=network
+||target.com^$removeparam=device
+||target.com^$removeparam=location
+||target.com^$removeparam=targetid
+||target.com^$removeparam=CPNG
+||target.com^$removeparam=LID
+! comfy.ua
+||comfy.ua^$removeparam=sc_content
+! https:
+||gaming.amazon.com^$removeparam=tag
+! https:
+||app.startpage.com^$removeparam=source
+! https:
+||americanas.com.br^$removeparam=offerId
+||americanas.com.br^$removeparam=nm_origem
+||americanas.com.br^$removeparam=DCSext.recom
+||americanas.com.br^$removeparam=pfm_type
+||americanas.com.br^$removeparam=nm_ranking_rec
+||americanas.com.br^$removeparam=pfm_carac
+||americanas.com.br^$removeparam=pfm_pos
+||americanas.com.br^$removeparam=pfm_page
+||americanas.com.br^$removeparam=pfm_index
+! hepsiburada.com
+! https:
+||hepsiburada.com^$removeparam=ftid
+||hepsiburada.com^$removeparam=wt_inf
+! https:
+||hepsiburada.com^$removeparam=wt_ds
+||hepsiburada.com^$removeparam=url_src
+! https:
+||hepsiburada.com^$removeparam=wt_so
+! https:
+||hepsiburada.com^$removeparam=shortlink
+||hepsiburada.com^$removeparam=wt_af
+||hepsiburada.com^$removeparam=wt_gl
+! https:
+||moebel.de^$removeparam=visitor_id
+||moebel.de^$removeparam=visitor_status
+! https:
+$removeparam=cid,domain=nhk.jp|nhk.or.jp
+! curalate.com
+||edge.curalate.com/v1/media/$xmlhttprequest,removeparam=appId
+||edge.curalate.com/v1/media/$xmlhttprequest,removeparam=fpcuid
+||edge.curalate.com/v1/media/$xmlhttprequest,removeparam=rid
+||edge.curalate.com/v1/img/$image,removeparam=spatialTags
+! https:
+||action.metaffiliation.com$removeparam=argsite
+! https:
+||rentio.jp^$removeparam=click_from
+! https:
+||readyfor.jp^$removeparam=sns_share_token
+! https:
+||newspicks.com^$removeparam=a
+||newspicks.com^$removeparam=adid
+||newspicks.com^$removeparam=ref
+||newspicks.com^$removeparam=block
+! https:
+||wsj.com^$removeparam=mod
+! https:
+||fanatical.com^$removeparam=aff_track
+||fanatical.com^$removeparam=cj_pid
+||fanatical.com^$removeparam=cj_aid
+||fanatical.com^$removeparam=CJEVENT
+! https:
+||tagomago.pl^$removeparam=subid
+||tagomago.pl^$removeparam=subid1
+||tagomago.pl^$removeparam=variant
+||linkbux.com/track/$removeparam=uid
+! https:
+||trip.com^$removeparam=trip_sub1
+||trip.com^$removeparam=allianceid
+! https:
+||dls.igg.com^$removeparam=media_source
+||dls.igg.com^$removeparam=campaign_name
+! https:
+||health.tvbs.com.tw^$removeparam=from
+! https:
+||dvdfab.cn^$removeparam=trackid
+! https:
+||puma.com^$removeparam=sc_src
+||puma.com^$removeparam=sc_lid
+||puma.com^$removeparam=sc_uid
+||puma.com^$removeparam=sc_llid
+||puma.com^$removeparam=sc_eh
+!
+! reddit.com
+! https:
+||reddit.com^$removeparam=target_user
+! https:
+||reddit.com^$removeparam=%243p
+||reddit.com^$removeparam=%24deep_link
+||reddit.com^$removeparam=post_index
+! reddit.com - email tracking
+||click.redditmail.com^$removeparam=ref
+||click.redditmail.com^$removeparam=ref_campaign
+||click.redditmail.com^$removeparam=ref_source
+||reddit.com^$removeparam=post_fullname
+! https:
+||reddit.com^$removeparam=share_id
+! https:
+||reddit.com^$removeparam=correlation_id
+||reddit.com^$removeparam=ref_campaign
+||reddit.com^$removeparam=ref_source
+||reddit.com^$removeparam=ref
+! https:
+!+ PLATFORM(ext_ff)
+||reddit.com^$removeparam=rdt
+!
+! https:
+||boosty.to^$removeparam=_1ld
+||boosty.to^$removeparam=_1lp
+||boosty.to^$removeparam=from
+! https:
+||avansas.com^$removeparam=sc_src
+||avansas.com^$removeparam=sc_llid
+||avansas.com^$removeparam=sc_lid
+||avansas.com^$removeparam=sc_uid
+||avansas.com^$removeparam=sc_customer
+! https:
+||keepstreams.jp/thanks-for-using-$removeparam
+! kickstarter.com
+||kickstarter.com$removeparam=ref
+||kickstarter.com/projects$removeparam=event
+||kickstarter.com/projects$removeparam=term
+||kickstarter.com/projects$removeparam=total_hits
+! https:
+||washingtonpost.com^$removeparam=itid
+! https:
+||tezfiles.com$removeparam=site
+! https:
+||calciomatome.net$removeparam=seesaa_related
+! https:
+||smocca.jp^$removeparam=cb_ref_code
+! https:
+||rtrp.jp^$removeparam=p_s
+! https:
+||lidea.today^$removeparam=from
+! change.org
+||change.org^$removeparam=source_location
+||change.org^$removeparam=user_flow
+! https:
+*$removeparam=from,domain=rbc.ru|rbclifemedia.ru
+! https:
+||fontanka.ru^$removeparam=from
+! LiveIntent
+||p.liadm.com/click?s=$removeparam=i6
+||p.liadm.com/click?s=$removeparam=_lc2_fpi
+||p.liadm.com/click?s=$removeparam=stpe
+||p.liadm.com/click?s=$removeparam=li
+!
+! Microsoft
+||msn.com^$removeparam=pc
+||msn.com^$removeparam=ei
+||microsoft.com^$removeparam=ranEAID
+||microsoft.com^$removeparam=ranSiteID
+||microsoft.com^$removeparam=ocid
+$removeparam=nclid,domain=microsoft.com
+$removeparam=cvid,domain=microsoft.com|msn.com|bing.com,document
+$removeparam=epi,domain=microsoft.com|xbox.com
+! https:
+! $removeparam=FORM,domain=bing.com
+!
+! https:
+$removeparam=sub_rt,domain=comemo.nikkei.com|diehardtales.com|greenplanet.kaneka.co.jp|j-yokatsu2.edu.city.uruma.okinawa.jp|labo.rheos.jp|note-harumi.sbfoods.co.jp|note.basicinc.jp|note.bcnretail.com|note.calbee.jp|note.com|note.gallery.intage.com|note.kogakuin.ac.jp|note.jp|note.minne.com|note.montblanc.design|note.nhkso.or.jp|note.pokkasapporo-fb.jp|note.roxx.co.jp|note.smartnews-ads.com|note.universal-music.co.jp|note.yamap.com|note.zochang.com|refalover-note.mainichi.jp|shanaiho.itandi.co.jp|uragawa-note.jpn.panasonic.com|webtripper.jp
+! https:
+||undressher.app^$removeparam=ref
+! https:
+||xingga.com^$removeparam=showid
+! https:
+||h-taikendan.net^$removeparam=ref
+! https:
+||camp-fire.jp/projects/*/view$removeparam=list
+! privatbank.ua
+||privatbank.ua^$removeparam=utm_addrid
+||privatbank.ua^$removeparam=utm_jeref
+||privatbank.ua^$removeparam=utm_positionUrl
+! https:
+||baseballchannel.jp^$removeparam=ref
+! https:
+||money.smt.docomo.ne.jp^$removeparam=ref
+! https:
+||store.shopping.yahoo.co.jp^$removeparam=sc_i
+! https:
+||kwiky.com^$removeparam=AFNO
+! https:
+||ai-porn.ai^$removeparam=ref
+! https:
+||camsoda.com^$removeparam=id
+! https:
+||aeza.net^$removeparam=ref
+! https:
+||gptgirlfriend.online^$removeparam=ref
+! https:
+||fantasygf.ai^$removeparam=linkId
+! https:
+||land.muah.ai^$removeparam=ref
+! https:
+||getidol.com^$removeparam=ref
+! https:
+||vodafone.com.tr^$removeparam=tracking_cid
+! https:
+||juicy-ai.com^$removeparam=ref
+! https:
+||slushy.com^$removeparam=af
+! https:
+||deepmode.com^$removeparam=fpr
+! https:
+||candy.ai^$removeparam=cid
+! https:
+||darkroomvr.com^$removeparam=nats
+! rozetka.com.ua
+||rozetka.com.ua^$removeparam=afclid
+! https:
+||aliexpress.com^$removeparam=algo_exp_id
+||aliexpress.com^$removeparam=utparam-url
+! https:
+||temu.com^$removeparam=_p_jump_id
+||temu.com^$removeparam=_x_vst_scene
+||temu.com^$removeparam=_p_rfs
+||temu.com^$removeparam=_x_ads_channel
+||temu.com^$removeparam=_x_ads_sub_channel
+||temu.com^$removeparam=_x_campaign
+||temu.com^$removeparam=_x_cid
+||temu.com^$removeparam=g_site
+||temu.com^$removeparam=g_lg
+||temu.com^$removeparam=g_region
+||temu.com^$removeparam=g_ccy
+||temu.com^$removeparam=refer_page_el_sn
+||temu.com^$removeparam=refer_page_sn
+! https:
+||vedomosti.ru^$removeparam=from
+! https:
+||cyber.sports.ru^$removeparam=p_a
+||cyber.sports.ru^$removeparam=p_n
+||cyber.sports.ru^$removeparam=p_c
+! https:
+||walmart.com^$removeparam=from
+! https:
+||audible.$removeparam=ref
+! https:
+||camcam.cc^$removeparam=ref
+! https:
+ref=producthunt^$removeparam=ref
+! igromania.ru
+||igromania.ru^$removeparam=from_button_waterfall_knb
+! https:
+||fikfapcams.com^$removeparam=referrer
+||fikfapcams.com^$removeparam=realDomain
+||fikfapcams.com^$removeparam=affiliateId
+||go.xliirdr.com/?*&targetDomain=$removeparam=p
+||go.xliirdr.com/?*&targetDomain=$removeparam=userId
+||go.xliirdr.com/?*&targetDomain=$removeparam=campaignId
+! https:
+||windscribe.com^$removeparam=pcpid
+||windscribe.com^$removeparam=temp_session
+! https:
+||samsung.com^$removeparam=cid
+! https:
+||nikkansports.com^$removeparam=nsgid
+! https:
+||game.hiroba.dpoint.docomo.ne.jp^$removeparam=mks_referer_event
+! https:
+||news.yahoo.co.jp^$removeparam=source
+||news.yahoo.co.jp^$removeparam=dv
+||news.yahoo.co.jp^$removeparam=mid
+||news.yahoo.co.jp^$removeparam=date
+||news.yahoo.co.jp^$removeparam=ctg
+||news.yahoo.co.jp^$removeparam=bt
+! https:
+||shop.adidas.jp^$removeparam=source_caller
+||shop.adidas.jp^$removeparam=shortlink
+! https:
+||daohang.qq.com^$removeparam=fr
+! https:
+||hoyoverse.com/branding$removeparam
+! https:
+||cloud.baidu.com^$removeparam=from
+||qianfan.cloud.baidu.com^$removeparam=track
+! https:
+||qjweb.jp^$removeparam=from
+! https:
+||sport.sky.it^$removeparam=social
+||sport.sky.it^$removeparam=share_id
+! https:
+||tokopedia.com^$removeparam=src
+||tokopedia.com^$removeparam=extParam
+||tokopedia.com^$removeparam=refined
+! https:
+||darkfans.com^$removeparam=ref
+||darkfans.com^$removeparam=af
+! https:
+||porntube.com^$removeparam=cid
+! https:
+||3movs.com^$removeparam=site_id
+! https:
+||jpsk.jp^$removeparam=click
+! https:
+||savefrom.net^$removeparam=from
+! https:
+$removeparam=from,domain=doujinnomori.com|shinshi-manga.net|echiman.com|dojin-navi.com
+! https:
+||temu.com^$removeparam=_bg_fs
+||temu.com^$removeparam=_x_sessn_id
+||temu.com^$removeparam=refer_page_name
+||temu.com^$removeparam=refer_page_id
+||temu.com^$removeparam=sku_id
+||temu.com^$removeparam=refer_share_channel
+||temu.com^$removeparam=refer_share_id
+||temu.com^$removeparam=_oak_page_source
+||temu.com^$removeparam=_oak_region
+||temu.com^$removeparam=refer_share_suin
+||temu.com^$removeparam=_oak_mp_inf
+||temu.com^$removeparam=top_gallery_url
+||temu.com^$removeparam=spec_gallery_id
+||temu.com^$removeparam=refer_source
+||temu.com^$removeparam=freesia_scene
+||temu.com^$removeparam=_oak_freesia_scene
+||temu.com^$removeparam=_oak_rec_ext_1
+||temu.com^$removeparam=_oak_gallery_order
+||temu.com^$removeparam=_x_channel_scene
+||temu.com^$removeparam=_x_channel_src
+||temu.com^$removeparam=share_img
+||temu.com^$removeparam=from_share
+! https:
+||videoproc.com/*install/$removeparam
+! https:
+||m.otenki.com^$removeparam=af
+! https:
+||carseven.co.jp^$removeparam=from
+! https:
+||blogmura.com^$removeparam=p_cid
+! https:
+||nvidia.com^$removeparam=jso
+! https:
+||nytimes.com^$removeparam=smid
+||nytimes.com^$removeparam=referringSource
+||nytimes.com^$removeparam=sgrp
+||nytimes.com^$removeparam=impression_id
+! https:
+||shimotsuke.co.jp^$removeparam=rankinghour
+||shimotsuke.co.jp^$removeparam=top
+||shimotsuke.co.jp^$removeparam=newsletter
+||shimotsuke.co.jp^$removeparam=relatedarticle
+||shimotsuke.co.jp^$removeparam=ref
+! https:
+||boncharge.com^$removeparam=shpxid
+! https:
+||plarium.com/landings/$removeparam
+! https:
+||lancasterarchery.com^$removeparam=af_lnk
+||lancasterarchery.com^$removeparam=dt_id
+! https:
+||lenta.ru^$removeparam=es
+! https:
+||finance.yahoo.co.jp^$removeparam=cpt_m
+||finance.yahoo.co.jp^$removeparam=cpt_n
+||finance.yahoo.co.jp^$removeparam=cpt_s
+||sbisec.co.jp^$removeparam=waad
+! https:
+||ejje.weblio.jp^$removeparam=erl
+! https:
+||qjweb.jp^$removeparam=from
+! https:
+||map.yahoo.co.jp^$removeparam=from_srv
+! https:
+||quora.com^$removeparam=share
+! https:
+||tcgplayer.com^$removeparam=source
+! https:
+||kyujin.navitime.co.jp^$removeparam=from
+! https:
+||avira.com^$removeparam=track
+! https:
+||foodpanda.$removeparam=src
+! https:
+||plusgaming.yandex.ru^$removeparam=clckid
+! https:
+||iotransfer.itopvpn.com^$removeparam=ref
+! https:
+||tradingview.com^$removeparam=exchange
+||tradingview.com^$removeparam=aff_id
+||tradingview.com^$removeparam=aff_sub
+! https:
+||tmz.com^$removeparam=adid
+! https:
+||substack.com$removeparam=triedRedirect
+! https:
+||m.weathercn.com^$removeparam=partner
+||m.weathercn.com^$removeparam=id
+||m.weathercn.com^$removeparam=p_source
+||m.weathercn.com^$removeparam=p_type
+! https:
+?ref=awesometechstack.com$removeparam=ref
+! https:
+||freebies.indiegala.com^$removeparam=ref
+! https:
+||qzone.qq.com^$removeparam=loginfrom
+||urlshare.cn^$removeparam=apptype
+||urlshare.cn^$removeparam=loginuin
+||urlshare.cn^$removeparam=plateform
+||urlshare.cn^$removeparam=src_uin
+||urlshare.cn^$removeparam=srctype
+! https:
+||crunchyroll.com^$removeparam=referrer
+! https:
+||zapiska.substack.com^$removeparam=publication_id
+||zapiska.substack.com^$removeparam=post_id
+||zapiska.substack.com^$removeparam=r
+! https:
+||youtu.be^$removeparam=si
+! https:
+||eplus.by^$removeparam=de_utm_source
+! https:
+||travelist.pl^$removeparam=MWID
+||perfo.salestube.pl^$removeparam=aff_click_id
+||clickserve.dartsearch.net^$removeparam=lid
+||clickserve.dartsearch.net^$removeparam=ds_s_kwgid
+! https:
+||rakumachi.jp^$removeparam=device_type
+||rakumachi.jp^$removeparam=uiaid
+! https:
+||carousell.*$removeparam=t-id
+||carousell.*$removeparam=t-referrer_browse_type
+||carousell.*$removeparam=t-referrer_category_id
+||carousell.*$removeparam=t-referrer_page_type
+||carousell.*$removeparam=t-referrer_request_id
+||carousell.*$removeparam=t-referrer_search_query
+||carousell.*$removeparam=t-referrer_search_query_source
+||carousell.*$removeparam=t-referrer_sort_by
+||carousell.*$removeparam=t-referrer_source
+||carousell.*$removeparam=t-source
+||carousell.*$removeparam=t-tap_index
+! Uber
+||ubereats.com^$removeparam=campaign
+||ubereats.com^$removeparam=sub-campaign
+||ubereats.com^$removeparam=marketing-visitor-id
+||uber.com^$removeparam=uclick_id
+! https:
+||controld.com^$removeparam=cid
+! https:
+?ref=upstract.com^$removeparam=ref
+! Wargaming tracking
+||track.wargaming-aff.com/click?pid=$removeparam=ref_id
+||trck.wargaming.net^$removeparam
+||join.worldoftanks.eu^$removeparam
+! https:
+||streamable.com^$removeparam=src_internal
+||streamable.com^$removeparam=src_player
+! https:
+||smartrecruiters.com^$removeparam=km_adgroup
+||smartrecruiters.com^$removeparam=km_matchtype
+||smartrecruiters.com^$removeparam=km_partner
+! https:
+||nuuvem.com^$removeparam=ranMID
+||nuuvem.com^$removeparam=ranEAID
+||nuuvem.com^$removeparam=ranSiteID
+! https:
+||gog.com^$removeparam=pp
+! https:
+||chitai-gorod.ru^$removeparam=partnerId
+! https:
+||mall.kinarino.jp^$removeparam=karea
+||mall.kinarino.jp^$removeparam=klay
+! https:
+||ilsecoloxix.it^$removeparam=ref
+! https:
+||gelocal.it^$removeparam=ref
+||gelocal.it^$removeparam=cnt
+! https:
+||allabout.co.jp^$removeparam=FM
+! https:
+||mora.jp^$removeparam=fmid
+! https:
+! https:
+||dvdfab.org^$removeparam=soft
+||dvdfab.org^$removeparam=ad
+||dvdfab.org^$removeparam=ver
+||dvdfab.org^$removeparam=clientusertype
+||dvdfab.org^$removeparam=client_e
+||dvdfab.org^$removeparam=c_ex
+||dvdfab.org^$removeparam=c_id
+! go2jump.org / tr.rdrtr.com
+||rdrtr.com^$removeparam=source
+||rdrtr.com^$removeparam=aff_sub
+||rdrtr.com^$removeparam=aff_sub2
+||rdrtr.com^$removeparam=aff_sub3
+||rdrtr.com^$removeparam=aff_sub4
+||rdrtr.com^$removeparam=aff_sub5
+! https:
+||indeed.com^$removeparam=from
+! https:
+||plus.yandex.*^$removeparam=source
+||plus.yandex.*^$removeparam=state
+||plus.yandex.*^$removeparam=origin
+! boredpanda.com
+||boredpanda.com^$removeparam=cexp_id
+||boredpanda.com^$removeparam=cexp_var
+! https:
+||ziprecruiter.com^$removeparam=zrclid
+! huffingtonpost.it
+||huffingtonpost.it^$removeparam=cnt
+||huffingtonpost.it^$removeparam=ref
+! https:
+||oh-my-teeth.com^$removeparam=clid
+! https:
+||olegmakarenko.ru^$removeparam=from
+! https:
+||dragonquest.jp^$removeparam=_bdld
+! https:
+||raretech.site^$removeparam=from
+! dtf.ru tracking
+||booster.osnova.io^$removeparam=place
+||booster.osnova.io^$removeparam=boosterUid
+! https:
+||smotreshka.tv^$removeparam=from
+! https:
+||announcements.bybit.com^$removeparam=pid
+||announcements.bybit.com^$removeparam=sa_utm_ci
+||announcements.bybit.com^$removeparam=sa_utm_channel
+||announcements.bybit.com^$removeparam=sa_utm_tcn
+! https:
+||game-i.daa.jp/?cmd=ad_mode$removeparam=cmd
+! https:
+||slickdeals.net^$removeparam=sdtrk
+||slickdeals.net^$removeparam=attr_track
+||slickdeals.net^$removeparam=trd
+||slickdeals.net^$removeparam=sdtid
+||slickdeals.net^$removeparam=prop
+||slickdeals.net^$removeparam=pv
+||slickdeals.net^$removeparam=au
+||slickdeals.net^$removeparam=peid
+||slickdeals.net^$removeparam=adobeRef
+||slickdeals.net^$removeparam=attrsrc
+||slickdeals.net^$removeparam=src
+||slickdeals.net/*&sdpid=$removeparam=sdpid
+||slickdeals.net/*&sdfid=$removeparam=sdfid
+||slickdeals.net/*&sdtrk=$removeparam=sdtrk
+! https:
+||beacon-recommend.tower.jp^$removeparam=tracking_id
+! https:
+||kinopoisk.ru^$removeparam=from_block
+! https:
+||bizhint.jp^$removeparam=trcd
+! https:
+||teknosa.com^$removeparam=adj_adgroup
+||teknosa.com^$removeparam=adp_cid
+||teknosa.com^$removeparam=adp_oid
+||teknosa.com^$removeparam=shopId
+! https:
+||stacksocial.com/*/*&partnerid=$removeparam=partnerid
+! https:
+||gillian-guide.github.io^$removeparam=ref
+! https:
+||pcmag.com^$removeparam=taid
+!
+! VK Group
+! VKontakte
+$removeparam=trackcode,domain=vk.com|vk.ru
+$removeparam=recom,domain=vk.com|vk.ru
+! vkplay.ru
+||vkplay.ru$removeparam=_1ld
+||vkplay.ru$removeparam=_1lp
+!
+! https:
+||incogni.com^$removeparam=transaction_id
+||incogni.com^$removeparam=offer_id
+||incogni.com^$removeparam=affiliate_id
+||incogni.com^$removeparam=aff_sub
+||incogni.com^$removeparam=source
+! https:
+! Do not remove "shareKey" parameter - https:
+||coolapk.com^$removeparam=shareUid
+||coolapk.com^$removeparam=shareFrom
+! sportbank.ua spam
+||sportbank.ua^$removeparam=ref
+! https:
+keepstreams.com^$removeparam=c_app
+keepstreams.com^$removeparam=client_m
+keepstreams.com^$removeparam=c_sys
+keepstreams.com^$removeparam=c_dt
+keepstreams.com^$removeparam=c_wh
+keepstreams.com^$removeparam=c_ad
+keepstreams.com^$removeparam=c_ver
+keepstreams.com^$removeparam=soft
+keepstreams.com^$removeparam=ad
+keepstreams.com^$removeparam=downloadmode
+! https:
+||newspicks.com^$removeparam=ref
+||newspicks.com^$removeparam=ref_t
+! https:
+||streamfab.jp^$removeparam=soft
+||streamfab.jp^$removeparam=ad
+||streamfab.jp^$removeparam=c_try
+||streamfab.jp^$removeparam=c_bm
+||streamfab.jp^$removeparam=c_app
+||streamfab.jp^$removeparam=c_sys
+||streamfab.jp^$removeparam=c_ver
+||streamfab.jp^$removeparam=c_ut
+||streamfab.jp^$removeparam=c_app_from
+||streamfab.jp^$removeparam=c_dt
+||streamfab.jp^$removeparam=c_wh
+! https:
+! https:
+||ozon.ru^$removeparam=origin_referer
+||ozon.ru^$removeparam=__rr
+||ozon.ru^$removeparam=abt_att
+||ozon.ru^$removeparam=asb
+||ozon.ru^$removeparam=advert
+||ozon.ru^$removeparam=asb2
+||ozon.ru^$removeparam=avtc
+||ozon.ru^$removeparam=avte
+||ozon.ru^$removeparam=avts
+||ozon.ru^$removeparam=from_url
+||ozon.ru^$removeparam=from_sku
+||ozon.ru^$removeparam=keywords
+! https:
+||stvkr.com/v*/click-$removeparam=sa
+||stvkr.com/v*/click-$removeparam=rfr
+||stvkr.com/v*/click-$removeparam=widht
+||stvkr.com/v*/click-$removeparam=height
+||stvkr.com/v*/click-$removeparam=timezone
+||dashboard.wedare.pl^$removeparam=smc1
+||dashboard.wedare.pl^$removeparam=smc2
+! https:
+||cmswire.com^$removeparam=source
+! damu.net homepage - Visit https:
+||v.daum.net^$removeparam=x_imp
+||v.daum.net^$removeparam=x_hk
+! https:
+!$removeparam=af_id,domain=dmm.co.jp|dmm.com
+$removeparam=dmmref,domain=dmm.co.jp|dmm.com
+$removeparam=i3_ref,domain=dmm.co.jp|dmm.com
+$removeparam=i3_ord,domain=dmm.co.jp|dmm.com
+! https:
+||mootoon.co.kr$removeparam=in_id
+! https:
+||researchgate.net^$removeparam=_tp
+! https:
+||peacocktv.com^$removeparam=orig_ref
+||peacocktv.com^$removeparam=method
+! https:
+! _csrc_, _cus_ and _cut_ are reproducible when you download their Windows app at Japanese langauge webpage.
+||streamfab.*^$removeparam=_csrc_
+||streamfab.*^$removeparam=_cus_
+||streamfab.*^$removeparam=_cut_
+||streamfab.*^$removeparam=c_ad
+||streamfab.*^$removeparam=client_t
+||streamfab.*^$removeparam=client_m
+! https:
+||slack.com/downloads/$removeparam=t
+! Naver Shopping - click an item at its search result webpage.
+$removeparam=frm,domain=msearch.shopping.naver.com|search.shopping.naver.com
+$removeparam=NaPm,domain=msearch.shopping.naver.com|search.shopping.naver.com
+! https:
+*$removeparam=t-src,domain=tutanota.com|tuta.com
+! donga.com - click an article at its main homepage. https:
+||donga.com^$removeparam=ref
+! https:
+||t.adcell.com/*?$removeparam=subId
+||track.webgains.com/click.html?$removeparam=clickref
+$removeparam=bid,domain=fafit24.de
+$removeparam=adcref,domain=fafit24.de
+$removeparam=cvrid,domain=decathlon.pl
+$removeparam=cvrpid,domain=decathlon.pl
+$removeparam=cvrsid,domain=decathlon.pl
+$removeparam=tag3,domain=ibood.com|decathlon.pl
+$removeparam=wgu,domain=ibood.com|decathlon.pl
+$removeparam=wgexpiry,domain=ibood.com|decathlon.pl
+! https:
+||rapidgator.net^$removeparam=referer
+! https:
+||donation.yahoo.co.jp^$removeparam=cpt_n
+||donation.yahoo.co.jp^$removeparam=cpt_s
+||donation.yahoo.co.jp^$removeparam=cpt_m
+||donation.yahoo.co.jp^$removeparam=cpt_c
+! tinkoff.ru
+||tinkoff.ru^$removeparam=dsp_click_id
+! https:
+||yahoo.co.jp^$removeparam=ikCo
+||yahoo.co.jp^$removeparam=sc_e
+! https:
+||happymail.co.jp^$removeparam=Log
+! Youtube
+$removeparam=embeds_referring_euri,domain=youtubekids.com|youtube-nocookie.com|youtube.com
+$removeparam=embeds_referring_origin,domain=youtubekids.com|youtube-nocookie.com|youtube.com
+$removeparam=source_ve_path,domain=youtubekids.com|youtube-nocookie.com|youtube.com
+||youtube.com^$removeparam=pp
+! https:
+||gotanynudes.com^$removeparam=ref
+! https:
+||nitter.net^$removeparam=referer
+! https:
+||gitlab.$removeparam=referrer_action
+! https:
+||gitlab.$removeparam=glm_source
+||gitlab.$removeparam=glm_content
+! streamfab.jp
+||streamfab.jp^$removeparam=trackid
+! etsy.com
+||etsy.com^$removeparam=click_key
+||etsy.com^$removeparam=ref
+||etsy.com^$removeparam=click_sum
+! https:
+||myprotein.jp^$removeparam=affil
+! https:
+||email.nationalgeographic.com^$removeparam=__F__
+||email.nationalgeographic.com^$removeparam=__dU__
+! https:
+||pixiv.net^$removeparam=from
+! https:
+||querie.me^$removeparam=timestamp
+! https:
+mailchimp.com$removeparam=amp%3Butm_medium
+mailchimp.com$removeparam=amp%3Butm_campaign
+mailchimp.com$removeparam=amp%3Baid
+mailchimp.com$removeparam=amp%3Bafl
+!
+! wetransfer.com
+! https:
+||wetransfer.com^$removeparam=t_network
+||wetransfer.com^$removeparam=t_s
+||wetransfer.com^$removeparam=t_lsid
+||wetransfer.com^$removeparam=t_rid
+||wetransfer.com^$removeparam=t_exp
+||wetransfer.com^$removeparam=t_ts
+! https:
+||wetransfer.com^$removeparam=trk
+||wetransfer.com^$removeparam=amp;utm_campaign
+||wetransfer.com^$removeparam=amp;utm_medium
+||wetransfer.com^$removeparam=amp;utm_source
+! https:
+||wetransfer.zendesk.com^$removeparam=amp%3Btrk
+||wetransfer.zendesk.com^$removeparam=amp%3Btoken
+||wetransfer.zendesk.com^$removeparam=amp%3Butm_campaign
+||wetransfer.zendesk.com^$removeparam=amp%3Butm_source
+||wetransfer.zendesk.com^$removeparam=amp%3Butm_medium
+!
+! https:
+||douyin.com^$removeparam=extra_params
+||douyin.com^$removeparam=previous_page
+! https:
+||bandcamp.com^$removeparam=from
+! https:
+||dvdfab.org^$removeparam=trackid
+||dvdfab.org^$removeparam=c_ad
+||dvdfab.org^$removeparam=c_app
+||dvdfab.org^$removeparam=c_app_from
+||dvdfab.org^$removeparam=c_bm
+||dvdfab.org^$removeparam=c_dt
+||dvdfab.org^$removeparam=c_sys
+||dvdfab.org^$removeparam=c_u
+||dvdfab.org^$removeparam=c_ut
+||dvdfab.org^$removeparam=c_ver
+||dvdfab.org^$removeparam=c_wh
+||dvdfab.org^$removeparam=client_m
+||dvdfab.org^$removeparam=client_t
+! wikipedia.org
+! https:
+||wikipedia.org^$removeparam=wprov
+! sportschosun.com - Click an internal article in their website.
+||sportschosun.com^$removeparam=f_url
+! https:
+||clickfunnels.com^$removeparam=aff_sub
+! https:
+||promote.betcity.ru^$removeparam=widget_id
+||promote.betcity.ru^$removeparam=refcode
+||promote.betcity.ru^$removeparam=icm
+! https:
+||linkedin.com/feed/update$removeparam=origin
+! yna.co.kr - Click an internal article in their website.
+||yna.co.kr^$removeparam=site
+! https:
+||easyfundraising.org.uk^$removeparam=efr_campaign
+||easyfundraising.org.uk^$removeparam=efr_medium
+||easyfundraising.org.uk^$removeparam=efr_source
+! https:
+||blogtrottr.com^$removeparam=lctg
+! https:
+||wowma.jp^$removeparam=wadd
+! https:
+||mypage.otsuka-shokai.co.jp^$removeparam=oiid
+! https:
+||hatalike.jp^$removeparam=track
+! https:
+||ieagent.jp^$removeparam=ct
+||ieagent.jp^$removeparam=cv
+||ieagent.jp^$removeparam=p
+||ieagent.jp^$removeparam=ref
+! doda.jp trackparams
+||doda.jp^$removeparam=fm
+||doda.jp^$removeparam=from
+||doda.jp^$removeparam=recommendID
+||doda.jp^$removeparam=usrclk
+||doda.jp^$removeparam=usrclk_searchListCassette
+! https:
+||hatarako.net^$removeparam=prelink
+! https:
+||myoji-kamon.net^$removeparam=from
+! https:
+||zozo.jp^$removeparam=t
+! https:
+||am730.com.hk^$removeparam=ncid
+! https:
+||roboform.com^$removeparam=frm
+||roboform.com^$removeparam=affid
+||roboform.com^$removeparam=a
+||roboform.com^$removeparam=c
+||roboform.com^$removeparam=s1
+! https:
+! https:
+||shareasale-analytics.com^$removeparam=ref
+||shareasale-analytics.com^$removeparam=afftrack
+||shareasale-analytics.com^$removeparam=lplid
+||shareasale-analytics.com^$removeparam=shrsl_analytics_sscid
+||shareasale-analytics.com^$removeparam=shrsl_analytics_sstid
+! https:
+||sportsbull.jp^$removeparam=vkTop
+! https:
+||hbol.jp^$removeparam=cx_clicks_art_mdl
+! https:
+||singtao.ca^$removeparam=referid
+! https:
+||orbis.co.jp^$removeparam=adid
+! https:
+||mora.jp^$removeparam=fmid
+! https:
+||record.pt^$removeparam=ref
+! https:
+||wsj.com^$removeparam=reflink
+! https:
+||github.com^$removeparam=reference_location
+! https:
+||column.sp.baseball.findfriends.jp^$removeparam=from
+! https:
+||fon.bet^$removeparam=affijet-click
+||fon.bet^$removeparam=partner_id
+||fon.bet^$removeparam=sub_1
+! https:
+||you.163.com^$removeparam=from
+! https:
+||jetbrains.com^$removeparam=from
+! https:
+||middleware.p7s1.io/galileo/v1/tracking?device=*&country=*&path=$removeparam=/^(device|country|path)=/,xmlhttprequest
+! https:
+||theathletic.com^$removeparam=login_source
+||theathletic.com^$removeparam=ref_page
+! https:
+||productcatalog.channeladvisor.com^$document,removeparam=InteractionSessionId
+||productcatalog.channeladvisor.com^$document,removeparam=UniqueUserId
+||productcatalog.channeladvisor.com^$document,removeparam=DeviceTypeId
+||productcatalog.channeladvisor.com^$document,removeparam=PCAT_vNextTracking_LocalWidget
+||productcatalog.channeladvisor.com^$document,removeparam=PCAT_vNextTracking_OnlinePlrss
+||productcatalog.channeladvisor.com^$document,removeparam=PCAT_vNextTracking_OnlineItrack
+||productcatalog.channeladvisor.com^$document,removeparam=PCAT_vNextTracking_RetailerScoring
+||productcatalog.channeladvisor.com^$document,removeparam=profileId
+||go.skimresources.com^$document,removeparam=id
+||go.skimresources.com^$document,removeparam=xcust
+||chemistwarehouse.com.au^$removeparam=ranMID
+||chemistwarehouse.com.au^$removeparam=ranEAID
+||chemistwarehouse.com.au^$removeparam=ranSiteID
+! https:
+||playstation.com$removeparam=emcid
+! epicgames.com
+||epicgames.com^$removeparam=epic_gameId
+||epicgames.com^$removeparam=epic_affiliate
+! https:
+||gamersgate.com^$removeparam=caff
+||humblebundle.com^$removeparam=partner
+! https:
+||minfin.com.ua^$removeparam=mpr
+||minfin.com.ua^$removeparam=mpl
+||minfin.com.ua^$removeparam=mcr
+! https:
+||cnbc.com^$removeparam=__source
+||cnbc.com^$removeparam=par
+! Naver newsstand - https:
+$removeparam=plink,domain=sbs.co.kr
+$removeparam=cooper,domain=sbs.co.kr
+$removeparam=nv,domain=khan.co.kr
+$removeparam=naver,domain=dt.co.kr
+$removeparam=pg,domain=fnnews.com
+$removeparam=sc,domain=dailian.co.kr
+$removeparam=OutLink,domain=sedaily.com
+$removeparam=newsstand,domain=sportalkorea.com
+! https:
+||theathletic.com^$removeparam=source
+! https:
+||deepl.com^$removeparam=cta
+! https:
+||espn.com^$removeparam=appsrc
+! https:
+||sciencedirect.com/*?via%3D$removeparam=/^via%3D/
+! https:
+||similarweb.com^$removeparam=from_ext
+! https:
+||bild.de^$removeparam=t_ref
+! https:
+||simplelogin.io^$removeparam=slref
+! https:
+||pravda.com.ua^$removeparam=pageviewCount
+! https:
+||belta.co.jp^$removeparam=cid
+$removeparam=urrad,domain=u-s-s.jp|belta.co.jp
+! https:
+||7net.omni7.jp^$removeparam=intpr
+||7net.omni7.jp^$removeparam=intpr2
+! https:
+||dietpartner.jp^$removeparam=from
+! https:
+||mailtrack.io/trace/link/$removeparam=userId
+! https:
+||trendyol.com^$removeparam=adjust_t
+! https:
+||kitizawa.com^$removeparam=ref
+! https:
+||smart-flash.jp^$removeparam=rf
+! https:
+||chunichi.co.jp^$removeparam=rct
+||chunichi.co.jp^$removeparam=ref
+! https:
+$removeparam=ref_type,domain=backit.me|epn.bz
+! https:
+||homedepot.com^$removeparam=fromReminder
+! https:
+||boards.greenhouse.io^$removeparam=ref
+! https:
+||headlines.peta.org^$removeparam=en_txn7
+! https:
+||tokyo-calendar.jp^$removeparam=ref
+! https:
+||mofos.com$removeparam=ats
+! https:
+||quizangel.com^$removeparam=utm_site_source
+||quizangel.com^$removeparam=utm_site_medium
+||quizangel.com^$removeparam=utm_site_campaign
+! https:
+||media.joj.sk/outstream/embed$removeparam=ad_params
+||media.joj.sk/outstream/embed$removeparam=gemius_identifier
+||media.joj.sk/outstream/embed$removeparam=tracking_params
+||media.joj.sk/outstream/embed$removeparam=ga_account
+! https:
+||klook.com^$removeparam=aid
+||klook.com^$removeparam=clickId
+||klook.com^$removeparam=spm
+! Skimlinks
+! https:
+||go.redirectingat.com^$removeparam=xcust
+||go.redirectingat.com^$removeparam=sref
+||go.redirectingat.com^$removeparam=id
+! https:
+||kmkk78.com^$removeparam=agentId
+! https:
+$removeparam=ref,domain=shein.co.uk|shein.com
+$removeparam=from_country,domain=shein.co.uk|shein.com
+$removeparam=mallCode,domain=shein.co.uk|shein.com
+$removeparam=src_module,domain=shein.co.uk|shein.com
+$removeparam=src_tab_page_id,domain=shein.co.uk|shein.com
+$removeparam=phone_code,domain=shein.co.uk|shein.com
+$removeparam=ici,domain=shein.co.uk|shein.com
+! https:
+||nesine.com^$removeparam=adj_adgroup
+||nesine.com^$removeparam=adjust_t
+||nesine.com^$removeparam=glid
+||nesine.com^$removeparam=rlid
+||nesine.com^$removeparam=trid
+||nesine.com^$removeparam=xid_param_2
+! https:
+||nordot.app^$removeparam=ncmp
+! https:
+||news-postseven.com^$removeparam=_from
+! https:
+||redtube.com^$removeparam=from
+! https:
+||tokyo-np.co.jp^$removeparam=rct
+! https:
+||yahoo.com^$removeparam=ncid
+! https:
+||nishispo.nishinippon.co.jp^$removeparam=rct
+! https:
+||zapiska.substack.com^$removeparam=isFreemail
+! https:
+||sincode.ai^$removeparam=via
+! https:
+||mintj.com^$removeparam=adv
+! https:
+||kakaku.com^$removeparam=lid
+! https:
+||stacksocial.com^$removeparam=rid
+||stacksocial.com^$removeparam=aid
+! https:
+||vodopad.ru^$removeparam=sphrase_id
+! https:
+/landing.$removeparam=ref
+/landing.$removeparam=clickid
+/landing.$removeparam=pixelid
+! https:
+||forbes.com^$removeparam=sh
+! https:
+||gorodche.ru^$removeparam=utm
+! https:
+||bloomberg.com^$removeparam=in_source
+||bloomberg.com^$removeparam=leadSource
+||bloomberg.com^$removeparam=sref
+||bloomberg.com^$removeparam=srnd
+! https:
+||marketwatch.com^$removeparam=mod
+! https:
+||podbean.com/player/$xmlhttprequest,removeparam=referrer
+||podbean.com/pb/$media,removeparam=pbss
+! https:
+||d.odsyms15.com/click$removeparam=article_id
+||d.odsyms15.com/click$removeparam=ext.referrer
+||d.odsyms15.com/click$removeparam=uid.p
+! https:
+||olx.$removeparam=ad_reason_recommended_items
+! https:
+||faphouse.com^$removeparam=statsUID
+||faphouse.com^$removeparam=xhUserId
+||faphouse.com^$removeparam=UserId
+||faphouse.com^$removeparam=login
+||faphouse.com^$removeparam=signature
+||faphouse.com^$removeparam=valid
+||faphouse.com^$removeparam=veb
+||faphouse.com^$removeparam=vep
+! https:
+||xhamster.com^$removeparam=from
+! https:
+||lite.qwant.com/redirect/$removeparam=cachekey
+||lite.qwant.com/redirect/$removeparam=serp_position
+||lite.qwant.com/redirect/$removeparam=position
+||lite.qwant.com/redirect/$removeparam=t
+||lite.qwant.com/redirect/$removeparam=tgp
+||lite.qwant.com/redirect/$removeparam=locale
+||lite.qwant.com/redirect/$removeparam=query
+||lite.qwant.com/redirect/$removeparam=ad
+||lite.qwant.com/redirect/$removeparam=uri
+! https:
+||realestate.yahoo.co.jp^$removeparam=sc_out
+! https:
+||glami.cz^$removeparam=/ga[ct]id/
+! spotify.com
+! https:
+||open.spotify.com^$removeparam=pi
+! https:
+||open.spotify.com^$removeparam=referral
+||open.spotify.com^$removeparam=si
+! SK Telecom (skt.sh domain used as their own URL shortening service )
+||skt.sh/common/share/bridge?$removeparam=referer
+! https:
+||login.sooplive.co.kr^$removeparam=szFrom
+! moffme.com?source=gl&medium=moffme&campaign=article_2699
+||moffme.com^$removeparam=source
+||moffme.com^$removeparam=medium
+||moffme.com^$removeparam=campaign
+! Uzou recommendation trackparam
+||click.speee-ad.jp^$removeparam=os
+||click.speee-ad.jp^$removeparam=ref
+||click.speee-ad.jp^$removeparam=sess_id
+||click.speee-ad.jp^$removeparam=slot_index
+||click.speee-ad.jp^$removeparam=v
+!! tiktok
+! https:
+||tiktok.com$removeparam=referer_video_id
+! https:
+||tiktok.com^$removeparam=embed_source
+||tiktok.com^$removeparam=referer_url
+||tiktok.com^$removeparam=refer
+! https:
+||tiktok.com^$removeparam=sec_uid
+||tiktok.com^$removeparam=web_id
+||tiktok.com^$removeparam=share_app_id
+||tiktok.com^$removeparam=share_author_id
+||tiktok.com^$removeparam=tt_from
+! https:
+! https:
+||tiktok.com^$removeparam=_d
+||tiktok.com^$removeparam=share_link_id
+||tiktok.com^$removeparam=u_code
+||tiktok.com^$removeparam=_r
+! email/copy link function
+||tiktok.com/@*/video/*$removeparam=is_from_webapp
+||tiktok.com/@*/video/*$removeparam=sender_device
+! Create effects link on main page and then clicking on a link
+||tiktok.com$removeparam=enter_method
+! login button on effect page - breaks comments after logging in
+! ||tiktok.com$removeparam=enter_from
+! searching a phrase and clicking on it
+||tiktok.com/search$removeparam=t
+||tiktok.com/@*/video/*$removeparam=q
+! ads.tiktok.com signup page
+||ads.tiktok.com/*/signup$removeparam=_source_
+||ads.tiktok.com/*/signup$removeparam=cacheSDK
+||ads.tiktok.com/*/signup$removeparam=region
+! tiktok end
+! https:
+||voicy.jp^$removeparam=share.ref
+! https:
+||chaturbate.com^$removeparam=/tour|campaign/,~third-party
+! https:
+||awaliwa.com^$removeparam=lg
+||awaliwa.com^$removeparam=s
+||awaliwa.com^$removeparam=c
+||awaliwa.com^$removeparam=z
+||awaliwa.com^$removeparam=old
+||awaliwa.com^$removeparam=bd_vid
+||awaliwa.com^$removeparam=acr
+! https:
+||megaknihy.cz^$removeparam=/param[0-9]{1}|utm_si|matchtype|device|creative|keyword|placement|adposition|campaignid|adgroupid|feeditemid|targetid|loc_|searchtype|network|search_pos|cat_pos|block|position/
+! https:
+||brazzers.com^$removeparam=ats
+! https:
+||whale.naver.com^$removeparam=wpid
+! https:
+||wemakeprice.com^$removeparam=refer
+! https:
+||joshi-spa.jp^$removeparam=cx_clicks_art_mdl
+||joshi-spa.jp^$removeparam=cx_clicks_sldbox
+! https:
+||n11.com^$removeparam=/pfx|adj/
+! https:
+||home.kingsoft.jp^$removeparam=from
+! AT Internet
+||bbc.$removeparam=facebook_page
+||bbc.$removeparam=at_bbc_team
+! https:
+||event.hoken-mammoth.jp^$removeparam=s_mf
+! internal links ex. https:
+||cinematoday.jp^$removeparam=g_clk
+! affiliate links on h7-game.com (nsfw)
+$removeparam=afid,domain=123chat.jp|kanochat.jp|live.fc2.com
+! https:
+||basketballking.jp^$removeparam=cx_art
+! cnet.com
+||cnet.com^$removeparam=medium
+||cnet.com^$removeparam=source
+||japan.cnet.com^$removeparam=tag
+! https:
+||asahi.com^$removeparam=iref
+||asahi.com^$removeparam=ref
+||asahi.com^$removeparam=cid
+! https:
+||cnn.co.jp^$removeparam=ref
+! https:
+||jiji.com^$removeparam=m
+! https:
+||fashion-press.net^$removeparam=media
+! https:
+||douban.com^$removeparam=_i
+! https:
+||immobilienscout24.de^$removeparam=referrer
+||immobilienscout24.de^$removeparam=navigationServiceUrl
+||immobilienscout24.de^$removeparam=searchId
+||immobilienscout24.de^$removeparam=searchGeoPath
+||immobilienscout24.de^$removeparam=source
+!+ NOT_PLATFORM(ext_ublock)
+||immobilienscout24.de^$removeparam=enteredFrom
+! https:
+||tumblr.com^$removeparam=source
+! https:
+||tumblr.app.link^$removeparam=_p
+! https:
+||dhits.docomo.ne.jp^$removeparam=affiliate
+! https:
+||promo.korabli.su^$removeparam
+! Adjust
+||app.adjust.com^$removeparam=nend_click_id
+||app.adjust.com^$removeparam=install_callback
+||app.adjust.com^$removeparam=ip_address
+||app.adjust.com^$removeparam=user_agent
+||app.adjust.com^$removeparam=campaign
+||app.adjust.com^$removeparam=creative
+||app.adjust.com^$removeparam=/^event_callback_/
+! https:
+||elgato.com^$removeparam=platform
+||elgato.com^$removeparam=link_id
+||elgato.com^$removeparam=token
+||elgato.com^$removeparam=contact_id
+||elgato.com^$removeparam=attribution_window
+! Emails from vercel.com
+! https:
+||vercel.com^$removeparam=redirected
+||vercel.com^$removeparam=sfmc_channel
+||vercel.com^$removeparam=sfmc_activity_name
+||vercel.com^$removeparam=sfmc_activity_id
+||vercel.com^$removeparam=sfmc_journey_name
+||vercel.com^$removeparam=sfmc_journey_id
+||vercel.com^$removeparam=sfmc_asset_id
+||vercel.com^$removeparam=sfmc_activityid
+! https:
+! https:
+||getir.com^$removeparam=is_retargeting
+||getir.com^$removeparam=shortlink
+||getir.com^$removeparam=deep_link_value
+||getir.com^$removeparam=c
+||getir.com^$removeparam=source_caller
+||getir.com^$removeparam=pid
+||getir.com^$removeparam=af_reengagement_window
+! https:
+||imdb.com^$removeparam=pf_rd_m
+||imdb.com^$removeparam=pf_rd_p
+||imdb.com^$removeparam=pf_rd_r
+||imdb.com^$removeparam=pf_rd_s
+||imdb.com^$removeparam=pf_rd_t
+||imdb.com^$removeparam=pf_rd_i
+! https:
+||wiley.com^$removeparam=/elq/
+! https:
+||thumbs4.redgifs.com/*&for=$removeparam=for
+||thumbs4.redgifs.com/*&for=$image,removeparam=for
+! politica.com.ua - links click counter
+||politica.com.ua^$removeparam=isUser
+! https:
+! https:
+! https:
+! https:
+$removeparam=sp_atk,domain=shopee.ph|shopee.co.th|shopee.co.id
+$removeparam=xptdk,domain=shopee.ph|shopee.co.th|shopee.co.id
+$removeparam=publish_id,domain=shopee.ph|shopee.co.th|shopee.co.id
+$removeparam=promotionId,domain=shopee.ph|shopee.co.th|shopee.co.id
+$removeparam=stm_medium,domain=shopee.ph|shopee.co.th|shopee.co.id
+$removeparam=stm_source,domain=shopee.ph|shopee.co.th|shopee.co.id
+! https:
+||adguard.$removeparam=clid
+$removeparam=clid,domain=adguard-vpn.*|adguardvpn-help.*
+! Cognativex
+||campaigns-serving.cognativex.com^$xmlhttprequest,removeparam=history_postids
+||campaigns-serving.cognativex.com^$xmlhttprequest,removeparam=device_code
+||campaigns-serving.cognativex.com^$xmlhttprequest,removeparam=exc_ads
+||campaigns-serving.cognativex.com^$xmlhttprequest,removeparam=history_adids
+! https:
+||dzen.ru/api/*/launcher/stats/$image,xmlhttprequest,removeparam
+||dzen.ru^$removeparam=from
+||dzen.ru^$removeparam=cl4url
+||dzen.ru^$removeparam=tst
+||dzen.ru^$document,removeparam=clid
+||dzen.ru^$removeparam=yredirect
+||dzen.ru^$removeparam=stid
+||dzen.ru^$removeparam=persistent_id
+! https:
+||teknosa.com^$removeparam=aid
+||teknosa.com^$removeparam=campid
+||teknosa.com^$removeparam=cid
+||teknosa.com^$removeparam=crid
+||teknosa.com^$removeparam=plid
+||teknosa.com^$removeparam=sid
+||teknosa.com^$removeparam=source
+! https:
+||bunte.de^$removeparam=umt_source
+! https:
+||store.udiscovermusic.com^$removeparam=/utm_/
+! https:
+||hktvmall.com/yuicombo?$script,removeparam=/_ui\/shared\/common\/js\/analytics\/with-intersection-track.js/
+! https:
+||go.xlivrdr.com^$removeparam
+! https:
+||1password.university^$removeparam=utm_ref
+! https:
+||blog.twitch.tv^$removeparam=web_only
+! https:
+||michaelkors.global^$removeparam=ecid
+! https:
+||doctolib.de^$removeparam=utm_website
+||doctolib.de^$removeparam=utm_page-url
+||doctolib.de^$removeparam=utm_content-group
+||doctolib.de^$removeparam=utm_button
+! https:
+||nationalgeographic.com^$removeparam=utm_rd
+! https:
+||ficbook.net^$removeparam=/premiumVisit|utm_compaign/
+! stripchat.com
+||go.tscprts.com^$removeparam
+||stripchat.com^$removeparam=abTest
+||stripchat.com^$removeparam=abTestVariant
+||stripchat.com^$removeparam=action
+||stripchat.com^$removeparam=trafficType
+||stripchat.com^$removeparam=userId
+||stripchat.com^$removeparam=landing
+||stripchat.com^$removeparam=modelId
+||stripchat.com^$removeparam=affiliateId
+||stripchat.com^$removeparam=referrer
+||stripchat.com^$removeparam=campaignId
+||stripchat.com^$removeparam=sourceId
+||stripchat.com^$removeparam=realDomain
+! https:
+||fmworld.net^$removeparam=from
+! https:
+||kaspersky.$removeparam=icid
+! Facebook
+||facebook.com/marketplace/$removeparam=tracking
+||facebook.com^$removeparam=rdid
+||facebook.com^$removeparam=extid
+||facebook.com^$removeparam=mibextid
+! https:
+||zenaps.com^$removeparam=cookie
+||zenaps.com^$removeparam=bId
+||awin1.com^$removeparam=linkid
+||awin1.com^$removeparam=clickref
+||awin1.com^$removeparam=awinaffid
+! https:
+||music.apple.com^$removeparam=itsct
+||music.apple.com^$removeparam=itscg
+! https:
+||netflix.com^$removeparam=trackId
+||netflix.com^$removeparam=tctx
+! georiot.com
+||target.georiot.com/Proxy.ashx$removeparam=tsid
+! https:
+||kamigame.jp^$removeparam=kamigame_source
+! https:
+||shop.hololivepro.com^$removeparam=pr_rec_id
+||shop.hololivepro.com^$removeparam=pr_rec_pid
+||shop.hololivepro.com^$removeparam=pr_ref_pid
+||shop.hololivepro.com^$removeparam=pr_seq
+||shop.hololivepro.com^$removeparam=pr_prod_strat
+! https:
+||wq.jd.com^$removeparam=pvid
+! https:
+||coolblue.nl^$removeparam=clickref
+||coolblue.nl^$removeparam=ref
+||coolblue.nl^$removeparam=PHGref
+||coolblue.nl^$removeparam=cmt
+! https:
+||banggood.com^$removeparam=utmid
+! dell.com
+||dell.com^$removeparam=gacd
+! https:
+||revolut.com^$removeparam=%7Ecampaign_id
+||revolut.com^$removeparam=%7Eclick_id
+||revolut.com^$removeparam=ext
+||revolut.com^$removeparam=%7Esecondary_publisher
+||revolut.com^$removeparam=%243p
+! https:
+||wise.com^$removeparam=partnerizecampaignID
+||wise.com^$removeparam=adref
+||wise.com^$removeparam=clickref
+||wise.com^$removeparam=partnerID
+! https:
+||join.worldoftanks.$removeparam=xid
+||join.worldoftanks.$removeparam=sid
+||join.worldoftanks.$removeparam=enctid
+||join.worldoftanks.$removeparam=pub_id
+! https:
+||weather.com$removeparam=par
+! https:
+||mirtesen.ru^$removeparam=nvuuid
+||mirtesen.ru^$removeparam=bvuuid
+||mirtesen.ru^$removeparam=ad
+! https:
+$removeparam=oref,domain=defenseone.com|govexec.com|nextgov.com|route-fifty.com
+! https:
+||rac.co.uk^$removeparam=cid
+! https:
+||heraldcorp.com/view.php$removeparam=pos
+! toomics.com
+||toomics.com^$removeparam=pid
+||toomics.com^$removeparam=subpid
+||toomics.com^$removeparam=channel
+||toomics.com^$removeparam=gen
+! https:
+||zavvi.com^$removeparam=affil
+||zavvi.com^$removeparam=sv_campaign_id
+! MacKeeper
+||mkaff.com/landings/$removeparam
+! Lazada
+$removeparam=mkttid,domain=lazada.com.ph|lazada.vn
+$removeparam=laz_trackid,domain=lazada.com.ph|lazada.vn
+$removeparam=trafficFrom,domain=lazada.com.ph|lazada.vn
+$removeparam=spm,domain=lazada.com.ph|lazada.vn
+$removeparam=scm,domain=lazada.com.ph|lazada.vn
+$removeparam=acm,domain=lazada.com.ph|lazada.vn
+$removeparam=clickTrackInfo,domain=lazada.com.ph|lazada.vn
+! trib.al - redirecting service used by spiegel.de (when posting on facebook.com)
+||trib.al$removeparam=fbclid
+||trib.al$removeparam=h
+||trib.al$removeparam=__tn__
+||trib.al$removeparam=c[0]
+!
+! Mail.Ru
+||trk.mail.ru^$subdocument,removeparam=mt_click_id
+$removeparam=/utm_partner_id|frommail/,domain=mail.ru|sportmail.ru
+||pulse.mail.ru^$removeparam=/^(udid|DeviceID|ver|appbuild|vendor|model|device_name|device_type|instanceid|device_year|connection_class|appsflyerid)/
+||checklink.mail.ru^$removeparam=android_id
+||checklink.mail.ru^$removeparam=advertising_id
+||checklink.mail.ru^$removeparam=advertising_tracking_enabled
+||checklink.mail.ru^$removeparam=autogen_token
+||checklink.mail.ru^$removeparam=email
+!
+! https:
+! Removing "primer", "subset_id" parameters causes that some fonts are displaying incorrectly - https:
+! another one https:
+||use.typekit.net^$font,removeparam=~/^(primer|subset_id)=/,domain=~fonts.adobe.com
+||p.typekit.net^$stylesheet,removeparam
+! https:
+||qcplay.co.jp/?shortlink=*&c=$removeparam=c
+||qcplay.co.jp^$removeparam=pid
+||qcplay.co.jp^$removeparam=shortlink
+! https:
+||giphy.com^$removeparam=cid
+||giphy.com^$removeparam=ct
+||giphy.com^$removeparam=rid
+! https:
+! https:
+! https:
+! https:
+$removeparam=ref,domain=jin115.com|bipblog.com|animember.net|sbbit.jp|blog.livedoor.jp|blog.jp|2chblog.jp|coincards.com|startmail.com
+! https:
+||cinematoday.jp^$removeparam=g_clk
+! https:
+||xxvidsx.com^$removeparam=ad
+||xxvidsx.com^$removeparam=site
+! https:
+||rapidgator.net^$removeparam=Referer
+! https:
+||atlassian.net^$removeparam=atlOrigin
+! https:
+||so-net.ne.jp^$removeparam=SmRcid
+! https:
+! https:
+||ameblo.jp^$removeparam=adxarea
+||ameblo.jp^$removeparam=frm_id
+! popin.cc widgets
+||popin.cc/popin_discovery/$script,removeparam=info
+||popin.cc/popin_discovery/$script,removeparam=uid
+! cancanlah.com
+||cancanlah.com^$removeparam=click_id
+! https:
+||api.cxense.com/public/widget/data?json=$script,removeparam=sid
+||api.cxense.com/public/widget/data?json=$script,removeparam=experienceId
+||api.cxense.com/public/widget/data?json=$script,removeparam=trackingId
+||api.cxense.com/public/widget/data?json=$script,removeparam=prnd
+||api.cxense.com/public/widget/data?json=$script,removeparam=getId
+||api.cxense.com/public/widget/data?json=$script,removeparam=usi
+||api.cxense.com/public/widget/data?json=$script,removeparam=widgetId
+! https:
+||player.theplatform.com^$removeparam=playeranalytics
+||player.theplatform.com^$removeparam=targetedlink
+! https:
+||zalando.$removeparam=wmc
+||zalando.$removeparam=/^cd\d+/
+||zalando.$removeparam=wt_cd
+||zalando.$removeparam=tm_hem
+! https:
+||iguru.gr^$removeparam=_unique_id
+||iguru.gr^$removeparam=feed_id
+! https:
+||quora.com/qemail/tc?$removeparam=al_imp
+||quora.com/qemail/tc?$removeparam=uid
+! https:
+||humblebundle.com^$removeparam=hmb_medium
+||humblebundle.com^$removeparam=hmb_campaign
+||humblebundle.com^$removeparam=hmb_source
+||humblebundle.com^$removeparam=mcID
+||humblebundle.com^$removeparam=linkID
+! https:
+||netkeiba.com^$removeparam=rf
+! Firefox extensions intall/update tracking
+||services.addons.mozilla.org^$removeparam=telemetry-client-id
+||versioncheck.addons.mozilla.org^$xmlhttprequest,removeparam=appID
+! Firefox download installer tracking
+! https:
+||download.mozilla.org^$removeparam=attribution_sig
+||download.mozilla.org^$removeparam=attribution_code
+! https:
+||nextgov.com^$removeparam=oref
+||defenseone.com^$removeparam=oref
+! https:
+||wizcase.com/?$removeparam=pageview_id
+||wizcase.com/?$removeparam=clickout_id
+||wizcase.com/?$removeparam=vid
+||microsoft.msafflnk.net^$removeparam=sharedid
+||microsoft.msafflnk.net^$removeparam=/^subid/
+||ojrq.net/p/$removeparam=tpsync
+||ojrq.net/p/$removeparam=cid
+||click.linksynergy.com/fs-bin/click?id=$removeparam=u1
+||click.linksynergy.com/fs-bin/click?id=$removeparam=u2
+! https:
+||go.mysku.ru^$removeparam=~r
+! apple.com
+||apple.com^$removeparam=afid
+||apple.com^$removeparam=cid
+||apple.com^$removeparam=ct
+||apple.com^$removeparam=pt
+! https:
+$removeparam=ActionID,domain=otto.de|ottoversand.at
+$removeparam=AffiliateID,domain=otto.de|ottoversand.at
+$removeparam=campid,domain=otto.de|ottoversand.at
+! https:
+||search.naver.com/p/crd/rd$removeparam=i
+||search.naver.com/p/crd/rd$removeparam=px,document,image
+||search.naver.com/p/crd/rd$removeparam=py,document,image
+||search.naver.com/p/crd/rd$removeparam=sx,document,image
+||search.naver.com/p/crd/rd$removeparam=sy,document,image
+||search.naver.com/p/crd/rd$removeparam=p,document,image
+||search.naver.com/p/crd/rd$removeparam=s,document,image
+||search.naver.com/p/crd/rd$removeparam=time,document,image
+! https:
+||buzzfeednews.com^$removeparam=ref
+! https:
+||goodreads.com^$removeparam=ref
+! https:
+||coconala.com^$removeparam=ref
+||coconala.com^$removeparam=ref_kind
+||coconala.com^$removeparam=ref_no
+! https:
+$domain=atlanticcouncil.org|digikey.com,removeparam=/^mkt_tok/
+! https:
+||xkcd.com^$removeparam=trk
+! https:
+||video.laxd.com^$removeparam=ref
+! https:
+! https:
+||approach.yahoo.co.jp^$removeparam=code
+! Taobao, Tmall
+||taobao.com^$removeparam=scm
+||taobao.com^$removeparam=pvid
+||taobao.com^$removeparam=utparam
+||tmall.com^$removeparam=ali_trackid
+||tmall.com^$removeparam=bxsign
+$removeparam=union_lens,domain=tmall.com|taobao.com
+||taobao.com^$removeparam=traceId
+||taobao.com^$removeparam=activityId
+||taobao.com^$removeparam=xId
+||taobao.com^$removeparam=ptl
+||taobao.com^$removeparam=app_pvid
+! Aliexpress
+||aliexpress.$removeparam=algo_pvid
+||aliexpress.$removeparam=curPageLogUid
+||aliexpress.$removeparam=pdp_npi
+||aliexpress.$removeparam=aff_trace_key
+||aliexpress.$removeparam=aff_platform
+||aliexpress.$removeparam=aff_short_key
+||aliexpress.$removeparam=spm
+||aliexpress.$removeparam=scm
+||aliexpress.$removeparam=scm_id
+||aliexpress.$removeparam=scm-url
+||aliexpress.$removeparam=utparam
+||aliexpress.$removeparam=aff_fcid
+||aliexpress.$removeparam=terminal_id
+||aliexpress.$removeparam=aff_trace_key
+||aliexpress.$removeparam=aff_fsk
+||aliexpress.$removeparam=pvid
+||aliexpress.$removeparam=dp
+||aliexpress.$removeparam=sk
+! https:
+||agoda.com^$removeparam=tag
+! https:
+||editor.flixier.com^$removeparam=/fx_(source|medium|campaign)/
+! https:
+||github.com/signup$removeparam=source
+||github.com/signup$removeparam=/^ref_/
+! https:
+||tradingview.com^$removeparam=source
+! https:
+||api.cxense.com^$removeparam=/^cx_/
+||api.cxense.com^$removeparam=/^pickup_list_click/
+! Rakuten sites self-promo links
+$removeparam=l-id,domain=nikki.ne.jp|rakuten.co.jp|rebates.jp
+$removeparam=scid,domain=rakuten.co.jp|rakuten-wallet.co.jp
+||rakuten.co.jp^$removeparam=sc2id
+! https:
+||azby.fmworld.net/cgi-bin/common/rd.cgi?$removeparam=affitest
+! https:
+||azby.fmworld.net^$removeparam=mc_pc
+! https:
+||toku.yahoo.co.jp^$removeparam=fr
+! https:
+! https:
+! https:
+! https:
+||nikkei.com^$removeparam=i_cid
+||nikkei.com^$removeparam=n_cid
+||nikkeibp.co.jp^$removeparam=i_cid
+! https:
+||cyberlink.com^$removeparam=affid
+! https:
+||zestradar.com^$removeparam=adclid
+! https:
+||hit.gemius.pl/hitredir$removeparam=id
+||hit.gemius.pl/hitredir$removeparam=extra
+! adorama.com
+||adorama.com^$removeparam=obem
+||adorama.com^$removeparam=bc_pid
+! https:
+||adjust.com^$removeparam=adgroup
+! https:
+||reddit.app.link^$removeparam=adblock
+||reddit.app.link^$removeparam=compact_view
+||reddit.app.link^$removeparam=dnt
+||reddit.app.link^$removeparam=geoip_country
+||reddit.app.link^$removeparam=referrer_domain
+||reddit.app.link^$removeparam=referrer_url
+! https:
+||dmkt-sp.jp^$removeparam=impressionId
+! www.dmm.co.jp trackparam
+||dmm.co.jp^$removeparam=dmmref
+||dmm.co.jp^$removeparam=i3_ord
+||dmm.co.jp^$removeparam=i3_ref
+! https:
+||imdb.com^$removeparam=ref_
+! https:
+||livedoor.biz^$removeparam=ref
+! adjust.com tracking
+||adj.st^$removeparam=identifier
+||adj.st^$removeparam=web_src
+||adj.st^$removeparam=adj_deep_link
+||adj.st^$removeparam=CollectionId
+||adj.st^$removeparam=adjust_deeplink
+||adj.st^$removeparam=pt
+||adj.st^$removeparam=pd
+||adj.st^$removeparam=adj_adgroup
+||adj.st^$removeparam=adj_adnomia_click_id
+||adj.st^$removeparam=pfx
+||adj.st^$removeparam=adj_deeplink
+||adj.st^$removeparam=adj_install_callback
+||adj.st^$removeparam=adj_event_callback_dn2j7g_5mdnim
+! Alexa extension tracking
+||data.alexa.com/data/$xmlhttprequest,removeparam=/cdt|ref/
+! https:
+||comodo.com^$removeparam=key5sk1
+! https:
+||comodo.com^$removeparam=track
+||comodo.com^$removeparam=af
+! https:
+||link.coupang.com^$removeparam=lptag
+! https:
+||wuzhuiso.com^$removeparam=src
+! https:
+||nordvpn.com^$removeparam=data1
+! https:
+||upgrad.com^$removeparam=UTM_MEDIUM
+! https:
+||adweek.com^$removeparam=traffic_source
+! AdGuard
+$removeparam=aid,domain=adguard-vpn.*|adguard-dns.io|adguard.com|adguard.info|adgardvpn-help.*
+! https:
+||kitbag.com^$removeparam=_ref
+||kitbag.com^$removeparam=ab
+! vstat extension tracking
+||web.vstat.info^$removeparam=guid
+||web.vstat.info^$removeparam=user_agent
+! https:
+||start.pm.by^$removeparam=adtag
+! https:
+||redhotpawn.com^$removeparam=cbqsid
+! https:
+||trendyol.com^$removeparam=tyutm_source
+||trendyol.com^$removeparam=tyutm_medium
+||trendyol.com^$removeparam=tyutm_campaign
+! https:
+||cc.loginfra.com/cc$removeparam=a
+||cc.loginfra.com/cc$removeparam=bw
+||cc.loginfra.com/cc$removeparam=px
+||cc.loginfra.com/cc$removeparam=py
+||cc.loginfra.com/cc$removeparam=sx
+||cc.loginfra.com/cc$removeparam=sy
+||cc.loginfra.com/cc$removeparam=nsc
+! https:
+||mein.onlinekonto.de^$removeparam=ref
+! https:
+||dengekionline.com^$removeparam=osusume_banner
+! https:
+! for more info - https:
+$removeparam=spm,domain=aliyun.com|sohu.com
+||aliyun.com^$removeparam=scm
+$removeparam=dt_dapp,domain=douban.com|163.com
+||douban.com^$removeparam=dt_platform
+! Google Play source tracking
+||play.google.com^$removeparam=pcampaignid
+! http:
+||cyber-ad01.cc^$removeparam=ip
+! https:
+||d-markets.net^$removeparam=ref
+! https:
+! Coupang.com - An electronic commerce service of S. Korea.
+||coupang.com/*/products/$removeparam=isshortened
+||coupang.com/*/products/$removeparam=src
+||coupang.com/*/products/$removeparam=spec
+||coupang.com/*/products/$removeparam=addtag
+||coupang.com/*/products/$removeparam=ctag
+||coupang.com/*/products/$removeparam=lptag
+||coupang.com/*/products/$removeparam=itime
+||coupang.com/*/products/$removeparam=pageType
+||coupang.com/*/products/$removeparam=pageValue
+||coupang.com/*/products/$removeparam=redirect
+||coupang.com/*/products/$removeparam=mcid
+||coupang.com/*/products/$removeparam=sharesource
+||coupang.com/*/products/$removeparam=style
+||coupang.com/*/products/$removeparam=settlement
+||coupang.com/*/products/$removeparam=adType
+||coupang.com/*/products/$removeparam=sourceType
+||coupang.com/*/products/$removeparam=wTrackId
+||coupang.com/*/products/$removeparam=filterKey
+||coupang.com/*/products/$removeparam=TrackId
+||coupang.com/*/products/$removeparam=wEntrySource
+||coupang.com/*/products/$removeparam=uriScheme
+||coupang.com/*/products/$removeparam=q
+||coupang.com^$removeparam=searchId
+||coupang.com^$removeparam=wRef
+||coupang.com^$removeparam=traceid
+||coupang.com^$removeparam=wTime
+||coupang.com^$removeparam=wPcid
+! https:
+||weidian.com^$removeparam=/distributorid|wfr|ifr|share_relation/
+! https:
+||jasonsavard.com^$removeparam=/cUrl|ref/
+! https:
+! https:
+$removeparam=a_aid,domain=expressvpn.com|vpnarea.com|wook.pt|affiliate.privatevpn.com
+! https:
+||hog.*^$removeparam=ad
+! https:
+! lcs.naver.com - It is used on Naver Corp's platform
+||lcs.naver.com/m?u=$removeparam=os
+||lcs.naver.com/m?u=$removeparam=ln
+||lcs.naver.com/m?u=$removeparam=sr
+||lcs.naver.com/m?u=$removeparam=bw
+||lcs.naver.com/m?u=$removeparam=bh
+||lcs.naver.com/m?u=$removeparam=ls
+||lcs.naver.com/m?u=$removeparam=navigationStart
+||lcs.naver.com/m?u=$removeparam=requestStart
+||lcs.naver.com/m?u=$removeparam=responseStart
+||lcs.naver.com/m?u=$removeparam=responseEnd
+||lcs.naver.com/m?u=$removeparam=domLoading
+||lcs.naver.com/m?u=$removeparam=domInteractive
+||lcs.naver.com/m?u=$removeparam=domContentLoadedEventStart
+||lcs.naver.com/m?u=$removeparam=domContentLoadedEventEnd
+||lcs.naver.com/m?u=$removeparam=domComplete
+||lcs.naver.com/m?u=$removeparam=loadEventStart
+||lcs.naver.com/m?u=$removeparam=loadEventEnd
+||lcs.naver.com/m?u=$removeparam=pid
+||lcs.naver.com/m?u=$removeparam=ts
+! https:
+||edx.org^$removeparam=source
+! https:
+||infoq.com^$removeparam=/topicPageSponsorship|^itm_/
+! https:
+||adshares.net^$removeparam=cid
+! https:
+||adobe.com/download/$removeparam=trackingid
+! https:
+||creativecloud.adobe.com^$removeparam=trackingid
+! https:
+||get.adobe.com^$removeparam=browser_type
+||get.adobe.com^$removeparam=browser_dist
+! https:
+||get.adobe.com^$removeparam=type
+||get.adobe.com^$removeparam=workflow
+||get.adobe.com^$removeparam=promoid
+||get.adobe.com^$removeparam=TRILIBIS_EMULATOR_UA
+! https:
+||ups.xplosion.de/ctx?event_id=$removeparam
+! https:
+||app.5-delivery.ru^$removeparam=c
+||app.5-delivery.ru^$removeparam=pid
+! https:
+||voyeur-house.tv^$removeparam=clickid
+! https:
+||cht.com.tw^$removeparam=Source
+||cht.com.tw^$removeparam=Identifier
+! aufast.co - affiliate(ads) links tracking
+||aufast.co^$removeparam=/^utm_/
+||aufast.co^$removeparam=clickid
+! iqbroker.com - affiliate(ads) links tracking
+||iqbroker.com^$removeparam=afftrack
+||iqbroker.com^$removeparam=clickid
+||iqbroker.com^$removeparam=aff_model
+! https:
+! https:
+! ads_params - it contains information on a which website video iframe is embedded
+||dailymotion.com/embed/video/*?ads_params=*&origin=$removeparam=ads_params
+||dailymotion.com/embed/video/*?ads_params=*&origin=$removeparam=origin
+! https:
+||wired.co.uk^$removeparam=mbid
+||wired.com^$removeparam=mbid
+! https:
+||wikihow.com^$removeparam=?utm_source
+! kohls.com - counter
+||kohls.com^$removeparam=CID
+! instagram.com - share tracking
+||instagram.com^$removeparam=ig_rid
+||instagram.com^$removeparam=igsh
+$removeparam=igshid,domain=instagram.com|threads.com|threads.net
+! https:
+||mediamarkt.com.tr^$removeparam=rbtc
+! https:
+||t.myvisualiq.net^$removeparam=~red
+! https:
+||uspoloassn.com^$removeparam=ref
+||arcelik.com.tr^$removeparam=ref
+! https:
+||express.de^$removeparam=cb
+||ksta.de^$removeparam=cb
+!
+! LinkedIn
+! Survey and self-promos
+||linkedin.com^$removeparam=courseClaim
+||linkedin.com^$removeparam=lipi
+||linkedin.com^$removeparam=trk
+! Premium upsell survey tracking
+||linkedin.com/premium/$removeparam=isSS
+||linkedin.com/premium/$removeparam=referenceId
+||linkedin.com/premium/$removeparam=upsellOrderOrigin
+||linkedin.com/premium/$removeparam=destRedirectURL
+! https:
+||linkedin.com^$removeparam=original_referer
+||linkedin.com^$removeparam=refId
+||linkedin.com^$removeparam=trackingId
+! https:
+||linkedin.com/authwall?$removeparam=trkInfo
+||linkedin.com/authwall?$removeparam=originalReferer
+! https:
+||linkedin.com^$removeparam=/^trk/
+!
+! https:
+||digikey.com^$removeparam=/^utm_cid/
+!
+! NicoNico (nicovideo.jp)
+||nicovideo.jp^$removeparam=via
+||www.nicovideo.jp^$removeparam=at
+||nicovideo.jp^$removeparam=state
+||nicovideo.jp^$removeparam=transition_id
+||nicovideo.jp^$removeparam=transition_type
+||nicovideo.jp^$removeparam=rf
+||nicovideo.jp^$removeparam=rp
+||nicovideo.jp^$removeparam=ra
+||nicovideo.jp^$removeparam=rd
+||nicovideo.jp^$removeparam=transit_from
+||live.nicovideo.jp^$removeparam=ch_anime_ref
+||seiga.nicovideo.jp^$removeparam=track
+||manga.nicovideo.jp^$removeparam=track
+||sp.nicovideo.jp^$removeparam=ss_id
+||sp.nicovideo.jp^$removeparam=ss_pos
+||sp.nicovideo.jp^$removeparam=cp_in
+||sp.nicovideo.jp^$removeparam=cnt_transit
+||sp.nicovideo.jp^$removeparam=viewing_source
+||nicovideo.jp^$removeparam=news_ref
+||nicovideo.jp^$removeparam=cmnhd_ref
+||nicovideo.jp^$removeparam=ref
+||nicoft.io^$removeparam=cmnhd_ref
+||nicoebook.jp^$removeparam=track
+! Keep subdomain
+$removeparam=from,domain=anime.nicovideo.jp|dic.nicovideo.jp
+!
+! Naver (naver.com) - tracking parameter
+! https:
+||search.naver.com/search.naver$removeparam=tqi
+||cc.naver.com/cc?a$removeparam=bw
+||cc.naver.com/cc?a$removeparam=px
+||cc.naver.com/cc?a$removeparam=py
+||cc.naver.com/cc?a$removeparam=sx
+||cc.naver.com/cc?a$removeparam=sy
+! Yandex
+$removeparam=search_source,domain=ya.ru|yandex.*
+$removeparam=search_domain,domain=ya.ru|yandex.*
+||yandex.*/search/$removeparam=banerid
+||yandex.*/search/$removeparam=suggest_reqid
+||yandex.*/search/$removeparam=did
+||yandex.*/promo/$removeparam=utm-term
+||yandex.*/news/$removeparam=from
+||yandex.*/news/$removeparam=persistent_id
+||yandex.*/sport/$removeparam=persistent_id
+||yandex.*/news/$removeparam=msid
+||yandex.*/sport/$removeparam=msid
+||yandex.*/news/$removeparam=mlid
+||yandex.*/sport/$removeparam=mlid
+||yandex.*/news/$removeparam=stid
+||yandex.*/sport/$removeparam=stid
+||yandex.*/images/$removeparam=source-serpid
+! Yandex.Market
+||market.yandex.$removeparam=offerid
+||market.yandex.$removeparam=show-uid
+||market.yandex.$removeparam=uniqueId
+||market.yandex.$removeparam=vid
+||market.yandex.$removeparam=mclid
+||market.yandex.$removeparam=clid
+!+ NOT_PLATFORM(android)
+||market.yandex.$removeparam=uniqueId
+! https:
+||www.yandex.$removeparam=clid
+:
+:
+! Yandex.Browser
+||browser.yandex.ru^$removeparam=from
+! Yandex.Docs
+||docs.yandex.$removeparam=uid
+! Yandex.Disk
+! Do not remove `sk` parameter - https:
+! Yandex.Pixel
+||amc.yandex.ru^$removeparam=cmn_id
+||amc.yandex.ru^$removeparam=ad_type=banner
+||amc.yandex.ru^$removeparam=crv_id
+!
+! Baidu search - statictics
+||www.baidu.com^$removeparam=rsv_pq
+||www.baidu.com^$removeparam=rsv_t
+! https:
+! Probably a bug
+!#if (!adguard_app_windows && !adguard_app_mac && !adguard_app_android)
+||www.baidu.com/link?url=$removeparam=eqid
+!#endif
+! bitrec.com recommendations widget
+||cod.bitrec.com/topocentras-services/js/recs?$removeparam=visitorId
+||cod.bitrec.com/topocentras-services/js/recs?$removeparam=externalVisitorId
+||cod.bitrec.com/topocentras-services/js/recs?$removeparam=r
+! https:
+||play.google.*^$removeparam=referrer
+! Google Search
+! ||www.google.com/url?$removeparam=ved
+! Breaks codepage in Google Search https:
+! ||google.*/search$removeparam=ie
+||google.*/search$removeparam=gs_l
+||google.*/search$removeparam=gs_lp
+||google.*/search$removeparam=sca_esv
+||google.*/search$removeparam=sclient
+||google.*/search$removeparam=ved
+||google.*/search$removeparam=oq
+||google.*/search$removeparam=gs_l
+||google.*/search$removeparam=oe
+||google.*/websearch$removeparam=visit_id
+||google.*/search$removeparam=biw
+||google.*/search$removeparam=bih
+||google.*/search$removeparam=sa
+||google.*/search$removeparam=source
+||google.*/search$removeparam=aqs
+||google.*/search$removeparam=sourceid
+||google.*/search$removeparam=ei
+||google.*/search$removeparam=gs_lcp
+||google.*/search$removeparam=gs_lcrp
+||google.*/search$removeparam=uds
+||google.*/search$removeparam=fbs
+||google.*/search$removeparam=iflsig
+||google.*/search$removeparam=sstk
+||google.*/webhp$removeparam=sca_esv
+||google.*/webhp$removeparam=ved
+||google.*/maps$removeparam=sca_esv
+||google.*/maps$removeparam=source
+||google.*/maps$removeparam=g_ep
+! https:
+||google.$removeparam=subid
+!
+! eBay tracking parameters
+||www.ebay.$removeparam=epid
+||www.ebay.$removeparam=itmmeta
+||www.ebay.$removeparam=hash
+||www.ebay.$removeparam=itmprp
+||www.ebay.$removeparam=ssspo
+||www.ebay.$removeparam=sssrc
+||www.ebay.$removeparam=ssuid
+||www.ebay.$removeparam=mkevt
+||www.ebay.$removeparam=mkcid
+||www.ebay.$removeparam=_trkparms
+||www.ebay.$removeparam=amdata
+||www.ebay.$removeparam=mkrid
+||www.ebay.$removeparam=campid
+||ebay.*/itm$removeparam=customid
+||ebay.*/itm$removeparam=toolid
+||ebay.*/itm$removeparam=_skw
+||ebay.*/str$removeparam=_trksid
+! https:
+! ||ebay.*/itm$removeparam=var
+! https:
+! ||www.ebay.$removeparam=_trksid
+!
+! Amazon tracking IDs found on several subpages
+! Disabled rules:
+! https:
+! ||amazon.*$removeparam=psc
+! https:
+! ||amazon.*$removeparam=ref
+! https:
+! ||amazon.*$removeparam=ref_
+! ||amazon.*$removeparam=ie
+! https:
+! ||amazon.*/message-us$removeparam=origRef
+! https:
+! Breaks navigation and removes chosen seller id on the item's page
+! ||amazon.*$removeparam=smid
+! Adjusted rules:
+! https:
+! ||amazon.$removeparam=c
+!
+! ||amazon.*$removeparam=sr - breaks automatic jump to review details
+! ||amazon.*$removeparam=s - breaks URLs which includes it to sort
+! https:
+$removeparam=asc_campaign,domain=aboutamazon.com|amazon.*|amzn.to
+$removeparam=asc_refurl,domain=aboutamazon.com|amazon.*|amzn.to
+$removeparam=asc_source,domain=aboutamazon.com|amazon.*|amzn.to
+!
+||amazon.*$removeparam=ascsubtag
+||amazon.*$removeparam=isDramIntegrated
+||amazon.*$removeparam=shoppingPortalEnabled
+||amazon.*/*dp/$removeparam=dib
+||amazon.*/*dp/$removeparam=dib_tag
+||amazon.*/*dp/$removeparam=keywords
+||amazon.*$removeparam=tag
+||amazon.*$removeparam=adgrpid
+||amazon.*$removeparam=AssociateTag
+||amazon.*/gp/buyagain$removeparam=ats
+||amazon.*/dp/$removeparam=c
+||amazon.*$removeparam=camp
+||amazon.*$removeparam=creative
+||amazon.*$removeparam=creativeASIN
+||amazon.*$removeparam=dchild
+||amazon.*$removeparam=field-lbr_brands_browse-bin
+||amazon.*$removeparam=hvadid
+||amazon.*$removeparam=hvbmt
+||amazon.*$removeparam=hvdev
+||amazon.*$removeparam=hvlocphy
+||amazon.*$removeparam=hvnetw
+||amazon.*$removeparam=hvqmt
+||amazon.*$removeparam=hvrand
+||amazon.*$removeparam=hvtargid
+||amazon.*$removeparam=hydadcr
+||amazon.*$removeparam=initialIssue
+||amazon.*$removeparam=linkCode
+||amazon.*$removeparam=linkId
+||amazon.*$removeparam=pd_rd_i
+||amazon.*$removeparam=pd_rd_r
+||amazon.*$removeparam=pd_rd_w
+||amazon.*$removeparam=pd_rd_wg
+||amazon.*$removeparam=pf_rd_i
+||amazon.*$removeparam=pf_rd_m
+||amazon.*$removeparam=pf_rd_p
+||amazon.*$removeparam=pf_rd_r
+||amazon.*$removeparam=pf_rd_s
+||amazon.*$removeparam=pf_rd_t
+||amazon.*$removeparam=pf_rd_w
+||amazon.*$removeparam=plattr
+||amazon.*$removeparam=qid
+||amazon.*$removeparam=rdc
+||amazon.*$removeparam=refRID
+||amazon.*$removeparam=th
+||amazon.*$removeparam=ts_id
+||amazon.*$removeparam=visitId
+||amazon.*$removeparam=vtr
+||amazon.*/aa$removeparam=bitCampaignCode
+||amazon.*/artists/$removeparam=tag
+||amazon.*/dp/$removeparam=pbs
+||amazon.*/dp/$removeparam=tag
+||amazon.*/gp/$removeparam=tag
+||amazon.*/hz/contact-us/csp$removeparam=/entries/
+||amazon.*/hz/contact-us/csp$removeparam=/Version/
+||amazon.*/hz/contact-us/csp$removeparam=from
+||amazon.*/hz/contact-us/csp$removeparam=source
+||amazon.*/message-us$removeparam=muClientName
+! ||amazon.*$removeparam=content-id
+! https:
+||app.mi.com/download/*?id=$removeparam=ref
+||app.mi.com/download/*?id=$removeparam=nonce
+||app.mi.com/download/*?id=$removeparam=appClientId
+||app.mi.com/download/*?id=$removeparam=appSignature
+! https:
+||mp.weixin.qq.com^$removeparam=chksm
+||mp.weixin.qq.com^$removeparam=key
+||mp.weixin.qq.com^$removeparam=uin
+||mp.weixin.qq.com^$removeparam=devicetype
+||mp.weixin.qq.com^$removeparam=exportkey
+||mp.weixin.qq.com^$removeparam=mpshare
+||mp.weixin.qq.com^$removeparam=scene
+||mp.weixin.qq.com^$removeparam=srcid
+||mp.weixin.qq.com^$removeparam=nettype
+||mp.weixin.qq.com^$removeparam=WBAPIAnalysisOriUICodes
+||mp.weixin.qq.com^$removeparam=v_p
+||mp.weixin.qq.com^$removeparam=launchid
+||mp.weixin.qq.com^$removeparam=from
+||mp.weixin.qq.com^$removeparam=aid
+! Prevent tracking when request is unblocked
+||pixel.adsafeprotected.com/services/pub?$xmlhttprequest,removeparam=slot
+||pixel.adsafeprotected.com/services/pub?$xmlhttprequest,removeparam=sessionId
+||pixel.adsafeprotected.com/services/pub?$xmlhttprequest,removeparam=anId
+||pixel.adsafeprotected.com/services/pub?$xmlhttprequest,removeparam=wr
+||pixel.adsafeprotected.com/services/pub?$xmlhttprequest,removeparam=sr
+||pixel.adsafeprotected.com/services/pub?$xmlhttprequest,removeparam=url
+! Ads tracking
+||cam4.com^$removeparam=act
+||cam4.com^$removeparam=suid
+||cam4.com^$removeparam=showSignupPopup
+! Tracks source site
+$removeparam=ocid,document,domain=msn.com
+$removeparam=ocid,domain=bbc.com|bbc.co.uk
+$removeparam=ns_mchannel,domain=bbc.com|bbc.co.uk
+$removeparam=ns_source,domain=bbc.com|bbc.co.uk
+$removeparam=ns_campaign,domain=bbc.com|bbc.co.uk
+$removeparam=ns_linkname,domain=bbc.com|bbc.co.uk
+$removeparam=ns_fee,domain=bbc.com|bbc.co.uk
+! insider.office.com
+||office.com^$removeparam=ocid
+! Embedded tweets
+$removeparam=refsrc,domain=twitter.com|x.com
+$removeparam=ref_src,domain=twitter.com|x.com
+$removeparam=ref_url,domain=twitter.com|x.com
+! Twitter
+$removeparam=cxt,domain=twitter.com|x.com
+$removeparam=s,domain=twitter.com|x.com
+! Breaks redirects https:
+! Do not apply to urls with /i/redirect?url=
+.com/*/status/$removeparam=t,domain=twitter.com|x.com
+!
+||zerkalo.io^$removeparam=tg
+||zerkalo.io^$removeparam=vk
+!
+! https:
+||nbcume.sc.omtrdc.net/id?d_visid_ver=$removeparam=/mcorgid|mid|ts/,domain=nbcdfw.com
+!
+||trendyol.com^$removeparam=utm_subaff
+!
+||realitykings.com^$removeparam=ats
+||marktjagd.de^$removeparam=client
+||coursera.org^$removeparam=siteID
+||mag2.com^$removeparam=trflg
+||dailymail.co.uk^$removeparam=ito
+||mioga.de^$removeparam=pl
+||mioga.de^$removeparam=idealoid
+||ejoker.de^$removeparam=sPartner
+||ejoker.de^$removeparam=idealoid
+||gmx.*/logoutlounge$removeparam=p
+||web.de/logoutlounge$removeparam=p
+||gmx.*^$removeparam=mc
+||web.de^$removeparam=mc
+||lotto.gmx.*^$removeparam=partnerId
+||lotto.gmx.*^$removeparam=advertisementId
+||lotto.web.de^$removeparam=partnerId
+||lotto.web.de^$removeparam=advertisementId
+||shopping.gmx.*^$removeparam=origin
+||shopping.web.de^$removeparam=origin
+||ad.doubleclick.net/ddm/trackclk/$removeparam=/^dc_trk_/
+||alza.de/*.htm$removeparam=kampan
+||cosse.de^$removeparam=referer
+||idealo.de/*.html$removeparam=offerKey
+||idealo.de/*.html$removeparam=offerListId
+||marketing.net.idealo-partner.com^$removeparam=smc2
+||marketing.net.idealo-partner.com^$removeparam=smc5
+||media01.eu/set.aspx$removeparam=trackid
+||netgames.de^$removeparam=refID
+||www.alternate.de^$removeparam=partner
+||www.galaxus.de^$removeparam=pcscpId
+||marketing.net.idealo-partner.com^$removeparam=amc
+||www.lidl.de^$removeparam=msktc
+||www.pricezilla.de^$removeparam=bid
+!
+||boomstore.de/*.html$removeparam=campaign
+||www.alternate.de^$removeparam=campaign
+||www.alternate.de^$removeparam=campaign
+!
+||cosse.de^$removeparam=sPartner
+||www.technikdirekt.de^$removeparam=sPartner
+||www.hitseller.de^$removeparam=sPartner
+!
+||galaxus.de^$removeparam=idealoid
+||www.technikdirekt.de^$removeparam=idealoid
+||netgames.de^$removeparam=idealoid
+||www.alternate.de^$removeparam=idealoid
+||www.electronic4you.de^$removeparam=idealoid
+||www.hitseller.de^$removeparam=idealoid
+!
+||www.hitseller.de^$removeparam=etcc_cmp
+||marketing.net.idealo-partner.com^$removeparam=etcc_cmp
+!
+||www.hitseller.de^$removeparam=etcc_med
+||marketing.net.idealo-partner.com^$removeparam=etcc_med
+!
+||www.hitseller.de^$removeparam=etcc_produkt
+||marketing.net.idealo-partner.com^$removeparam=etcc_produkt
+!
+||visit.digidip.net^$removeparam=/^(ppref|ref|pid)=/
+||ad.admitad.com^$removeparam=/^subid/
+||mvideo.ru^$removeparam=/^(_requestid|reff)=/
+!
+||websearch.rakuten.co.jp/Web?$removeparam=ref
+||rakuten.co.jp^*&trflg=$removeparam=trflg
+||search.yahoo.co.jp^$removeparam=fr
+! https:
+||flipkart.com^$removeparam=_refId
+||flipkart.com^$removeparam=/^affExtParam/
+||flipkart.com^$removeparam=affid
+||flipkart.com^$removeparam=cid
+||flipkart.com^$removeparam=iid
+||flipkart.com^$removeparam=lid
+||flipkart.com^$removeparam=/^otracker/
+||flipkart.com^$removeparam=pageUID
+||flipkart.com^$removeparam=pwsvid
+||flipkart.com^$removeparam=ssid
+||flipkart.com^$removeparam=store
+! Daraz & Shop (Samesite)
+||daraz.*$removeparam=/spm=|scm=|from=|keyori=|sugg=|search=|mp=|c=|^abtest|^abbucket|pos=|themeID=|algArgs=|clickTrackInfo=|acm=|item_id=|version=|up_id=|pvid=/
+! Bilibili
+||bilibili.com^$removeparam=trackid
+||bilibili.com^$removeparam=track_id
+||bilibili.com^$removeparam=caid
+||bilibili.com^$removeparam=resource_id
+||bilibili.com^$removeparam=source_id
+||bilibili.com^$removeparam=request_id
+||bilibili.com^$removeparam=creative_id
+||bilibili.com^$removeparam=linked_creative_id
+||bilibili.com^$removeparam=native_mode
+:
+||bilibili.com^$removeparam=from_spmid
+||bilibili.com^$removeparam=msource
+||bilibili.com^$removeparam=csource
+||bilibili.com^$removeparam=source
+||bilibili.com^$removeparam=share_from
+||bilibili.com^$removeparam=spmid
+||bilibili.com^$removeparam=plat_id
+||bilibili.com^$removeparam=buvid
+||bilibili.com^$removeparam=up_id
+||bilibili.com^$removeparam=seid
+||bilibili.com^$removeparam=share_source
+||bilibili.com^$removeparam=spm_id_from
+||bilibili.com^$removeparam=from_spm_id
+||bilibili.com^$removeparam=share_medium
+||bilibili.com^$removeparam=share_plat
+||bilibili.com^$removeparam=share_session_id
+||bilibili.com^$removeparam=share_tag
+||bilibili.com^$removeparam=timestamp
+||bilibili.com^$removeparam=unique_k
+||search.bilibili.com^$removeparam=from_source
+||bilibili.com^$removeparam=vd_source
+! https:
+! ||bilibili.com^$removeparam=mid
+! Weibo
+||weibo.*^$removeparam=weibo_id
+||weibo.*^$removeparam=dt_dapp
+! Iqiyi
+||iqiyi.com^$removeparam=r_area
+||iqiyi.com^$removeparam=recArea
+||iqiyi.com^$removeparam=block
+||iqiyi.com^$removeparam=eventId
+||iqiyi.com^$removeparam=event_id
+||iqiyi.com^$removeparam=vfrm
+||iqiyi.com^$removeparam=vfrmblk
+||iqiyi.com^$removeparam=vfrmrst
+! Sohu
+||sohu.com^$removeparam=_f
+||sohu.com^$removeparam=_trans_
+||sohu.com^$removeparam=scm
+||sohu.com^$removeparam=spm
+! Youku
+||v.youku.com^$removeparam=ptag
+||v.youku.com^$removeparam=scm
+||v.youku.com^$removeparam=spm
+! The Register
+||theregister.com^$removeparam=td
+!
+! Deezer
+! https:
+||deezer.com^$removeparam=origin
+||deezer.com^$removeparam=deferredFl
+! GamesPlanet
+||gamesplanet.com^$removeparam=ref
+!
+! Special rules for AdGuard websites' test pages. The only purpose of these
+! rules is to make test pages work so that users could verify that AdGuard
+! is properly working.
+!
+!+ NOT_OPTIMIZED
+adguard.info,adguard.com,adguard.app##.hello_from_adguard_tracking_params
+! Detect of using AdGuard products
+!+ PLATFORM(windows, mac, android, cli, ios) NOT_OPTIMIZED
+adguard.info,adguard.com,adguard.app##.hello_from_adguard_apps
+!+ NOT_PLATFORM(windows, mac, android, cli, ios, ext_ublock) NOT_OPTIMIZED
+adguard.info,adguard.com,adguard.app##.hello_from_adguard_ext
+! Detect HTTPS filtering
+!+ PLATFORM(windows, mac, android, cli) NOT_OPTIMIZED
+||https-filtering-check.adtidy.org^
+! Detect Advanced Protection of AdGuard for iOS
+!+ PLATFORM(ios) NOT_OPTIMIZED
+adguard.info,adguard.com,adguard.app#$#.hello_from_adguard_advanced_protection_ios { display: none !important; }
+!
+!---------------------------------------------------------------------------!
+!-------------- Fixing filtration errors (false-positive) ------------------!
+!---------------------------------------------------------------------------!
+!
+! This section contains the list of rules that fix incorrect blocking. Rules should be domain-specific and only the `removeparam` modifier is allowed.
+!
+! Good: @@||example.org^$removeparam=cx
+! Bad:  @@||example.org^$stealth (should be in AdGuard Base - allowlist_stealth.txt)
+!
+!
+!
+! https:
+@@||metabase.com^$removeparam=utm_term
+! https:
+@@||adj.st^$removeparam=adj_t
+! https:
+@@||yandex.go.link^$removeparam=adj_t
+! https:
+@@||em.dynamicyield.com^$removeparam=cuid
+! Some a8 links on https:
+@@||a8cv.amiami.jp/click/$removeparam=a8
+! https:
+!+ PLATFORM(ext_ublock)
+@@||rpc.meituan.com/api/foodorder$removeparam,xmlhttprequest,domain=awp.meituan.com
+! https:
+@@||apimeishi.meituan.com/meishi/poi$removeparam=utm_medium,xmlhttprequest,domain=meishi.meituan.com
+@@||portal-portm.meituan.com/horn$removeparam=utm_medium,xmlhttprequest,domain=meishi.meituan.com
+! https:
+@@||tix.axs.com^$removeparam=irclickid
+! https:
+! BUG: https:
+! TODO: remove when this issue is fixed in MV2 extension
+!+ PLATFORM(ext_ff, ext_opera, ext_chromium)
+@@||google.*/url?*%26srsltid%3D$removeparam=srsltid
+! https:
+!+ PLATFORM(ext_ublock)
+@@||m.maoyan.com/api/mtrade/mmcs/cinema/v2/select/movie/cinemas.json$removeparam,xmlhttprequest
+! https:
+!+ PLATFORM(android)
+@@||ozon.ru/my/points$removeparam=__rr,app=ru.ozon.app.android
+! https:
+! TODO: remove when this issue is fixed - https:
+!#if (adguard_ext_chromium || adguard_ext_firefox || adguard_ext_opera)
+@@||bywiola.com^$removeparam=tagtag_uid
+@@||converti.se/click/$removeparam=wgexpiry
+@@||dashboard.wedare.pl^$removeparam
+@@||pl-pepper.digidip.net/visit$removeparam
+@@||tc.tradetracker.net/?*=ppr-pl-$removeparam
+!#endif
+! https:
+! TODO: remove when this issue is fixed - https:
+!#if (adguard_ext_chromium || adguard_ext_firefox || adguard_ext_opera)
+@@||allegro.pl/affiliate?redirect_url=$removeparam=clickId
+@@||allegro.pl/affiliate?redirect_url=$removeparam=utm_source
+@@||allegro.pl/affiliate?redirect_url=$removeparam=utm_campaign
+!#endif
+! redirecting link on mobile from mydealz.de to Metro
+@@||rd.bizrate.com^$removeparam=utm_campaign
+@@||rd.bizrate.com^$removeparam=utm_medium
+! reddit.com - e-mails about replies not resolving to the post
+@@||reddit.app.link^$removeparam=utm_content,domain=reddit.app.link
+! https:
+@@||video-shoper.ru^$removeparam=utm_source
+! https:
+@@||glavnoe.life^$removeparam=utm_campaign
+@@||glavnoe.life^$removeparam=utm_content
+@@||glavnoe.life^$removeparam=utm_medium
+@@||glavnoe.life^$removeparam=utm_referrer
+@@||glavnoe.life^$removeparam=utm_source
+@@||glavnoe.life^$removeparam=utm_term
+! https:
+@@||booklive.jp/vcentry/landing?$removeparam=vc_lpp
+! https:
+@@||google.*/maps^$removeparam=utm_campaign
+! https:
+@@||uploadnow.*/share$removeparam=utm_source
+! https:
+@@||3dnews.ru/*?utm_source=^$removeparam=utm_source
+! https:
+@@||gaugau.futabanet.jp^$removeparam=utm_content
+! https:
+@@||lifehacker.ru^$removeparam=erid
+! https:
+@@||transfernow.net/*/*?utm_source=$removeparam=utm_source
+! https:
+@@||cleviationly.com/adServe/aff?cmpid=*mydealz*&dlink=$removeparam=cmpid
+! https:
+@@||pixel.adsafeprotected.com/services/pub?$xmlhttprequest,removeparam=slot,domain=reuters.com
+@@||pixel.adsafeprotected.com/services/pub?$xmlhttprequest,removeparam=anId,domain=reuters.com
+! https:
+@@||mootoon.co.kr^$removeparam=cuid
+! https:
+@@||forbes.ru^$removeparam=erid
+! greenbuildingadvisor.com - broken login
+@@||greenbuildingadvisor.com^$removeparam=oly_enc_id
+! https:
+! Fixes ERR_TOO_MANY_REDIRECTS error
+@@||login.aliexpress.*/sync_cookie_write.htm?*&_ga=$removeparam=_ga
+! https:
+@@||kommersant.ru^$removeparam=erid
+! https:
+@@||redirects.tradedoubler.com^$removeparam=utm_content
+@@||redirects.tradedoubler.com^$removeparam=utm_campaign
+! https:
+@@||tradedoubler.com^$removeparam=tduid
+! https:
+@@||carrefourpl.snrpage.com^$removeparam=utm_source
+! https:
+@@||s.click.aliexpress.com/deep_link.htm?aff_short_key=$removeparam=aff_short_key
+! https:
+@@||transfernow.net/*/dltransfer$removeparam=utm_source
+! https:
+! Fixing a redirect loop
+@@||assetstore.unity.com/packages/*?aid=*&utm_$removeparam
+! https:
+@@||mmcref.pl/?$removeparam=utm_medium
+! https:
+@@||lanacion.com.ar/*module$removeparam=utm_source
+! https:
+@@||t.send.vt.edu/r/?id=$removeparam=utm_source
+@@||t.send.vt.edu/r/?id=$removeparam=utm_medium
+@@||t.send.vt.edu/r/?id=$removeparam=utm_campaign
+! https:
+@@||lanacion.com.ar/?utm_source=navigation$removeparam
+! https:
+@@||ad.doubleclick.net/ddm/trackclk/*https:
+! https:
+@@||chaynikam.info^$removeparam
+! https:
+! https:
+@@||fakt.pl/*?utm_source=$removeparam
+@@||onet.pl/?utm_source=$removeparam
+! https:
+@@||empflix.com^$removeparam
+! https:
+@@||cdn-fck.tnaflix.com^$removeparam
+! https:
+@@||xe.com^$removeparam
+! https:
+@@||ofeminin.pl/*&srcc=ucs$removeparam=utm_source
+@@||auto-swiat.pl/*&srcc=ucs$removeparam=utm_source
+@@||komputerswiat.pl/*&srcc=ucs$removeparam=utm_source
+@@||noizz.pl/*&srcc=ucs$removeparam=utm_source
+@@||plejada.pl/*&srcc=ucs$removeparam=utm_source
+@@||medonet.pl/*&srcc=ucs$removeparam=utm_source
+@@||businessinsider.com.pl/*&srcc=ucs$removeparam=utm_source
+! https:
+! https:
+@@||onet.pl/?utm_source=$removeparam
+! https:
+@@||tix.axs.com^$removeparam
+! https:
+@@||sendgb.com/*/?utm_source=$removeparam=utm_source
+! https:
+! it can be removed after the release of the extension 4.0
+!
+! https:
+@@||mywot.com/*/confirmNewEmail/$removeparam
+! app.plex.tv - login page is broken by removing UTM parameters
+@@||app.plex.tv/auth-form/$removeparam=utm_source,domain=app.plex.tv
+@@||app.plex.tv/auth-form/$removeparam=utm_content,domain=app.plex.tv
+@@||app.plex.tv/auth-form/$removeparam=utm_medium,domain=app.plex.tv
+! https:
+@@||plex.tv/api/v*/users/*?utm_source=$removeparam=utm_source,domain=watch.plex.tv
+! https:
+@@/embed/comments^$removeparam,~third-party,domain=clickhole.com|lifehacker.com|splinternews.com|avclub.com|deadspin.com|gizmodo.com|jalopnik.com|jezebel.com|kotaku.com|qz.com|theinventory.com|theonion.com|theroot.com|thetakeout.com
+! https:
+@@||urldefense.com^$removeparam
+! https:
+@@||cdn.privatehost.com/videos*/$removeparam
+! https:
+@@||rightnowtech.com/engagement/api/consumer/nvidia/*/requestEngagement?pool=$removeparam
+! https:
+@@||insurancexblog.blogspot.com/?utm_source=$removeparam=utm_source
+! https:
+@@||gizmodo.com/embed/comments/$removeparam
+! kotaku.com - "See all replies" button broken
+@@||kotaku.com/embed/comments$removeparam
+! https:
+@@||fakt.pl/*&srcc=ucs$removeparam
+@@||przegladsportowy.pl/*&srcc=ucs$removeparam
