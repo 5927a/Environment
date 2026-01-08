@@ -128,3 +128,4 @@ payload:
   - PROCESS-NAME,wpsoffice.exe
   - PROCESS-NAME,wpsclouddisk.exe
   - PROCESS-NAME,ksolaunch.exe
+  - PROCESS-NAME,msedgewebview2.exe
