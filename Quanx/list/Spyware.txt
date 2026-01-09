@@ -543,6 +543,10 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1) { remove: true; }
 !
 !
 !
+||cse.rakanto.com^
+||repo.rakanto.com^
+||aim-tag.hcn.health^
+||wstats.ageverif.com^
 ||api.eventbus.me^
 ||rumt-sg.com^
 ||gm.mmstat.com^
@@ -48355,6 +48359,7 @@ HOST-SUFFIX,stape.net
 ! Blocking piwik analytics subdomain(for DNS filtering)
 |piwik.
 !
+||hw-t.hypers.com.cn^
 ||prd-collect-llm.xverse.cn^
 ||securemetrics.apple.com^
 ||graffiti-tags.apple.com^
@@ -68869,7 +68874,7 @@ _tracking.php?b=
 !
 ! Tealium
 ! The site should be carefully checked when you add this rule
-||tags.tiqcdn.com/utag/*/prod/utag.js$domain=mcafee.com|help.dropbox.com|radissonhotels.com|post.ch|usnews.com|krymr.com|cnet.com|adidas.co.uk|adidas.nl|adidas.pl|lineadirecta.com|sibreal.org|modernatx.com|louisvuitton.com|simplybusiness.co.uk|uber.com|monroeandmain.com|totaljobs.com|mitsubishi-motors.co.jp|ubereats.com|grubhub.com|talksport.com|truecar.com|hulu.com|qvc.jp|brother-usa.com|mtvema.com|mtv.co.uk|mtv.de|mtv.it|thesun.co.uk|anantara.com|iflscience.com|calvinklein.ca|taylor.com|news.com.au|agoda.com|vodafone.com.tr
+||tags.tiqcdn.com/utag/*/prod/utag.js$domain=mcafee.com|help.dropbox.com|radissonhotels.com|post.ch|usnews.com|krymr.com|cnet.com|adidas.co.uk|adidas.nl|adidas.pl|lineadirecta.com|sibreal.org|modernatx.com|louisvuitton.com|simplybusiness.co.uk|uber.com|monroeandmain.com|totaljobs.com|mitsubishi-motors.co.jp|ubereats.com|grubhub.com|talksport.com|truecar.com|hulu.com|qvc.jp|brother-usa.com|mtvema.com|mtv.co.uk|mtv.de|mtv.it|thesun.co.uk|anantara.com|iflscience.com|calvinklein.ca|taylor.com|news.com.au|agoda.com|vodafone.com.tr|huawei.com
 ||tags.tiqcdn.com/utag/*/utag.sync.js$domain=yousee.dk|sibreal.org|calvinklein.ca|hosteurope.de|news.com.au
 !
 !
@@ -68935,6 +68940,7 @@ HOST-SUFFIX,demdex.net/id^$redirect=nooptext,important
 !
 ! NOTE: Specific rules
 !
+||appmifile.com/i18n/ga*/
 ||cast-imp.jtbc.co.kr/trac?event=
 ||bsp-proxy.wetransfer.net/pico/v*/web-events
 ||wetransfer.com/api/web-metrics
@@ -78116,6 +78122,10 @@ d4?appid*type*
 !
 !
 !
+! https:
+@@||cdn.optimizely.com/datafiles/*.json$domain=wingstop.com
+! https:
+@@||pi.ai/ingest/$domain=pi.ai
 ! https:
 @@||log.go.com/log$xmlhttprequest,domain=disneyvacationclub.disney.go.com
 ! https:

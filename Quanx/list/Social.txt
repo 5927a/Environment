@@ -676,6 +676,9 @@ echofm.online,antirez.com,comicbook.com,alexp.pl,2ality.com,smarttubeapp.github.
 !
 ! NOTE: Specific rules
 !
+windguru.cz##a[data-name="share"]
+zvyki.com##.onesongblock-end
+operawire.com##.page-social-share
 sexfeast.ru##.yandexshare_div
 esquire.com##div[role="toolbar"] > div[class^="css-"]:has(> div[aria-label="Share article"])
 myoji-yurai.net##.insta_btn2
@@ -9628,7 +9631,7 @@ sinarharian.com.my##a[class*="addthis"]
 rosewe.com##.shareToShow
 nv.ua##.article__footer_share
 haberler.com##.videoSocialShare
-dailydishrecipes.com,travelfoodatlas.com##.dpsp-content-wrapper
+realhousemoms.com,dailydishrecipes.com,travelfoodatlas.com##.dpsp-content-wrapper
 dailydishrecipes.com,travelfoodatlas.com,instalki.pl##.dpsp-share-text
 unian.net,1plus1.video##.o-share-table-cell-right
 coandroid.ru##.list-soc
