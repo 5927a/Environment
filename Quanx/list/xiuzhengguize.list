@@ -1,1 +1,7 @@
+#DOMAIN-SUFFIX,id6.me
+HOST,www.msftconnecttest.com
+HOST,dns.msftncsi.com
+HOST,captive.apple.com
+HOST,www.apple.com
 HOST-SUFFIX,open.e.189.cn
+HOST-SUFFIX,wximg.wxs.qq.com

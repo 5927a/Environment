@@ -739,6 +739,7 @@ payload:
   - '!'
   - '! NOTE: Specific rules'
   - '!'
+  - to-corona-ex.com##main .tablet\:-mx-2 ~ .mt-12
   - windguru.cz##a[data-name="share"]
   - zvyki.com##.onesongblock-end
   - operawire.com##.page-social-share

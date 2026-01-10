@@ -48359,6 +48359,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1) { remove: true; }
 ! Blocking piwik analytics subdomain(for DNS filtering)
 |piwik.
 !
+||me9ddf.moebelix.
 ||hw-t.hypers.com.cn^
 ||prd-collect-llm.xverse.cn^
 ||securemetrics.apple.com^
@@ -68940,6 +68941,9 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 !
 ! NOTE: Specific rules
 !
+||scriber.webflix.ai/beacon
+||rawpixel.com/external/gtag.js
+moebelix.*#%#
 ||appmifile.com/i18n/ga*/
 ||cast-imp.jtbc.co.kr/trac?event=
 ||bsp-proxy.wetransfer.net/pico/v*/web-events
@@ -78123,6 +78127,9 @@ d4?appid*type*
 !
 !
 ! https:
+!+ PLATFORM(windows, mac, android, cli)
+||awswaf.com/*/telemetry|$redirect=nooptext,domain=discipulusv2.amasystem.net
+! https:
 @@||cdn.optimizely.com/datafiles/*.json$domain=wingstop.com
 ! https:
 @@||pi.ai/ingest/$domain=pi.ai
@@ -83019,6 +83026,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||brownboxgroup.com^
 ||bruisebaseball.com^
 ||bubblyaction.com^
+||buddycanvas.com^
 ||bugpizza.com^
 ||buildingknife.com^
 ||bulbbait.com^
@@ -84063,6 +84071,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||physicstees.com^
 ||pickmicro.com^
 ||pietexture.com^
+||pigeonkit.com^
 ||pigeonsetc.com^
 ||pigmentpaper.com^
 ||pinchsquirrel.com^
@@ -84161,6 +84170,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||questionate.com^
 ||quicklyedit.com^
 ||quicksandear.com^
+||quicktrick.net^
 ||quietknowledge.com^
 ||quillkick.com^
 ||quiltquick.com^
@@ -84210,6 +84220,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||reconditeprison.com^
 ||reconditerake.com^
 ||reconditerespect.com^
+||recyclehits.com^
 ||redbasketball.com^
 ||redbricksoap.com^
 ||reduceplan.com^
@@ -84255,6 +84266,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||ritzyveil.com^
 ||roaddynamics.com^
 ||roadwalks.com^
+||roamhousing.com^
 ||robotgarages.com^
 ||rockagainst.com^
 ||rockstarwriter.com^
