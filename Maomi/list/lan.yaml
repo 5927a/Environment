@@ -1,4 +1,7 @@
 payload:
+  - IP-CIDR,172.21.0.150/32,no-resolve
+  - IP-CIDR,172.21.0.100/32,no-resolve
+  - IP-CIDR,172.21.0.101/32,no-resolve
   - IP-CIDR,223.5.5.5/32,no-resolve
   - IP-CIDR,119.29.29.29/32,no-resolve
   - IP-CIDR,114.114.114.114/32,no-resolve
