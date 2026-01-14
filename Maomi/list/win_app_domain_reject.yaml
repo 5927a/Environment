@@ -4,7 +4,6 @@ payload:
   - DOMAIN,update.pan.baidu.com
   - DOMAIN,dtapp-pub.dingtalk.com
   - DOMAIN-KEYWORD,viewdepth
-  - DOMAIN-KEYWORD,pixpin
   - DOMAIN-KEYWORD,ecopaste
   - DOMAIN-SUFFIX,photoshop.com
   - DOMAIN-KEYWORD,adobe
