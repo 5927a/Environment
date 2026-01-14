@@ -155,3 +155,24 @@ payload:
   - PROCESS-NAME,updateself.exe
   - PROCESS-NAME,updsynctool.exe
   - PROCESS-NAME,wpsupdate.exe
+  - PROCESS-NAME,JianyingPro.exe
+  - PROCESS-NAME,uninst.exe
+  - PROCESS-NAME,courgette64.exe
+  - PROCESS-NAME,ETLHelper.exe
+  - PROCESS-NAME,feedbacktool.exe
+  - PROCESS-NAME,ffmpeg.exe
+  - PROCESS-NAME,hpatchz.exe
+  - PROCESS-NAME,JianyingPro-DiffUpgrade.exe
+  - PROCESS-NAME,JianyingPro.exe
+  - PROCESS-NAME,JianyingProTray.exe
+  - PROCESS-NAME,minidump_stackwalk.exe
+  - PROCESS-NAME,parfait_crash_handler.exe
+  - PROCESS-NAME,push_detect.exe
+  - PROCESS-NAME,taskcontainer.exe
+  - PROCESS-NAME,ttdaemon.exe
+  - PROCESS-NAME,uninstshell.exe
+  - PROCESS-NAME,VECrashHandler.exe
+  - PROCESS-NAME,VEFileVerify.exe
+  - PROCESS-NAME,VEHelper.exe
+  - PROCESS-NAME,JianyingProService.exe
+  - PROCESS-NAME,uninst.exe
