@@ -505,6 +505,8 @@ $removeparam=tduid
 !
 !
 ! https:
+||online.nojima.co.jp^$removeparam=campaign
+! https:
 ||temu.com^$removeparam=_x_ads_account
 ||temu.com^$removeparam=_x_ads_creative_id
 ||temu.com^$removeparam=_x_ads_id

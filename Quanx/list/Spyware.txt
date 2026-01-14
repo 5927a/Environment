@@ -36,6 +36,9 @@ spletnik.ru#%#
 !
 !
 ! https:
+muylinux.com$$script:contains(isAmpDevMode)
+muylinux.com#%#
+! https:
 southpark.*,southparkstudios.*#%#
 ! https:
 coupang.com#%#
@@ -543,6 +546,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1) { remove: true; }
 !
 !
 !
+||telemetry.tataritv.com^
 ||powa-ingest-prod-*.video-player.arcpublishing.com^
 ||cpu-api.infor.pl^
 ||cse.rakanto.com^
@@ -48361,6 +48365,11 @@ HOST-SUFFIX,stape.net
 ! Blocking piwik analytics subdomain(for DNS filtering)
 |piwik.
 !
+||r.anime-go.cc^
+||logs.collector.*.cloud.solarwinds.com^
+||doppler.hulu.com^
+||events.insiad.com^
+||agatha-log-service-*.a.run.app^
 ||me9ddf.moebelix.
 ||hw-t.hypers.com.cn^
 ||prd-collect-llm.xverse.cn^
@@ -49019,7 +49028,7 @@ HOST-SUFFIX,prod.pr.analytics.console.aws.a2z.com
 ||stats.bunkr.ru^
 ||logs.netflix.com^
 ||mst.rnd.de^
-||cza.crazygames.com^
+||cza*.crazygames.com^
 ||event-dot-procolor-backend.appspot.com^
 ||prod.event.mwm-asset-manager.mwmwebapis.com^
 ||api.amplitudeexperiment.com^
@@ -49276,7 +49285,6 @@ HOST-SUFFIX,prod.pr.analytics.console.aws.a2z.com
 ||femetrics.grammarly.io^
 ||realtimeanalytics.yext.com^
 ||stats.indianpornempire.com^
-||lp.spac.me^
 ||analytics.verfacto.com^
 ||log.dzen.ru^
 ||flask.us.nextdoor.com^
@@ -50616,7 +50624,6 @@ HOST-SUFFIX,prod.pr.analytics.console.aws.a2z.com
 ||log.ecgh.dk^
 ||log.enuri.com^
 ||log.g-enews.com^
-||log.go.com^
 ||log.iyunmai.com^
 ||log.krs-ix.ru^
 ||log.mappy.net^
@@ -68943,6 +68950,11 @@ HOST-SUFFIX,demdex.net/id^$redirect=nooptext,important
 !
 ! NOTE: Specific rules
 !
+||ir.ebaystatic.com/*/s_1x2.gif
+gamespot.com#%#
+||openway.deepseeksvc.com/v*/write/rum
+||l.search.naver.com/n/responsive/*&no_qc=*&p=
+||eadaily.com/tools/calc_news_stat.php
 ||scriber.webflix.ai/beacon
 ||rawpixel.com/external/gtag.js
 moebelix.*#%#
@@ -69888,7 +69900,6 @@ colliers.com#%#
 ||cbsivideo.com/cb-measurements/
 ||scv.band.us/jackpotlog/*/logs|$xmlhttprequest
 ||epicgames.com/id/api/analytics
-||doppler.hulu.com/doppler/*/ingest?source=client-reporting-HTML
 ||terabox.app/sse/events?
 ||widget2.vreview.tv/js/amplitude.js
 ||savefrom.net/build/js/basicMetricsTracking.js
@@ -70572,7 +70583,6 @@ pcmag.com##img[src^="https:
 ||dataplane.rum.*.amazonaws.com/appmonitors
 ||suumo.jp/jj/jjcommon/sc/s_code.js
 ||bablic.com/api/engine/pling
-||spcs.*/api/common/beacon/
 ||unification.useinsider.com/api/event/
 ||rou.video/js/yd.js
 ||elle.com.hk/assets/js/ur.js
@@ -75068,6 +75078,8 @@ adguard.info,adguard.com,adguard.app#$#.hello_from_adguard_advanced_protection_i
 ! Bad:  ||example.com^$cookie=flat_r_mb (should be in cookies_specific.txt)
 !
 !
+! Wikia
+$cookie=wikia_beacon_id
 ! Intent IQ
 $cookie=_iiq_fdata
 $cookie=_iiq_ab_map
@@ -75340,10 +75352,6 @@ $cookie=_wctrck
 $cookie=flocktory-uuid
 ! wisepops.com widget counter
 $cookie=/^wisepops/
-! Demandware Analytics
-! https:
-! https:
-$cookie=/dwanonymous_/,domain=~nintendo.com|~hoka.com
 ! https:
 $cookie=cqcid,domain=~nintendo.com
 ! BUG: https:
@@ -76771,7 +76779,7 @@ $cookie=ev_did,domain=diariovasco.com
 ! Do not block pixapi.net. It causes issues
 !
 ! Blocking Facebook mobile tracking
-||graph.facebook.com^$app=cl.android|com.shorts.wave.drama|com.drama.happy.look|com.enjoy.fancynovel.better|com.novel.eromance.ugs|com.novel.estory.free.reader.dreame.gp.us|com.fatix.fatixpro|com.coupang.mobile.eats|com.warmweather.forecast.reporter
+||graph.facebook.com^$app=cl.android|com.shorts.wave.drama|com.drama.happy.look|com.enjoy.fancynovel.better|com.novel.eromance.ugs|com.novel.estory.free.reader.dreame.gp.us|com.fatix.fatixpro|com.coupang.mobile.eats|com.warmweather.forecast.reporter|com.booking
 ! https:
 ||adeventtracker.spotify.com^
 ||do-not-tracker.org^
@@ -76784,7 +76792,7 @@ $cookie=ev_did,domain=diariovasco.com
 ! For specific apps
 ||firebaselogging-pa.googleapis.com^$app=com.sampleapp
 ||ads-api.twitter.com^$app=com.twitter.android
-||tags.tiqcdn.com^$app=uk.co.thetimes|com.hulu.plus
+||tags.tiqcdn.com^$app=uk.co.thetimes|com.hulu.plus|com.booking
 ||ljc.coupang.com^$app=com.coupang.mobile
 ||api-track.linke.ai^$app=com.aigc.ushow.ichat
 ||assets.adobedtm.com^$app=com.aa.android|uk.co.thetimes|de.spiegel.android.app.spon|com.hilton.android.hhonors
@@ -76855,6 +76863,7 @@ $app=com.miui.analytics
 ||analytics.qoqa.com^
 !
 ! Appsflyer
+||skadsdk.appsflyersdk.com^
 ||attr.appsflyersdk.com^
 dynamic-report-api.appsflyersdk.com^
 ||privacy-sandbox.appsflyersdk.com^
@@ -76929,6 +76938,14 @@ dlsdk.appsflyer.com^
 !
 ! NOTE: Regular rules
 !
+||mab-mob2.websearchapp.com^
+||news-events.apple.com^
+||news-app-events.apple.com^
+||news-sports-events.apple.com^
+||track.applicaster.com^
+||hb-mob2.optiword.com^
+||tracking.geo.*.amazonaws.com^
+||telemetry.doxo.com^
 ||sensorsdata-datasink.stardust-tv.com^
 ||event-api-cs.stardust-tv.com^
 ||logreport-global-dual.cool*cloud.com^
@@ -78129,14 +78146,24 @@ d4?appid*type*
 !
 !
 ! https:
+!+ NOT_PLATFORM(windows, mac, android, cli)
+@@||live.mrf.io/statics/marfeel/gardac-sync.js$domain=muylinux.com
+! https:
+investor-web.hdfcfund.com#%#
+!+ PLATFORM(ios, ext_android_cb)
+@@||tw.netcore.co.in/smartechclient.js$domain=investor-web.hdfcfund.com
+! https:
+! https:
+@@||a.klaviyo.com/client/subscriptions/
+! https:
+@@||st.dynamicyield.com/st?$domain=noelleeming.co.nz
+! https:
 !+ PLATFORM(windows, mac, android, cli)
 ||awswaf.com/*/telemetry|$redirect=nooptext,domain=discipulusv2.amasystem.net
 ! https:
 @@||cdn.optimizely.com/datafiles/*.json$domain=wingstop.com
 ! https:
 @@||pi.ai/ingest/$domain=pi.ai
-! https:
-@@||log.go.com/log$xmlhttprequest,domain=disneyvacationclub.disney.go.com
 ! https:
 @@||a.klaviyo.com/client/subscriptions/$xmlhttprequest,domain=ahead-nutrition.com
 ! https:
@@ -83387,6 +83414,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||etherealpinnacle.com^
 ||evanescentedge.com^
 ||evasivejar.com^
+||evencoating.com^
 ||eventexistence.com^
 ||eventsmall.com^
 ||exampleshake.com^
@@ -84325,6 +84353,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||scenicchicago.com^
 ||scenicdrops.com^
 ||scentedkindly.com^
+||scholarloop.com^
 ||sciencedart.com^
 ||scientificshirt.com^
 ||scintillatingscissors.com^
@@ -84349,6 +84378,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||secretturtle.com^
 ||seedscissors.com^
 ||seekmyshop.com^
+||seekremote.com^
 ||seenvault.com^
 ||seespice.com^
 ||selectivesummer.com^
