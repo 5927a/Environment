@@ -1,3 +1,9 @@
+HOST,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe
+HOST,apple-relay.fastly-edge.com
+HOST,apple-relay.cloudflare.com
+HOST,cp4.cloudflare.com
+HOST,apple-relay.apple.com
+HOST,gspe1-ssl.ls.apple.com
 HOST,browser-intake-datadoghq.com
 HOST,chat.openai.com.cdn.cloudflare.net
 HOST,openai-api.arkoselabs.com
