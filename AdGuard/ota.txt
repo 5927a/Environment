@@ -1,0 +1,7 @@
+||app-site-association.cdn-apple.com^
+||mesu.apple.com^
+||gdmf.apple.com^
+||updates-http.cdn-apple.com^
+||xp.apple.com^
+||component-ota-cn.allawntech.com^
+||h5fs.coloros.com^
