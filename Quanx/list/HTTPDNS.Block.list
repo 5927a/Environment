@@ -1,6 +1,7 @@
 HOST,httpdns.alicdn.com
 HOST,httpdns-api.aliyuncs.com
 HOST,httpdns-sc.aliyuncs.com
+HOST,resolvers-cn.httpdns.aliyuncs.com
 IP-CIDR,203.107.1.0/24
 HOST,httpsdns.baidu.com
 HOST,httpdns.baidu.com
@@ -8,16 +9,24 @@ HOST,httpdns.baidubce.com
 IP-CIDR,180.76.76.200/32
 HOST,httpdns.bilivideo.com
 HOST,httpdns.c.cdnhwc2.com
+HOST,doh.iqiyi.com
 HOST,dns.jd.com
 IP-CIDR,101.124.19.122/32
 IP-CIDR6,2402:db40:5100:1011::5/128
 IP-CIDR,103.224.222.208/32
+HOST,httpdns.kg.qq.com
 HOST,httpdns.calorietech.com
 HOST,httpdns.meituan.com
+HOST,httpdnsmultiapi.meituan.com
+HOST,httpdnsmultiapivip.meituan.com
+HOST,dnspod.meituan.httpdns.qcloud.com
+HOST,dnspod.meituan.httpdns.start.qcloud.com
 IP-CIDR,202.90.108.13/32
 IP-CIDR,202.90.110.46/32
+HOST,httpdns.immomo.com
 HOST,httpdns.yunxindns.com
 HOST,httpdns.n.netease.com
+HOST,httpdns-sdk.n.netease.com
 HOST,httpdns.music.163.com
 HOST,music.httpdns.c.163.com
 HOST,lofter.httpdns.c.163.com
@@ -33,6 +42,7 @@ HOST,httpdns.volcengineapi.com
 HOST,dns.weibo.cn
 IP-CIDR,39.97.128.148/32
 IP-CIDR,39.97.130.51/32
+HOST,aedns.weixin.qq.com
 HOST,dns.weixin.qq.com
 HOST,dns.weixin.qq.com.cn
 IP-CIDR,42.81.232.18/32
@@ -44,5 +54,6 @@ IP-CIDR6,2402:4e00:1900:1700:0:9554:1ad9:c3a/128
 IP-CIDR6,240e:928:1400:10::25/128
 IP-CIDR,182.254.116.117/32
 IP-CIDR,182.254.118.119/32
+HOST,yuyin-httpdns.gslb.yy.com
 IP-CIDR,118.89.204.198/32
 IP-CIDR6,2402:4e00:1200:ed00:0:9089:6dac:96b6/128
