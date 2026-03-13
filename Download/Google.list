@@ -399,3 +399,4 @@ IP-CIDR,74.125.206.188/32,no-resolve
 IP-CIDR,74.125.23.188/32,no-resolve
 IP-CIDR,74.125.24.188/32,no-resolve
 IP-CIDR,74.125.28.188/32,no-resolve
+DOMAIN-KEYWORD,www.google.
