@@ -1,5 +1,3 @@
-###########################################
-### windows11端版本
 mode: rule
 external-controller-cors:
   allow-origins:
@@ -93,11 +91,11 @@ dns:
     - geosite:private
     - geosite:cn
   default-nameserver:
-      - 119.29.29.29
-      - 223.5.5.5
+    - 119.29.29.29
+    - 223.5.5.5
   nameserver:
-     - https://cloudflare-dns.com/dns-query
-     - https://dns.google/dns-query
+    - https://cloudflare-dns.com/dns-query
+    - https://dns.google/dns-query
   nameserver-policy:
     "geosite:cn":
       - 119.29.29.29
@@ -150,18 +148,18 @@ NodeParam: &NodeParam {type: http, interval: 21600, health-check: {enable: true,
 # 节点订阅   # url替换自己的，这个是机场订阅地址
 proxy-providers:
   ONE:
-   url: 'https:/12eeb41c7d0c36e'
+   url: 'https169c7d0c36e'
    <<: *NodeParam
    path: './proxy_provider/ONE.yaml'
 
 
   TWO:
-    url: '6f8c4d'
+    url: 'http1824306f8c4d'
     <<: *NodeParam
     path: './proxy_provider/TWO.yaml'
 
   THREE:
-    url: '992b2b746'
+    url: 'httb746'
     <<: *NodeParam
     path: './proxy_provider/THREE.yaml'
 
@@ -181,7 +179,7 @@ proxy-groups:
   - {name: 币圈选择, type: select, proxies: [币出口, 手动选择, DIRECT], icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Cryptocurrency_2.png}
 
   # 自动选择
-  - {name: 主出口, type: url-test, url: 'http://cp.cloudflare.com/generate_204', interval: 60, tolerance: 100, timeout: 5000, lazy: false, include-all: true, filter: ".*(?i)(日本|Japan|JP|美国|US)", icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Final.png}
+  - {name: 主出口, type: url-test, url: 'http://cp.cloudflare.com/generate_204', interval: 60, tolerance: 100, timeout: 5000, lazy: false, include-all: true, filter: "(?i)(日本|Japan|JP|美国|US)(?!.*x3).*", icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Final.png}
   - {name: 备出口, type: url-test, url: 'http://cp.cloudflare.com/generate_204', interval: 60, tolerance: 100, timeout: 5000, lazy: false, include-all: true, filter: ".*(?i)(SG|新加)", icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Singapore.png}
   - {name: 币出口, type: url-test, url: 'http://cp.cloudflare.com/generate_204', interval: 180, tolerance: 100, timeout: 5000, include-all: true, filter: ".*(?i)(日本|Japan|JP|香港|HK|新加)", icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Cryptocurrency_3.png}
   - {name: 手动选择, type: select, url: 'http://cp.cloudflare.com/generate_204', interval: 180, tolerance: 70, include-all: true, filter: ".*", icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Unlock.png}
@@ -239,7 +237,7 @@ rule-providers:
   # 广告规则
   anti-ad-surge2:
     <<: *domain_yaml
-    url: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Maomi/list/ad2.yaml
+    url: https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/reject.txt
     path: "./rule_set/ad2.yaml"
 
   #chatgpt
@@ -303,10 +301,10 @@ rule-providers:
     path: "./rule_set/China.list"
 
   # 直连
-  ASN:
-    <<: *classical_yaml
-    url: https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/main/ruleset/ASN.China.yaml
-    path: "./rule_set/ASN.China.yaml"
+  # ASN:
+  #   <<: *classical_yaml
+  #   url: https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/main/ruleset/ASN.China.yaml
+  #   path: "./rule_set/ASN.China.yaml"
 
   private_ip:
     <<: *ip
