@@ -176,3 +176,5 @@ payload:
   - PROCESS-NAME,VEHelper.exe
   - PROCESS-NAME,JianyingProService.exe
   - PROCESS-NAME,uninst.exe
+  - PROCESS-NAME,app_shell_updater.exe
+  - PROCESS-NAME,tt_crash_reporter.exe
