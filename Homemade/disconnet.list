@@ -97,7 +97,6 @@ DOMAIN,awaken.amap.com
 DOMAIN,free-aos-cdn-image.amap.com
 # 京东
 DOMAIN,idklog.ingeek.com
-#
 DOMAIN,open.e.kuaishou.com
 DOMAIN,log.mmstat.com
 DOMAIN,gm.mmstat.com
@@ -106,3 +105,5 @@ DOMAIN,adashx.ut.dingtalk.com
 DOMAIN,h-adashx.ut.dingtalk.com
 DOMAIN,pcapp-data-collect.youku.com
 DOMAIN,h-adashx.ut.taobao.com
+# 小红书
+DOMAIN,apm-fe.xiaohongshu.com
