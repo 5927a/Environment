@@ -111,3 +111,5 @@ DOMAIN,pcapp-data-collect.youku.com
 DOMAIN,h-adashx.ut.taobao.com
 # 小红书
 DOMAIN,apm-fe.xiaohongshu.com
+# 阿里追踪
+DOMAIN,userlink.alicdn.com
