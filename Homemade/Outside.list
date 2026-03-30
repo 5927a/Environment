@@ -1,222 +1,155 @@
-# Apple - 云服务、应用商店、开发
-DOMAIN,apple-relay.cloudflare.com
+# ==================== Apple 服务（强烈走国外）====================
+DOMAIN-SUFFIX,icloud.com
+DOMAIN-SUFFIX,icloud-content.com
+DOMAIN-SUFFIX,apple-cloudkit.com
+DOMAIN-SUFFIX,apzones.com
+DOMAIN-SUFFIX,icloud-privacy-relay.com
+DOMAIN-SUFFIX,itunes.apple.com
+DOMAIN-SUFFIX,apps.apple.com
+DOMAIN-SUFFIX,mzstatic.com
+DOMAIN-SUFFIX,apple.news
 DOMAIN,apple-relay.apple.com
-DOMAIN,api-glb-sea.smoot.apple.com
-DOMAIN,apple.comscoreresearch.com
-DOMAIN,cdn.apple-cloudkit.com
+DOMAIN,apple-relay.cloudflare.com
 DOMAIN,developer.apple.com
-DOMAIN,devimages-cdn.apple.com
-DOMAIN,devstreaming-cdn.apple.com
-DOMAIN,docs-assets.developer.apple.com
-DOMAIN,gspe1-ssl.ls.apple.com
-DOMAIN,js-cdn.music.apple.com
-DOMAIN,lookup-api.apple.com
-DOMAIN,news-assets.apple.com
-DOMAIN,news-client.apple.com
-DOMAIN,news-edge.apple.com
-DOMAIN,news-events.apple.com
 DOMAIN,testflight.apple.com
+DOMAIN-SUFFIX,tv.apple.com
 DOMAIN,tv.applemusic.com
+DOMAIN,lookup-api.apple.com
 DOMAIN,www.apple.com
 DOMAIN,rtlimages.apple.com
-DOMAIN-KEYWORD,icloud
-DOMAIN-KEYWORD,itunes
-DOMAIN-SUFFIX,mzstatic.com
 DOMAIN-SUFFIX,ls.apple.com
-DOMAIN-SUFFIX,apple-cloudkit.com
 DOMAIN-SUFFIX,apple-dns.net
-DOMAIN-SUFFIX,apple-livephotoskit.com
-DOMAIN-SUFFIX,apple.news
-DOMAIN-SUFFIX,apps.apple.com
-DOMAIN-SUFFIX,appsto.re
-DOMAIN-SUFFIX,apzones.com
-DOMAIN-SUFFIX,blobstore.apple.com
-DOMAIN-SUFFIX,cdn-apple.com
-DOMAIN-SUFFIX,digicert.com
-DOMAIN-SUFFIX,gc.apple.com
-DOMAIN-SUFFIX,iwork.apple.com
-DOMAIN-SUFFIX,me.com
-DOMAIN-SUFFIX,mylcloud.net
-DOMAIN-SUFFIX,ocsp.apple.com
-DOMAIN-SUFFIX,tv.apple.com
-# Google - 搜索、视频、邮件
-DOMAIN-SUFFIX,android.com
-DOMAIN-SUFFIX,firebaseio.com
-DOMAIN-SUFFIX,g.co
-DOMAIN-SUFFIX,ggpht.com
-DOMAIN-SUFFIX,gmail.com
-DOMAIN-SUFFIX,goo.gl
+
+# ==================== Google 服务（强烈走国外）====================
 DOMAIN-SUFFIX,google.com
 DOMAIN-SUFFIX,googleapis.com
 DOMAIN-SUFFIX,googleusercontent.com
 DOMAIN-SUFFIX,googlevideo.com
 DOMAIN-SUFFIX,gstatic.com
 DOMAIN-SUFFIX,youtube.com
-# Microsoft - 搜索、云服务、游戏
+DOMAIN-SUFFIX,gmail.com
+DOMAIN-SUFFIX,android.com
+DOMAIN-SUFFIX,firebaseio.com
+DOMAIN-SUFFIX,ggpht.com
+DOMAIN-SUFFIX,g.co
+DOMAIN-SUFFIX,goo.gl
+
+# ==================== Microsoft 服务（强烈走国外）====================
+DOMAIN-SUFFIX,microsoft.com
+DOMAIN-SUFFIX,azure.com
+DOMAIN-SUFFIX,onedrive.com
+DOMAIN-SUFFIX,windows.com
+DOMAIN-SUFFIX,xbox.com
+DOMAIN-SUFFIX,skype.com
 DOMAIN-SUFFIX,msn.com
-DOMAIN-SUFFIX,msn.cn
 DOMAIN-SUFFIX,onenote.com
 DOMAIN-SUFFIX,surface.com
-DOMAIN-KEYWORD,azure
-DOMAIN-KEYWORD,bing.com
-DOMAIN-KEYWORD,microsoft
-DOMAIN-KEYWORD,onedrive
-DOMAIN-KEYWORD,skype
-DOMAIN-KEYWORD,windows
-DOMAIN-KEYWORD,xbox
-# Meta/Facebook - 社交、即时通讯
+DOMAIN-SUFFIX,bing.com
+
+# ==================== Meta / Facebook（强烈走国外）====================
+DOMAIN-SUFFIX,facebook.com
 DOMAIN-SUFFIX,instagram.com
+DOMAIN-SUFFIX,whatsapp.com
 DOMAIN-SUFFIX,messenger.com
-DOMAIN-KEYWORD,facebook
-DOMAIN-KEYWORD,whatsapp
-# Twitter/X - 社交
-DOMAIN-SUFFIX,t.co
-DOMAIN-SUFFIX,twimg.com
-DOMAIN-SUFFIX,twitter.com
+DOMAIN-SUFFIX,fb.com
+
+# ==================== Twitter / X（强烈走国外）====================
 DOMAIN-SUFFIX,x.com
-# ByteDance/TikTok - 短视频
+DOMAIN-SUFFIX,twitter.com
+DOMAIN-SUFFIX,twimg.com
+DOMAIN-SUFFIX,t.co
+
+# ==================== ByteDance / TikTok（核心走国外）====================
+DOMAIN-SUFFIX,tiktok.com
+DOMAIN-SUFFIX,tiktokcdn.com
+DOMAIN-SUFFIX,tiktokcdn-us.com
+DOMAIN-SUFFIX,tiktokv.com
+DOMAIN-SUFFIX,tiktokv.us
+DOMAIN-SUFFIX,byteoversea.com
+DOMAIN-SUFFIX,ibytedtos.com
+DOMAIN-SUFFIX,ibyteimg.com
+DOMAIN-SUFFIX,capcut.com
+DOMAIN-SUFFIX,musical.ly
+
+# ==================== 其他重要国外服务（强烈走国外）====================
+# GitHub
+DOMAIN-SUFFIX,github.com
+DOMAIN-SUFFIX,github.io
+DOMAIN-SUFFIX,githubusercontent.com
+
+# Telegram
+DOMAIN-SUFFIX,telegram.org
+DOMAIN-SUFFIX,t.me
+DOMAIN-SUFFIX,telegra.ph
+
+# Discord
+DOMAIN-SUFFIX,discord.com
+DOMAIN-SUFFIX,discordapp.com
+DOMAIN-SUFFIX,discordapp.net
+
+# 流媒体
+DOMAIN-SUFFIX,netflix.com
+DOMAIN-SUFFIX,nflxvideo.net
+DOMAIN-SUFFIX,disneyplus.com
+
+# AI 服务
+DOMAIN-SUFFIX,openai.com
+DOMAIN-SUFFIX,anthropic.com
+DOMAIN-SUFFIX,claude.ai
+DOMAIN-SUFFIX,grok.com
+
+# TikTok 次要域名（统计、效果、包分发等，可走国内）
 DOMAIN,lf16-effectcdn.byteeffecttos-g.com
 DOMAIN,lf16-pkgcdn.pitaya-clientai.com
 DOMAIN,p16-tiktokcdn-com.akamaized.net
 DOMAIN-SUFFIX,bytedapm.com
 DOMAIN-SUFFIX,bytegecko-i18n.com
-DOMAIN-SUFFIX,byteoversea.com
-DOMAIN-SUFFIX,capcut.com
-DOMAIN-SUFFIX,ibytedtos.com
-DOMAIN-SUFFIX,ibyteimg.com
-DOMAIN-SUFFIX,ipstatp.com
 DOMAIN-SUFFIX,isnssdk.com
-DOMAIN-SUFFIX,muscdn.com
-DOMAIN-SUFFIX,musical.ly
-DOMAIN-SUFFIX,sgpstatp.com
 DOMAIN-SUFFIX,snssdk.com
-DOMAIN-SUFFIX,tik-tokapi.com
-DOMAIN-SUFFIX,tiktok.com
-DOMAIN-SUFFIX,tiktokcdn-us.com
-DOMAIN-SUFFIX,tiktokcdn.com
-DOMAIN-SUFFIX,tiktokd.net
-DOMAIN-SUFFIX,tiktokd.org
-DOMAIN-SUFFIX,tiktokmusic.app
-DOMAIN-SUFFIX,tiktokv.com
-DOMAIN-SUFFIX,tiktokv.us
+DOMAIN-SUFFIX,sgpstatp.com
+DOMAIN-SUFFIX,ipstatp.com
 DOMAIN-SUFFIX,ttwebview.com
-DOMAIN-KEYWORD,musical.ly
-DOMAIN-KEYWORD,tiktok
-# GitHub - 代码托管
-DOMAIN-SUFFIX,github.com
-DOMAIN-SUFFIX,github.io
-DOMAIN-SUFFIX,githubusercontent.com
-# Telegram - 即时通讯
-DOMAIN-SUFFIX,t.me
-DOMAIN-SUFFIX,telegra.ph
-DOMAIN-SUFFIX,telegram.org
-# Reddit - 社区论坛
-DOMAIN-KEYWORD,reddit
-# Discord - 即时通讯、社区
-DOMAIN-SUFFIX,discord.com
-DOMAIN-SUFFIX,discordapp.com
-DOMAIN-SUFFIX,discordapp.net
-# Clubhouse - 音频社交
-DOMAIN-SUFFIX,clubhouseapi.com
-DOMAIN-SUFFIX,joinclubhouse.com
-# Line - 即时通讯
-DOMAIN-SUFFIX,line-apps.com
-DOMAIN-SUFFIX,line-scdn.net
-DOMAIN-SUFFIX,line.me
-# Naver - 搜索、门户
-DOMAIN-SUFFIX,naver.jp
-# 新闻媒体 - 国际新闻
-DOMAIN-SUFFIX,9to5mac.com
+
+# 新闻媒体 & 其他次要服务
 DOMAIN-SUFFIX,bbc.com
-DOMAIN-SUFFIX,cnet.com
-DOMAIN-SUFFIX,chinatimes.com
 DOMAIN-SUFFIX,cnn.com
-DOMAIN-SUFFIX,dw.com
-DOMAIN-SUFFIX,time.com
 DOMAIN-SUFFIX,wsj.com
 DOMAIN-SUFFIX,wsj.net
-DOMAIN-SUFFIX,yandex.ru
+DOMAIN-SUFFIX,time.com
+DOMAIN-SUFFIX,cnet.com
+DOMAIN-SUFFIX,dw.com
+DOMAIN-SUFFIX,9to5mac.com
+DOMAIN-SUFFIX,chinatimes.com
 DOMAIN-SUFFIX,zaobao.com
-# 流媒体服务 - 视频、音乐
-DOMAIN-SUFFIX,disneyplus.com
-DOMAIN-SUFFIX,netflix.com
-DOMAIN-SUFFIX,nflxvideo.net
-DOMAIN-KEYWORD,disney
-DOMAIN-KEYWORD,spotify
-# 云存储服务 - 文件共享
-DOMAIN-KEYWORD,dropbox
-# WPS/金山 - 办公软件
+DOMAIN-SUFFIX,yandex.ru
+DOMAIN-SUFFIX,line.me
+DOMAIN-SUFFIX,line-apps.com
+DOMAIN-SUFFIX,line-scdn.net
+DOMAIN-SUFFIX,naver.jp
+DOMAIN-SUFFIX,clubhouseapi.com
+DOMAIN-SUFFIX,joinclubhouse.com
+DOMAIN-SUFFIX,dueapp.com
+DOMAIN-SUFFIX,adblockplus.org
 DOMAIN-SUFFIX,wps.com
 DOMAIN-SUFFIX,wpscdn.com
-DOMAIN-KEYWORD,kingsoft
-# 搜索工具 - 隐私搜索
-DOMAIN-SUFFIX,duckduckgo.com
-# 生产力工具 - 日程管理
-DOMAIN-SUFFIX,dueapp.com
-# 支付服务 - 在线支付
-DOMAIN-KEYWORD,paypal
-# Amazon - 电商、云服务
-DOMAIN-KEYWORD,amazon
-# Cloudflare - CDN、网络安全
-DOMAIN-KEYWORD,cloudflare
-# 博客/社区 - 技术博客
-DOMAIN-SUFFIX,apache.org
-DOMAIN-SUFFIX,coolshell.cn
-DOMAIN-SUFFIX,dev.to
-DOMAIN-SUFFIX,figma.com
-DOMAIN-SUFFIX,jsdelivr.net
-DOMAIN-SUFFIX,linux.do
-DOMAIN-SUFFIX,medium.com
-DOMAIN-SUFFIX,stackoverflow.com
-DOMAIN-SUFFIX,v2ex.com
-DOMAIN-SUFFIX,vimeo.com
-DOMAIN-KEYWORD,bianyuan
-DOMAIN-KEYWORD,mozilla
-DOMAIN-KEYWORD,netsarang
-DOMAIN-KEYWORD,wordpress
-# AI 服务 - 人工智能
-DOMAIN-SUFFIX,anthropic.com
-DOMAIN-SUFFIX,claude.ai
-DOMAIN-SUFFIX,grok.com
-DOMAIN-SUFFIX,openai.com
-# 加密货币交易所 - 数字资产
-DOMAIN-SUFFIX,aex.com
-DOMAIN-SUFFIX,bibox.com
-DOMAIN-SUFFIX,bitcointalk.org
-DOMAIN-SUFFIX,bitfinex.com
-DOMAIN-SUFFIX,bithumb.com
-DOMAIN-SUFFIX,bitmex.com
-DOMAIN-SUFFIX,bitstamp.net
-DOMAIN-SUFFIX,bittrex.com
-DOMAIN-SUFFIX,bybit.com
-DOMAIN-SUFFIX,coinbase.com
-DOMAIN-SUFFIX,coincheck.com
-DOMAIN-SUFFIX,coingecko.com
-DOMAIN-SUFFIX,coinmarketcap.com
-DOMAIN-SUFFIX,coinone.co.kr
-DOMAIN-SUFFIX,etherscan.io
-DOMAIN-SUFFIX,ftx.com
-DOMAIN-SUFFIX,gate.io
-DOMAIN-SUFFIX,gemini.com
-DOMAIN-SUFFIX,huobi.com
-DOMAIN-SUFFIX,korbit.co.kr
-DOMAIN-SUFFIX,kraken.com
-DOMAIN-SUFFIX,kucoin.com
-DOMAIN-SUFFIX,liquid.com
-DOMAIN-SUFFIX,okex.com
-DOMAIN-SUFFIX,okx.com
-DOMAIN-SUFFIX,poloniex.com
-DOMAIN-SUFFIX,sushi.com
-DOMAIN-SUFFIX,uniswap.org
-DOMAIN-SUFFIX,zb.com
-DOMAIN-KEYWORD,binance
-# 系统及杂项服务
-DOMAIN-SUFFIX,adblockplus.org
 DOMAIN-SUFFIX,ierc20.com
 DOMAIN-SUFFIX,mbalib.com
-DOMAIN-KEYWORD,bitwarden
-DOMAIN-KEYWORD,quantumult
-DOMAIN-KEYWORD,wiki
-# 网盘
+DOMAIN-SUFFIX,reddit.com
+DOMAIN-SUFFIX,mozilla.org
+DOMAIN-SUFFIX,wordpress.com
+DOMAIN-SUFFIX,wordpress.org
+
+
+# 其他常用
+DOMAIN-SUFFIX,duckduckgo.com
+DOMAIN-SUFFIX,figma.com
+DOMAIN-SUFFIX,medium.com
+DOMAIN-SUFFIX,stackoverflow.com
+DOMAIN-SUFFIX,vimeo.com
 DOMAIN-SUFFIX,mega.nz
-DOMAIN-KEYWORD,.mega.
+DOMAIN-SUFFIX,dropbox.com
+DOMAIN-SUFFIX,paypal.com
+DOMAIN-SUFFIX,cloudflare.com
+DOMAIN-SUFFIX,binance.com
+DOMAIN-SUFFIX,wikimedia.org
+DOMAIN-SUFFIX,wikiwand.com
