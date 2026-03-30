@@ -1,4 +1,8 @@
 DOMAIN,time.apple.com
+DOMAIN,time.asia.apple.com
+DOMAIN,ntp.sjtu.edu.cn
+DOMAIN,ntp.ntsc.ac.cn
+DOMAIN,cn.ntp.org.cn
 #阿里巴巴 - 云计算、电商、支付、地图及企业服务
 DOMAIN-KEYWORD,alibaba
 DOMAIN-KEYWORD,alicdn
