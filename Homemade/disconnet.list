@@ -90,6 +90,10 @@ DOMAIN-SUFFIX,updateime.baidu.com
 DOMAIN-SUFFIX,xterminal.cn
 # 万年历
 DOMAIN-SUFFIX,iytcdn.com
+DOMAIN-SUFFIX,getui.net
+DOMAIN-SUFFIX,partner.sm.cn
+DOMAIN-SUFFIX,1rtb.com
+DOMAIN,oartner.uc.cn
 # 高德开屏
 DOMAIN,amap-aos-info-nogw.amap.com
 DOMAIN,amdc.m.taobao.com
