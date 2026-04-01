@@ -1,4 +1,8 @@
 HOST,time.apple.com
+HOST,time.asia.apple.com
+HOST,ntp.sjtu.edu.cn
+HOST,ntp.ntsc.ac.cn
+HOST,cn.ntp.org.cn
 #阿里巴巴 - 云计算、电商、支付、地图及企业服务
 HOST-KEYWORD,alibaba
 HOST-KEYWORD,alicdn

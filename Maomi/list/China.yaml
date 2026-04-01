@@ -1,5 +1,9 @@
 payload:
   - DOMAIN,time.apple.com
+  - DOMAIN,time.asia.apple.com
+  - DOMAIN,ntp.sjtu.edu.cn
+  - DOMAIN,ntp.ntsc.ac.cn
+  - DOMAIN,cn.ntp.org.cn
   - DOMAIN-KEYWORD,alibaba
   - DOMAIN-KEYWORD,alicdn
   - DOMAIN-KEYWORD,alipay
