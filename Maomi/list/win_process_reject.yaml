@@ -1,8 +1,10 @@
 payload:
   - PROCESS-NAME,PixPin.exe
+  - PROCESS-NAME,PixPinAuxiliary.exe
+  - PROCESS-NAME,unins000.exe
+  - PROCESS-NAME,unzip.exe
   - PROCESS-NAME,zip.exe
   - PROCESS-NAME,crashpad_handler.exe
-  - PROCESS-NAME,unzip.exe
   - PROCESS-NAME,unins000.exe
   - PROCESS-NAME,snipaste.exe
   - PROCESS-NAME,DingTalkUpdater.exe
