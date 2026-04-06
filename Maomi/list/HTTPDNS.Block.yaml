@@ -7,6 +7,7 @@ payload:
   - DOMAIN,httpsdns.baidu.com
   - DOMAIN,httpdns.baidu.com
   - DOMAIN,httpdns.baidubce.com
+  - DOMAIN,httpdns.bcelive.com
   - IP-CIDR,180.76.76.200/32
   - DOMAIN,httpdns.bilivideo.com
   - DOMAIN,httpdns.c.cdnhwc2.com

@@ -6,6 +6,7 @@ IP-CIDR,203.107.1.0/24
 HOST,httpsdns.baidu.com
 HOST,httpdns.baidu.com
 HOST,httpdns.baidubce.com
+HOST,httpdns.bcelive.com
 IP-CIDR,180.76.76.200/32
 HOST,httpdns.bilivideo.com
 HOST,httpdns.c.cdnhwc2.com

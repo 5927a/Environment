@@ -362,6 +362,17 @@ IP-CIDR,173.194.0.0/16,no-resolve
 IP-CIDR,216.73.80.0/20,no-resolve
 IP-CIDR,74.125.0.0/16,no-resolve
 IP-CIDR6,2620:120:e000::/40,no-resolve
+HOST-SUFFIX,ggpht.cn
+HOST-SUFFIX,ggpht.com
+HOST-SUFFIX,gvt1.com
+HOST-SUFFIX,gvt2.com
+HOST-SUFFIX,youtu.be
+HOST-SUFFIX,yt.be
+HOST-SUFFIX,ytimg.com
+HOST-KEYWORD,youtube
+IP-CIDR,172.110.32.0/21,no-resolve
+IP-CIDR,216.73.80.0/20,no-resolve
+IP-CIDR6,2620:120:e000::/40,no-resolve
 IP-CIDR,108.177.125.188/32,no-resolve
 IP-CIDR,142.250.10.188/32,no-resolve
 IP-CIDR,142.250.31.188/32,no-resolve
@@ -389,4 +400,3 @@ IP-CIDR,74.125.23.188/32,no-resolve
 IP-CIDR,74.125.24.188/32,no-resolve
 IP-CIDR,74.125.28.188/32,no-resolve
 HOST-KEYWORD,www.google.
-HOST,music.youtube.com
