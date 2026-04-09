@@ -5,3 +5,4 @@ HOST,captive.apple.com
 HOST,www.apple.com
 HOST-SUFFIX,open.e.189.cn
 HOST-SUFFIX,wximg.wxs.qq.com
+IP-CIDR,23.94.68.183/32,,no-resolve
