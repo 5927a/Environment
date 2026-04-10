@@ -65,7 +65,7 @@ sniffer:
 dns:
   enable: true
   ipv6: false
-  listen: 0.0.0.0:1053
+  listen: 0.0.0.0:7874
   prefer-h3: true
   use-system-hosts: false # 是否查询系统 hosts，默认 true
   respect-rules: true  # 仅对符合规则的请求使用 DNS
