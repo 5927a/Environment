@@ -1,4 +1,5 @@
 IP-CIDR,223.5.5.5/32,no-resolve
+IP-CIDR,23.94.68.189/32,,no-resolve
 IP-CIDR,119.29.29.29/32,no-resolve
 IP-CIDR,114.114.114.114/32,no-resolve
 IP-CIDR,223.6.6.6/32,no-resolve
@@ -20,4 +21,3 @@ IP-CIDR,224.0.0.0/4,no-resolve
 IP-CIDR6,::1/128,no-resolve
 IP-CIDR6,fc00::/7,no-resolve
 IP-CIDR6,fe80::/10,no-resolve
-IP-CIDR,23.94.68.183/32,,no-resolve

@@ -120,7 +120,6 @@ payload:
   - PROCESS-NAME,OfficeClickToRun.exe
   - PROCESS-NAME,WizTree64.exe
   - PROCESS-NAME,WizTree.exe
-  - PROCESS-NAME,msedgewebview2.exe
   - PROCESS-NAME,ksolaunch.exe
   - PROCESS-NAME,et.exe
   - PROCESS-NAME,install_webmdshow.exe
