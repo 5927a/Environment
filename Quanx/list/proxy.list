@@ -174,6 +174,7 @@ HOST-SUFFIX,accim.org,Proxy
 HOST-SUFFIX,accountkit.com,Proxy
 HOST-SUFFIX,aceros-de-hispania.com,Proxy
 HOST-SUFFIX,acevpn.com,Proxy
+HOST-SUFFIX,acg.mn,Proxy
 HOST-SUFFIX,acg.rip,Proxy
 HOST-SUFFIX,acg18.me,Proxy
 HOST-SUFFIX,acgbox.org,Proxy
@@ -693,6 +694,7 @@ HOST-SUFFIX,blacked.com,Proxy
 HOST-SUFFIX,blacklogic.com,Proxy
 HOST-SUFFIX,blackmagicdesign.com,Proxy
 HOST-SUFFIX,blackvpn.com,Proxy
+HOST-SUFFIX,bleepingcomputer.com,Proxy
 HOST-SUFFIX,blewpass.com,Proxy
 HOST-SUFFIX,blingblingsquad.net,Proxy
 HOST-SUFFIX,blinkx.com,Proxy
@@ -814,6 +816,7 @@ HOST-SUFFIX,bookepub.com,Proxy
 HOST-SUFFIX,books.com.tw,Proxy
 HOST-SUFFIX,booktopia.com.au,Proxy
 HOST-SUFFIX,bookwalker.com.tw,Proxy
+HOST-SUFFIX,boomplay.com,Proxy
 HOST-SUFFIX,boomssr.com,Proxy
 HOST-SUFFIX,bootstrapcdn.com,Proxy
 HOST-SUFFIX,borgenmagazine.com,Proxy
@@ -1244,6 +1247,7 @@ HOST-SUFFIX,cn-proxy.com,Proxy
 HOST-SUFFIX,cn6.eu,Proxy
 HOST-SUFFIX,cna.com.tw,Proxy
 HOST-SUFFIX,cnabc.com,Proxy
+HOST-SUFFIX,cnbc.com,Proxy
 HOST-SUFFIX,cnbeta.com.tw,Proxy
 HOST-SUFFIX,cnd.org,Proxy
 HOST-SUFFIX,cnet.com,Proxy
@@ -1353,6 +1357,7 @@ HOST-SUFFIX,ctao.org,Proxy
 HOST-SUFFIX,ctfriend.net,Proxy
 HOST-SUFFIX,ctinets.com,Proxy
 HOST-SUFFIX,ctinews.com,Proxy
+HOST-SUFFIX,ctinsider.com,Proxy
 HOST-SUFFIX,ctitv.com.tw,Proxy
 HOST-SUFFIX,ctowc.org,Proxy
 HOST-SUFFIX,cts.com.tw,Proxy
@@ -1721,6 +1726,7 @@ HOST-SUFFIX,edgecastcdn.net,Proxy
 HOST-SUFFIX,edgekey.net,Proxy
 HOST-SUFFIX,edgesuite.net,Proxy
 HOST-SUFFIX,edicypages.com,Proxy
+HOST-SUFFIX,edigest.hk,Proxy
 HOST-SUFFIX,edmontonservice.com,Proxy
 HOST-SUFFIX,edns.biz,Proxy
 HOST-SUFFIX,edoors.com,Proxy
@@ -2901,6 +2907,7 @@ HOST-SUFFIX,hinet.net,Proxy
 HOST-SUFFIX,hitbtc.com,Proxy
 HOST-SUFFIX,hitomi.la,Proxy
 HOST-SUFFIX,hitun.io,Proxy
+HOST-SUFFIX,hive.blog,Proxy
 HOST-SUFFIX,hiveon.net,Proxy
 HOST-SUFFIX,hiwifi.com,Proxy
 HOST-SUFFIX,hizb-ut-tahrir.info,Proxy
@@ -3204,6 +3211,7 @@ HOST-SUFFIX,indsr.org.tw,Proxy
 HOST-SUFFIX,inf.news,Proxy
 HOST-SUFFIX,info-graf.fr,Proxy
 HOST-SUFFIX,informer.com,Proxy
+HOST-SUFFIX,infosec.exchange,Proxy
 HOST-SUFFIX,infura.io,Proxy
 HOST-SUFFIX,ingress.com,Proxy
 HOST-SUFFIX,inherit.live,Proxy
@@ -3475,6 +3483,7 @@ HOST-SUFFIX,karkhung.com,Proxy
 HOST-SUFFIX,karmapa-teachings.org,Proxy
 HOST-SUFFIX,karmapa.org,Proxy
 HOST-SUFFIX,kat.cr,Proxy
+HOST-SUFFIX,kathmandupost.com,Proxy
 HOST-SUFFIX,kawaiikawaii.jp,Proxy
 HOST-SUFFIX,kawase.com,Proxy
 HOST-SUFFIX,kba-tx.org,Proxy
@@ -3623,6 +3632,7 @@ HOST-SUFFIX,liaowangxizang.net,Proxy
 HOST-SUFFIX,liberal.org.hk,Proxy
 HOST-SUFFIX,libertysculpturepark.com,Proxy
 HOST-SUFFIX,libertytimes.com.tw,Proxy
+HOST-SUFFIX,libgen.is,Proxy
 HOST-SUFFIX,library-access.sk,Proxy
 HOST-SUFFIX,libraryinformationtechnology.com,Proxy
 HOST-SUFFIX,libredd.it,Proxy
@@ -3840,6 +3850,7 @@ HOST-SUFFIX,media.org.hk,Proxy
 HOST-SUFFIX,mediachinese.com,Proxy
 HOST-SUFFIX,mediafire.com,Proxy
 HOST-SUFFIX,mediafreakcity.com,Proxy
+HOST-SUFFIX,mediamatters.org,Proxy
 HOST-SUFFIX,mediawiki.org,Proxy
 HOST-SUFFIX,medium.com,Proxy
 HOST-SUFFIX,meee.com.tw,Proxy
@@ -3970,6 +3981,7 @@ HOST-SUFFIX,mixx.com,Proxy
 HOST-SUFFIX,mizzmona.com,Proxy
 HOST-SUFFIX,mji.rip,Proxy
 HOST-SUFFIX,mjj.rip,Proxy
+HOST-SUFFIX,mjj.today,Proxy
 HOST-SUFFIX,mk5000.com,Proxy
 HOST-SUFFIX,mlc.ai,Proxy
 HOST-SUFFIX,mlcool.com,Proxy
@@ -4228,12 +4240,14 @@ HOST-SUFFIX,newschinacomment.org,Proxy
 HOST-SUFFIX,newscn.org,Proxy
 HOST-SUFFIX,newsdetox.ca,Proxy
 HOST-SUFFIX,newsdh.com,Proxy
+HOST-SUFFIX,newshub.co.nz,Proxy
 HOST-SUFFIX,newsmax.com,Proxy
 HOST-SUFFIX,newspeak.cc,Proxy
 HOST-SUFFIX,newstamago.com,Proxy
 HOST-SUFFIX,newstapa.org,Proxy
 HOST-SUFFIX,newstarnet.com,Proxy
 HOST-SUFFIX,newstatesman.com,Proxy
+HOST-SUFFIX,newstimes.com,Proxy
 HOST-SUFFIX,newsweek.com,Proxy
 HOST-SUFFIX,newtaiwan.com.tw,Proxy
 HOST-SUFFIX,newtalk.tw,Proxy
@@ -4254,6 +4268,8 @@ HOST-SUFFIX,nflximg.com,Proxy
 HOST-SUFFIX,nflximg.net,Proxy
 HOST-SUFFIX,nflxso.net,Proxy
 HOST-SUFFIX,nflxvideo.net,Proxy
+HOST-SUFFIX,nfsc.press,Proxy
+HOST-SUFFIX,nfscofficial.com,Proxy
 HOST-SUFFIX,nftstorage.link,Proxy
 HOST-SUFFIX,ng.mil,Proxy
 HOST-SUFFIX,nga.mil,Proxy
@@ -4513,6 +4529,7 @@ HOST-SUFFIX,ourtv.hk,Proxy
 HOST-SUFFIX,over-blog.com,Proxy
 HOST-SUFFIX,overcast.fm,Proxy
 HOST-SUFFIX,overdaily.org,Proxy
+HOST-SUFFIX,overdrive.com,Proxy
 HOST-SUFFIX,overplay.net,Proxy
 HOST-SUFFIX,ovi.com,Proxy
 HOST-SUFFIX,ovpn.com,Proxy
@@ -4609,6 +4626,7 @@ HOST-SUFFIX,pen.io,Proxy
 HOST-SUFFIX,penchinese.com,Proxy
 HOST-SUFFIX,penchinese.net,Proxy
 HOST-SUFFIX,pendrivelinux.com,Proxy
+HOST-SUFFIX,penguin.com.au,Proxy
 HOST-SUFFIX,pengyulong.com,Proxy
 HOST-SUFFIX,penisbot.com,Proxy
 HOST-SUFFIX,pentalogic.net,Proxy
@@ -5082,6 +5100,7 @@ HOST-SUFFIX,rthk.hk,Proxy
 HOST-SUFFIX,rthk.org.hk,Proxy
 HOST-SUFFIX,rti.org.tw,Proxy
 HOST-SUFFIX,rti.tw,Proxy
+HOST-SUFFIX,rts.ch,Proxy
 HOST-SUFFIX,rtycminnesota.org,Proxy
 HOST-SUFFIX,ruanyifeng.com,Proxy
 HOST-SUFFIX,rukor.org,Proxy
@@ -5753,6 +5772,7 @@ HOST-SUFFIX,tg.dev,Proxy
 HOST-SUFFIX,tgfcer.com,Proxy
 HOST-SUFFIX,tgstat.com,Proxy
 HOST-SUFFIX,thaicn.com,Proxy
+HOST-SUFFIX,the-sun.com,Proxy
 HOST-SUFFIX,theatlantic.com,Proxy
 HOST-SUFFIX,theatrum-belli.com,Proxy
 HOST-SUFFIX,theaustralian.com.au,Proxy
@@ -5804,6 +5824,7 @@ HOST-SUFFIX,thetrotskymovie.com,Proxy
 HOST-SUFFIX,thetvdb.com,Proxy
 HOST-SUFFIX,theverge.com,Proxy
 HOST-SUFFIX,thevivekspot.com,Proxy
+HOST-SUFFIX,theweek.com,Proxy
 HOST-SUFFIX,thewgo.org,Proxy
 HOST-SUFFIX,thewirechina.com,Proxy
 HOST-SUFFIX,theync.com,Proxy
@@ -6104,6 +6125,7 @@ HOST-SUFFIX,tvb.com,Proxy
 HOST-SUFFIX,tvbanywhere.com,Proxy
 HOST-SUFFIX,tvboxnow.com,Proxy
 HOST-SUFFIX,tvbs.com.tw,Proxy
+HOST-SUFFIX,tvdy1.com,Proxy
 HOST-SUFFIX,tvider.com,Proxy
 HOST-SUFFIX,tvmost.com.hk,Proxy
 HOST-SUFFIX,tvplayvideos.com,Proxy
@@ -6458,6 +6480,7 @@ HOST-SUFFIX,voicettank.org,Proxy
 HOST-SUFFIX,vot.org,Proxy
 HOST-SUFFIX,vovo2000.com,Proxy
 HOST-SUFFIX,vox-cdn.com,Proxy
+HOST-SUFFIX,vox.com,Proxy
 HOST-SUFFIX,voxer.com,Proxy
 HOST-SUFFIX,voy.com,Proxy
 HOST-SUFFIX,vpn.ac,Proxy
