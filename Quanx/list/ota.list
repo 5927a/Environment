@@ -1,7 +1,7 @@
-HOST-SUFFIX,app-site-association.cdn-apple.com
-HOST-SUFFIX,mesu.apple.com
-HOST-SUFFIX,gdmf.apple.com
-HOST-SUFFIX,updates-http.cdn-apple.com
-HOST-SUFFIX,xp.apple.com
-HOST-SUFFIX,component-ota-cn.allawntech.com
-HOST-SUFFIX,h5fs.coloros.com
+HOST-SUFFIX,app-site-association.cdn-apple.com,reject
+HOST-SUFFIX,mesu.apple.com,reject
+HOST-SUFFIX,gdmf.apple.com,reject
+HOST-SUFFIX,updates-http.cdn-apple.com,reject
+HOST-SUFFIX,xp.apple.com,reject
+HOST-SUFFIX,component-ota-cn.allawntech.com,reject
+HOST-SUFFIX,h5fs.coloros.com,reject
