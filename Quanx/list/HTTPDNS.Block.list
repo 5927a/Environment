@@ -5,9 +5,11 @@ HOST,resolvers-cn.httpdns.aliyuncs.com
 IP-CIDR,203.107.1.0/24
 HOST,httpsdns.baidu.com
 HOST,httpdns.baidu.com
+IP-CIDR,180.76.76.112/32
 HOST,httpdns.baidubce.com
 HOST,httpdns.bcelive.com
 IP-CIDR,180.76.76.200/32
+IP-CIDR,180.76.76.220/32
 HOST,httpdns.bilivideo.com
 HOST,httpdns.c.cdnhwc2.com
 HOST,doh.iqiyi.com
@@ -25,6 +27,7 @@ HOST,dnspod.meituan.httpdns.start.qcloud.com
 IP-CIDR,202.90.108.13/32
 IP-CIDR,202.90.110.46/32
 HOST,httpdns.immomo.com
+HOST,httpdns.yunxinfw.com
 HOST,httpdns.yunxindns.com
 HOST,httpdns.n.netease.com
 HOST,httpdns-sdk.n.netease.com
@@ -35,6 +38,7 @@ IP-CIDR,59.111.239.61/32
 IP-CIDR,59.111.239.62/32
 IP-CIDR,115.236.121.51/32
 IP-CIDR,115.236.121.195/32
+HOST,httpdns.ocloud.oppomobile.com
 HOST,httpdns.push.oppomobile.com
 HOST-SUFFIX,httpdns.pro
 IP-CIDR,119.29.29.98/32

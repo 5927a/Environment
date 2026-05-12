@@ -3,5 +3,7 @@ payload:
   - DOMAIN,dns.msftncsi.com
   - DOMAIN,captive.apple.com
   - DOMAIN,www.apple.com
+  - DOMAIN,time.apple.com
+  - DOMAIN-SUFFIX,push.apple.com
   - DOMAIN-SUFFIX,open.e.189.cn
   - DOMAIN-SUFFIX,wximg.wxs.qq.com

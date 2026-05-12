@@ -4,12 +4,6 @@ payload:
   - DOMAIN,ntp.sjtu.edu.cn
   - DOMAIN,ntp.ntsc.ac.cn
   - DOMAIN,cn.ntp.org.cn
-  - DOMAIN-KEYWORD,alibaba
-  - DOMAIN-KEYWORD,alicdn
-  - DOMAIN-KEYWORD,alipay
-  - DOMAIN-KEYWORD,aliyun
-  - DOMAIN-KEYWORD,taobao
-  - DOMAIN-KEYWORD,tmall
   - DOMAIN-SUFFIX,1688.com
   - DOMAIN-SUFFIX,aliapp.org
   - DOMAIN-SUFFIX,amap.com
@@ -20,8 +14,6 @@ payload:
   - DOMAIN-SUFFIX,luohanacademy.com
   - DOMAIN-SUFFIX,restapi.amap.com
   - DOMAIN-SUFFIX,qwen.ai
-  - DOMAIN-KEYWORD,tencent
-  - DOMAIN-KEYWORD,wechat
   - DOMAIN-SUFFIX,gtimg.com
   - DOMAIN-SUFFIX,qlogo.cn
   - DOMAIN-SUFFIX,qpic.cn
@@ -31,10 +23,8 @@ payload:
   - DOMAIN-SUFFIX,weixin.com
   - DOMAIN-SUFFIX,weixinbridge.com
   - DOMAIN-SUFFIX,weixinsxy.com
-  - DOMAIN-KEYWORD,gtmc.com
   - DOMAIN-SUFFIX,ingeek.com
   - DOMAIN-SUFFIX,bonree.com
-  - DOMAIN-KEYWORD,360buy
   - DOMAIN-SUFFIX,jd.com
   - DOMAIN-SUFFIX,jd.shop
   - DOMAIN-SUFFIX,jdbusiness.com
@@ -44,7 +34,6 @@ payload:
   - DOMAIN-SUFFIX,jddebug.com
   - DOMAIN-SUFFIX,jingxi.com
   - DOMAIN-SUFFIX,paipai.com
-  - DOMAIN-KEYWORD,douyin
   - DOMAIN-SUFFIX,amemv.com
   - DOMAIN-SUFFIX,bytedance.com
   - DOMAIN-SUFFIX,ixigua.com
@@ -168,7 +157,6 @@ payload:
   - DOMAIN-SUFFIX,suning.com
   - DOMAIN-SUFFIX,vip.com
   - DOMAIN-SUFFIX,vipshop.com
-  - DOMAIN-KEYWORD,bilibili
   - DOMAIN-SUFFIX,bilivideo.com
   - DOMAIN-SUFFIX,iqiyi.com
   - DOMAIN-SUFFIX,kuaishou.com
@@ -243,8 +231,6 @@ payload:
   - DOMAIN-SUFFIX,xunlei.com
   - DOMAIN-SUFFIX,ys7.com
   - DOMAIN-SUFFIX,zhihu.com
-  - DOMAIN-KEYWORD,midea.com
-  - DOMAIN-KEYWORD,midea.net
   - DOMAIN-SUFFIX,autohome.com.cn
   - DOMAIN-SUFFIX,autoimg.cn
   - DOMAIN-SUFFIX,byd.com
@@ -276,11 +262,6 @@ payload:
   - DOMAIN-SUFFIX,org.cn
   - DOMAIN-SUFFIX,qbittorrent.org
   - DOMAIN-SUFFIX,sandai.net
-  - DOMAIN-KEYWORD,aria2
-  - DOMAIN-KEYWORD,thunder
-  - DOMAIN-KEYWORD,xlliveud
-  - DOMAIN-KEYWORD,xunlei
-  - DOMAIN-KEYWORD,yunpan
   - DOMAIN-SUFFIX,sf-express.com
   - DOMAIN-SUFFIX,12306.cn
   - DOMAIN-SUFFIX,ctrip.com
@@ -294,3 +275,20 @@ payload:
   - DOMAIN-SUFFIX,tongyi.com
   - DOMAIN-SUFFIX,eebbk.net
   - DOMAIN-SUFFIX,eebbk.com
+  - DOMAIN-KEYWORD,tencent
+  - DOMAIN-KEYWORD,wechat
+  - DOMAIN-KEYWORD,alibaba
+  - DOMAIN-KEYWORD,alicdn
+  - DOMAIN-KEYWORD,alipay
+  - DOMAIN-KEYWORD,aliyun
+  - DOMAIN-KEYWORD,taobao
+  - DOMAIN-KEYWORD,tmall
+  - DOMAIN-KEYWORD,360buy
+  - DOMAIN-KEYWORD,aria2
+  - DOMAIN-KEYWORD,thunder
+  - DOMAIN-KEYWORD,xlliveud
+  - DOMAIN-KEYWORD,xunlei
+  - DOMAIN-KEYWORD,yunpan
+  - DOMAIN-KEYWORD,bilibili
+  - DOMAIN-KEYWORD,douyin
+  - DOMAIN-KEYWORD,gtmc.com
