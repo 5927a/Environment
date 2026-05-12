@@ -1,8 +1,11 @@
-HOST,time.apple.com
-HOST,time.asia.apple.com
+#时间
 HOST,ntp.sjtu.edu.cn
 HOST,ntp.ntsc.ac.cn
 HOST,cn.ntp.org.cn
+#苹果
+HOST,time.apple.com
+HOST,time.asia.apple.com
+HOST-SUFFIX,push.apple.com
 #阿里巴巴 - 云计算、电商、支付、地图及企业服务
 HOST-SUFFIX,1688.com
 HOST-SUFFIX,aliapp.org

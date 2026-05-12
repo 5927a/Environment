@@ -4,7 +4,6 @@ payload:
   - DOMAIN-SUFFIX,apple-cloudkit.com
   - DOMAIN-SUFFIX,apzones.com
   - DOMAIN-SUFFIX,icloud-privacy-relay.com
-  - DOMAIN-SUFFIX,apple.news
   - DOMAIN,apple-relay.apple.com
   - DOMAIN,apple-relay.cloudflare.com
   - DOMAIN,developer.apple.com
@@ -16,6 +15,7 @@ payload:
   - DOMAIN,rtlimages.apple.com
   - DOMAIN-SUFFIX,ls.apple.com
   - DOMAIN-SUFFIX,apple-dns.net
+  - DOMAIN-SUFFIX,apple.news
   - DOMAIN-SUFFIX,guzzoni.apple.com
   - DOMAIN-SUFFIX,smoot.apple.com
   - DOMAIN-SUFFIX,fastly-edge.com

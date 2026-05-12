@@ -1,9 +1,10 @@
 payload:
-  - DOMAIN,time.apple.com
-  - DOMAIN,time.asia.apple.com
   - DOMAIN,ntp.sjtu.edu.cn
   - DOMAIN,ntp.ntsc.ac.cn
   - DOMAIN,cn.ntp.org.cn
+  - DOMAIN,time.apple.com
+  - DOMAIN,time.asia.apple.com
+  - DOMAIN-SUFFIX,push.apple.com
   - DOMAIN-SUFFIX,1688.com
   - DOMAIN-SUFFIX,aliapp.org
   - DOMAIN-SUFFIX,amap.com
