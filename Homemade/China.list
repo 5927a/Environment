@@ -4,12 +4,6 @@ DOMAIN,ntp.sjtu.edu.cn
 DOMAIN,ntp.ntsc.ac.cn
 DOMAIN,cn.ntp.org.cn
 #阿里巴巴 - 云计算、电商、支付、地图及企业服务
-DOMAIN-KEYWORD,alibaba
-DOMAIN-KEYWORD,alicdn
-DOMAIN-KEYWORD,alipay
-DOMAIN-KEYWORD,aliyun
-DOMAIN-KEYWORD,taobao
-DOMAIN-KEYWORD,tmall
 DOMAIN-SUFFIX,1688.com
 DOMAIN-SUFFIX,aliapp.org
 DOMAIN-SUFFIX,amap.com
@@ -21,8 +15,6 @@ DOMAIN-SUFFIX,luohanacademy.com
 DOMAIN-SUFFIX,restapi.amap.com
 DOMAIN-SUFFIX,qwen.ai
 #腾讯 - 互联网服务、即时通讯、支付及社交
-DOMAIN-KEYWORD,tencent
-DOMAIN-KEYWORD,wechat
 DOMAIN-SUFFIX,gtimg.com
 DOMAIN-SUFFIX,qlogo.cn
 DOMAIN-SUFFIX,qpic.cn
@@ -33,11 +25,9 @@ DOMAIN-SUFFIX,weixin.com
 DOMAIN-SUFFIX,weixinbridge.com
 DOMAIN-SUFFIX,weixinsxy.com
 # 广汽丰田
-DOMAIN-KEYWORD,gtmc.com
 DOMAIN-SUFFIX,ingeek.com
 DOMAIN-SUFFIX,bonree.com
 #京东 - 电商
-DOMAIN-KEYWORD,360buy
 DOMAIN-SUFFIX,jd.com
 DOMAIN-SUFFIX,jd.shop
 DOMAIN-SUFFIX,jdbusiness.com
@@ -48,7 +38,6 @@ DOMAIN-SUFFIX,jddebug.com
 DOMAIN-SUFFIX,jingxi.com
 DOMAIN-SUFFIX,paipai.com
 #字节跳动 - 短视频、新闻
-DOMAIN-KEYWORD,douyin
 DOMAIN-SUFFIX,amemv.com
 DOMAIN-SUFFIX,bytedance.com
 DOMAIN-SUFFIX,ixigua.com
@@ -180,7 +169,6 @@ DOMAIN-SUFFIX,suning.com
 DOMAIN-SUFFIX,vip.com
 DOMAIN-SUFFIX,vipshop.com
 #视频及娱乐平台
-DOMAIN-KEYWORD,bilibili
 DOMAIN-SUFFIX,bilivideo.com
 DOMAIN-SUFFIX,iqiyi.com
 DOMAIN-SUFFIX,kuaishou.com
@@ -258,8 +246,6 @@ DOMAIN-SUFFIX,xhscdn.com
 DOMAIN-SUFFIX,xunlei.com
 DOMAIN-SUFFIX,ys7.com
 DOMAIN-SUFFIX,zhihu.com
-DOMAIN-KEYWORD,midea.com
-DOMAIN-KEYWORD,midea.net
 #汽车及相关服务
 DOMAIN-SUFFIX,autohome.com.cn
 DOMAIN-SUFFIX,autoimg.cn
@@ -297,11 +283,6 @@ DOMAIN-SUFFIX,org.cn
 #下载及文件共享服务
 DOMAIN-SUFFIX,qbittorrent.org
 DOMAIN-SUFFIX,sandai.net
-DOMAIN-KEYWORD,aria2
-DOMAIN-KEYWORD,thunder
-DOMAIN-KEYWORD,xlliveud
-DOMAIN-KEYWORD,xunlei
-DOMAIN-KEYWORD,yunpan
 #物流服务
 DOMAIN-SUFFIX,sf-express.com
 #旅行及票务服务
@@ -324,3 +305,27 @@ DOMAIN-SUFFIX,tongyi.com
 #步步高
 DOMAIN-SUFFIX,eebbk.net
 DOMAIN-SUFFIX,eebbk.com
+#腾讯
+DOMAIN-KEYWORD,tencent
+DOMAIN-KEYWORD,wechat
+#阿里巴巴 - 云计算、电商、支付、地图及企业服务
+DOMAIN-KEYWORD,alibaba
+DOMAIN-KEYWORD,alicdn
+DOMAIN-KEYWORD,alipay
+DOMAIN-KEYWORD,aliyun
+DOMAIN-KEYWORD,taobao
+DOMAIN-KEYWORD,tmall
+#京东 - 电商
+DOMAIN-KEYWORD,360buy
+#下载
+DOMAIN-KEYWORD,aria2
+DOMAIN-KEYWORD,thunder
+DOMAIN-KEYWORD,xlliveud
+DOMAIN-KEYWORD,xunlei
+DOMAIN-KEYWORD,yunpan
+#哔哩
+DOMAIN-KEYWORD,bilibili
+#抖音
+DOMAIN-KEYWORD,douyin
+#广汽丰田app
+DOMAIN-KEYWORD,gtmc.com
