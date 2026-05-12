@@ -4,9 +4,6 @@ payload:
   - DOMAIN-SUFFIX,apple-cloudkit.com
   - DOMAIN-SUFFIX,apzones.com
   - DOMAIN-SUFFIX,icloud-privacy-relay.com
-  - DOMAIN-SUFFIX,itunes.apple.com
-  - DOMAIN-SUFFIX,apps.apple.com
-  - DOMAIN-SUFFIX,mzstatic.com
   - DOMAIN-SUFFIX,apple.news
   - DOMAIN,apple-relay.apple.com
   - DOMAIN,apple-relay.cloudflare.com
