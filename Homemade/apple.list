@@ -5,10 +5,6 @@ DOMAIN-SUFFIX,apple-cloudkit.com
 DOMAIN-SUFFIX,apzones.com
 DOMAIN-SUFFIX,icloud-privacy-relay.com
 #应用商店
-#DOMAIN-SUFFIX,itunes.apple.com
-#DOMAIN-SUFFIX,apps.apple.com
-#DOMAIN-SUFFIX,mzstatic.com
-DOMAIN-SUFFIX,apple.news
 DOMAIN,apple-relay.apple.com
 DOMAIN,apple-relay.cloudflare.com
 DOMAIN,developer.apple.com
@@ -20,6 +16,10 @@ DOMAIN,www.apple.com
 DOMAIN,rtlimages.apple.com
 DOMAIN-SUFFIX,ls.apple.com
 DOMAIN-SUFFIX,apple-dns.net
+#DOMAIN-SUFFIX,itunes.apple.com
+#DOMAIN-SUFFIX,apps.apple.com
+#DOMAIN-SUFFIX,mzstatic.com
+DOMAIN-SUFFIX,apple.news
 # ===================== Apple AI ===================================
 DOMAIN-SUFFIX,guzzoni.apple.com
 DOMAIN-SUFFIX,smoot.apple.com
