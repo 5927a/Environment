@@ -1,0 +1,9 @@
+#DOMAIN-SUFFIX,id6.me,REJECT
+HOST,www.msftconnecttest.com,REJECT
+HOST,dns.msftncsi.com,REJECT
+HOST,captive.apple.com,REJECT
+HOST,www.apple.com,REJECT
+HOST,time.apple.com,REJECT
+DOMAIN-SUFFIX,push.apple.com,REJECT
+DOMAIN-SUFFIX,open.e.189.cn,REJECT
+DOMAIN-SUFFIX,wximg.wxs.qq.com,REJECT

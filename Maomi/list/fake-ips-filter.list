@@ -1,0 +1,11 @@
+#STUN
++.stun.*.*
++.stun.*.*.*
++.stun.*.*.*.*
++.stun.*.*.*.*.*
+#Google
+lens.l.google.com
+#证书
++.digicert.com
+#apple
+captive.apple.com

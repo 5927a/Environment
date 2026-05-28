@@ -1,0 +1,13 @@
+HOST,update.googleapis.com,REJECT
+HOST,softwareupdate.vmware.com,REJECT
+HOST,update.pan.baidu.com,REJECT
+HOST,dtapp-pub.dingtalk.com,REJECT
+HOST-KEYWORD,viewdepth,REJECT
+HOST-KEYWORD,ecopaste,REJECT
+DOMAIN-SUFFIX,photoshop.com,REJECT
+HOST-KEYWORD,adobe,REJECT
+#DOMAIN-SUFFIX,nvidia.com,REJECT
+#DOMAIN-KEYWORD,2345,REJECT
+DOMAIN-SUFFIX,huandian.com,REJECT
+HOST-KEYWORD,potplayer,REJECT
+DOMAIN-SUFFIX,ieway.cn,REJECT

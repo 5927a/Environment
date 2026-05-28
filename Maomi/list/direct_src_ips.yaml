@@ -1,0 +1,4 @@
+payload:
+    - SRC-IP-CIDR,172.21.0.10/32
+    - SRC-IP-CIDR,172.21.0.11/32
+    - SRC-IP-CIDR,172.21.0.12/32

@@ -1,0 +1,331 @@
+mode: rule
+external-controller-cors:
+  allow-origins:
+    - "*"
+  allow-private-network: true
+mixed-port: 7890
+socks-port: 7891
+port: 7892
+redir-port: 7893
+tproxy-port: 7984
+###########################################
+external-controller: 127.0.0.1:9090
+secret: "788!@SDSt5@$@sfr2"
+#secret: ""
+external-ui: "./profiles/ui" # 外部控制目录
+external-ui-url: ""
+###########################################
+ipv6: false
+bind-address: "*"
+allow-lan: true
+log-level: silent
+find-process-mode: always
+###########################################
+lan-allowed-ips:
+  - 127.0.0.1/32
+  - ::/0
+lan-disallowed-ips: []
+authentication: []
+skip-auth-prefixes:
+  - 127.0.0.1/32
+  - ::1/128
+###########################################
+keep-alive-interval: 30 # TCP Keep Alive 间隔,单位为秒,控制 Clash 发出 TCP Keep Alive 包的间隔,减少移动设备耗电问题的临时措施
+keep-alive-idle: 60
+###########################################
+unified-delay: false # 统一延迟 true/false
+tcp-concurrent: true # TCP 并发 如果域名解析结果对应多个IP,并发请求所有IP,选择握手最快的IP进行通讯
+profile:
+  store-selected: true
+  store-fake-ip: true
+###########################################
+sniffer:
+  enable: true                 # 启用 sniffer
+  force-dns-mapping: false      # 强制使用内置 DNS 映射嗅探域名
+  parse-pure-ip: true          # 解析纯 IP 请求（如果可能提取域名）
+  override-destination: true   # 用嗅探域名覆盖目标（影响路由）
+  sniff:
+    HTTP:
+      ports: [80, 8080-8880]   # HTTP 嗅探端口
+      override-destination: false
+    TLS:
+      ports: [443, 8443]       # TLS 嗅探端口
+    QUIC:
+      ports: [443, 8443]       # QUIC 嗅探端口
+  skip-domain:                 # 跳过嗅探这些域名
+    - "+.push.apple.com"
+  force-domain:                # 强制嗅探这些域名
+    - "google.com"
+    - "x.com"
+    - "youtube.com"
+    - "telegram.org"
+    - "live.com"
+    - "googlevideo.com"
+###########################################
+tun:
+  enable: true
+  stack: mixed
+  auto-route: true
+  auto-detect-interface: true
+  dns-hijack:
+    - 0.0.0.0:53
+  mtu: 1500
+############################################
+hosts:
+  dns.alidns.com: [223.5.5.5, 223.6.6.6, 2400:3200::1, 2400:3200:baba::1]
+  doh.pub: [1.12.12.12, 1.12.12.21, 120.53.53.53]
+  dns.google: [8.8.8.8, 8.8.4.4, 2001:4860:4860::8888, 2001:4860:4860::8844]
+  cloudflare-dns.com: [1.1.1.1, 1.0.0.1, 2606:4700:4700::1111, 2606:4700:4700::1001]
+################################################
+dns:
+  enable: true
+  ipv6: false
+  listen: 127.0.0.1:1053
+  prefer-h3: false
+  use-system-hosts: false # 是否查询系统 hosts，默认 true
+  respect-rules: true  # 仅对符合规则的请求使用 DNS
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter-mode: blacklist
+  fake-ip-filter:
+    - geosite:private
+    - geosite:cn
+  default-nameserver:
+    - 119.29.29.29
+    - 223.5.5.5
+  nameserver:
+    - https://cloudflare-dns.com/dns-query
+    - https://dns.google/dns-query
+  nameserver-policy:
+    "geosite:cn":
+      - 119.29.29.29
+      - 223.5.5.5
+    "geosite:private":
+      - system
+    geosite:!cn:
+     - https://cloudflare-dns.com/dns-query
+     - https://dns.google/dns-query
+  direct-nameserver:
+    - 119.29.29.29
+    - 223.5.5.5
+  proxy-server-nameserver:
+    - https://223.5.5.5/dns-query
+    - https://doh.pub/dns-query
+  fallback:
+    - https://doh.opendns.com/dns-query
+    - https://dns.quad9.net/dns-query
+    - https://dns.adguard-dns.com/dns-query
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+    ipcidr:
+      - 240.0.0.0/4
+      - 127.0.0.0/8
+      - 10.0.0.0/8
+      - 172.16.0.0/12
+      - 192.168.0.0/16
+    domain:
+      - '+.google.com'
+      - '+.facebook.com'
+      - '+.youtube.com'
+      - '+.x.com'
+      - '+.telegram.org'
+###########################################
+geodata-mode: false # GEOIP 数据模式,更改 geoip 使用文件为 mmdb 或者 dat , true 为 dat
+geosite-matcher: "succinct" # GeoSite 匹配器使用的实现 succinct (default, same as rule-set)/mph (from V2Ray, also `hybrid` in Xray)
+geodata-loader: "standard" # GEO 文件加载模式 standard/memconservative
+geo-auto-update: true # 自动更新 GEO 是否启用,可选 true/false
+geo-update-interval: 48 # 更新间隔,单位 h
+geox-url:
+  geoip: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Download/geoip.dat
+  geosite: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Download/geosite.dat
+  mmdb: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Download/Country.mmdb
+  asn: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Download/GeoLite2-ASN.mmdb
+
+# 节点订阅的参数 [每12小时更新一次订阅节点，每 60 秒一次健康检查]
+NodeParam: &NodeParam {type: http, interval: 21600, health-check: {enable: true, url: 'http://cp.cloudflare.com/generate_204', interval: 600}}
+
+# 节点订阅   # url替换自己的，这个是机场订阅地址
+proxy-providers:
+  ONE:
+   url: 'https169c7d0c36e'
+   <<: *NodeParam
+   path: './proxy_provider/ONE.yaml'
+
+
+  TWO:
+    url: 'http1824306f8c4d'
+    <<: *NodeParam
+    path: './proxy_provider/TWO.yaml'
+
+  THREE:
+    url: 'httb746'
+    <<: *NodeParam
+    path: './proxy_provider/THREE.yaml'
+
+
+# 策略组
+proxy-groups:
+  - {name: 直连选择, type: select, proxies: [DIRECT, REJECT], icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Direct.png}
+  - {name: 拒绝服务, type: select, proxies: [REJECT, DIRECT, 自动选择], icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Reject.png}
+  - {name: 节点选择, type: select, proxies: [自动选择, 手动选择, DIRECT, REJECT], icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Auto.png}
+  - {name: 自动选择, type: fallback, proxies: [主出口,备出口], interval: 60, timeout: 5000, url: 'http://cp.cloudflare.com/generate_204',  icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Proxy.png}
+  - {name: 电报服务, type: select, proxies: [节点选择, 手动选择], icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Telegram_X.png}
+  - {name: 谷歌服务, type: select, proxies: [节点选择, 手动选择], icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Google_Search.png}
+  - {name: 推特服务, type: select, proxies: [节点选择, 手动选择], icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Twitter.png}
+  - {name: ChatGpt, type: select, proxies: [节点选择, 手动选择], icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/ChatGPT.png}
+  - {name: 苹果服务, type: select, proxies: [DIRECT, 节点选择, 手动选择], icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Apple.png}
+  - {name: 微软服务, type: select, proxies: [节点选择, 手动选择, DIRECT], icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Microsoft.png}
+  - {name: 币圈选择, type: select, proxies: [币出口, 手动选择, DIRECT], icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Cryptocurrency_2.png}
+
+  # 自动选择
+  - {name: 主出口, type: url-test, url: 'http://cp.cloudflare.com/generate_204', interval: 60, tolerance: 100, timeout: 5000, lazy: false, include-all: true, filter: "(?i)(日本|Japan|JP|美国|US)(?!.*x3).*", icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Final.png}
+  - {name: 备出口, type: url-test, url: 'http://cp.cloudflare.com/generate_204', interval: 60, tolerance: 100, timeout: 5000, lazy: false, include-all: true, filter: ".*(?i)(SG|新加)", icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Singapore.png}
+  - {name: 币出口, type: url-test, url: 'http://cp.cloudflare.com/generate_204', interval: 180, tolerance: 100, timeout: 5000, include-all: true, filter: ".*(?i)(日本|Japan|JP|香港|HK|新加)", icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Cryptocurrency_3.png}
+  - {name: 手动选择, type: select, url: 'http://cp.cloudflare.com/generate_204', interval: 180, tolerance: 70, include-all: true, filter: ".*", icon: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Colors/Unlock.png}
+# 规则参数 [每12小时更新一次订阅规则，更新规则时使用（节点选择）策略]
+classical_text: &classical_text {type: http, behavior: classical, interval: 86400 , format: text, client-fingerprint: chrome}
+
+domain_yaml: &domain_yaml {type: http, behavior: domain, interval: 86400 , format: yaml, client-fingerprint: chrome}
+
+classical_yaml: &classical_yaml {type: http, behavior: classical, interval: 86400 , format: yaml, client-fingerprint: chrome}
+
+domain_rule: &domain_rule {type: http, behavior: domain, format: text, interval: 86400, client-fingerprint: chrome}
+
+ip: &ip {type: http, interval: 86400, behavior: ipcidr, format: mrs}
+
+domain: &domain {type: http, interval: 86400, behavior: domain, format: mrs}
+
+
+rule-providers:
+  # 修正规则
+  xiuzhengguize:
+    <<: *classical_text
+    url: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Homemade/xiuzhengguize.list
+    path: "./rule_set/xiuzhengguize.list"
+
+  # 拒绝
+  disconnet:
+    <<: *classical_text
+    url: https://raw.githubusercontent.com/5927a/Environment/config/Homemade/disconnet.list
+    path: "./rule_set/disconnet.list"
+
+  # 禁止更新App域名
+  win_app_domain_reject:
+    <<: *classical_text
+    url: https://raw.githubusercontent.com/5927a/Environment/config/Homemade/win_app_domain_reject.list
+    path: "./rule_set/win_app_domain_reject.list"
+
+  # 拒绝更新系统
+  iota:
+    <<: *classical_text
+    url: https://raw.githubusercontent.com/5927a/Environment/config/Homemade/ota.list
+    path: "./rule_set/ota.list"
+
+  # 禁止httpd_dns
+  dns_reject:
+    <<: *classical_yaml
+    url: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Maomi/list/HTTPDNS.Block.yaml
+    path: "./rule_set/HTTPDNS.Block.yaml"
+
+  # 禁止进程联网
+  win_process_reject:
+    <<: *classical_yaml
+    url: https://raw.githubusercontent.com/5927a/Environment/config/Maomi/list/win_process_reject.yaml
+    path: "./rule_set/win_process_reject.yaml"
+
+  # 广告规则
+  anti-ad-surge2:
+    <<: *domain_yaml
+    url: https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/reject.txt
+    path: "./rule_set/ad2.yaml"
+
+  #chatgpt
+  chagpt:
+    <<: *classical_yaml
+    url: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Maomi/list/OpenAI.yaml
+    path: "./rule_set/OpenAI.yaml"
+
+  # google
+  google:
+    <<: *classical_yaml
+    url: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Maomi/list/Google.yaml
+    path: "./rule_set/Google.yaml"
+
+  # Binance
+  Binance:
+    <<: *classical_yaml
+    url: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Maomi/list/Binance.yaml
+    path: "./rule_set/Binance.yaml"
+
+  # twitter
+  twitter:
+    <<: *classical_yaml
+    url: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Maomi/list/Twitter.yaml
+    path: "./rule_set/Twitter.yaml"
+
+  #飞机
+  telegram:
+    <<: *classical_yaml
+    url: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Maomi/list/Telegram.yaml
+    path: "./rule_set/Telegram.yaml"
+
+  #苹果
+  apple:
+    <<: *classical_yaml
+    url: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Maomi/list/Apple_All.yaml
+    path: "./rule_set/Apple_All.yaml"
+
+  # 微软
+  microsoft:
+    <<: *classical_yaml
+    url: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Maomi/list/Microsoft.yaml
+    path: "./rule_set/Microsoft.yaml"
+
+  # 境外域名
+  Outside:
+    <<: *classical_text
+    url: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Homemade/Outside.list
+    path: "./rule_set/Outside.list"
+
+  # 下载App
+  down_p2p:
+    <<: *classical_yaml
+    url: https://raw.githubusercontent.com/5927a/Environment/config/Maomi/list/p2p.yaml
+    path: "./rule_set/p2p.yaml"
+
+  # 直连
+  china:
+    <<: *classical_text
+    url: https://raw.githubusercontent.com/5927a/Environment/refs/heads/config/Homemade/China.list
+    path: "./rule_set/China.list"
+
+  # 直连
+  # ASN:
+  #   <<: *classical_yaml
+  #   url: https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/main/ruleset/ASN.China.yaml
+  #   path: "./rule_set/ASN.China.yaml"
+
+  private_ip:
+    <<: *ip
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/private.mrs"
+    path: "./rule_set/private.mrs"
+
+# 分流规则
+rules:
+  - RULE-SET,private_ip,直连选择,no-resolve
+  - RULE-SET,xiuzhengguize,直连选择
+  - RULE-SET,disconnet,拒绝服务
+  - RULE-SET,dns_reject,拒绝服务
+  - RULE-SET,win_process_reject,拒绝服务
+  - RULE-SET,win_app_domain_reject,拒绝服务
+  - RULE-SET,anti-ad-surge2,拒绝服务
+  - RULE-SET,google,谷歌服务
+  - RULE-SET,Binance,币圈选择
+  - RULE-SET,chagpt,ChatGpt
+  - RULE-SET,twitter,推特服务
+  - RULE-SET,telegram,电报服务
+  - RULE-SET,microsoft,微软服务
+  - RULE-SET,Outside,节点选择
+  - GEOIP,cn,直连选择
+  - MATCH,节点选择

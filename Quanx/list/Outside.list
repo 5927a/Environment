@@ -1,0 +1,143 @@
+# ==================== Apple 服务 ====================
+DOMAIN-SUFFIX,icloud.com,REJECT
+DOMAIN-SUFFIX,icloud-content.com,REJECT
+DOMAIN-SUFFIX,apple-cloudkit.com,REJECT
+DOMAIN-SUFFIX,apzones.com,REJECT
+DOMAIN-SUFFIX,icloud-privacy-relay.com,REJECT
+DOMAIN-SUFFIX,apple.news,REJECT
+HOST,apple-relay.apple.com,REJECT
+HOST,apple-relay.cloudflare.com,REJECT
+HOST,developer.apple.com,REJECT
+HOST,testflight.apple.com,REJECT
+DOMAIN-SUFFIX,tv.apple.com,REJECT
+HOST,tv.applemusic.com,REJECT
+HOST,lookup-api.apple.com,REJECT
+HOST,www.apple.com,REJECT
+HOST,rtlimages.apple.com,REJECT
+DOMAIN-SUFFIX,ls.apple.com,REJECT
+DOMAIN-SUFFIX,apple-dns.net,REJECT
+# ===================== Apple AI ===================================
+DOMAIN-SUFFIX,guzzoni.apple.com,REJECT
+DOMAIN-SUFFIX,smoot.apple.com,REJECT
+DOMAIN-SUFFIX,fastly-edge.com,REJECT
+DOMAIN-SUFFIX,apple-relay.apple.com,REJECT
+# ==================== Google 服务 ====================
+DOMAIN-SUFFIX,google.com,REJECT
+DOMAIN-SUFFIX,googleapis.com,REJECT
+DOMAIN-SUFFIX,googleusercontent.com,REJECT
+DOMAIN-SUFFIX,googlevideo.com,REJECT
+DOMAIN-SUFFIX,gstatic.com,REJECT
+DOMAIN-SUFFIX,youtube.com,REJECT
+DOMAIN-SUFFIX,gmail.com,REJECT
+DOMAIN-SUFFIX,android.com,REJECT
+DOMAIN-SUFFIX,firebaseio.com,REJECT
+DOMAIN-SUFFIX,ggpht.com,REJECT
+DOMAIN-SUFFIX,g.co,REJECT
+DOMAIN-SUFFIX,goo.gl,REJECT
+# ==================== Microsoft 服务 ====================
+DOMAIN-SUFFIX,microsoft.com,REJECT
+DOMAIN-SUFFIX,azure.com,REJECT
+DOMAIN-SUFFIX,onedrive.com,REJECT
+DOMAIN-SUFFIX,windows.com,REJECT
+DOMAIN-SUFFIX,xbox.com,REJECT
+DOMAIN-SUFFIX,skype.com,REJECT
+DOMAIN-SUFFIX,msn.com,REJECT
+DOMAIN-SUFFIX,onenote.com,REJECT
+DOMAIN-SUFFIX,surface.com,REJECT
+DOMAIN-SUFFIX,bing.com,REJECT
+# ==================== Meta / Facebook====================
+DOMAIN-SUFFIX,facebook.com,REJECT
+DOMAIN-SUFFIX,instagram.com,REJECT
+DOMAIN-SUFFIX,whatsapp.com,REJECT
+DOMAIN-SUFFIX,messenger.com,REJECT
+DOMAIN-SUFFIX,fb.com,REJECT
+# ==================== Twitter / X====================
+DOMAIN-SUFFIX,x.com,REJECT
+DOMAIN-SUFFIX,twitter.com,REJECT
+DOMAIN-SUFFIX,twimg.com,REJECT
+DOMAIN-SUFFIX,t.co,REJECT
+# ==================== ByteDance / TikTok ====================
+DOMAIN-SUFFIX,tiktok.com,REJECT
+DOMAIN-SUFFIX,tiktokcdn.com,REJECT
+DOMAIN-SUFFIX,tiktokcdn-us.com,REJECT
+DOMAIN-SUFFIX,tiktokv.com,REJECT
+DOMAIN-SUFFIX,tiktokv.us,REJECT
+DOMAIN-SUFFIX,byteoversea.com,REJECT
+DOMAIN-SUFFIX,ibytedtos.com,REJECT
+DOMAIN-SUFFIX,ibyteimg.com,REJECT
+DOMAIN-SUFFIX,capcut.com,REJECT
+DOMAIN-SUFFIX,musical.ly,REJECT
+# ==================== 其他重要国外服务 ====================
+# GitHub
+DOMAIN-SUFFIX,github.com,REJECT
+DOMAIN-SUFFIX,github.io,REJECT
+DOMAIN-SUFFIX,githubusercontent.com,REJECT
+# Telegram
+DOMAIN-SUFFIX,telegram.org,REJECT
+DOMAIN-SUFFIX,t.me,REJECT
+DOMAIN-SUFFIX,telegra.ph,REJECT
+# Discord
+DOMAIN-SUFFIX,discord.com,REJECT
+DOMAIN-SUFFIX,discordapp.com,REJECT
+DOMAIN-SUFFIX,discordapp.net,REJECT
+# 流媒体
+DOMAIN-SUFFIX,netflix.com,REJECT
+DOMAIN-SUFFIX,nflxvideo.net,REJECT
+DOMAIN-SUFFIX,disneyplus.com,REJECT
+# AI 服务
+DOMAIN-SUFFIX,openai.com,REJECT
+DOMAIN-SUFFIX,anthropic.com,REJECT
+DOMAIN-SUFFIX,claude.ai,REJECT
+DOMAIN-SUFFIX,grok.com,REJECT
+# TikTok 次要域名（统计、效果、包分发等，可走国内）
+HOST,lf16-effectcdn.byteeffecttos-g.com,REJECT
+HOST,lf16-pkgcdn.pitaya-clientai.com,REJECT
+HOST,p16-tiktokcdn-com.akamaized.net,REJECT
+DOMAIN-SUFFIX,bytedapm.com,REJECT
+DOMAIN-SUFFIX,bytegecko-i18n.com,REJECT
+DOMAIN-SUFFIX,isnssdk.com,REJECT
+DOMAIN-SUFFIX,snssdk.com,REJECT
+DOMAIN-SUFFIX,sgpstatp.com,REJECT
+DOMAIN-SUFFIX,ipstatp.com,REJECT
+DOMAIN-SUFFIX,ttwebview.com,REJECT
+# 新闻媒体 & 其他次要服务
+DOMAIN-SUFFIX,bbc.com,REJECT
+DOMAIN-SUFFIX,cnn.com,REJECT
+DOMAIN-SUFFIX,wsj.com,REJECT
+DOMAIN-SUFFIX,wsj.net,REJECT
+DOMAIN-SUFFIX,time.com,REJECT
+DOMAIN-SUFFIX,cnet.com,REJECT
+DOMAIN-SUFFIX,dw.com,REJECT
+DOMAIN-SUFFIX,9to5mac.com,REJECT
+DOMAIN-SUFFIX,chinatimes.com,REJECT
+DOMAIN-SUFFIX,zaobao.com,REJECT
+DOMAIN-SUFFIX,yandex.ru,REJECT
+DOMAIN-SUFFIX,line.me,REJECT
+DOMAIN-SUFFIX,line-apps.com,REJECT
+DOMAIN-SUFFIX,line-scdn.net,REJECT
+DOMAIN-SUFFIX,naver.jp,REJECT
+DOMAIN-SUFFIX,clubhouseapi.com,REJECT
+DOMAIN-SUFFIX,joinclubhouse.com,REJECT
+DOMAIN-SUFFIX,dueapp.com,REJECT
+DOMAIN-SUFFIX,adblockplus.org,REJECT
+DOMAIN-SUFFIX,wps.com,REJECT
+DOMAIN-SUFFIX,wpscdn.com,REJECT
+DOMAIN-SUFFIX,ierc20.com,REJECT
+DOMAIN-SUFFIX,mbalib.com,REJECT
+DOMAIN-SUFFIX,reddit.com,REJECT
+DOMAIN-SUFFIX,mozilla.org,REJECT
+DOMAIN-SUFFIX,wordpress.com,REJECT
+DOMAIN-SUFFIX,wordpress.org,REJECT
+# 其他常用
+DOMAIN-SUFFIX,duckduckgo.com,REJECT
+DOMAIN-SUFFIX,figma.com,REJECT
+DOMAIN-SUFFIX,medium.com,REJECT
+DOMAIN-SUFFIX,stackoverflow.com,REJECT
+DOMAIN-SUFFIX,vimeo.com,REJECT
+DOMAIN-SUFFIX,mega.nz,REJECT
+DOMAIN-SUFFIX,dropbox.com,REJECT
+DOMAIN-SUFFIX,paypal.com,REJECT
+DOMAIN-SUFFIX,cloudflare.com,REJECT
+DOMAIN-SUFFIX,binance.com,REJECT
+DOMAIN-SUFFIX,wikimedia.org,REJECT
+DOMAIN-SUFFIX,wikiwand.com,REJECT

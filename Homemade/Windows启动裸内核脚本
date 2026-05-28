@@ -1,0 +1,20 @@
+@echo off
+:: start_猫.bat
+:: 脚本用于在 Windows 11 上启动, 按日期和时间记录日志
+
+:: 启动
+echo Mihomo Starting  %date% %time%
+echo ##########################
+echo don't close window
+
+:: 配置参数
+set CLASH_PATH="C:\Program Files\mihomo-v11910\mihomo.exe"
+set CONFIG_PATH="C:\Program Files\mihomo-v11910\clash.yaml"
+set LOG_DIR="C:\Users\shuot\Documents\Logs\Clash-logs"
+
+:: 生成按日期和时间命名的日志文件名（格式：clash_YYYYMMDD_HHMM.log）
+set LOG_FILE="%LOG_DIR%\clash_%date:~0,4%%date:~5,2%%date:~8,2%_%time:~0,2%%time:~3,2%.log"
+
+:: 启动 mihomo 并将日志写入文件
+echo Starting mihomo at %date% %time% >> %LOG_FILE%
+%CLASH_PATH% -f %CONFIG_PATH%  >> %LOG_FILE% 2>&1

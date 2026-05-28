@@ -1,0 +1,27 @@
+# ==================== Apple 服务 ====================
+DOMAIN-SUFFIX,icloud.com,REJECT
+DOMAIN-SUFFIX,icloud-content.com,REJECT
+DOMAIN-SUFFIX,apple-cloudkit.com,REJECT
+DOMAIN-SUFFIX,apzones.com,REJECT
+DOMAIN-SUFFIX,icloud-privacy-relay.com,REJECT
+#应用商店
+HOST,apple-relay.apple.com,REJECT
+HOST,apple-relay.cloudflare.com,REJECT
+HOST,developer.apple.com,REJECT
+HOST,testflight.apple.com,REJECT
+DOMAIN-SUFFIX,tv.apple.com,REJECT
+HOST,tv.applemusic.com,REJECT
+HOST,lookup-api.apple.com,REJECT
+HOST,www.apple.com,REJECT
+HOST,rtlimages.apple.com,REJECT
+DOMAIN-SUFFIX,ls.apple.com,REJECT
+DOMAIN-SUFFIX,apple-dns.net,REJECT
+#DOMAIN-SUFFIX,itunes.apple.com,REJECT
+#DOMAIN-SUFFIX,apps.apple.com,REJECT
+#DOMAIN-SUFFIX,mzstatic.com,REJECT
+DOMAIN-SUFFIX,apple.news,REJECT
+# ===================== Apple AI ===================================
+DOMAIN-SUFFIX,guzzoni.apple.com,REJECT
+DOMAIN-SUFFIX,smoot.apple.com,REJECT
+DOMAIN-SUFFIX,fastly-edge.com,REJECT
+DOMAIN-SUFFIX,apple-relay.apple.com,REJECT
